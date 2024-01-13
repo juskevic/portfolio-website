@@ -1,0 +1,85 @@
+:root {
+
+}
+
+html {
+    background-color: #0081a7;
+}
+
+@font-face {
+    font-family: "Steelfish-Rg";
+    src: url("assets/fonts/steelfish-rg.ttf");
+}
+
+@font-face {
+    font-family: "Cascadia Code SemiLight";
+    src: url("assets/fonts/CascadiaCode-SemiLight.ttf");
+}
+
+h1 {
+    color: #fdfcdc;
+    font-family: "Steelfish-Rg", sans-serif;
+    font-size: 100px;
+    text-shadow: 1px 4px #fed9b7;
+    -webkit-text-stroke: 1px black;
+    padding: 10px;
+    text-align: right;
+    margin: 0;
+    position: sticky;
+    top: 0
+}
+
+.menu {
+    color: #FDFCDC;
+    font-family: "Steelfish-Rg", sans-serif;
+    font-size: 45px;
+    padding: 5px;
+    text-align: left;
+    margin: 0;
+    -webkit-text-stroke: 1px #FED9B7;
+    top: 0;
+}
+
+.menu-about-me:hover {
+    -webkit-text-stroke: 1px #FDFCDC;
+    color: #F07167;
+}
+
+.menu-projects:hover {
+    -webkit-text-stroke: 1px #FDFCDC;
+    color: #F07167;
+}
+
+.menu-socials:hover {
+    -webkit-text-stroke: 1px #FDFCDC;
+    color: #F07167;
+}
+
+.menu-blog:hover {
+    -webkit-text-stroke: 1px #FDFCDC;
+    color: #F07167;
+}
+
+#about-me-h2 {
+    color: #F07167;
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+    margin-top: 150px;
+    margin-left: 60px;
+    padding-left: 30px;
+    text-align: left;
+
+}
+
+#menu-about-me-a {
+    color: inherit;
+    transform: inherit;
+    background-color: inherit;
+    -webkit-text-stroke: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
