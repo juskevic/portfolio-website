@@ -1,9 +1,13 @@
-:root {
-
+:root { /** color url: https://coolors.co/palette/161925-23395b-406e8e-8ea8c3-cbf7ed **/
+    --main-background-color: #161925;
+    --main-header-color: #23395b;
+    --main-header-shadow-color: #406e8e;
+    --main-menu-color: #CBF7ED;
+    --main-menu-border: #8EA8C3;
 }
 
 html {
-    background-color: #0081a7;
+    background-color: var(--main-background-color);
 }
 
 @font-face {
@@ -16,52 +20,52 @@ html {
     src: url("assets/fonts/CascadiaCode-SemiLight.ttf");
 }
 
-h1 {
-    color: #fdfcdc;
+h1 { /** kituccino.dev header **/
+    color: var(--main-header-color);
     font-family: "Steelfish-Rg", sans-serif;
     font-size: 100px;
-    text-shadow: 1px 4px #fed9b7;
-    -webkit-text-stroke: 1px black;
+    text-shadow: -3px 2px var(--main-header-shadow-color);
     padding: 10px;
     text-align: right;
     margin: 0;
     position: sticky;
-    top: 0
+    top: 0;
+    -webkit-text-stroke: 1px var(--main-background-color);
 }
 
 .menu {
-    color: #FDFCDC;
+    color: var(--main-menu-color);
     font-family: "Steelfish-Rg", sans-serif;
     font-size: 45px;
     padding: 5px;
     text-align: left;
     margin: 0;
-    -webkit-text-stroke: 1px #FED9B7;
+    -webkit-text-stroke: 1px var(--main-menu-border);
     top: 0;
 }
 
 .menu-about-me:hover {
-    -webkit-text-stroke: 1px #FDFCDC;
-    color: #F07167;
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
 }
 
 .menu-projects:hover {
-    -webkit-text-stroke: 1px #FDFCDC;
-    color: #F07167;
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
 }
 
 .menu-socials:hover {
-    -webkit-text-stroke: 1px #FDFCDC;
-    color: #F07167;
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
 }
 
 .menu-blog:hover {
-    -webkit-text-stroke: 1px #FDFCDC;
-    color: #F07167;
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
 }
 
 #about-me-h2 {
-    color: #F07167;
+    color: var(--main-header-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -70,6 +74,7 @@ h1 {
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
+    -webkit-text-stroke: 1px var(--main-menu-border);
 
 }
 
