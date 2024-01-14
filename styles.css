@@ -49,21 +49,6 @@ h1 { /** kituccino.dev header **/
     color: var(--main-background-color);
 }
 
-.menu-projects:hover {
-    -webkit-text-stroke: 1px var(--main-menu-color);
-    color: var(--main-background-color);
-}
-
-.menu-socials:hover {
-    -webkit-text-stroke: 1px var(--main-menu-color);
-    color: var(--main-background-color);
-}
-
-.menu-blog:hover {
-    -webkit-text-stroke: 1px var(--main-menu-color);
-    color: var(--main-background-color);
-}
-
 #about-me-h2 {
     color: var(--main-header-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
@@ -87,4 +72,44 @@ h1 { /** kituccino.dev header **/
     font-family: inherit;
     font-size: inherit;
     text-decoration: inherit;
+}
+
+.menu-projects:hover {
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
+}
+
+#projects-h2 {
+    color: var(--main-header-color);
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+    margin-top: 150px;
+    margin-left: 60px;
+    padding-left: 30px;
+    text-align: left;
+    -webkit-text-stroke: 1px var(--main-menu-border);
+
+}
+
+#menu-projects-a {
+    color: inherit;
+    transform: inherit;
+    background-color: inherit;
+    -webkit-text-stroke: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
+
+.menu-socials:hover {
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
+}
+
+.menu-blog:hover {
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
 }
