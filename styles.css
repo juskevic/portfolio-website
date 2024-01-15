@@ -33,6 +33,18 @@ h1 { /** kituccino.dev header **/
     -webkit-text-stroke: 1px var(--main-background-color);
 }
 
+#website-version {
+    position: absolute;
+    color: var(--main-menu-color);
+    text-shadow: -3px 2px var(--main-header-shadow-color);
+    text-align: left;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    font-size: 25px;
+    font-family: "Steelfish-Rg", sans-serif;
+}
+
 .menu {
     color: var(--main-menu-color);
     font-family: "Steelfish-Rg", sans-serif;
@@ -42,6 +54,10 @@ h1 { /** kituccino.dev header **/
     margin: 0;
     -webkit-text-stroke: 1px var(--main-menu-border);
     top: 0;
+}
+
+.menu-about-me {
+
 }
 
 .menu-about-me:hover {
@@ -74,6 +90,10 @@ h1 { /** kituccino.dev header **/
     text-decoration: inherit;
 }
 
+.menu-projects {
+    filter: brightness(50%);
+}
+
 .menu-projects:hover {
     -webkit-text-stroke: 1px var(--main-menu-color);
     color: var(--main-background-color);
@@ -90,6 +110,7 @@ h1 { /** kituccino.dev header **/
     padding-left: 30px;
     text-align: left;
     -webkit-text-stroke: 1px var(--main-menu-border);
+    filter: brightness(50%);
 
 }
 
@@ -109,6 +130,10 @@ h1 { /** kituccino.dev header **/
     color: var(--main-background-color);
 }
 
+.menu-socials {
+    filter: brightness(50%);
+}
+
 #socials-h2 {
     color: var(--main-header-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
@@ -120,6 +145,7 @@ h1 { /** kituccino.dev header **/
     padding-left: 30px;
     text-align: left;
     -webkit-text-stroke: 1px var(--main-menu-border);
+    filter: brightness(50%);
 }
 
 #menu-socials-a {
@@ -136,4 +162,8 @@ h1 { /** kituccino.dev header **/
 .menu-blog:hover {
     -webkit-text-stroke: 1px var(--main-menu-color);
     color: var(--main-background-color);
+}
+
+.menu-blog {
+    filter: brightness(50%);
 }
