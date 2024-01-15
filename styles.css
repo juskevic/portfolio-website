@@ -1,5 +1,4 @@
-/* Root Variables */
-:root {
+:root { /** color url: https://coolors.co/palette/161925-23395b-406e8e-8ea8c3-cbf7ed **/
     --main-background-color: #161925;
     --main-header-color: #23395b;
     --main-header-shadow-color: #406e8e;
@@ -7,12 +6,10 @@
     --main-menu-border: #8EA8C3;
 }
 
-/* General Styles */
 html {
     background-color: var(--main-background-color);
 }
 
-/* Fonts */
 @font-face {
     font-family: "Steelfish-Rg";
     src: url("assets/fonts/steelfish-rg.ttf");
@@ -23,8 +20,7 @@ html {
     src: url("assets/fonts/CascadiaCode-SemiLight.ttf");
 }
 
-/* Header Styles */
-h1 {
+h1 { /** kituccino.dev header **/
     color: var(--main-header-color);
     font-family: "Steelfish-Rg", sans-serif;
     font-size: 80px;
@@ -37,7 +33,18 @@ h1 {
     -webkit-text-stroke: 1px var(--main-background-color);
 }
 
-/* Menu Styles */
+#website-version {
+    position: absolute;
+    color: var(--main-menu-color);
+    text-shadow: -3px 2px var(--main-header-shadow-color);
+    text-align: left;
+    top: 0;
+    left: 0;
+    padding-left: 15px;
+    font-size: 25px;
+    font-family: "Steelfish-Rg", sans-serif;
+}
+
 .menu {
     color: var(--main-menu-color);
     font-family: "Steelfish-Rg", sans-serif;
@@ -49,7 +56,15 @@ h1 {
     top: 0;
 }
 
-/* About Me Section Styles */
+.menu-about-me {
+
+}
+
+.menu-about-me:hover {
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
+}
+
 #about-me-h2 {
     color: var(--main-header-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
@@ -61,9 +76,29 @@ h1 {
     padding-left: 30px;
     text-align: left;
     -webkit-text-stroke: 1px var(--main-menu-border);
+
 }
 
-/* Projects Section Styles */
+#menu-about-me-a {
+    color: inherit;
+    transform: inherit;
+    background-color: inherit;
+    -webkit-text-stroke: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
+
+.menu-projects {
+    filter: brightness(50%);
+}
+
+.menu-projects:hover {
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
+}
+
 #projects-h2 {
     color: var(--main-header-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
@@ -76,9 +111,29 @@ h1 {
     text-align: left;
     -webkit-text-stroke: 1px var(--main-menu-border);
     filter: brightness(50%);
+
 }
 
-/* Socials Section Styles */
+#menu-projects-a {
+    color: inherit;
+    transform: inherit;
+    background-color: inherit;
+    -webkit-text-stroke: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
+
+.menu-socials:hover {
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
+}
+
+.menu-socials {
+    filter: brightness(50%);
+}
+
 #socials-h2 {
     color: var(--main-header-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
@@ -93,5 +148,22 @@ h1 {
     filter: brightness(50%);
 }
 
-/* Blog Section Styles */
-/* Add your```
+#menu-socials-a {
+    color: inherit;
+    transform: inherit;
+    background-color: inherit;
+    -webkit-text-stroke: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
+
+.menu-blog:hover {
+    -webkit-text-stroke: 1px var(--main-menu-color);
+    color: var(--main-background-color);
+}
+
+.menu-blog {
+    filter: brightness(50%);
+}
