@@ -167,3 +167,28 @@ h1 { /** kituccino.dev header **/
 .menu-blog {
     filter: brightness(50%);
 }
+
+#blog-h2 {
+    color: var(--main-header-color);
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+    margin-top: 150px;
+    margin-left: 60px;
+    padding-left: 30px;
+    text-align: left;
+    -webkit-text-stroke: 1px var(--main-menu-border);
+    filter: brightness(50%);
+}
+
+#menu-blog-a {
+    color: inherit;
+    transform: inherit;
+    background-color: inherit;
+    -webkit-text-stroke: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
