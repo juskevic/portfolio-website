@@ -56,10 +56,6 @@ h1 { /** kituccino.dev header **/
     top: 0;
 }
 
-.menu-about-me {
-
-}
-
 .menu-about-me:hover {
     -webkit-text-stroke: 1px var(--main-menu-color);
     color: var(--main-background-color);
@@ -88,6 +84,15 @@ h1 { /** kituccino.dev header **/
     font-family: inherit;
     font-size: inherit;
     text-decoration: inherit;
+}
+
+.about-me-main {
+    color: var(--main-menu-border);
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    font-size: 20px;
+    margin-left: 60px;
+    padding-left: 30px;
+    text-align: left;
 }
 
 .menu-projects {
