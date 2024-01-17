@@ -1,9 +1,8 @@
 :root { /** color url: https://coolors.co/palette/161925-23395b-406e8e-8ea8c3-cbf7ed **/
-    --main-background-color: #161925;
-    --main-header-color: #23395b;
-    --main-header-shadow-color: #406e8e;
-    --main-menu-color: #CBF7ED;
-    --main-menu-border: #8EA8C3;
+    --main-background-color: #A0AECD;
+    --main-header-color: #000000;
+    --main-menu-color: #000000;
+    --about-me-text: #000000;
 }
 
 html {
@@ -20,23 +19,21 @@ html {
     src: url("assets/fonts/CascadiaCode-SemiLight.ttf");
 }
 
-h1 { /** kituccino.dev header **/
+#sushiwok-header { /** kituccino.dev header **/
     color: var(--main-header-color);
     font-family: "Steelfish-Rg", sans-serif;
-    font-size: 80px;
-    text-shadow: -3px 2px var(--main-header-shadow-color);
-    padding: 10px;
+    font-size: 40px;
+    padding: 5px;
     text-align: right;
     margin: 0;
     position: sticky;
     top: 0;
-    -webkit-text-stroke: 1px var(--main-background-color);
+    font-style: italic;
 }
 
 #website-version {
     position: absolute;
     color: var(--main-menu-color);
-    text-shadow: -3px 2px var(--main-header-shadow-color);
     text-align: left;
     top: 0;
     left: 0;
@@ -52,7 +49,6 @@ h1 { /** kituccino.dev header **/
     padding: 5px;
     text-align: left;
     margin: 0;
-    -webkit-text-stroke: 1px var(--main-menu-border);
     top: 0;
 }
 
@@ -62,7 +58,7 @@ h1 { /** kituccino.dev header **/
 }
 
 #about-me-h2 {
-    color: var(--main-header-color);
+    color: var(--about-me-text);
     font-family: "Cascadia Code SemiLight", sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -71,7 +67,6 @@ h1 { /** kituccino.dev header **/
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
-    -webkit-text-stroke: 1px var(--main-menu-border);
 
 }
 
@@ -87,16 +82,12 @@ h1 { /** kituccino.dev header **/
 }
 
 .about-me-main {
-    color: var(--main-menu-border);
+    color: var(--about-me-text);
     font-family: "Cascadia Code SemiLight", sans-serif;
     font-size: 20px;
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
-}
-
-.menu-projects {
-    filter: brightness(50%);
 }
 
 .menu-projects:hover {
@@ -114,7 +105,6 @@ h1 { /** kituccino.dev header **/
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
-    -webkit-text-stroke: 1px var(--main-menu-border);
     filter: brightness(50%);
 
 }
@@ -135,10 +125,6 @@ h1 { /** kituccino.dev header **/
     color: var(--main-background-color);
 }
 
-.menu-socials {
-    filter: brightness(50%);
-}
-
 #socials-h2 {
     color: var(--main-header-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
@@ -149,7 +135,6 @@ h1 { /** kituccino.dev header **/
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
-    -webkit-text-stroke: 1px var(--main-menu-border);
     filter: brightness(50%);
 }
 
@@ -169,10 +154,6 @@ h1 { /** kituccino.dev header **/
     color: var(--main-background-color);
 }
 
-.menu-blog {
-    filter: brightness(50%);
-}
-
 #blog-h2 {
     color: var(--main-header-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
@@ -183,8 +164,6 @@ h1 { /** kituccino.dev header **/
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
-    -webkit-text-stroke: 1px var(--main-menu-border);
-    filter: brightness(50%);
 }
 
 #menu-blog-a {
