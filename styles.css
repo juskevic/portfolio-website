@@ -21,7 +21,7 @@ html {
 
 #sushiwok-header { /** kituccino.dev header **/
     color: var(--main-header-color);
-    font-family: "Steelfish-Rg", sans-serif;
+    font-family: "Agency FB", sans-serif;
     font-size: 40px;
     padding: 5px;
     text-align: right;
@@ -44,7 +44,7 @@ html {
 
 .menu {
     color: var(--main-menu-color);
-    font-family: "Steelfish-Rg", sans-serif;
+    font-family: "Bodoni MT", sans-serif;
     font-size: 45px;
     padding: 5px;
     text-align: left;
@@ -52,9 +52,31 @@ html {
     top: 0;
 }
 
-.menu-about-me:hover {
-    -webkit-text-stroke: 1px var(--main-menu-color);
-    color: var(--main-background-color);
+.menu-about-me {
+    display: inline-block;
+    position: relative;
+    color: black;
+    line-height: 0.9;
+    margin-top: 1em;
+    margin-bottom: -1.5rem;
+}
+
+.menu-about-me::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.menu-about-me:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #about-me-h2 {
@@ -90,11 +112,6 @@ html {
     text-align: left;
 }
 
-.menu-projects:hover {
-    -webkit-text-stroke: 1px var(--main-menu-color);
-    color: var(--main-background-color);
-}
-
 #projects-h2 {
     color: var(--main-header-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
@@ -105,8 +122,12 @@ html {
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
-    filter: brightness(50%);
+    filter: opacity(50%);
 
+}
+
+.menu-projects {
+    filter: opacity(50%);
 }
 
 #menu-projects-a {
@@ -120,9 +141,8 @@ html {
     text-decoration: inherit;
 }
 
-.menu-socials:hover {
-    -webkit-text-stroke: 1px var(--main-menu-color);
-    color: var(--main-background-color);
+.menu-socials {
+    filter: opacity(50%);
 }
 
 #socials-h2 {
@@ -135,7 +155,7 @@ html {
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
-    filter: brightness(50%);
+    filter: opacity(50%);
 }
 
 #menu-socials-a {
@@ -149,9 +169,8 @@ html {
     text-decoration: inherit;
 }
 
-.menu-blog:hover {
-    -webkit-text-stroke: 1px var(--main-menu-color);
-    color: var(--main-background-color);
+.menu-blog {
+    filter: opacity(50%);
 }
 
 #blog-h2 {
@@ -164,6 +183,7 @@ html {
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
+    filter: opacity(50%);
 }
 
 #menu-blog-a {
