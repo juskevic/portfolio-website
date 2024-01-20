@@ -5,6 +5,7 @@
     --about-me-text: #000000;
 }
 
+/*Main HTML*/
 html {
     background-color: var(--main-background-color);
 }
