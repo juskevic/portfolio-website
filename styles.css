@@ -172,7 +172,7 @@ html {
 .menu-socials:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-
+}
 
 
 /* "Socials" h2 header */
