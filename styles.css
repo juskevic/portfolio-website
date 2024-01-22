@@ -1,5 +1,4 @@
 :root { /** color url: https://coolors.co/palette/161925-23395b-406e8e-8ea8c3-cbf7ed **/
-    --main-background-color: #A0AECD;
     --main-header-color: #000000;
     --main-menu-color: #000000;
     --about-me-text: #000000;
@@ -21,16 +20,9 @@ html {
     src: url("assets/fonts/CascadiaCode-SemiLight.ttf");
 }
 
-#sushiwok-header { /** kituccino.dev header **/
-    color: var(--main-header-color);
-    font-family: "Agency FB", sans-serif;
-    font-size: 40px;
-    padding: 5px;
-    text-align: right;
-    margin: 0;
-    position: sticky;
-    top: 0;
-    font-style: italic;
+@font-face {
+    font-family: "Padyakke";
+    src: url("assets/fonts/PadyakkeExpandedOne-Regular.ttf");
 }
 
 #website-version {
@@ -46,9 +38,9 @@ html {
 
 .menu {
     color: var(--main-menu-color);
-    font-family: "Bodoni MT", sans-serif;
+    font-family: Padyakke, sans-serif;
     font-size: 45px;
-    padding: 5px;
+    padding: 50px 5px 5px;
     text-align: left;
     margin: 0;
     top: 0;
@@ -71,7 +63,7 @@ html {
     display: inline-block;
     position: relative;
     color: black;
-    line-height: 0.9;
+    line-height: 0.4;
     margin-top: 1em;
     margin-bottom: -1.5rem;
 }
@@ -151,7 +143,7 @@ html {
     display: inline-block;
     position: relative;
     color: black;
-    line-height: 0.9;
+    line-height: 0.4;
     margin-top: 1em;
     margin-bottom: -1.5rem;
 }
@@ -226,4 +218,12 @@ html {
     padding-left: 30px;
     text-align: left;
     filter: opacity(50%);
+}
+
+#copyright {
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    position: absolute;
+    left: 50%;;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
 }
