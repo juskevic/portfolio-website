@@ -10,6 +10,7 @@ html {
     background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
+/* Added fonts from system */
 @font-face {
     font-family: "Steelfish-Rg";
     src: url("assets/fonts/steelfish-rg.ttf");
@@ -25,6 +26,7 @@ html {
     src: url("assets/fonts/PadyakkeExpandedOne-Regular.ttf");
 }
 
+/* Main menu class */
 .menu {
     color: var(--main-menu-color);
     font-family: Padyakke, sans-serif;
@@ -46,6 +48,8 @@ html {
     font-size: inherit;
     text-decoration: inherit;
 }
+
+/* ----- ABOUT ME SECTION -----*/
 
 /* Main menu About Me selector | START OF UNDERLINE ANIMATION */
 .menu-about-me {
@@ -102,6 +106,9 @@ html {
     text-align: left;
 }
 
+/* ----- SOCIALS SECTION -----*/
+
+/* Main menu SOCIALS class | START OF UNDERLINE ANIMATION*/
 .menu-socials {
     display: inline-block;
     position: relative;
@@ -131,7 +138,6 @@ html {
     transform-origin: bottom left;
     filter: opacity(70%);
 }
-
 
 /* "Socials" h2 header */
 #socials-h2 {
@@ -167,6 +173,9 @@ html {
 #socials-text a:hover {
     font-weight: bold;
 }
+
+/* ----- PROJECTS SECTION -----*/
+/* ADD COMMENTS LATER */
 
 #projects-h2 {
     color: var(--main-header-color);
@@ -206,6 +215,7 @@ html {
     filter: opacity(50%); /* Remove later !!! */
 }
 
+/* ----- BOTTOM SECTION -----*/
 
 #copyright {
     font-family: "Cascadia Code SemiLight", sans-serif;
