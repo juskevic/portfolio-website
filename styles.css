@@ -1,4 +1,4 @@
-:root { /** color url: https://coolors.co/palette/161925-23395b-406e8e-8ea8c3-cbf7ed **/
+:root {
     --main-header-color: #000000;
     --main-menu-color: #000000;
     --about-me-text: #000000;
@@ -6,8 +6,8 @@
 
 /*Main HTML*/
 html {
-    background: rgb(238,174,202);
-    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: rgb(238, 174, 202);
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 
 @font-face {
@@ -25,22 +25,11 @@ html {
     src: url("assets/fonts/PadyakkeExpandedOne-Regular.ttf");
 }
 
-#website-version {
-    position: absolute;
-    color: var(--main-menu-color);
-    text-align: left;
-    top: 0;
-    left: 0;
-    padding-left: 15px;
-    font-size: 25px;
-    font-family: "Steelfish-Rg", sans-serif;
-}
-
 .menu {
     color: var(--main-menu-color);
     font-family: Padyakke, sans-serif;
     font-size: 45px;
-    padding: 50px 5px 5px;
+    padding: 5px 5px 5px;
     text-align: left;
     margin: 0;
     top: 0;
@@ -79,25 +68,27 @@ html {
     background-color: black;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+    filter: opacity(70%);
 }
 
 /* END OF UNDERLINE ANIMATION */
 .menu-about-me:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+    filter: opacity(70%);
 }
 
 /* About Me H2 header */
 #about-me-h2 {
     color: var(--about-me-text);
-    font-family: "Times New Roman", sans-serif;
+    font-family: Padyakke, sans-serif;
     font-weight: bold;
     font-size: 60px;
     margin-top: 150px;
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
-    padding-top: 100px;
+    padding-top: 130px;
 
 }
 
@@ -109,34 +100,6 @@ html {
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
-}
-
-#projects-h2 {
-    color: var(--main-header-color);
-    font-family: "Times New Roman", sans-serif;
-    font-weight: bold;
-    font-size: 60px;
-    margin-top: 150px;
-    margin-left: 60px;
-    padding-left: 30px;
-    text-align: left;
-    filter: opacity(50%);
-
-}
-
-.menu-projects {
-    filter: opacity(50%);
-}
-
-#menu-projects-a {
-    color: inherit;
-    transform: inherit;
-    background-color: inherit;
-    -webkit-text-stroke: inherit;
-    font-style: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    text-decoration: inherit;
 }
 
 .menu-socials {
@@ -159,19 +122,21 @@ html {
     background-color: black;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
+    filter: opacity(70%);
 }
 
 /* END OF UNDERLINE ANIMATION */
 .menu-socials:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+    filter: opacity(70%);
 }
 
 
 /* "Socials" h2 header */
 #socials-h2 {
     color: var(--main-header-color);
-    font-family: "Times New Roman", sans-serif;
+    font-family: Padyakke, sans-serif;
     font-weight: bold;
     font-size: 60px;
     margin-top: 150px;
@@ -203,22 +168,44 @@ html {
     font-weight: bold;
 }
 
-.menu-blog {
-    filter: opacity(50%);
-}
-
-#blog-h2 {
+#projects-h2 {
     color: var(--main-header-color);
-    font-family: "Cascadia Code SemiLight", sans-serif;
+    font-family: Padyakke, sans-serif;
     font-weight: bold;
-    font-style: italic;
     font-size: 60px;
     margin-top: 150px;
     margin-left: 60px;
     padding-left: 30px;
     text-align: left;
     filter: opacity(50%);
+
 }
+
+.menu-projects {
+    filter: opacity(50%);
+}
+
+#menu-projects-a {
+    color: inherit;
+    transform: inherit;
+    background-color: inherit;
+    -webkit-text-stroke: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
+
+#projects-text {
+    color: var(--main-header-color);
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    font-size: 20px;
+    margin-left: 60px;
+    padding-left: 30px;
+    text-align: left;
+    filter: opacity(50%); /* Remove later !!! */
+}
+
 
 #copyright {
     font-family: "Cascadia Code SemiLight", sans-serif;
