@@ -242,6 +242,38 @@ html {
     filter: opacity(50%); /* Remove later !!! */
 }
 
+/* BLOG SECTION */
+
+.menu-blog {
+    display: inline-block;
+    position: relative;
+    color: black;
+    line-height: 0.4;
+    margin-top: 1em;
+    margin-bottom: -1.5rem;
+}
+
+.menu-blog::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    filter: opacity(70%);
+}
+
+/* END OF UNDERLINE ANIMATION */
+.menu-blog:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    filter: opacity(70%);
+}
+
 /* ----- BOTTOM SECTION -----*/
 
 #copyright {
