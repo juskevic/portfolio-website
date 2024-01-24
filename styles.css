@@ -31,10 +31,10 @@ html {
     color: var(--main-menu-color);
     font-family: Padyakke, sans-serif;
     font-size: 45px;
-    padding: 5px 5px 5px;
     text-align: left;
     margin: 0;
     top: 0;
+    padding: 5px 5px 80px;
 }
 
 /*Main menu selector targeting the anchor elements within*/
@@ -190,9 +190,35 @@ html {
     filter: opacity(50%);
 
 }
-
+/* Menu Projects | START OF UNDERLINE ANIMATION */
 .menu-projects {
-    filter: opacity(50%);
+    display: inline-block;
+    position: relative;
+    color: black;
+    line-height: 0.4;
+    margin-top: 1em;
+    margin-bottom: -1.5rem;
+}
+
+.menu-projects::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    filter: opacity(70%);
+}
+
+/* END OF UNDERLINE ANIMATION */
+.menu-projects:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    filter: opacity(70%);
 }
 
 #menu-projects-a {
