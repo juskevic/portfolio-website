@@ -13,17 +13,17 @@ html {
 /* Added fonts from system */
 @font-face {
     font-family: "Steelfish-Rg";
-    src: url("assets/fonts/steelfish-rg.ttf");
+    src: url("../fonts/steelfish-rg.ttf");
 }
 
 @font-face {
     font-family: "Cascadia Code SemiLight";
-    src: url("assets/fonts/CascadiaCode-SemiLight.ttf");
+    src: url("../fonts/CascadiaCode-SemiLight.ttf");
 }
 
 @font-face {
     font-family: "Padyakke";
-    src: url("assets/fonts/PadyakkeExpandedOne-Regular.ttf");
+    src: url("../fonts/PadyakkeExpandedOne-Regular.ttf");
 }
 
 /* Main menu class */
@@ -250,4 +250,5 @@ html {
     left: 50%;;
     transform: translate(-50%, -50%);
     font-size: 14px;
+    padding-top: 30px;
 }
