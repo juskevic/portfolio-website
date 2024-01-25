@@ -1,0 +1,33 @@
+:root {
+
+}
+html {
+    /* add a background here later*/
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin-right: 50px;
+}
+
+footer {
+    text-align: center;
+}
+
+#blog-header {
+    display: flex;
+    justify-content: center;
+}
+
+#blog-return-button {
+/*add stuff in here later*/
+
