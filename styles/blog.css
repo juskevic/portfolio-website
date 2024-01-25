@@ -1,6 +1,7 @@
 :root {
 
 }
+
 html {
     /* add a background here later*/
 }
@@ -29,5 +30,9 @@ footer {
 }
 
 #blog-return-button {
-/*add stuff in here later*/
+    /*add stuff in here later*/
+}
 
+#notify-me {
+    filter: opacity(50%);
+}
