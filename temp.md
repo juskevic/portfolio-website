@@ -1,0 +1,3 @@
+- index / styles
+  - Fixed socials "LeetCode" on hover not working accurately.
+  - Removed CSS and comment bloat

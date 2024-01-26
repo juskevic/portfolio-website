@@ -18,23 +18,57 @@ nav {
 
 nav a {
     margin-right: 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    font-weight: bold;
 }
 
 footer {
-    text-align: center;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Opacity placeholder class, REMOVE LATER */
 .opacity-placeholder {
     filter: opacity(50%);
 }
+
+.socials {
+    color: var(--about-me-text);
+    display: flex;
+    justify-content: space-around;
+    font-family: "Cascadia Code SemiLight", sans-serif;
+}
+
 
 #blog-header {
     display: flex;
     justify-content: center;
 }
 
-#blog-return-button {
-    /*add stuff in here later*/
+#copyright { /* Copyright notice */
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    text-align: center;
+    font-size: 15px;
 }
+
+#socials-text {
+    font-size: 15px;
+}
+
+#socials-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#socials-text a:hover {
+    font-weight: bold;
+}
+
+
 
