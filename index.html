@@ -1,6 +1,3 @@
-<!-- TO  DO: 1. Make that the menu text goes to a different .html page each 2. REMOVE the socials menu option instead add them to the RIGHT side of the page. (In a cool way :D) 3. REMOVE the About Me button. add it to the right side also. (In a cool way of course)
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,32 +8,28 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <title>sushiwok.dev | ver a0.5</title>
+    <title>sushiwok.dev | ver a0.6</title>
 </head>
 <body>
 <script></script>
 <!-- Main MENU division -->
-<div class="menu">
-    <p class="menu-about-me"><a href="#about-me-h2">About Me</a></p>
-    <br>
-    <p class="menu-socials"><a href="#socials-h2">Socials</a></p>
-    <br>
-    <p class="menu-projects"><a href="#projects-h2">Projects</a></p>
-    <br>
-    <p class="menu-blog"><a href="blog.html">Blog</a></p>
-</div>
-<!-- About Me division-->
-<div class="about-me">
-    <h2 id="about-me-h2">ABOUT ME</h2>
-    <!-- About me TEXT XD-->
-    <p id="about-me-text">
-        Hi there! My name is Max, and I’m a web developer who is passionate about creating beautiful and functional websites. I’m currently learning JavaScript and Algorithms to enhance my skills and knowledge. I’m also proficient in HTML and CSS. In the future, I’m looking forward to learning more front-end technologies to create even more amazing websites! 😊 (Written on 23/01/2024)
-    </p>
-</div>
-<!--Socials division-->
+<header>
+    <div class="menu">
+        <p class="menu-projects"><a>Projects</a></p>
+        <br>
+        <p class="menu-blog"><a href="blog.html">Blog</a></p>
+    </div>
+    <!-- About Me division-->
+    <div class="about-me">
+        <p id="about-me-text">
+            Hi there! My name is Max, and I’m a web developer who is passionate about creating beautiful and functional websites. I’m currently learning JavaScript and Algorithms to enhance my skills and knowledge. I’m also proficient in HTML and CSS. In the future, I’m looking forward to learning more front-end technologies to create even more amazing websites! 😊 (Written on 23/01/2024)
+        </p>
+    </div>
+</header>
+<main></main>
+<footer>
+    <!-- Main socials division-->
 <div class="socials">
-    <!--Main SOCIALS h2 header-->
-    <h2 id="socials-h2"><span>SOCIALS</span></h2>
     <!--Socials text-->
     <div id="socials-text">
         <!--Anchor leading to GitHub-->
@@ -52,24 +45,12 @@
         </p>
     </div>
 </div>
-<!-- The PROJECTS division. -->
-<!-- TO DO: Each future <h3> and the following <p> tags should href to a main article of the described item... -->
-<div class="projects">
-    <!-- Main PROJECTS header <h2> -->
-    <h2 id="projects-h2">PROJECTS</h2>
-    <!-- PROJECTS text division -->
-    <div id="projects-text">
-        <!-- BROWSER GAMES <h3> -->
-        <h3 id="projects-browser-games-h3">BROWSER GAMES</h3>
-            <!-- BROWSER GAMES text -->
-            <p id="projects-browser-games-h3-text">...(TBA)</p>
-    </div>
-</div>
 <!-- COPYRIGHT MARK DIVISION-->
 <div id="copyright">
     <p>&copy; 2024 sushiwok.dev</p>
 </div>
 <!-- Script Loader -->
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

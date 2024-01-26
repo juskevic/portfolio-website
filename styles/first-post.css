@@ -1,0 +1,16 @@
+:root {
+
+}
+
+html {
+    /* ADD BACKGROUND LATER */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+}
