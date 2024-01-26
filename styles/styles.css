@@ -16,6 +16,7 @@ header {
 }
 
 footer {
+    position: fixed;
     width: 100%;
 }
 
@@ -109,8 +110,19 @@ footer {
 /*Socials text*/
 
 .socials {
+    color: var(--about-me-text);
     display: flex;
     justify-content: space-around;
+    font-family: "Cascadia Code SemiLight", sans-serif;
+}
+
+#socials-text {
+    font-size: 15px;
+}
+
+#socials-text a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /*Socials text anchor on mouse hover*/ /*CHANGE THIS LATER(MAKE IT MORE COOL)*/
