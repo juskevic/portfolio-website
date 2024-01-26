@@ -4,7 +4,6 @@
     --about-me-text: #000000;
 }
 
-/*Main HTML*/
 html {
     background: rgb(238, 174, 202);
     background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
@@ -28,7 +27,6 @@ footer {
     width: 100%;
 }
 
-/* Added fonts from system */
 @font-face {
     font-family: "Steelfish-Rg";
     src: url("../fonts/steelfish-rg.ttf");
@@ -44,7 +42,6 @@ footer {
     src: url("../fonts/PadyakkeExpandedOne-Regular.ttf");
 }
 
-/* Main menu class */
 .menu {
     color: var(--main-menu-color);
     font-family: Padyakke, sans-serif;
@@ -55,7 +52,6 @@ footer {
     padding: 5px 5px 80px;
 }
 
-/*Main menu selector targeting the anchor elements within*/
 .menu a {
     color: inherit;
     transform: inherit;
@@ -67,9 +63,6 @@ footer {
     text-decoration: inherit;
 }
 
-/* ----- ABOUT ME SECTION -----*/
-
-/* Main menu About Me selector | START OF UNDERLINE ANIMATION */
 .menu-about-me {
     display: inline-block;
     position: relative;
@@ -100,8 +93,6 @@ footer {
     filter: opacity(70%);
 }
 
-
-/* About Me text id selector*/
 #about-me-text {
     color: var(--about-me-text);
     font-family: "Cascadia Code SemiLight", sans-serif;
@@ -111,11 +102,6 @@ footer {
     margin-right: 30px;
     margin-left: 30px;
 }
-
-/* ----- FOOTER SECTION ----- */
-/* ----- SOCIALS SECTION ----- */
-
-/*Socials text*/
 
 .socials {
     color: var(--about-me-text);
@@ -133,13 +119,10 @@ footer {
     color: inherit;
 }
 
-/*Socials text anchor on mouse hover*/ /*CHANGE THIS LATER(MAKE IT MORE COOL)*/
 #socials-text a:hover {
     font-weight: bold;
 }
 
-/* ----- PROJECTS SECTION -----*/
-/* Menu Projects | START OF UNDERLINE ANIMATION */
 .menu-projects {
     display: inline-block;
     position: relative;
@@ -163,25 +146,11 @@ footer {
     filter: opacity(70%);
 }
 
-/* END OF UNDERLINE ANIMATION */
 .menu-projects:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
     filter: opacity(70%);
 }
-
-#menu-projects-a {
-    color: inherit;
-    transform: inherit;
-    background-color: inherit;
-    -webkit-text-stroke: inherit;
-    font-style: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    text-decoration: inherit;
-}
-
-/* BLOG SECTION */
 
 .menu-blog {
     display: inline-block;
@@ -206,20 +175,14 @@ footer {
     filter: opacity(70%);
 }
 
-/* END OF UNDERLINE ANIMATION */
 .menu-blog:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
     filter: opacity(70%);
 }
 
-/* ----- BOTTOM SECTION -----*/
-
-#copyright {
+#copyright { /* Copyright notice */
     font-family: "Cascadia Code SemiLight", sans-serif;
-    position: absolute;
-    left: 50%;;
-    transform: translate(-50%, -50%);
-    font-size: 14px;
-    padding-top: 30px;
+    text-align: center;
+    font-size: 15px;
 }
