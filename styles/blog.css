@@ -24,6 +24,11 @@ footer {
     text-align: center;
 }
 
+/* Opacity placeholder class, REMOVE LATER */
+.opacity-placeholder {
+    filter: opacity(50%);
+}
+
 #blog-header {
     display: flex;
     justify-content: center;
@@ -33,6 +38,3 @@ footer {
     /*add stuff in here later*/
 }
 
-#notify-me {
-    filter: opacity(50%);
-}
