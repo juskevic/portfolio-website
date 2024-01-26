@@ -15,6 +15,10 @@ header {
     justify-content: space-between;
 }
 
+footer {
+    width: 100%;
+}
+
 /* Added fonts from system */
 @font-face {
     font-family: "Steelfish-Rg";
@@ -99,55 +103,14 @@ header {
     margin-left: 30px;
 }
 
-/* ----- SOCIALS SECTION -----*/
+/* ----- FOOTER SECTION ----- */
+/* ----- SOCIALS SECTION ----- */
 
-/* Main menu SOCIALS class | START OF UNDERLINE ANIMATION*/
-.menu-socials {
-    display: inline-block;
-    position: relative;
-    color: black;
-    line-height: 0.4;
-    margin-top: 1em;
-    margin-bottom: -1.5rem;
-}
+/*Socials text*/
 
-.menu-socials::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-    filter: opacity(70%);
-}
-
-/* END OF UNDERLINE ANIMATION */
-.menu-socials:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    filter: opacity(70%);
-}
-
-/*Socials text (under h2)*/
-#socials-text {
-    color: var(--main-header-color);
-    font-family: "Cascadia Code SemiLight", sans-serif;
-    font-size: 20px;
-    margin-left: 60px;
-    padding-left: 30px;
-    text-align: left;
-}
-
-/*Socials text anchor only selector*/
-#socials-text a {
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    text-decoration: none;
+.socials {
+    display: flex;
+    justify-content: space-around;
 }
 
 /*Socials text anchor on mouse hover*/ /*CHANGE THIS LATER(MAKE IT MORE COOL)*/
@@ -156,20 +119,6 @@ header {
 }
 
 /* ----- PROJECTS SECTION -----*/
-/* ADD COMMENTS LATER */
-
-#projects-h2 {
-    color: var(--main-header-color);
-    font-family: Padyakke, sans-serif;
-    font-weight: bold;
-    font-size: 60px;
-    margin-top: 150px;
-    margin-left: 60px;
-    padding-left: 30px;
-    text-align: left;
-    filter: opacity(50%);
-
-}
 /* Menu Projects | START OF UNDERLINE ANIMATION */
 .menu-projects {
     display: inline-block;
@@ -210,16 +159,6 @@ header {
     font-family: inherit;
     font-size: inherit;
     text-decoration: inherit;
-}
-
-#projects-text {
-    color: var(--main-header-color);
-    font-family: "Cascadia Code SemiLight", sans-serif;
-    font-size: 20px;
-    margin-left: 60px;
-    padding-left: 30px;
-    text-align: left;
-    filter: opacity(50%); /* Remove later !!! */
 }
 
 /* BLOG SECTION */
