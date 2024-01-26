@@ -177,7 +177,8 @@ footer {
 
 .menu-blog:hover::after {
     transform: scaleX(1);
-    transform-origin: bottom left;
+    transform-origin:
+            bottom left;
     filter: opacity(70%);
 }
 
