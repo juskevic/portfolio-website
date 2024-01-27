@@ -9,21 +9,17 @@ html {
 header {
     display: flex;
     justify-content: center;
-}
-
-header h1 {
-    font-style: italic;
+    align-items: center;
+    flex-direction: column;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-nav a {
-    margin-right: 50px;
-    text-decoration: none;
-    color: inherit;
+nav > * {
+    margin: 0 10px;
 }
 
 nav a:hover {
