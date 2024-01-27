@@ -7,8 +7,16 @@ html {
 }
 
 header {
+    text-align: center;
+}
+
+header nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+main {
+    text-align: center;
 }
 
 .opacity-placeholder {

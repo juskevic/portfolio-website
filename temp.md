@@ -3,5 +3,6 @@
   - Added new files
 - blog
   - Added link to "Album Reviews"
+  - Fixed nav not being inside of header
 - album-reviews
   - ...
