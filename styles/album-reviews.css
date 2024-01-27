@@ -5,3 +5,7 @@
 html {
 
 }
+
+.opacity-placeholder {
+    filter: opacity(50%);
+}
