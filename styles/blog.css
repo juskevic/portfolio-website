@@ -11,6 +11,10 @@ header {
     justify-content: center;
 }
 
+header h1 {
+    font-style: italic;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -42,7 +46,6 @@ footer {
     color: var(--about-me-text);
     display: flex;
     justify-content: space-around;
-    font-family: "Cascadia Code SemiLight", sans-serif;
 }
 
 
@@ -52,7 +55,6 @@ footer {
 }
 
 #copyright { /* Copyright notice */
-    font-family: "Cascadia Code SemiLight", sans-serif;
     text-align: center;
     font-size: 15px;
 }
