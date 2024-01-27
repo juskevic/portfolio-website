@@ -1,3 +1,3 @@
-- index / styles
-  - Fixed socials "LeetCode" on hover not working accurately.
-  - Removed CSS and comment bloat
+- sushiwok-web
+  - Added new Repositories (album-reviews)
+  - Added new files
