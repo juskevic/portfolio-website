@@ -1,3 +1,7 @@
 - sushiwok-web
   - Added new Repositories (album-reviews)
   - Added new files
+- blog
+  - Added link to "Album Reviews"
+- album-reviews
+  - ...
