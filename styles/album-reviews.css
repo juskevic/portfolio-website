@@ -6,7 +6,10 @@ html {
 /* Add some color in here later */
 }
 
-
+header {
+    display: flex;
+    justify-content: center;
+}
 
 .opacity-placeholder {
     filter: opacity(50%);
