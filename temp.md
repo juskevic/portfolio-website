@@ -1,9 +1,0 @@
-- sushiwok-web
-  - Added new Repositories (album-reviews)
-  - Added new files
-- blog
-  - **Entire header has been restructured with FlexBox**
-  - Added link to "Album Reviews"
-  - Fixed nav not being inside of header
-- album-reviews
-  - Added FlexBox CSS
