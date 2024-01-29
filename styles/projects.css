@@ -40,3 +40,13 @@ footer {
     text-align: center;
     font-size: 15px;
 }
+
+#project-cosmopolitan {
+    max-width: calc(100% - 50px);
+    margin: 50px;
+}
+
+#project-cosmopolitan-desc {
+    max-width: calc(100% - 140px);
+    margin-right: 140px;
+}
