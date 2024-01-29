@@ -1,0 +1,42 @@
+:root {
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > * {
+    margin: 0 10px;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.socials {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 15px;
+}
