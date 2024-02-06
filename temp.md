@@ -1,8 +1,12 @@
 - index/styles
   - Updated anchors
 - blog
+  - "blog" *theoretically* ready for blog posting
+    - Additional database/automatic updating will have to be added later
   - The "Album Reviews" section has been terminated
   - Added "sample" post
+    - Aligned text using margin properties
+    - Added "Date posted: "
   - Updated "Go Back" anchor text to "Home"
   - Updated "Latest" anchor text to "About"
 - projects
