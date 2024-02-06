@@ -1,5 +1,10 @@
+- index/styles
+  - Updated anchors
 - blog
   - The "Album Reviews" section has been terminated
+  - Added "sample" post
+  - Updated "Go Back" anchor text to "Home"
+  - Updated "Latest" anchor text to "About"
 - projects
   - Added desc. for Cosmopolitan
   - Updated main CSS aligment
