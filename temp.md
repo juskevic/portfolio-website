@@ -1,0 +1,5 @@
+- blog
+  - The "Album Reviews" section has been terminated
+- projects
+  - Added desc. for Cosmopolitan
+  - Updated main CSS aligment

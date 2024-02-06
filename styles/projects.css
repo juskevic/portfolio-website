@@ -22,6 +22,11 @@ nav a:hover {
     font-weight: bold;
 }
 
+main {
+    max-width: calc(100% - 50px);
+    margin: 50px;
+}
+
 footer {
     position: fixed;
     justify-content: space-between;
@@ -34,16 +39,6 @@ footer {
     color: black;
     display: flex;
     justify-content: space-around;
-}
-
-#copyright {
-    text-align: center;
-    font-size: 15px;
-}
-
-#project-cosmopolitan {
-    max-width: calc(100% - 50px);
-    margin: 50px;
 }
 
 #project-cosmopolitan-desc {
