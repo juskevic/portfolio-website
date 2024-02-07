@@ -45,3 +45,7 @@ footer {
     max-width: calc(100% - 140px);
     margin-right: 140px;
 }
+
+#copyright {
+    text-align: center;
+}
