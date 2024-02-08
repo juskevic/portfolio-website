@@ -2,6 +2,13 @@
 
 }
 
+/*body {
+    background-image: url("../images/Vnrnl.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+
 header {
     display: flex;
     justify-content: center;
