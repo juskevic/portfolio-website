@@ -4,11 +4,6 @@
     --about-me-text: #000000;
 }
 
-html {
-    background: rgb(238, 174, 202);
-    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-}
-
 body {
     user-select: none;
     -webkit-user-select: none;
@@ -178,8 +173,7 @@ footer {
 
 .menu-blog:hover::after {
     transform: scaleX(1);
-    transform-origin:
-            bottom left;
+    transform-origin: bottom left;
     filter: opacity(70%);
 }
 

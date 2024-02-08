@@ -1,3 +1,4 @@
+- The website has been redesigned
 - projects
   - Added Project "Swordsmith"
   - Removed CSS bloat
