@@ -1,10 +1,14 @@
+/* Palette used as of a0.8: https://coolors.co/palette/590d22-800f2f-a4133c-c9184a-ff4d6d-ff758f-ff8fa3-ffb3c1-ffccd5-fff0f3*/
+
 :root {
-    --main-header-color: #000000;
-    --main-menu-color: #000000;
-    --about-me-text: #000000;
+    --text-color: whitesmoke;
+    --animation-underline-color: whitesmoke;
 }
 
 body {
+    /* #a4133c, #ff758f*/
+    background: rgb(164, 19, 60);
+    background: linear-gradient(90deg, rgba(164, 19, 60, 1) 0%, rgba(255, 117, 143, 1) 100%);
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -39,7 +43,7 @@ footer {
 }
 
 .menu {
-    color: var(--main-menu-color);
+    color: var(--text-color);
     font-family: Padyakke, sans-serif;
     font-size: 45px;
     text-align: left;
@@ -62,7 +66,7 @@ footer {
 .menu-about-me {
     display: inline-block;
     position: relative;
-    color: black;
+    color: var(--text-color);
     line-height: 0.4;
     margin-top: 1em;
     margin-bottom: -1.5rem;
@@ -76,7 +80,7 @@ footer {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: var(--animation-underline-color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
     filter: opacity(70%);
@@ -90,7 +94,7 @@ footer {
 }
 
 #about-me-text {
-    color: var(--about-me-text);
+    color: var(--text-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
     font-size: 20px;
     padding-left: 40px;
@@ -100,7 +104,7 @@ footer {
 }
 
 .socials {
-    color: var(--about-me-text);
+    color: var(--text-color);
     display: flex;
     justify-content: space-around;
     font-family: "Cascadia Code SemiLight", sans-serif;
@@ -122,7 +126,7 @@ footer {
 .menu-projects {
     display: inline-block;
     position: relative;
-    color: black;
+    color: var(--text-color);
     line-height: 0.4;
     margin-top: 1em;
     margin-bottom: -1.5rem;
@@ -136,7 +140,7 @@ footer {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: var(--animation-underline-color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
     filter: opacity(70%);
@@ -151,7 +155,7 @@ footer {
 .menu-blog {
     display: inline-block;
     position: relative;
-    color: black;
+    color: var(--text-color);
     line-height: 0.4;
     margin-top: 1em;
     margin-bottom: -1.5rem;
@@ -165,7 +169,7 @@ footer {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: black;
+    background-color: var(--animation-underline-color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
     filter: opacity(70%);
@@ -181,4 +185,5 @@ footer {
     font-family: "Cascadia Code SemiLight", sans-serif;
     font-size: 15px;
     text-align: center;
+    color: var(--text-color);
 }
