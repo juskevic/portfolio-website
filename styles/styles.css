@@ -38,10 +38,6 @@ footer {
 .menu {
     color: var(--text-color);
     font-size: 45px;
-    text-align: left;
-    margin: 0;
-    top: 0;
-    padding: 5px 5px 80px;
 }
 
 .menu a {
@@ -55,64 +51,11 @@ footer {
     text-decoration: inherit;
 }
 
-.menu-about-me {
-    display: inline-block;
-    position: relative;
-    color: var(--text-color);
-    line-height: 0.4;
-    margin-top: 1em;
-    margin-bottom: -1.5rem;
-}
-
-.menu-about-me::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--animation-underline-color);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-    filter: opacity(70%);
-}
-
-/* END OF UNDERLINE ANIMATION */
-.menu-about-me:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    filter: opacity(70%);
-}
-
-#about-me-text {
-    color: var(--text-color);
-    font-family: "Cascadia Code SemiLight", sans-serif;
-    font-size: 20px;
-    padding-left: 40px;
-    padding-top: 40px;
-    margin-right: 30px;
-    margin-left: 30px;
-}
-
 .socials {
     color: var(--text-color);
     display: flex;
     justify-content: space-around;
     font-family: "Cascadia Code SemiLight", sans-serif;
-}
-
-#socials-text {
-    font-size: 15px;
-}
-
-#socials-text a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#socials-text a:hover {
-    font-weight: bold;
 }
 
 .menu-projects {
@@ -171,6 +114,29 @@ footer {
     transform: scaleX(1);
     transform-origin: bottom left;
     filter: opacity(70%);
+}
+
+#about-me-text {
+    color: var(--text-color);
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 40px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#socials-text {
+    font-size: 15px;
+}
+
+#socials-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#socials-text a:hover {
+    font-weight: bold;
 }
 
 #copyright { /* Copyright notice */
