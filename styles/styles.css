@@ -51,13 +51,6 @@ footer {
     text-decoration: inherit;
 }
 
-.socials {
-    color: var(--text-color);
-    display: flex;
-    justify-content: space-around;
-    font-family: "Cascadia Code SemiLight", sans-serif;
-}
-
 .menu-projects {
     display: inline-block;
     position: relative;
@@ -114,6 +107,13 @@ footer {
     transform: scaleX(1);
     transform-origin: bottom left;
     filter: opacity(70%);
+}
+
+.socials {
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    font-family: "Cascadia Code SemiLight", sans-serif;
 }
 
 #about-me-text {
