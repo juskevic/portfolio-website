@@ -1,20 +1,24 @@
 /* Palette used as of a0.8: https://coolors.co/palette/590d22-800f2f-a4133c-c9184a-ff4d6d-ff758f-ff8fa3-ffb3c1-ffccd5-fff0f3*/
 
 :root {
-    --text-color: whitesmoke;
-    --animation-underline-color: whitesmoke;
+    --text-color: #FFF0F3;
+    --animation-underline-color: #FFCCD5;
 }
 
 body {
-    /* #a4133c, #ff758f*/
-    background: rgb(164, 19, 60);
-    background: linear-gradient(90deg, rgba(164, 19, 60, 1) 0%, rgba(255, 117, 143, 1) 100%);
+    /* #800f2f, #ff758f*/
+    background: rgb(128,15,47);
+    background: linear-gradient(90deg, rgba(128,15,47,1) 0%, rgba(255,117,143,1) 100%);
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
 
+@font-face {
+    font-family: "Akony";
+    src: url("../fonts/akony.otf");
+}
 
 header {
     display: flex;
@@ -27,24 +31,9 @@ footer {
     bottom: 0;
 }
 
-@font-face {
-    font-family: "Steelfish-Rg";
-    src: url("../fonts/steelfish-rg.ttf");
-}
-
-@font-face {
-    font-family: "Cascadia Code SemiLight";
-    src: url("../fonts/CascadiaCode-SemiLight.ttf");
-}
-
-@font-face {
-    font-family: "Padyakke";
-    src: url("../fonts/PadyakkeExpandedOne-Regular.ttf");
-}
-
 .menu {
     color: var(--text-color);
-    font-family: Padyakke, sans-serif;
+    font-family: Akony, sans-serif;
     font-size: 45px;
     text-align: left;
     margin: 0;
