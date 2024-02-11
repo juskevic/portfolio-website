@@ -70,11 +70,13 @@ nav a {
 }
 
 #menu-projects + #menu-blog {
+    /* Adds margin to the "Projects" anchor. Moves it away from "Blog" bscly*/
     margin-left: 100px;
 }
 
 #nav-bar {
-    padding-right: 250px;
+    /* Adds padding to nav bar ANCHORS from the right side*/
+    padding-right: 200px;
 }
 
 #about-me-text {
