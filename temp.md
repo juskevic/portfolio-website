@@ -1,5 +1,6 @@
 - **Website has been redesigned**
 - Website fonts have been changed
+- Added new comments
 - Added new font(s)
 - header element was re-arranged using FlexBox 
 - styles.css has been re-structured

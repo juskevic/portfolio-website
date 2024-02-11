@@ -83,10 +83,6 @@ nav a {
     color: var(--text-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
     font-size: 20px;
-    padding-left: 40px;
-    padding-top: 40px;
-    margin-right: 30px;
-    margin-left: 30px;
 }
 
 #socials-text {
