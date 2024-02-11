@@ -5,24 +5,28 @@
     --animation-underline-color: #FFCCD5;
 }
 
+@font-face {
+    font-family: "Akony";
+    src: url("../fonts/akony.otf");
+}
+
 body {
     /* #800f2f, #ff758f*/
-    background: rgb(128,15,47);
-    background: linear-gradient(90deg, rgba(128,15,47,1) 0%, rgba(255,117,143,1) 100%);
+    background: rgb(128, 15, 47);
+    background: linear-gradient(90deg, rgba(128, 15, 47, 1) 0%, rgba(255, 117, 143, 1) 100%);
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
 
-@font-face {
-    font-family: "Akony";
-    src: url("../fonts/akony.otf");
+header h1 {
+    font-family: "Akony", sans-serif;
+    color: var(--text-color);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
+main {
+
 }
 
 footer {
@@ -33,7 +37,6 @@ footer {
 
 .menu {
     color: var(--text-color);
-    font-family: Akony, sans-serif;
     font-size: 45px;
     text-align: left;
     margin: 0;
