@@ -10,6 +10,11 @@
     src: url("../fonts/akony.otf");
 }
 
+@font-face {
+    font-family: "Bronson";
+    src: url("../fonts/BRONSON-Black.ttf");
+}
+
 body {
     /* #800f2f, #ff758f*/
     background: rgb(128, 15, 47);
@@ -23,6 +28,7 @@ body {
 header h1 {
     font-family: "Akony", sans-serif;
     color: var(--text-color);
+    padding-left: 20px;
 }
 
 main {
@@ -76,7 +82,9 @@ nav a {
 
 #nav-bar {
     /* Adds padding to nav bar ANCHORS from the right side*/
-    padding-right: 200px;
+    padding-right: 100px;
+    font-family: "Bronson", sans-serif;
+    font-size: 30px;
 }
 
 #about-me-text {
