@@ -1,4 +1,6 @@
-- 
-- 
-- styles.css was re-structured
+- **Website has be redesigned**
+- Website fonts have been changed
+- Added new font(s)
+- styles.css has been re-structured
+- index.html has been re-structured
 - "Cosmopolitan" project removed from "projects"
