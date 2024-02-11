@@ -1,6 +1,7 @@
 - **Website has been redesigned**
 - Website fonts have been changed
 - Added new font(s)
+- header element was re-arranged using FlexBox 
 - styles.css has been re-structured
 - index.html has been re-structured
 - "Cosmopolitan" project removed from "projects"
