@@ -1,4 +1,4 @@
 - 
 - 
-- 
+- styles.css was re-structured
 - "Cosmopolitan" project removed from "projects"
