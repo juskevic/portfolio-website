@@ -1,12 +1,36 @@
-:root {
+/* Palette used as of a0.8: https://coolors.co/palette/590d22-800f2f-a4133c-c9184a-ff4d6d-ff758f-ff8fa3-ffb3c1-ffccd5-fff0f3*/
 
+:root {
+    --text-color: #FFF0F3;
+    --animation-underline-color: #FFCCD5;
 }
 
-html {
-    /* add a background here later*/
+@font-face {
+    font-family: "Akony";
+    src: url("../fonts/akony.otf");
+}
+
+@font-face {
+    font-family: "Bronson";
+    src: url("../fonts/BRONSON-Black.ttf");
+}
+
+body {
+    /* #800f2f, #ff758f*/
+    background: rgb(128, 15, 47);
+    background: linear-gradient(90deg, rgba(128, 15, 47, 1) 0%, rgba(255, 117, 143, 1) 100%);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+header h1 {
+    font-family: "Akony", sans-serif;
 }
 
 header {
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +38,15 @@ header {
 }
 
 nav {
+    font-family: "Bronson", sans-serif;
     display: flex;
     justify-content: space-between;
+}
+
+nav a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
 }
 
 nav > * {
