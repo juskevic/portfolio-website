@@ -5,5 +5,7 @@
 - header element was re-arranged using FlexBox 
 - styles.css has been re-structured
 - index.html has been re-structured
+- projects.html/css has been redesigned
+- blog.html/css has been redesigned
 - "Cosmopolitan" project removed from "projects"
 - Removed CSS bloat
