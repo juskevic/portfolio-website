@@ -2,6 +2,7 @@
 - Website fonts have been changed
 - Added new comments
 - Added new font(s)
+- Added hover effect on text (JS) in index, blog, and projects.html/css
 - header element was re-arranged using FlexBox 
 - styles.css has been re-structured
 - index.html has been re-structured
