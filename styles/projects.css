@@ -25,11 +25,25 @@ body {
     -ms-user-select: none;
 }
 
+header h1 {
+    font-family: "Akony", sans-serif;
+}
+
+header nav {
+    font-family: "Bronson", sans-serif;
+}
+
 header {
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 nav {
@@ -46,11 +60,15 @@ nav a:hover {
 }
 
 main {
+    font-family: "Cascadia Code SemiLight", sans-serif;
     max-width: calc(100% - 50px);
     margin: 50px;
+    color: var(--text-color);
 }
 
 footer {
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    color: var(--text-color);
     position: fixed;
     justify-content: space-between;
     align-items: center;
@@ -58,8 +76,13 @@ footer {
     width: 100%;
 }
 
+footer a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
 .socials {
-    color: black;
     display: flex;
     justify-content: space-around;
 }
