@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let searchLink = document.getElementById('nav-search');
 
     // Function to apply the hover effect
-    function applyHoverEffect(element) {
+    function applyHoverEffectProjects(element) {
         element.style.transition = 'transform  0.3s, background-color  0.3s';
         element.addEventListener('mouseenter', function () {
             element.style.transform = 'scale(1.1)';
@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    applyHoverEffect(homeLink);
-    applyHoverEffect(searchLink);
+    applyHoverEffectProjects(homeLink);
+    applyHoverEffectProjects(searchLink);
 });
