@@ -82,6 +82,28 @@ nav a {
 #menu-projects, #menu-blog {
     margin: 0;
     padding: 0;
+    display: inline-flex; /* Use inline-flex to keep the link text inline */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for transform and background-color */
+    text-decoration: none; /* Remove default underline from links */
+    color: inherit; /* Inherit text color from parent */
+}
+
+#menu-projects, #menu-blog {
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* Use inline-flex to keep the link text inline */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for transform and color */
+    text-decoration: none; /* Remove default underline from links */
+    color: inherit; /* Inherit text color from parent */
+}
+
+#menu-projects:hover, #menu-blog:hover {
+    color: var(--animation-underline-color); /* Text color on hover */
+    transform: scale(1.1); /* Scale up on hover */
 }
 
 #menu-projects + #menu-blog {
