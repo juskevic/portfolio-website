@@ -10,3 +10,27 @@ aboutMeText.addEventListener('click', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Select the "Projects" and "Blog" links
+    var projectLink = document.getElementById('menu-projects');
+    var blogLink = document.getElementById('menu-blog');
+
+    // Function to apply the hover effect
+    function applyHoverEffect(element) {
+        element.style.transition = 'transform  0.3s, background-color  0.3s';
+        element.style.backgroundColor = '#FFCCD5'; // Set the initial background color
+        element.addEventListener('mouseenter', function () {
+            element.style.transform = 'scale(1.1)'; // Scale up the link
+        });
+        element.addEventListener('mouseleave', function () {
+            element.style.transform = 'scale(1)'; // Reset the scale
+            element.style.backgroundColor = ''; // Remove the background color
+        });
+    }
+
+    // Apply the hover effect to the "Projects" and "Blog" links
+    applyHoverEffect(projectLink);
+    applyHoverEffect(blogLink);
+});
+
+
