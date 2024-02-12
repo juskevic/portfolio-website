@@ -94,6 +94,22 @@ footer {
     font-size: 80%;
 }
 
+#nav-home, #nav-about, #nav-archive, #nav-notify-me {
+    margin: 10px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, color 0.3s;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#nav-home:hover, #nav-about:hover, #nav-archive:hover, #nav-notify-me:hover {
+    color: var(--animation-underline-color);
+    transform: scale(1.1);
+}
+
 #blog-header {
     display: flex;
     justify-content: center;
