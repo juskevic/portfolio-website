@@ -36,9 +36,10 @@ header nav {
 header {
     color: var(--text-color);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
+    padding-left: 20px;
 }
 
 header a {
