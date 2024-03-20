@@ -1,0 +1,2 @@
+- Website structure has been refactored.
+- Removed "uwu" text.
