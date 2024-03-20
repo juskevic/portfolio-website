@@ -1,2 +1,4 @@
-- Website structure has been refactored.
-- Removed "uwu" text.
+- Website updated to version _Alpha 1.0_
+- Website structure has been refactored
+- Added "Website under construction banner"
+- Removed "uwu" text

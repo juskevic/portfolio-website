@@ -21,3 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
     applyHoverEffect(archiveLink)
     applyHoverEffect(notifyLink)
 });
+
+/* Website under construction bar */
+const messages = ['Website Under Construction ⚒️', "I'm are working on it! ⛏️", 'Coming soon... ⏳'];
+let index = 0;
+
+function changeMessage() {
+    document.querySelector('.construction-bar p').textContent = messages[index];
+    index = (index + 1) % messages.length;
+}
+
+setInterval(changeMessage, 5000);
