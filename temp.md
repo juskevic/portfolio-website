@@ -1,4 +1,5 @@
 - Website updated to version _Alpha 1.0_
 - Website structure has been refactored
+- Website has been realigned
 - Added "Website under construction banner"
 - Removed "uwu" text
