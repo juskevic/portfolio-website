@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* Website under construction bar */
-const messages = ['Website Under Construction ⚒️', "I'm are working on it! ⛏️", 'Coming soon... ⏳'];
+const messages = ['Website Under Construction ⚒️', "I'm working on it! ⛏️", 'Coming soon... ⏳'];
 let index = 0;
 
 function changeMessage() {
