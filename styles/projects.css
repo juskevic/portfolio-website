@@ -9,17 +9,16 @@
 }
 
 body {
-    /* #800f2f, #ff758f*/
     background-color: var(---background-color);
-    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
 
 header h1 {
-    text-decoration: none;
-    color: inherit;
+    font-family: "Akony", sans-serif;
+    color: var(--text-color);
+    padding-left: 20px;
 }
 
 nav {
@@ -39,26 +38,13 @@ nav a {
 }
 
 main {
-    font-family: "Cascadia Code SemiLight", sans-serif;
-    max-width: calc(100% - 50px);
-    margin: 50px;
-    color: var(--text-color);
+
 }
 
 footer {
-    font-family: "Cascadia Code SemiLight", sans-serif;
-    color: var(--text-color);
     position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    bottom: 0;
     width: 100%;
-}
-
-footer a {
-    text-decoration: none;
-    font-family: inherit;
-    color: inherit;
+    bottom: 0;
 }
 
 .header-container-projects {
