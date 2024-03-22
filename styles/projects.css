@@ -18,31 +18,12 @@ body {
 }
 
 header h1 {
-    font-family: "Akony", sans-serif;
-    color: var(--text-color);
-    padding-left: 20px;
-}
-
-header nav {
-    font-family: "Bronson", sans-serif;
-}
-
-header {
-    color: var(--text-color);
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-left: 20px;
-}
-
-header a {
     text-decoration: none;
     color: inherit;
 }
 
 nav {
-   color: var(--text-color);
+    color: var(--text-color);
     font-size: 45px;
 }
 
@@ -87,7 +68,6 @@ footer a {
 }
 
 #nav-go-back {
-    margin: 0;
     padding: 0;
     display: inline-flex;
     align-items: center;
@@ -95,6 +75,7 @@ footer a {
     transition: transform 0.3s, background-color 0.3s;
     text-decoration: none;
     color: inherit;
+        margin: 0 0 0 100px;
 }
 
 #nav-go-back:hover {
