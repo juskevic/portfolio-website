@@ -80,37 +80,35 @@ nav a {
 #menu-projects, #menu-blog {
     margin: 0;
     padding: 0;
-    display: inline-flex; /* Use inline-flex to keep the link text inline */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for transform and background-color */
-    text-decoration: none; /* Remove default underline from links */
-    color: inherit; /* Inherit text color from parent */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+    text-decoration: none;
+    color: inherit;
 }
 
 #menu-projects, #menu-blog {
     margin: 0;
     padding: 0;
-    display: inline-flex; /* Use inline-flex to keep the link text inline */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    transition: transform 0.3s, color 0.3s; /* Smooth transition for transform and color */
-    text-decoration: none; /* Remove default underline from links */
-    color: inherit; /* Inherit text color from parent */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, color 0.3s;
+    text-decoration: none;
+    color: inherit;
 }
 
 #menu-projects:hover, #menu-blog:hover {
-    color: var(--animation-underline-color); /* Text color on hover */
-    transform: scale(1.1); /* Scale up on hover */
+    color: var(--animation-underline-color);
+    transform: scale(1.1);
 }
 
 #menu-projects + #menu-blog {
-    /* Adds margin to the "Projects" anchor. Moves it away from "Blog" bscly*/
     margin-left: 100px;
 }
 
 #nav-bar {
-    /* Adds padding to nav bar ANCHORS from the right side*/
     padding-right: 100px;
     font-family: "Bronson", sans-serif;
     font-size: 30px;
@@ -147,12 +145,6 @@ nav a {
     font-weight: bold;
 }
 
-#copyright { /* Copyright notice */
-    font-family: "Cascadia Code SemiLight", sans-serif;
-    font-size: 15px;
-    text-align: center;
-    color: var(--text-color);
-}
 /*Website under const. banner - remove later*/
 .construction-bar {
     font-family: "Cascadia Code SemiLight", sans-serif;
