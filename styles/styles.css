@@ -88,17 +88,6 @@ nav a {
     color: inherit;
 }
 
-#menu-projects, #menu-blog {
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s, color 0.3s;
-    text-decoration: none;
-    color: inherit;
-}
-
 #menu-projects:hover, #menu-blog:hover {
     color: var(--animation-underline-color);
     transform: scale(1.1);

@@ -19,6 +19,8 @@ body {
 
 header h1 {
     font-family: "Akony", sans-serif;
+    color: var(--text-color);
+    padding-left: 20px;
 }
 
 header nav {
@@ -40,16 +42,19 @@ header a {
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
+   color: var(--text-color);
+    font-size: 45px;
 }
 
-nav > * {
-    margin: 0 10px;
-}
-
-nav a:hover {
-    font-weight: bold;
+nav a {
+    color: inherit;
+    transform: inherit;
+    background-color: inherit;
+    -webkit-text-stroke: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
 }
 
 main {
@@ -75,21 +80,24 @@ footer a {
     color: inherit;
 }
 
-.socials {
+.header-container-projects {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#nav-home, #nav-search {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    transition: transform 0.3s, color 0.3s;
+#nav-go-back {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
     text-decoration: none;
     color: inherit;
 }
 
-#nav-home:hover, #nav-search:hover {
+#nav-go-back:hover {
     color: var(--animation-underline-color);
     transform: scale(1.1);
 }
