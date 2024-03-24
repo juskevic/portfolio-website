@@ -70,13 +70,6 @@ footer {
     padding-left: 30px;
 }
 
-.socials {
-    color: var(--text-color);
-    display: flex;
-    justify-content: space-around;
-    font-family: "Cascadia Code SemiLight", sans-serif;
-}
-
 #menu-projects, #menu-blog {
     margin: 0;
     padding: 0;
