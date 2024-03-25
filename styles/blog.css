@@ -28,7 +28,8 @@ header h1 {
 nav {
     color: var(--text-color);
     font-family: "Bronson", sans-serif;
-    font-size: 35px;
+    padding-right: 100px;
+    font-size: 30px;
 }
 
 nav a {
