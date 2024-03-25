@@ -92,7 +92,7 @@ footer {
 }
 
 #nav-home:hover {
-    color: var(--on-hover-color);
+    color: #E5383B;
     transform: scale(1.1);;
 }
 
