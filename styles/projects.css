@@ -23,7 +23,9 @@ header h1 {
 
 nav {
     color: var(--text-color);
-    font-size: 45px;
+    padding-right: 100px;
+    font-family: "Bronson", sans-serif;
+    font-size: 30px;
 }
 
 nav a {
@@ -75,12 +77,6 @@ footer {
 
 #copyright {
     text-align: center;
-}
-
-#nav-bar {
-    padding-right: 100px;
-    font-family: "Bronson", sans-serif;
-    font-size: 30px;
 }
 
 /*Website under const. banner - remove later*/

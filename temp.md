@@ -6,3 +6,4 @@
 - Added 404.html to the repo
 - Removed "uwu" text easter-egg
 - Removed "socials" at the bottom of the page
+- CSS/HTML has been cleaned up
