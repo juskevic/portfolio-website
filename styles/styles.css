@@ -3,7 +3,7 @@
 :root {
     ---background-color: #F5F3F4;
     --text-color: #0B090A;
-    --animation-underline-color: #E5383B;
+    --on-hover-color: #E5383B;
 }
 
 @font-face {
@@ -82,7 +82,7 @@ footer {
 }
 
 #menu-projects:hover, #menu-blog:hover {
-    color: var(--animation-underline-color);
+    color: var(--on-hover-color);
     transform: scale(1.1);
 }
 
@@ -112,19 +112,6 @@ footer {
     color: inherit;
     font-family: inherit;
     font-size: 40px;
-}
-
-#socials-text {
-    font-size: 15px;
-}
-
-#socials-text a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#socials-text a:hover {
-    font-weight: bold;
 }
 
 /*Website under const. banner - remove later*/
