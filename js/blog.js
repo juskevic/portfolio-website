@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Select the "Projects" and "Blog" links
     let homeLink = document.getElementById('nav-home');
-    let aboutLink = document.getElementById('nav-about');
-    let archiveLink = document.getElementById('nav-archive');
-    let notifyLink = document.getElementById('nav-notify-me');
 
     // Function to apply the hover effect
     function applyHoverEffect(element) {
@@ -17,9 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     applyHoverEffect(homeLink);
-    applyHoverEffect(aboutLink);
-    applyHoverEffect(archiveLink)
-    applyHoverEffect(notifyLink)
 });
 
 /* Website under construction bar */

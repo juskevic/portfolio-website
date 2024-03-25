@@ -21,30 +21,25 @@ body {
 
 header h1 {
     font-family: "Akony", sans-serif;
-}
-
-header {
+    padding-left: 20px;
     color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 nav {
+    color: var(--text-color);
     font-family: "Bronson", sans-serif;
-    display: flex;
-    justify-content: space-between;
+    font-size: 35px;
 }
 
 nav a {
     color: inherit;
+    transform: inherit;
+    background-color: inherit;
+    -webkit-text-stroke: inherit;
+    font-style: inherit;
     font-family: inherit;
-    text-decoration: none;
-}
-
-nav > * {
-    margin: 0 10px;
+    font-size: inherit;
+    text-decoration: inherit;
 }
 
 main {
@@ -70,10 +65,10 @@ footer {
     filter: opacity(50%);
 }
 
-.socials {
-    color: var(--text-color);
+.projects-header-container {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .blog-post-snippet {
@@ -84,42 +79,20 @@ footer {
     font-size: 80%;
 }
 
-#nav-home, #nav-about, #nav-archive, #nav-notify-me {
-    margin: 10px;
+#nav-home {
+    padding: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s, color 0.3s;
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-#nav-home:hover, #nav-about:hover, #nav-archive:hover, #nav-notify-me:hover {
-    color: var(--animation-underline-color);
-    transform: scale(1.1);
-}
-
-#blog-header {
-    display: flex;
-    justify-content: center;
-}
-
-#copyright { /* Copyright notice */
-    text-align: center;
-    font-size: 15px;
-}
-
-#socials-text {
-    font-size: 15px;
-}
-
-#socials-text a {
+    transition: transform 0.3s, background-color 0.3s;
     text-decoration: none;
     color: inherit;
+    margin: 0 0 0 100px;
 }
 
-#socials-text a:hover {
-    font-weight: bold;
+#nav-home:hover {
+    color: var(--on-hover-color);
+    transform: scale(1.1);;
 }
 
 /*Website under const. banner - remove later*/
@@ -149,6 +122,10 @@ footer {
 }
 
 @keyframes moveLine {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
