@@ -70,8 +70,8 @@ footer {
     padding-left: 30px;
 }
 
-#menu-projects, #menu-blog {
-    margin: 0;
+#menu-projects, #menu-blog, #menu-about {
+    margin: 0 0 0 70px;
     padding: 0;
     display: inline-flex;
     align-items: center;
@@ -81,13 +81,9 @@ footer {
     color: inherit;
 }
 
-#menu-projects:hover, #menu-blog:hover {
+#menu-projects:hover, #menu-blog:hover, #menu-about:hover {
     color: var(--on-hover-color);
     transform: scale(1.1);
-}
-
-#menu-projects + #menu-blog {
-    margin-left: 100px;
 }
 
 #nav-bar {

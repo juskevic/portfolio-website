@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Select the "Projects" and "Blog" links
     let projectLink = document.getElementById('menu-projects');
     let blogLink = document.getElementById('menu-blog');
+    let aboutLink = document.getElementById('menu-about');
 
     // Function to apply the hover effect
     function applyHoverEffect(element) {
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     applyHoverEffect(projectLink);
     applyHoverEffect(blogLink);
+    applyHoverEffect(aboutLink)
 });
 
 /* Website under construction bar */

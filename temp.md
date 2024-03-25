@@ -1,10 +1,1 @@
-- Website updated to version _Alpha 0.9_
-- Website color scheme has been changed
-- Website structure has been refactored
-- Website has been realigned (index, blog, projects)
-- Added "Website under construction banner"
-- Added 404.html to the repo
-- Removed "uwu" text easter-egg
-- Removed "socials" at the bottom of the page
-- CSS/HTML has been cleaned up
-- Temp
+- Website updated to version _Alpha 0.9.1_
