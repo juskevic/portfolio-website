@@ -1,2 +1,2 @@
 - Website updated to version _Alpha 0.9.1_
-- Added JavaScript pop-up (stolen form Codepen)
+- Website has been made responsive for mobile use (Still under construction)
