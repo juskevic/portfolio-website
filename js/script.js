@@ -32,22 +32,3 @@ function changeMessage() {
 
 setInterval(changeMessage, 5000);
 
-/*Pop up msg*/
-let popup = document.querySelector(".popup");
-let close = document.querySelector(".popup .close");
-
-popup.style.display = "block";
-popup.style.visibility = "hidden";
-setTimeout(() => {
-    popup.style.visibility = "visible";
-    popup.style.opacity = "1";
-}, 1000);
-
-close.addEventListener("click", () => {
-    popup.style.opacity = "0";
-    popup.style.visibility = "hidden";
-    setTimeout(() => {
-        popup.style.display = "none";
-    }, 1000);
-});
-
