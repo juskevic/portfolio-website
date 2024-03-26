@@ -1,1 +1,2 @@
 - Website updated to version _Alpha 0.9.1_
+- Added JavaScript pop-up (stolen form Codepen)
