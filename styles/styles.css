@@ -141,15 +141,11 @@ footer {
     100% { transform: translateX(100%); }
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .popup {
+    font-family: "Cascadia Code SemiLight", sans-serif;
     width: 400px;
-    background-color: #f5f3f4;
+    background-color: orange;
+    color: black;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px #dddddd;
@@ -179,7 +175,7 @@ footer {
 }
 
 .popup .close:hover {
-    background-color: #ff0105;
+    background-color: #E5383B;
 }
 
 .popup h3 {
