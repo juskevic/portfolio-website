@@ -93,22 +93,23 @@ footer {
 }
 
 #socials {
+    color: #161A1D;
     display: grid;
-    font-size: 20px;
-    padding-left: 50px;
+    padding-left: 150px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
+    font-size: 16px;
 }
 
 #socials::before {
     content: '';
     position: absolute;
-    left: 0;
-    top: 50%;
+    left: 56%;
+    top: 43%;
     transform: translateY(-50%);
-    height: 80%;
+    height: 35%;
     width: 2px;
-    background-color: var(--text-color);
+    background-color: #B1A7A6;
 }
 
 #socials a {
@@ -121,6 +122,11 @@ footer {
     color: var(--on-hover-color);
 }
 
+#socials span {
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    padding-left: 10px;
+    font-weight: normal;
+}
 
 #welcome-text {
     color: var(--text-color);
@@ -167,8 +173,12 @@ footer {
 }
 
 @keyframes moveLine {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 /* Mobile-specific adjustments */
