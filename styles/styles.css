@@ -92,6 +92,36 @@ footer {
     font-size: 30px;
 }
 
+#socials {
+    display: grid;
+    font-size: 20px;
+    padding-left: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+}
+
+#socials::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    width: 2px;
+    background-color: var(--text-color);
+}
+
+#socials a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+}
+
+#socials a:hover {
+    color: var(--on-hover-color);
+}
+
+
 #welcome-text {
     color: var(--text-color);
     font-family: "Cascadia Code SemiLight", sans-serif;
