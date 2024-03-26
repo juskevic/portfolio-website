@@ -1,11 +1,9 @@
 /* Hover effect function */
 document.addEventListener('DOMContentLoaded', function () {
-    // Select the "Projects" and "Blog" links
     let projectLink = document.getElementById('menu-projects');
     let blogLink = document.getElementById('menu-blog');
     let aboutLink = document.getElementById('menu-about');
 
-    // Function to apply the hover effect
     function applyHoverEffect(element) {
         element.style.transition = 'transform  0.3s, background-color  0.3s';
         element.addEventListener('mouseenter', function () {
