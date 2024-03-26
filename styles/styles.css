@@ -140,3 +140,50 @@ footer {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
 }
+
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 24px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        font-size: 30px;
+    }
+
+    .about-me {
+        margin-left: 50px;
+        margin-right: 15px;
+        margin-top: 75px;
+        padding-left: 15px;
+    }
+
+    #menu-projects, #menu-blog, #menu-about {
+        margin: 0 0 0 35px;
+        font-size: 20px;
+    }
+
+    #nav-bar {
+        padding-right: 50px;
+        font-size: 24px;
+    }
+
+    #welcome-text, #im-a-web-developer, #my-name-is {
+        font-size: 20px;
+    }
+
+    .construction-bar {
+        font-size: 12px;
+    }
+}
