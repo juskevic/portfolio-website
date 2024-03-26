@@ -141,14 +141,6 @@ footer {
     100% { transform: translateX(100%); }
 }
 
-#const-bar-left-text {
-    text-align: left;
-    width: inherit;
-    color: inherit;
-    padding-left: 10px;
-    position: inherit;
-}
-
 .popup {
     font-family: "Cascadia Code SemiLight", sans-serif;
     width: 400px;
