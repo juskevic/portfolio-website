@@ -1,2 +1,3 @@
-- Website updated to version _Alpha 0.9.1_
-- Website has been made responsive for mobile use (Still under construction)
+- Website updated to version _Alpha 0.9.2_
+- Added content to "About Me"
+- Updated "under construction banner"
