@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Akony";
+    src: url("../fonts/akony.otf");
+}
+
+@font-face {
+    font-family: "Bronson";
+    src: url("../fonts/BRONSON-Black.ttf");
+}
+
+/*Website under const. banner - remove later*/
+.construction-bar {
+    font-family: "Cascadia Code SemiLight", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    padding: 0;
+    z-index: 1000;
+}
+
+.animated-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    animation: moveLine 3s linear infinite;
+}
+
+@keyframes moveLine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
