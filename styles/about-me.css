@@ -8,6 +8,15 @@
     src: url("../fonts/BRONSON-Black.ttf");
 }
 
+body {
+
+}
+
+header h1 {
+    font-family: "Akony", sans-serif;
+
+}
+
 /*Website under const. banner - remove later*/
 .construction-bar {
     font-family: "Cascadia Code SemiLight", sans-serif;
