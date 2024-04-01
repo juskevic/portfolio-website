@@ -19,6 +19,22 @@ document.addEventListener('DOMContentLoaded', function () {
     applyHoverEffect(aboutLink)
 });
 
+// Night-mode functionality (probably broken)
+document.addEventListener('DOMContentLoaded', function() {
+    const switchInput = document.getElementById('switch');
+    const body = document.body;
+
+    function toggleNightMode() {
+        if (body.classList.contains('night-mode')) {
+            body.classList.remove('night-mode');
+        } else {
+            body.classList.add('night-mode');
+        }
+    }
+
+    switchInput.addEventListener('change', toggleNightMode);
+});
+
 /* Website under construction bar */
 const messages = ['Website under construction ⚒️', "I'm working on it! ⛏️", 'Bugs are to be expected! 🚨 '];
 let index = 0;
