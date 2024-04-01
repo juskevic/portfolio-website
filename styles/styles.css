@@ -1,10 +1,22 @@
 /* Palette used as of a0.9: https://coolors.co/palette/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff*/
 
 :root {
-    ---background-color: #F5F3F4;
+    --background-color: #F5F3F4;
     --text-color: #0B090A;
     --on-hover-color: #E5383B;
 }
+
+/* This is broken */
+body.night-mode,
+body.night-mode p,
+body.night-mode h1,
+body.night-mode h2,
+body.night-mode h3,
+body.night-mode a {
+    background-color: #161A1D;
+    color: #D3D3D3 !important;
+}
+
 
 @font-face {
     font-family: "Akony";
@@ -17,7 +29,7 @@
 }
 
 body {
-    background-color: var(---background-color);
+    background-color: var(--background-color);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -144,6 +156,48 @@ footer {
     color: inherit;
     font-family: inherit;
     font-size: 40px;
+}
+
+#night-mode input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+#night-mode label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 200px;
+    height: 100px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+#night-mode label:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+#night-mode input:checked + label {
+    background: #bada55;
+}
+
+#night-mode input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+#night-mode label:active:after {
+    width: 130px;
 }
 
 /*Website under const. banner - remove later*/
