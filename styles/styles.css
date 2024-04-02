@@ -99,7 +99,7 @@ main {
 }
 
 #nav-bar {
-    padding-right: 100px;
+    padding-right: 120px;
     font-family: "Bronson", sans-serif;
     font-size: 30px;
 }
@@ -107,7 +107,7 @@ main {
 #socials {
     color: #161A1D;
     display: grid;
-    padding-left: 150px;
+    padding-left: 170px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
     font-size: 16px;
@@ -116,7 +116,7 @@ main {
 #socials::before {
     content: '';
     position: absolute;
-    left: 56%;
+    left: 57%;
     top: 43%;
     transform: translateY(-50%);
     height: 35%;
@@ -172,7 +172,7 @@ main {
 
 #night-mode label {
     cursor: pointer;
-    text-indent: -9999px;
+    /*text-indent: -9999px;*/
     width: 80px;
     height: 40px;
     background: grey;
