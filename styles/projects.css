@@ -83,7 +83,18 @@ main h2 {
 }
 
 .repo-name {
+    filter: opacity(60%);
+    color: #B1A7A6;
+    font-size: 22px;
+}
 
+.repo-anchors {
+    color: inherit;
+    text-decoration: none;
+}
+
+.repo-anchors:hover {
+    color: #E5383B;
 }
 
 /*FOOTER SECTION*/
