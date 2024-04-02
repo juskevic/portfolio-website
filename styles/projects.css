@@ -8,6 +8,8 @@
     src: url("../fonts/BRONSON-Black.ttf");
 }
 
+
+/*HEADER SECTION*/
 body {
     background-color: #F5F3F4;
     -webkit-user-select: none;
@@ -39,16 +41,6 @@ nav a {
     text-decoration: inherit;
 }
 
-main {
-
-}
-
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
 .header-container-projects {
     display: flex;
     align-items: center;
@@ -63,7 +55,7 @@ footer {
     transition: transform 0.3s, background-color 0.3s;
     text-decoration: none;
     color: inherit;
-        margin: 0 0 0 100px;
+    margin: 0 0 0 100px;
 }
 
 #nav-go-back:hover {
@@ -71,12 +63,20 @@ footer {
     transform: scale(1.1);
 }
 
-#shapeshifter-project {
-    padding-right: 32%;
+/*MAIN SECTION*/
+main {
+    display: grid;
+    justify-content: start;
+    text-align: start;
+    padding-left: 60px;
+    padding-top: 30px;
 }
 
-#copyright {
-    text-align: center;
+/*FOOTER SECTION*/
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 /*Website under const. banner - remove later*/
