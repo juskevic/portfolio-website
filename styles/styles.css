@@ -158,13 +158,13 @@ main {
     font-size: 40px;
 }
 
+/* Night mode button */
 #night-mode {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
 }
-
 
 #night-mode input[type=checkbox]{
     visibility: hidden;
@@ -173,11 +173,11 @@ main {
 #night-mode label {
     cursor: pointer;
     text-indent: -9999px;
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
     background: grey;
     display: block;
-    border-radius: 100px;
+    border-radius: 80px;
     position: relative;
 }
 
@@ -186,8 +186,8 @@ main {
     position: absolute;
     top: 3px;
     left: 4px;
-    width: 44px;
-    height: 44px;
+    width: 33px;
+    height: 33px;
     background: #fff;
     border-radius: 45px;
     transition: 0.3s;
@@ -203,7 +203,7 @@ main {
 }
 
 #night-mode label:active:after {
-    width: 65px;
+    width: 45px;
 }
 
 /*Website under const. banner - remove later*/
