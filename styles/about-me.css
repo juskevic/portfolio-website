@@ -77,8 +77,12 @@ main {
     transform: scale(1.1%);
 }
 
+#introduction a:hover {
+    text-decoration: underline;
+}
+
 #introduction {
-    margin-right: 55 %;
+    margin-right: 55%;
 }
 
 /*FOOTER SECTION*/
