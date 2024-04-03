@@ -71,6 +71,15 @@ main {
     padding-left: 20px;
 }
 
+#introduction a {
+    color: #E5383B;
+    text-decoration: none;
+    transform: scale(1.1%);
+}
+
+#introduction {
+    margin-right: 55 %;
+}
 
 /*FOOTER SECTION*/
 /*Website under const. banner - remove later*/
