@@ -62,6 +62,17 @@ nav a {
     transform: scale(1.1);
 }
 
+/*MAIN SECTION*/
+main {
+    font-family: "Cascadia Code SemiLight", sans-serif; /*Change the font to something else later please*/
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    padding-left: 20px;
+}
+
+
+/*FOOTER SECTION*/
 /*Website under const. banner - remove later*/
 .construction-bar {
     font-family: "Cascadia Code SemiLight", sans-serif;
