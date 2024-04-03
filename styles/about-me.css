@@ -9,12 +9,40 @@
 }
 
 body {
-
+    background-color: #F5F3F4;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 header h1 {
     font-family: "Akony", sans-serif;
+    padding-left: 20px;
+    color: var(--text-color);
+}
 
+nav {
+    color: var(--text-color);
+    padding-right: 100px;
+    font-family: "Bronson", sans-serif;
+    font-size: 30px;
+}
+
+nav a {
+    color: inherit;
+    transform: inherit;
+    background-color: inherit;
+    -webkit-text-stroke: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: inherit;
+}
+
+.about-me-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*Website under const. banner - remove later*/
