@@ -45,6 +45,22 @@ nav a {
     justify-content: space-between;
 }
 
+#nav-go-back {
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+    text-decoration: none;
+    color: inherit;
+    margin: 0 0 0 100px;
+}
+
+#nav-go-back:hover {
+    color: #E5383B;
+    transform: scale(1.1);
+}
+
 /*Website under const. banner - remove later*/
 .construction-bar {
     font-family: "Cascadia Code SemiLight", sans-serif;
