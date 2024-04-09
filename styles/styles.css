@@ -146,18 +146,6 @@ main {
     font-size: 25px;
 }
 
-#im-a-web-developer {
-    color: #E5383B;
-    font-family: inherit;
-    font-size: inherit;
-}
-
-#my-name-is {
-    color: inherit;
-    font-family: inherit;
-    font-size: 40px;
-}
-
 /* Night mode button */
 #night-mode {
     position: fixed;
