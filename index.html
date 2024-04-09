@@ -35,23 +35,33 @@
         </p>
         <div id="socials">
             <a href="https://github.com/makuyoshi" class="fab fa-github" target="_blank"><span>GitHub</span></a>
-            <a href="#" class="fab fa-linkedin-in" target="_blank"><span>LinkedIn</span></a>
+            <a class="fab fa-linkedin-in no-link" target=""><span>LinkedIn</span></a>
             <a href="https://codepen.io/makuyoshi" class="fab fa-codepen" target="_blank"><span>CodePen</span></a>
             <a href="https://leetcode.com/sushiwok/" class="fas fa-book" target="_blank"><span>LeetCode</span></a>
-            <a href="#" class="fab fa-discord" target="_blank"><span>Discord<span style="filter: opacity(50%)">On Request</span></span></a>
+            <a class="fab fa-discord no-link" target="_blank"><span>Discord<span
+                    style="filter: opacity(50%)">On Request</span></span></a>
             <a href="#" class="fas fa-envelope" target="_blank"><span>Email</span></a>
+            <script>
+                const noLinkElements = document.querySelectorAll('.fab.fa-discord.no-link, .fab.fa-linkedin-in.no-link');
+                noLinkElements.forEach(element => {
+                    element.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        alert('The link has not been set!');
+                    });
+                });
+            </script>
         </div>
     </div>
 </main>
 <footer>
     <div id="night-mode">
-        <input type="checkbox" id="switch" />
+        <input type="checkbox" id="switch"/>
         <label for="switch"></label>
     </div>
-<!--    <div class="construction-bar">
-        <div class="animated-line"></div>
-        <p>Website under construction ⚒️</p>
-    </div>-->
+    <!--    <div class="construction-bar">
+            <div class="animated-line"></div>
+            <p>Website under construction ⚒️</p>
+        </div>-->
 </footer>
 <script src="js/script.js"></script> <!-- Script Loader -->
 </body>
