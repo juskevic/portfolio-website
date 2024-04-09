@@ -119,6 +119,24 @@ nav a {
     font-size: 25px;
 }
 
+/* HEADER - ANIMATIONS */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header-container {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+
 /* MAIN SECTION */
 
 body.night-mode,
@@ -223,6 +241,8 @@ main {
     background-color: black;
     animation: moveLine 3s linear infinite;
 }
+
+/*FOOTER - ANIMATIONS*/
 
 @keyframes moveLine {
     0% {
