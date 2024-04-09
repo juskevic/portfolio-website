@@ -59,11 +59,23 @@
         <input type="checkbox" id="switch"/>
         <label for="switch"></label>
     </div>
-    <!--    <div class="construction-bar">
-            <div class="animated-line"></div>
-            <p>Website under construction ⚒️</p>
-        </div>-->
+    <!-- UNDER CONSTRUCTION BANNER -->
+<!--    <div class="construction-bar">
+        <div class="animated-line"></div>
+        <p>Website under construction ⚒️</p>
+        <script> /* UNDER CONST. BANNER JS */
+            const messages = ['Website under construction ⚒️', "I'm working on it! ⛏️", 'Bugs are to be expected! 🚨 '];
+            let index = 0;
+
+            function changeMessage() {
+                document.querySelector('.construction-bar p').textContent = messages[index];
+                index = (index + 1) % messages.length;
+            }
+
+            setInterval(changeMessage, 5000);
+        </script>
+    </div>-->
 </footer>
-<script src="js/script.js"></script> <!-- Script Loader -->
+<script src="js/script.js"></script> <!-- Main script loader -->
 </body>
 </html>
