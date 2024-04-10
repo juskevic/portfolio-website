@@ -1,4 +1,5 @@
-/* Hover effect function */
+// HEADER SECTION
+// Hover effect function
 document.addEventListener('DOMContentLoaded', function () {
     let projectLink = document.getElementById('menu-projects');
     let blogLink = document.getElementById('menu-blog');
@@ -19,6 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
     applyHoverEffect(aboutLink)
 });
 
+// MAIN SECTION
+// Type in effect on "about-me"
+
+
+
+// FOOTER SECTION
 // Night-mode functionality (probably broken)
 document.addEventListener('DOMContentLoaded', function() {
     const switchInput = document.getElementById('switch');
@@ -35,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     switchInput.addEventListener('change', toggleNightMode);
 });
 
-/* Website under construction bar */
+// Website under construction bar
 const messages = ['Website under construction ⚒️', "I'm working on it! ⛏️", 'Bugs are to be expected! 🚨 '];
 let index = 0;
 

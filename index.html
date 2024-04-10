@@ -13,7 +13,7 @@
     <meta property="og:description" content="Personal portfolio website of Makuyoshi">
     <meta property="og:image" content=""> <!-- Add a preview image here later -->
     <meta property="og:url" content="https://www.makuyoshi.dev">
-    <link rel="icon" type="image/png" href="#"> <!-- Add an icon here later <3. Don't forget to change the type="" -->
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="#" media="(prefers-color-scheme: dark)"> <!-- Dark mode stylesheet. Should be used in the future for an integrated dark mode. (not the broken thing I have now) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,9 +34,9 @@
     <div class="about-me">
         <p id="welcome-text">
             👋 Hi there! <br>
-            <span style="color: inherit; font-family: inherit; font-size: 40px">
-            My name is Max, <br>
-                and I'm a <span style="color: #E5383B; font-family: inherit; font-size: inherit;">Web Developer</span>.
+            <span style="color: inherit; font-family: inherit; font-size: 40px">My name is Max, <br>
+                and I'm a <span style="color: #E5383B; font-family: inherit; font-size: inherit;">
+                    Web Developer</span>.
             </span>
         </p>
         <div id="socials">
@@ -44,9 +44,12 @@
             <a class="fab fa-linkedin-in no-link" target=""><span>LinkedIn</span></a>
             <a href="https://codepen.io/makuyoshi" class="fab fa-codepen" target="_blank"><span>CodePen</span></a>
             <a href="https://leetcode.com/sushiwok/" class="fas fa-book" target="_blank"><span>LeetCode</span></a>
-            <a class="fab fa-discord no-link" target="_blank"><span>Discord<span
-                    style="filter: opacity(50%)">On Request</span></span></a>
-            <a href="#" class="fas fa-envelope" target="_blank"><span>Email</span></a>
+            <a class="fab fa-discord no-link" target="_blank">
+                <span>Discord<span style="filter: opacity(50%)">On Request</span></span>
+            </a>
+            <a href="#" class="fas fa-envelope" target="_blank">
+                <span>Email</span>
+            </a>
             <!-- remove the <script> bellow once links to LinkedIn and Discord have been provided :)-->
             <script>
                 const noLinkElements = document.querySelectorAll('.fab.fa-discord.no-link, .fab.fa-linkedin-in.no-link');
@@ -69,17 +72,6 @@
 <!--    <div class="construction-bar">
         <div class="animated-line"></div>
         <p>Website under construction ⚒️</p>
-        <script> /* UNDER CONST. BANNER JS */
-            const messages = ['Website under construction ⚒️', "I'm working on it! ⛏️", 'Bugs are to be expected! 🚨 '];
-            let index = 0;
-
-            function changeMessage() {
-                document.querySelector('.construction-bar p').textContent = messages[index];
-                index = (index + 1) % messages.length;
-            }
-
-            setInterval(changeMessage, 5000);
-        </script>
     </div>-->
 </footer>
 <script src="js/script.js"></script> <!-- Main script loader -->
