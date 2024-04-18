@@ -52,4 +52,3 @@ function changeMessage() {
 }
 
 setInterval(changeMessage, 5000);
-
