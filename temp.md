@@ -1,5 +1,1 @@
-- Website updated to version _Alpha 0.9.2_
-- Added HTML/CSS to "About Me"
-- Added a "Night Mode" button
-- Updated "under construction banner"
-- Removed "Blog" from the website
+
