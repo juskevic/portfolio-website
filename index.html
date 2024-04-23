@@ -1,79 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home Page | makuyoshi.dev</title>
+    <title>makuyoshi.dev</title>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="version" content="a0.9.3"> <!-- Current website version -->
-    <meta name="description" content="Personal portfolio website of Makuyoshi">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="makuyoshi.dev | Home Page">
-    <meta property="og:description" content="Personal portfolio website of Makuyoshi">
-    <meta property="og:image" content=""> <!-- Add a preview image here later -->
-    <meta property="og:url" content="https://www.makuyoshi.dev">
-    <link rel="icon" type="image/ico" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="#" media="(prefers-color-scheme: dark)"> <!-- Dark mode stylesheet. Should be used in the future for an integrated dark mode. (not the broken thing I have now) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        main {
+            font-family: "Cascadia Code SemiLight", sans-serif;
+            text-align: center;
+        }
+        body {
+            background-color: #EDF2F4;
+        }
+        .text-color {
+            color: #8d99ae;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <div class="header-container">
-        <h1>makuyoshi.dev</h1>
-        <nav id="nav-bar">
-            <a href="about-me.html" id="menu-about" title="About Me">About Me</a>
-            <a href="projects.html" id="menu-projects">Projects</a>
-        </nav>
-    </div>
-</header>
 <main>
-    <div class="about-me">
-        <p id="welcome-text">
-            👋 Hi there! <br>
-            <span style="color: inherit; font-family: inherit; font-size: 40px">My name is Max, <br>
-                and I'm a <span style="color: #E5383B; font-family: inherit; font-size: inherit;">
-                    Web Developer</span>.
-            </span>
-        </p>
-        <div id="socials">
-            <a href="https://github.com/makuyoshi" class="fab fa-github" target="_blank"><span>GitHub</span></a>
-            <a class="fab fa-linkedin-in no-link" target=""><span>LinkedIn</span></a>
-            <a href="https://codepen.io/makuyoshi" class="fab fa-codepen" target="_blank"><span>CodePen</span></a>
-            <a href="https://leetcode.com/sushiwok/" class="fas fa-book" target="_blank"><span>LeetCode</span></a>
-            <a class="fab fa-discord no-link" target="_blank">
-                <span>Discord<span style="filter: opacity(50%)">On Request</span></span>
-            </a>
-            <a href="#" class="fas fa-envelope" target="_blank">
-                <span>Email</span>
-            </a>
-            <!-- remove the <script> bellow once links to LinkedIn and Discord have been provided :)-->
-            <script>
-                const noLinkElements = document.querySelectorAll('.fab.fa-discord.no-link, .fab.fa-linkedin-in.no-link');
-                noLinkElements.forEach(element => {
-                    element.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        alert('The link has not been set!');
-                    });
-                });
-            </script>
-        </div>
-    </div>
+    <p class="text-color" style="font-size: 2.5rem">The website makuyoshi.dev <br> is being rebuild using React JS.</p>
+    <p class="text-color" style="font-size: 2rem">expected release: July 2024</p>
+    <img src="https://www.publis.cz/data/text-icon/icon-294.png?nc=10" alt="React logo" style="width: 200px; filter: opacity(50%)">
 </main>
-<footer>
-    <div id="night-mode"> <!-- Broken night-mode button. JS can be found in script.js -->
-        <input type="checkbox" id="switch"/>
-        <label for="switch"></label>
-    </div>
-    <!-- UNDER CONSTRUCTION BANNER -->
-<!--    <div class="construction-bar">
-        <div class="animated-line"></div>
-        <p>Website under construction ⚒️</p>
-    </div>-->
-</footer>
-<script src="js/script.js"></script> <!-- Main script loader -->
 </body>
 </html>
