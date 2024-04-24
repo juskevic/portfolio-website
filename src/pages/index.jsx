@@ -2,6 +2,24 @@
 import React from 'react';
 import Head from 'next/head';
 
+const Header = () => {
+    return (
+        <>
+            <header>
+                <h1>makuyoshi.dev</h1>
+                <nav>
+                    <button>
+                        Button 1
+                    </button>
+                    <button>
+                        Button 2
+                    </button>
+                </nav>
+            </header>
+        </>
+    )
+}
+
 const HomePage = () => {
     return (
         <>
@@ -14,6 +32,7 @@ const HomePage = () => {
                 <meta property="og:description" content="Makuyoshi's portfolio website build using Next.js" />
                 <meta property="og:url" content="https://makuyoshi.dev" />
             </Head>
+            <Header />
         </>
     );
 };
