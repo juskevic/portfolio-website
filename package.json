@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "makuyoshi-web",
   "version": "b0.1",
   "private": true,
