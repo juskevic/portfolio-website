@@ -11,3 +11,10 @@
 
 }
 
+body {
+    background-color: #0d0c1d;
+}
+
+#header-brand {
+    font-family: "Akony", sans-serif;
+}
