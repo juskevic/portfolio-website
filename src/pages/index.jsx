@@ -1,19 +1,18 @@
-// pages/index.jsx
 import React from 'react';
 import Head from 'next/head';
 
 const Header = () => {
     return (
         <>
-            <header>
-                <h1>makuyoshi.dev</h1>
-                <nav>
-                    <button>
-                        Button 1
-                    </button>
-                    <button>
-                        Button 2
-                    </button>
+            <header className="flex justify-between items-center p-6">
+                <h1 id="header-brand" className="text-4xl m-3 text-amber-50">makuyoshi.dev</h1>
+                <nav className="flex space-x-12">
+                    <a className="text-amber-50 py-2 px-4 text-2xl hover:underline" href="#">
+                        About Me
+                    </a>
+                    <a className="text-amber-50 py-2 px-4 text-2xl hover:underline" href="#">
+                        Projects
+                    </a>
                 </nav>
             </header>
         </>
