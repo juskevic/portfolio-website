@@ -4,7 +4,7 @@ import Head from 'next/head';
 const Header = () => {
     return (
         <>
-            <header className="flex flex-row justify-center space-x-0 p-8 text-3xl">
+            <header className="flex flex-row justify-center space-x-0 p-5 text-3xl">
                 <h1 id="header-brand" className="pr-5">makuyoshi.dev /</h1>
                 <nav className="space-x-7 text-2xl">
                     <a className="hover:underline" href="#">
@@ -22,10 +22,10 @@ const Header = () => {
 const Main = () => {
     return (
         <>
-            <main>
-                <div>
-                    <h2>Hi there 👋</h2>
-                    <p>Hi, my name is Max and Im a web developer.</p>
+            <main className="flex justify-start pl-52 pt-32">
+                <div className="space-y-3">
+                    <h2 className="text-4xl">Hi there! 👋</h2>
+                    <p className="text-5xl">My name is Max, <br /> and Im a <span>Web Developer</span>.</p>
                 </div>
             </main>
         </>
@@ -50,6 +50,8 @@ const HomePage = () => {
                 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet"/>
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
                 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet"/>
+                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+                <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
             </Head>
             <Header/>
             <Main/>
