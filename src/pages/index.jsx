@@ -19,6 +19,18 @@ const Header = () => {
     )
 }
 
+const Main = () => {
+    return (
+        <>
+            <main>
+                <div>
+                    <h2>Hi there 👋</h2>
+                </div>
+            </main>
+        </>
+    )
+}
+
 const HomePage = () => {
     return (
         <>
@@ -39,6 +51,7 @@ const HomePage = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet"/>
             </Head>
             <Header/>
+            <Main/>
         </>
     );
 };
