@@ -4,14 +4,14 @@ import Head from 'next/head';
 const Header = () => {
     return (
         <>
-            <header className="flex flex-row justify-center space-x-8 p-8 text-3xl">
-                <h1 id="header-brand" className="pr-5">makuyoshi.dev</h1>
-                <nav className="space-x-7">
+            <header className="flex flex-row justify-center space-x-0 p-8 text-3xl">
+                <h1 id="header-brand" className="pr-5">makuyoshi.dev /</h1>
+                <nav className="space-x-7 text-2xl">
                     <a className="hover:underline" href="#">
-                        About
+                        <span>about me</span>
                     </a>
                     <a className="hover:underline" href="#">
-                        Projects
+                        <span>projects</span>
                     </a>
                 </nav>
             </header>
@@ -25,6 +25,7 @@ const Main = () => {
             <main>
                 <div>
                     <h2>Hi there 👋</h2>
+                    <p>Hi, my name is Max and Im a web developer.</p>
                 </div>
             </main>
         </>
