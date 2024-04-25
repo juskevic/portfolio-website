@@ -29,6 +29,10 @@ header span {
 
 main {
     color: var(--text-color);
-    font-family: "Cascadia Code SemiLight", serif;
+    font-family: "Indie Flower", serif;
+}
+
+main span{
+    color: var(--text-highligther)
 }
 
