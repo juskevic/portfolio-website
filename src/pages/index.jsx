@@ -4,21 +4,17 @@ import Head from 'next/head';
 const Header = () => {
     return (
         <>
-            <div className="flex items-center justify-center">
-                <header className="flex flex-col sm:flex-row justify-start items-center p-4">
-                    <h1 id="header-brand"
-                        className="text-2xl sm:text-4xl md:text-4xl mr-10 text-amber-50">makuyoshi.dev</h1>
-                    <nav className="pt-2">
-                        <a className="text-amber-50 text-xl sm:text-3xl p-4 hover:underline" href="#">
-                            About
-                        </a>
-                        <a className="text-amber-50 text-xl sm:text-3xl p-4 hover:underline" href="#">
-                            Projects
-                        </a>
-                    </nav>
-                </header>
-            </div>
-
+            <header className="flex flex-row justify-center space-x-8 p-8 text-3xl">
+                <h1 id="header-brand" className="pr-5">makuyoshi.dev</h1>
+                <nav className="space-x-7">
+                    <a className="hover:underline" href="#">
+                        About
+                    </a>
+                    <a className="hover:underline" href="#">
+                        Projects
+                    </a>
+                </nav>
+            </header>
         </>
     )
 }
