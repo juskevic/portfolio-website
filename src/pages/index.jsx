@@ -31,6 +31,11 @@ const Navbar = () => {
                     <span
                         className="absolute bottom-0.5 left-0 w-0 h-0.5 bg-bg-silver transition-all group-hover:w-full"></span>
                 </a>
+                <a className="relative group" href="#">
+                    <span>contact</span>
+                    <span
+                        className="absolute bottom-0.5 left-0 w-0 h-0.5 bg-bg-silver transition-all group-hover:w-full"></span>
+                </a>
             </nav>
         </>
     )
