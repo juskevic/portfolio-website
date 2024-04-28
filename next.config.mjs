@@ -1,4 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+/** @type {{reactStrictMode: boolean, experimental: {runtime: string}, swcMinify: boolean}} */
+const nextConfig = {
+    experimental: {
+        runtime: 'experimental-edge',
+    },
+    reactStrictMode: true,
+    swcMinify: true,
+}
+module.exports = nextConfig
