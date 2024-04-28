@@ -24,8 +24,3 @@ main {
     color: var(--text-color);
     font-family: "Indie Flower", serif;
 }
-
-main span{
-    color: var(--text-highligther)
-}
-
