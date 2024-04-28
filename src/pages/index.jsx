@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { TypeAnimation } from 'react-type-animation';
 
 const Header = () => {
     return (
@@ -47,7 +48,24 @@ const Main = () => {
             <main className="flex justify-start pl-52 pt-32">
                 <div className="space-y-3">
                     <h2 className="text-4xl">Hi there! 👋</h2>
-                    <p className="text-6xl">My name is Max, <br/> and Im a <span>Web Developer</span>.</p>
+                    <p className="text-6xl">
+                        <TypeAnimation
+                            style={{ whiteSpace: 'pre-line' }}
+                            sequence={[
+                                `My name is Max,\n and I'm a Web Developer.`,
+                                6000,
+                                `Welcome to \nmy portfolio website!`,
+                                6000,
+                                `Take a look at my Projects! \n (the link is not working yet)`,
+                                6000,
+                                `Thanks for visiting 💖`,
+                                6000
+                            ]}
+                            cursor={false}
+                            speed={30}
+                            repeat={Infinity}
+                        />
+                    </p>
                 </div>
             </main>
         </>
