@@ -4,17 +4,34 @@ import Head from 'next/head';
 const Header = () => {
     return (
         <>
-            <header className="flex flex-row justify-center space-x-0 p-5 text-3xl">
-                <h1 id="header-brand" className="pr-5">makuyoshi.dev /</h1>
-                <nav className="space-x-7 text-2xl">
-                    <a className="hover:underline" href="#">
-                        <span>about me</span>
-                    </a>
-                    <a className="hover:underline" href="#">
-                        <span>projects</span>
-                    </a>
-                </nav>
+            <header className="flex flex-row justify-center space-x-96 p-5 text-3xl">
+                <h1 id="header-brand">makuyoshi.dev</h1>
+                <Navbar />
             </header>
+        </>
+    )
+}
+
+const Navbar = () => {
+    return (
+        <>
+            <nav className="space-x-10">
+                <a className="relative group" href="#">
+                    <span>about me</span>
+                    <span
+                        className="absolute bottom-0.5 left-0 w-0 h-0.5 bg-bg-silver transition-all group-hover:w-full"></span>
+                </a>
+                <a className="relative group" href="#">
+                    <span>projects</span>
+                    <span
+                        className="absolute bottom-0.5 left-0 w-0 h-0.5 bg-bg-silver transition-all group-hover:w-full"></span>
+                </a>
+                <a className="relative group" href="#">
+                    <span>blog</span>
+                    <span
+                        className="absolute bottom-0.5 left-0 w-0 h-0.5 bg-bg-silver transition-all group-hover:w-full"></span>
+                </a>
+            </nav>
         </>
     )
 }
@@ -25,7 +42,7 @@ const Main = () => {
             <main className="flex justify-start pl-52 pt-32">
                 <div className="space-y-3">
                     <h2 className="text-4xl">Hi there! 👋</h2>
-                    <p className="text-5xl">My name is Max, <br /> and Im a <span>Web Developer</span>.</p>
+                    <p className="text-6xl">My name is Max, <br/> and Im a <span>Web Developer</span>.</p>
                 </div>
             </main>
         </>
