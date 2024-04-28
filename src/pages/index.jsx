@@ -20,24 +20,16 @@ const Navbar = () => {
         <>
             <nav className="space-x-10">
                 <a className="relative group" href="#">
-                    <span>about me</span>
-                    <span
-                        className="absolute bottom-0.5 left-0 w-0 h-0.5 bg-bg-silver transition-all group-hover:w-full"></span>
+                    <span className="hover:underline">about me</span>
                 </a>
-                <a className="relative group" href="#">
+                <a className="relative group opacity-50" href="#">
                     <span>projects</span>
-                    <span
-                        className="absolute bottom-0.5 left-0 w-0 h-0.5 bg-bg-silver transition-all group-hover:w-full"></span>
                 </a>
-                <a className="relative group" href="#">
+                <a className="relative group opacity-50" href="#">
                     <span>blog</span>
-                    <span
-                        className="absolute bottom-0.5 left-0 w-0 h-0.5 bg-bg-silver transition-all group-hover:w-full"></span>
                 </a>
-                <a className="relative group" href="#">
+                <a className="relative group opacity-50" href="#">
                     <span>contact</span>
-                    <span
-                        className="absolute bottom-0.5 left-0 w-0 h-0.5 bg-bg-silver transition-all group-hover:w-full"></span>
                 </a>
             </nav>
         </>
@@ -57,16 +49,20 @@ const Main = () => {
                             style={{ whiteSpace: 'pre-line' }}
                             sequence={[
                                 `My name is Max,\n and I'm a Web Developer.`,
-                                6000,
-                                `Welcome to \nmy portfolio website!`,
-                                6000,
-                                `Take a look at my Projects! \n (the link is not working yet)`,
-                                6000,
-                                `Thanks for visiting 💖`,
-                                6000
+                                7000,
+                                `I'm currently learning \nJavaScript`,
+                                7000,
+                                `I'm currently learning \nReact`,
+                                7000,
+                                `I'm currently learning \nBootstrap`,
+                                7000,
+                                `I'm currently learning \nTailwind`,
+                                7000,
+                                `I'm currently learning \nNext.js`,
+                                7000
                             ]}
-                            cursor={false}
-                            speed={30}
+                            cursor={true}
+                            speed={40}
                             repeat={Infinity}
                         />
                     </p>
@@ -80,7 +76,7 @@ const HomePage = () => {
     return (
         <>
             <Head>
-                <title>Home Page | makuyoshi.dev</title>
+                <title>Index | makuyoshi.dev</title>
 
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
