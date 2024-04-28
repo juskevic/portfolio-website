@@ -5,7 +5,9 @@ import { TypeAnimation } from 'react-type-animation';
 const Header = () => {
     return (
         <>
-            <header className="flex flex-row justify-center space-x-96 p-5 text-3xl">
+            <header className="
+            flex flex-row justify-center space-x-16 p-4 text-1xl
+            xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96">
                 <h1 id="header-brand">makuyoshi.dev</h1>
                 <Navbar />
             </header>
@@ -45,10 +47,12 @@ const Navbar = () => {
 const Main = () => {
     return (
         <>
-            <main className="flex justify-start pl-52 pt-32">
+            <main className="
+            flex justify-start pl-10 pt-16
+            xl:flex xl:justify-start xl:pl-52 xl:pt-32">
                 <div className="space-y-3">
-                    <h2 className="text-4xl">Hi there! 👋</h2>
-                    <p className="text-6xl">
+                    <h2 className="text-3xl xl:text-4xl">Hi there! 👋</h2>
+                    <p className="text-5xl xl:text-6xl">
                         <TypeAnimation
                             style={{ whiteSpace: 'pre-line' }}
                             sequence={[
