@@ -1,9 +1,10 @@
-/** @type {{reactStrictMode: boolean, experimental: {runtime: string}, swcMinify: boolean}} */
+// next.config.js
 const nextConfig = {
-    experimental: {
-        runtime: 'experimental-edge',
-    },
     reactStrictMode: true,
+    experimental: {
+
+    },
     swcMinify: true,
-}
-module.exports = nextConfig
+};
+
+export default nextConfig;
