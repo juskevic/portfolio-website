@@ -3,27 +3,20 @@
 @tailwind utilities;
 
 :root { /* Colors! */
-    --background-color: #FFFAFF;
-    --header-color: #0A2463;
-    --nav-color: #3E92CC;
-    --text-color: #1E1B18;
+    --background-color: #161A1D;
+    --header-color: #B1A7A6;
+    --nav-color: #B1A7A6;
+    --text-color: #D3D3D3;
     --text-highligther: #D8315B;
 }
 
 body {
-    background-color: #FFFAFF;
+    background-color: var(--background-color);
+    user-select: none;
 }
 
 header {
     color: var(--header-color);
-}
-
-header h1 {
-    font-family: "IBM Plex Mono", serif;
-}
-
-header span {
-    color: var(--text-color);
     font-family: "Exo", serif;
 }
 
