@@ -44,7 +44,8 @@ const Main = () => {
             flex justify-between pl-8 pt-16
             xl:flex xl:justify-between xl:pl-52 xl:pt-32">
                 <div id="main-animation" className="space-y-3">
-                    <h2 className="text-3xl xl:text-4xl">Hi there! 👋</h2>
+                    <h2 className="text-3xl xl:text-4xl">Hi there! 👋 <a href="https://github.com/makuyoshi"><i className="bi bi-github"></i></a>
+                    </h2>
                     <p className="text-5xl xl:text-6xl">
                         <TypeAnimation
                             style={{whiteSpace: 'pre-line'}}
