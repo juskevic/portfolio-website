@@ -68,15 +68,6 @@ const Main = () => {
                         />
                     </p>
                 </div>
-                <div id="main-socials" className="
-                hidden
-                xl:flex xl:flex-col xl:space-y-4 xl:pr-72">
-                    <button><i className="bi bi-github"></i> GitHub</button>
-                    <button><i className="fa fa-codepen"></i> CodePen</button>
-                    <button><i className="bi bi-linkedin"></i> LinkedIn</button>
-                    <button><i className="bi bi-discord"></i> Discord</button>
-                    <button><i className="bi bi-envelope"></i> Mail</button>
-                </div>
             </main>
         </>
     )
