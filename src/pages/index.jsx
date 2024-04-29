@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import { TypeAnimation } from 'react-type-animation';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 const Header = () => {
     return (
@@ -18,18 +20,17 @@ const Header = () => {
 const Navbar = () => {
     return (
         <>
-            <nav className="space-x-10">
+            <nav className="
+            space-x-4
+            xl:space-x-10">
                 <a className="relative group" href="#">
-                    <span className="hover:underline">about me</span>
+                    <span className="hover:underline">about</span>
                 </a>
                 <a className="relative group opacity-50" href="#">
                     <span>projects</span>
                 </a>
                 <a className="relative group opacity-50" href="#">
                     <span>blog</span>
-                </a>
-                <a className="relative group opacity-50" href="#">
-                    <span>contact</span>
                 </a>
             </nav>
         </>
@@ -40,32 +41,41 @@ const Main = () => {
     return (
         <>
             <main className="
-            flex justify-start pl-10 pt-16
-            xl:flex xl:justify-start xl:pl-52 xl:pt-32">
-                <div className="space-y-3">
+            flex justify-between pl-8 pt-16
+            xl:flex xl:justify-between xl:pl-52 xl:pt-32">
+                <div id="main-animation" className="space-y-3">
                     <h2 className="text-3xl xl:text-4xl">Hi there! 👋</h2>
                     <p className="text-5xl xl:text-6xl">
                         <TypeAnimation
-                            style={{ whiteSpace: 'pre-line' }}
+                            style={{whiteSpace: 'pre-line'}}
                             sequence={[
                                 `My name is Max,\n and I'm a Web Developer.`,
-                                7000,
+                                8000,
                                 `I'm currently learning \nJavaScript`,
-                                7000,
+                                8000,
                                 `I'm currently learning \nReact`,
-                                7000,
+                                8000,
                                 `I'm currently learning \nBootstrap`,
-                                7000,
+                                8000,
                                 `I'm currently learning \nTailwind`,
-                                7000,
+                                8000,
                                 `I'm currently learning \nNext.js`,
-                                7000
+                                8000
                             ]}
                             cursor={true}
-                            speed={40}
+                            speed={45}
                             repeat={Infinity}
                         />
                     </p>
+                </div>
+                <div id="main-socials" className="
+                hidden
+                xl:flex xl:flex-col xl:space-y-4 xl:pr-72">
+                    <button><i className="bi bi-github"></i> GitHub</button>
+                    <button><i className="fa fa-codepen"></i> CodePen</button>
+                    <button><i className="bi bi-linkedin"></i> LinkedIn</button>
+                    <button><i className="bi bi-discord"></i> Discord</button>
+                    <button><i className="bi bi-envelope"></i> Mail</button>
                 </div>
             </main>
         </>
