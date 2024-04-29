@@ -44,8 +44,7 @@ const Main = () => {
             flex justify-between pl-8 pt-16
             xl:flex xl:justify-between xl:pl-52 xl:pt-32">
                 <div id="main-animation" className="space-y-3">
-                    <h2 className="text-3xl xl:text-4xl">Hi there! 👋 <a href="https://github.com/makuyoshi"><i className="bi bi-github"></i></a>
-                    </h2>
+                    <h2 className="text-3xl xl:text-4xl">Hi there! 👋</h2>
                     <p className="text-5xl xl:text-6xl">
                         <TypeAnimation
                             style={{whiteSpace: 'pre-line'}}
@@ -74,6 +73,22 @@ const Main = () => {
     )
 }
 
+const Footer = () => {
+    return (
+        <>
+            <footer>
+                <div className="flex flex-row justify-center absolute bottom-1 p-4 w-full space-x-8 text-2xl">
+                    <a href="https://github.com/makuyoshi"><i className="bi bi-github"></i></a>
+                    <a href="https://codepen.io/makuyoshi"><i className="fa fa-codepen"></i></a>
+                    <a href="#"><i className="bi bi-discord"></i></a>
+                    <a href="#"><i className="bi bi-linkedin"></i></a>
+                    <a href="https://www.last.fm/user/makuyoshi"><i className="fa fa-lastfm"></i></a>
+                </div>
+            </footer>
+        </>
+    )
+}
+
 const HomePage = () => {
     return (
         <>
@@ -97,6 +112,7 @@ const HomePage = () => {
             </Head>
             <Header/>
             <Main/>
+            <Footer />
         </>
     );
 };
