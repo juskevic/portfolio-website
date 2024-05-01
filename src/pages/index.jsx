@@ -77,7 +77,7 @@ const Main = () => {
                 <div className="
                 invisible
                 xl:rounded-full xl:border-border-silver xl:border-2 xl:mr-48 xl:brightness-90 xl:visible">
-                    <Image src="/makuyoshiLogo.png" alt="makuyoshi logo" width={350} height={350}></Image>
+                    <Image src="/makuyoshiLogo.png" alt="makuyoshi logo" width={300} height={300}></Image>
                 </div>
             </main>
         </>
@@ -94,6 +94,7 @@ const Footer = () => {
                     <a href="#"><i className="bi bi-discord"></i></a>
                     <a href="#"><i className="bi bi-linkedin"></i></a>
                     <a href="https://www.last.fm/user/makuyoshi"><i className="fa fa-lastfm"></i></a>
+                    <a><i className="bi bi-envelope-at"></i></a>
                 </div>
             </footer>
         </>
@@ -108,6 +109,13 @@ const HomePage = () => {
 
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+                <meta name="description"
+                      content="Makuyoshi's portfolio website build using Next.js"/>
+                <meta name="robots" content="index, follow"/>
+                <link rel="canonical" href="https://www.makuyoshi.dev"/>
+                <link rel="alternate" hrefLang="en-us" href="https://wwww.makuyoshi.dev"/>
+
                 <meta property="og:title" content="Makuyoshi.dev"/>
                 <meta property="og:description" content="Makuyoshi's portfolio website build using Next.js"/>
                 <meta property="og:url" content="https://makuyoshi.dev"/>
@@ -122,8 +130,8 @@ const HomePage = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
             </Head>
             <Header/>
-            <Main />
-            <Footer />
+            <Main/>
+            <Footer/>
         </>
     );
 };
