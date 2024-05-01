@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -23,9 +25,9 @@ const Navbar = () => {
             <nav className="
             space-x-4
             xl:space-x-10">
-                <a className="relative group" href="/about">
-                    <span>about</span>
-                </a>
+                <Link href="/about" className="hover:underline">
+                    about
+                </Link>
                 <a className="relative group opacity-50" href="#">
                     <span>projects</span>
                 </a>
@@ -72,6 +74,11 @@ const Main = () => {
                         />
                     </p>
                 </div>
+                <div className="
+                invisible
+                xl:rounded-full xl:border-border-silver xl:border-2 xl:mr-48 xl:brightness-90 xl:visible">
+                    <Image src="/makuyoshiLogo.png" alt="makuyoshi logo" width={350} height={350}></Image>
+                </div>
             </main>
         </>
     )
@@ -115,7 +122,7 @@ const HomePage = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
             </Head>
             <Header/>
-            <Main/>
+            <Main />
             <Footer />
         </>
     );
