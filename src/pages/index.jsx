@@ -111,7 +111,7 @@ const HomePage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
                 <meta name="description"
-                      content="Makuyoshi's portfolio website build using Next.js"/>
+                      content="Makuyoshi's portfolio website build using Next.js ✨"/>
                 <meta name="robots" content="index, follow"/>
                 <link rel="canonical" href="https://www.makuyoshi.dev"/>
                 <link rel="alternate" hrefLang="en-us" href="https://wwww.makuyoshi.dev"/>
