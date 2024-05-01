@@ -52,15 +52,19 @@ const Main = () => {
                                 `My name is Max,\n and I'm a Web Developer.`,
                                 8000,
                                 `I'm currently learning \nJavaScript`,
-                                8000,
+                                4000,
                                 `I'm currently learning \nReact`,
-                                8000,
+                                4000,
                                 `I'm currently learning \nBootstrap`,
-                                8000,
+                                4000,
                                 `I'm currently learning \nTailwind`,
-                                8000,
+                                4000,
                                 `I'm currently learning \nNext.js`,
-                                8000
+                                4000,
+                                `I'm currently learning \nUI/UX`,
+                                4000,
+                                `Thanks for visiting <3`,
+                                10000
                             ]}
                             cursor={true}
                             speed={45}
