@@ -23,8 +23,8 @@ const Navbar = () => {
             <nav className="
             space-x-4
             xl:space-x-10">
-                <a className="relative group" href="#">
-                    <span className="hover:underline">about</span>
+                <a className="relative group" href="/about">
+                    <span>about</span>
                 </a>
                 <a className="relative group opacity-50" href="#">
                     <span>projects</span>
