@@ -2,16 +2,42 @@ import React from 'react';
 import Head from 'next/head';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'font-awesome/css/font-awesome.min.css';
+import Link from "next/link";
+
+const Header = () => {
+    return (
+        <>
+            <header className="
+            flex flex-row justify-center space-x-16 p-4 text-1xl
+            xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96">
+                <h1 id="header-brand">makuyoshi.dev / about</h1>
+                <Navbar />
+            </header>
+        </>
+    )
+}
+
+const Navbar = () => {
+    return (
+        <>
+            <nav className="
+            space-x-4
+            xl:space-x-10">
+                <Link href="/" className="hover:underline">
+                    home
+                </Link>
+                <Link href="#" className="hover:underline">
+                    contact
+                </Link>
+            </nav>
+        </>
+    )
+}
 
 const Main = () => {
     return (
         <>
             <main>
-                <div className="rounded border-border-silver border-2 bg-bg-eerie">
-                    <a href="https://www.last.fm/user/makuyoshi"><img
-                        src="https://lastfm-recently-played.vercel.app/api?user=makuyoshi&show_user=header&count=5"
-                        alt="last.fm scrobbles"/></a>
-                </div>
             </main>
         </>
     )
@@ -24,8 +50,18 @@ const AboutMePage = () => {
                 <title>About | makuyoshi.dev</title>
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+                <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet"/>
+                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+                <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet"/>
+                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+                <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
             </Head>
-            <Main />
+            <Header/>
+            <Main/>
         </>
     )
 }
