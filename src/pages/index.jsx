@@ -65,7 +65,7 @@ const Main = () => {
                                 4000,
                                 `I'm currently learning \nUI/UX`,
                                 4000,
-                                `Thanks for visiting <3`,
+                                `Thanks \nfor visiting <3`,
                                 10000
                             ]}
                             cursor={true}
@@ -75,8 +75,8 @@ const Main = () => {
                     </p>
                 </div>
                 <div className="
-                invisible
-                xl:rounded-full xl:border-border-silver xl:border-2 xl:mr-48 xl:brightness-90 xl:visible">
+                hidden
+                xl:rounded-full xl:border-border-silver xl:border-2 xl:mr-48 xl:brightness-90 xl:block">
                     <Image src="/makuyoshiLogo.png" alt="makuyoshi logo" width={300} height={300}></Image>
                 </div>
             </main>
