@@ -38,7 +38,7 @@ const Main = () => {
     return (
         <>
             <main className="flex">
-                <div className="about-me-font flex flex-col justify-between pl-40 pt-16 space-y-5 w-1/2">
+                <div className="about-me-font flex flex-col justify-between pl-40 pt-16 space-y-5 w-1/2 mb-32">
                     <h2 className="text-4xl">ABOUT ME</h2>
                     <p className="about-me-font-2 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -57,6 +57,7 @@ const Main = () => {
                     <h2 className="opacity-50 text-2xl">EDUCATION</h2>
                 </div>
                 <div className="w-1/2 pl-32 pt-16">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <a href="https://github.com/JeffreyCA/lastfm-recently-played-readme"><img
                         src="https://lastfm-recently-played.vercel.app/api?user=makuyoshi&show_user=header&count=7&header_style=compact_stats_only"
                         alt="last.fm scrobbles"
