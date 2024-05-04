@@ -38,7 +38,22 @@ const Main = () => {
     return (
         <>
             <main>
-                <div></div>
+                <div className="flex flex-col justify-between pl-40 pt-16 text-2xl space-y-3">
+                    <h2>ABOUT ME</h2>
+                        <p>...About me text</p>
+                    <h2>TECH STACK</h2>
+                        <h3>Languages:</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                        <h3>Frameworks:</h3>
+                            <p>Bootstrap, Tailwind CSS, React, Next.js</p>
+                        <h3>Other:</h3>
+                            <p>Git, Linux (Arch, Mint)</p>
+                    <h2>EXPERIENCE</h2>
+                    <h2>EDUCATION</h2>
+                </div>
+                <div>
+                    {/*Last.fm*/}
+                </div>
             </main>
         </>
     )
