@@ -38,25 +38,26 @@ const Main = () => {
     return (
         <>
             <main className="flex">
-                <div className="about-me-font flex flex-col justify-between pl-40 pt-16 space-y-5 w-1/2 mb-32">
-                    <h2 className="text-4xl">ABOUT ME</h2>
-                    <p className="about-me-font-2 text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                <div className=" flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10
+                about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-5 xl:w-1/2 xl:mb-32">
+                    <h2 className="text-3xl xl:text-4xl">ABOUT ME</h2>
+                    <p className="about-me-font-2 text-xl xl:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                         nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
                         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                         laborum.</p>
-                    <h2 className="text-3xl">TECH STACK</h2>
-                    <h3 className="text-2xl">Languages:</h3>
-                    <p className="about-me-font-2 text-2xl">HTML, CSS, JavaScript</p>
-                    <h3 className="text-2xl">Frameworks:</h3>
-                    <p className="about-me-font-2 text-2xl">Bootstrap, Tailwind CSS, React, Next.js</p>
-                    <h3 className="text-2xl">Other:</h3>
-                    <p className="about-me-font-2 text-2xl">Git, Linux (Arch, Mint)</p>
-                    <h2 className="opacity-50 text-2xl">EXPERIENCE</h2>
-                    <h2 className="opacity-50 text-2xl">EDUCATION</h2>
+                    <h2 className="text-3xl xl:text-3xl">TECH STACK</h2>
+                    <h3 className="text-2xl xl:text-2xl">Languages:</h3>
+                    <p className="about-me-font-2 text-2xl xl:text-2xl">HTML, CSS, JavaScript</p>
+                    <h3 className="text-2xl xl:text-2xl">Frameworks:</h3>
+                    <p className="about-me-font-2 text-2xl xl:text-2xl">Bootstrap, Tailwind CSS, React, Next.js</p>
+                    <h3 className="text-2xl xl:text-2xl">Other:</h3>
+                    <p className="about-me-font-2 text-2xl xl:text-2xl">Git, Linux (Arch, Mint)</p>
+                    <h2 className="opacity-50 text-3xl xl:text-3xl">EXPERIENCE</h2>
+                    <h2 className="opacity-50 text-3xl xl:text-3xl">EDUCATION</h2>
                 </div>
-                <div className="w-1/2 pl-32 pt-16">
+                <div className="hidden xl:w-1/2 xl:pl-32 xl:pt-16 xl:block">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <a href="https://github.com/JeffreyCA/lastfm-recently-played-readme"><img
                         src="https://lastfm-recently-played.vercel.app/api?user=makuyoshi&show_user=header&count=7&header_style=compact_stats_only"
