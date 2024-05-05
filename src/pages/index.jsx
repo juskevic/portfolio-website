@@ -28,9 +28,9 @@ const Navbar = () => {
                 <Link href="/about" className="hover:underline">
                     about
                 </Link>
-                <a className="relative group opacity-50" href="#">
-                    <span>projects</span>
-                </a>
+                <Link href="/projects" className="hover:underline">
+                    projects
+                </Link>
                 <a className="relative group opacity-50" href="#">
                     <span>blog</span>
                 </a>
