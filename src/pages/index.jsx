@@ -94,7 +94,6 @@ const Footer = () => {
                     <a href="#"><i className="bi bi-linkedin"></i></a>
                     <a><i className="bi bi-mastodon"></i></a>
                     <a><i className="bi bi-telegram"></i></a>
-                    <button><i className="bi bi-envelope-at-fill"></i></button>
                 </div>
             </footer>
         </>
