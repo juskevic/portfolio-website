@@ -38,7 +38,7 @@ const Main = () => {
     return (
         <>
             <main className="flex">
-                <div className=" flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10
+                <div className=" flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10
                 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-5 xl:w-1/2 xl:mb-32">
                     <h2 className="text-3xl xl:text-4xl">ABOUT ME</h2>
                     <p className="about-me-font-2 text-xl xl:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -70,6 +70,24 @@ const Main = () => {
     )
 }
 
+const Footer = () => {
+    return (
+        <>
+            <footer>
+                <div className="flex flex-row justify-center absolute bottom p-4 w-full space-x-8 text-2xl">
+                    <a href="https://github.com/makuyoshi"><i className="bi bi-github"></i></a>
+                    <a href="https://twitter.com/makuyoshi_dev"><i className="bi bi-twitter-x"></i></a>
+                    <a href="#"><i className="bi bi-linkedin"></i></a>
+                    <a><i className="bi bi-mastodon"></i></a>
+                    <a><i className="bi bi-telegram"></i></a>
+                    <a href="https://www.last.fm/user/makuyoshi"><i className="fa fa-lastfm"></i></a>
+                    <button><i className="bi bi-envelope-at-fill"></i></button>
+                </div>
+            </footer>
+        </>
+    )
+}
+
 const AboutMePage = () => {
     return (
         <>
@@ -92,6 +110,7 @@ const AboutMePage = () => {
             </Head>
             <Header/>
             <Main/>
+            <Footer />
         </>
     )
 }
