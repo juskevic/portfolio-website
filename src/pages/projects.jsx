@@ -30,6 +30,28 @@ const Navbar = () => {
     )
 }
 
+const Main = () => {
+    return (
+        <>
+            <main className="flex">
+                <div className=" flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10
+                about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-10 xl:w-1/2 xl:mb-32">
+                    <div className="space-y-3">
+                        <h2 className="text-3xl xl:text-4xl">Portfolio Website</h2>
+                        <h1 className="text-xl">Next.js | Tailwind | React</h1>
+                        <p className="about-me-font-2 text-xl xl:text-2xl">...My website</p>
+                    </div>
+                    <div className="space-y-3">
+                        <h2 className="text-3xl xl:text-4xl">Highstorm Weather</h2>
+                        <h1 className="text-xl text-purple-400">Bootstrap</h1>
+                        <p className="about-me-font-2 text-xl xl:text-2xl">...About</p>
+                    </div>
+                </div>
+            </main>
+        </>
+    )
+}
+
 const ProjectsPage = () => {
     return (
         <>
@@ -52,6 +74,7 @@ const ProjectsPage = () => {
                       rel="stylesheet"/>
             </Head>
             <Header/>
+            <Main/>
         </>
     )
 }
