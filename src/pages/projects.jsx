@@ -1,8 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from "next/link";
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import 'font-awesome/css/font-awesome.min.css';
 
 const Header = () => {
     return (
@@ -38,8 +36,12 @@ const Main = () => {
                 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-10 xl:w-1/2 xl:mb-32">
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">Portfolio Website</h2>
-                        <h1 className="text-xl">Next.js | Tailwind | React</h1>
-                        <p className="about-me-font-2 text-xl xl:text-2xl">...My website</p>
+                        <h1 className="text-xl space-x-3">
+                            <span>Next.js</span>
+                            <span>Tailwind</span>
+                            <span>React</span>
+                        </h1>
+                        <p className="about-me-font-2 text-xl xl:text-2xl"></p>
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">Highstorm Weather</h2>
@@ -48,7 +50,10 @@ const Main = () => {
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">DC Helper</h2>
-                        <h1 className="text-xl">React Native</h1>
+                        <h1 className="text-xl space-x-3">
+                            <span>Bootstrap</span>
+                            <span>React Native</span>
+                        </h1>
                         <p className="about-me-font-2 text-xl xl:text-2xl">...</p>
                     </div>
                 </div>
