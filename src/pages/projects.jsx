@@ -43,8 +43,13 @@ const Main = () => {
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">Highstorm Weather</h2>
-                        <h1 className="text-xl text-purple-400">Bootstrap</h1>
+                        <h1 className="text-xl">Bootstrap</h1>
                         <p className="about-me-font-2 text-xl xl:text-2xl">...About</p>
+                    </div>
+                    <div className="space-y-3">
+                        <h2 className="text-3xl xl:text-4xl">DC Helper</h2>
+                        <h1 className="text-xl">React Native</h1>
+                        <p className="about-me-font-2 text-xl xl:text-2xl">...</p>
                     </div>
                 </div>
             </main>
