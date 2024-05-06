@@ -1,8 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from "next/link";
+import FooterExtended from "@/components/FooterExtended.jsx";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'font-awesome/css/font-awesome.min.css';
-import Link from "next/link";
 
 const Header = () => {
     return (
@@ -109,7 +110,7 @@ const AboutMePage = () => {
             </Head>
             <Header/>
             <Main/>
-            <Footer />
+            <FooterExtended />
         </>
     )
 }
