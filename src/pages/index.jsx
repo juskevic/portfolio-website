@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import Footer from "@/components/Footer.jsx"
 import { TypeAnimation } from 'react-type-animation';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -35,8 +36,8 @@ const Main = () => {
     return (
         <>
             <main className="
-            flex justify-between pl-8 pt-16
-            xl:flex xl:justify-between xl:pl-52 xl:pt-32">
+            flex justify-between pl-8 pt-16 mb-10
+            xl:flex xl:justify-between xl:pl-52 xl:pt-32 xl:mb-48">
                 <div id="main-animation" className="space-y-3">
                     <h2 className="text-3xl xl:text-4xl">Hi there! 👋</h2>
                     <p className="text-5xl xl:text-6xl">
@@ -76,22 +77,6 @@ const Main = () => {
     )
 }
 
-const Footer = () => {
-    return (
-        <>
-            <footer>
-                <div className="flex flex-row justify-center absolute bottom-1 p-4 w-full space-x-8 text-2xl">
-                    <a href="https://github.com/makuyoshi"><i className="bi bi-github"></i></a>
-                    <a href="https://twitter.com/makuyoshi_dev"><i className="bi bi-twitter-x"></i></a>
-                    <a href="#"><i className="bi bi-linkedin"></i></a>
-                    <a><i className="bi bi-mastodon"></i></a>
-                    <a><i className="bi bi-telegram"></i></a>
-                </div>
-            </footer>
-        </>
-    )
-}
-
 const HomePage = () => {
     return (
         <>
@@ -122,7 +107,7 @@ const HomePage = () => {
             </Head>
             <Header/>
             <Main/>
-            <Footer/>
+            <Footer />
         </>
     );
 };

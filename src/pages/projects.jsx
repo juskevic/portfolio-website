@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import Footer from '../components/Footer.jsx'
+import Footer from "@/components/Footer.jsx"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Header = () => {
@@ -57,7 +57,7 @@ const Main = () => {
                         <p className="about-me-font-2 text-xl xl:text-2xl">At as in understood an remarkably solicitude. Mean them very seen she she. Use totally written the observe pressed justice. Instantly cordially far intention recommend estimable yet her his. Ladies stairs enough esteem add fat all enable. Needed its design number winter see. Oh be me sure wise sons no. Piqued ye of am spirit regret. Stimulated discretion impossible admiration in particular conviction up.
 
                             In post mean shot ye. There out her child sir his lived. Design at uneasy me season of branch on praise esteem. Abilities discourse believing consisted remaining to no. Mistaken no me denoting dashwood as screened. Whence or esteem easily he on. Dissuade husbands at of no if disposal.</p>
-                        <a className="text-xl opacity-70 hover:underline">Private <i className="bi bi-lock"></i></a>
+                        <p className="text-xl opacity-70">Private <i className="bi bi-lock"></i></p>
                     </div>
                 </div>
             </main>
