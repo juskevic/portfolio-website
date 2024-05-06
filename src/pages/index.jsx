@@ -13,28 +13,20 @@ const Header = () => {
             flex flex-row justify-center space-x-16 p-4 text-1xl
             xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96">
                 <h1 id="header-brand">makuyoshi.dev</h1>
-                <Navbar />
-            </header>
-        </>
-    )
-}
-
-const Navbar = () => {
-    return (
-        <>
-            <nav className="
+                <nav className="
             space-x-4
             xl:space-x-10">
-                <Link href="/about" className="hover:underline">
-                    about
-                </Link>
-                <Link href="/projects" className="hover:underline">
-                    projects
-                </Link>
-                <a className="relative group opacity-50" href="#">
-                    <span>blog</span>
-                </a>
-            </nav>
+                    <Link href="/about" className="hover:underline">
+                        about
+                    </Link>
+                    <Link href="/projects" className="hover:underline">
+                        projects
+                    </Link>
+                    <a className="relative group opacity-50" href="#">
+                        <span>blog</span>
+                    </a>
+                </nav>
+            </header>
         </>
     )
 }

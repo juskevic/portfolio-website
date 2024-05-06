@@ -11,21 +11,14 @@ const Header = () => {
             flex flex-row justify-center space-x-16 p-4 text-1xl
             xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96">
                 <h1 id="header-brand">makuyoshi.dev / projects</h1>
-                <Navbar/>
-            </header>
-        </>
-    )
-}
-const Navbar = () => {
-    return (
-        <>
-            <nav className="
+                <nav className="
             space-x-4
             xl:space-x-10">
-                <Link href="/" className="hover:underline">
-                    home
-                </Link>
-            </nav>
+                    <Link href="/" className="hover:underline">
+                        home
+                    </Link>
+                </nav>
+            </header>
         </>
     )
 }
