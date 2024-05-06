@@ -81,6 +81,7 @@ const Footer = () => {
                     <a><i className="bi bi-mastodon"></i></a>
                     <a><i className="bi bi-telegram"></i></a>
                     <a href="https://www.last.fm/user/makuyoshi"><i className="fa fa-lastfm"></i></a>
+                    <a><i className="bi bi-xbox"></i></a>
                     <button><i className="bi bi-envelope-at-fill"></i></button>
                 </div>
             </footer>
