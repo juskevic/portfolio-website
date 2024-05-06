@@ -36,21 +36,21 @@ const Main = () => {
                 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-10 xl:w-1/2 xl:mb-32">
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">Portfolio Website</h2>
-                        <h1 className="text-xl space-x-3">
+                        <h1 className="text-xl space-x-3 italic">
                             <span>Next.js</span>
                             <span>Tailwind</span>
                             <span>React</span>
                         </h1>
-                        <p className="about-me-font-2 text-xl xl:text-2xl"></p>
+                        <p className="about-me-font-2 text-xl xl:text-2xl">...</p>
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">Highstorm Weather</h2>
-                        <h1 className="text-xl">Bootstrap</h1>
-                        <p className="about-me-font-2 text-xl xl:text-2xl">...About</p>
+                        <h1 className="text-xl italic">Bootstrap</h1>
+                        <p className="about-me-font-2 text-xl xl:text-2xl">...</p>
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">DC Helper</h2>
-                        <h1 className="text-xl space-x-3">
+                        <h1 className="text-xl space-x-3 italic">
                             <span>Bootstrap</span>
                             <span>React Native</span>
                         </h1>
