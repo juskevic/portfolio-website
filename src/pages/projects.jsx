@@ -39,16 +39,20 @@ const Main = () => {
                         <h2 className="text-3xl xl:text-4xl">Portfolio Website</h2>
                         <h1 className="text-xl space-x-3 italic">
                             <span>Next.js</span>
-                            <span>Tailwind CSS</span>
+                            <span>Tailwindcss</span>
                             <span>React.js</span>
                         </h1>
-                        <p className="about-me-font-2 text-xl xl:text-2xl">...</p>
+                        <p className="about-me-font-2 text-xl xl:text-2xl">At as in understood an remarkably solicitude. Mean them very seen she she. Use totally written the observe pressed justice. Instantly cordially far intention recommend estimable yet her his. Ladies stairs enough esteem add fat all enable. Needed its design number winter see. Oh be me sure wise sons no. Piqued ye of am spirit regret. Stimulated discretion impossible admiration in particular conviction up.
+
+                            In post mean shot ye. There out her child sir his lived. Design at uneasy me season of branch on praise esteem. Abilities discourse believing consisted remaining to no. Mistaken no me denoting dashwood as screened. Whence or esteem easily he on. Dissuade husbands at of no if disposal.</p>
                         <a href="https://github.com/makuyoshi/makuyoshi-web" className="text-xl opacity-70 hover:underline">makuyoshi-web <i className="bi bi-github"></i></a>
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">Highstorm Weather</h2>
                         <h1 className="text-xl italic">Bootstrap</h1>
-                        <p className="about-me-font-2 text-xl xl:text-2xl">...</p>
+                        <p className="about-me-font-2 text-xl xl:text-2xl">At as in understood an remarkably solicitude. Mean them very seen she she. Use totally written the observe pressed justice. Instantly cordially far intention recommend estimable yet her his. Ladies stairs enough esteem add fat all enable. Needed its design number winter see. Oh be me sure wise sons no. Piqued ye of am spirit regret. Stimulated discretion impossible admiration in particular conviction up.
+
+                            In post mean shot ye. There out her child sir his lived. Design at uneasy me season of branch on praise esteem. Abilities discourse believing consisted remaining to no. Mistaken no me denoting dashwood as screened. Whence or esteem easily he on. Dissuade husbands at of no if disposal.</p>
                         <a href="https://github.com/makuyoshi/Highstorm" className="text-xl opacity-70 hover:underline">Highstorm <i className="bi bi-github"></i></a>
                     </div>
                     <div className="space-y-3">
@@ -56,11 +60,29 @@ const Main = () => {
                         <h1 className="text-xl space-x-3 italic">
                             <span>React Native</span>
                         </h1>
-                        <p className="about-me-font-2 text-xl xl:text-2xl">...</p>
+                        <p className="about-me-font-2 text-xl xl:text-2xl">At as in understood an remarkably solicitude. Mean them very seen she she. Use totally written the observe pressed justice. Instantly cordially far intention recommend estimable yet her his. Ladies stairs enough esteem add fat all enable. Needed its design number winter see. Oh be me sure wise sons no. Piqued ye of am spirit regret. Stimulated discretion impossible admiration in particular conviction up.
+
+                            In post mean shot ye. There out her child sir his lived. Design at uneasy me season of branch on praise esteem. Abilities discourse believing consisted remaining to no. Mistaken no me denoting dashwood as screened. Whence or esteem easily he on. Dissuade husbands at of no if disposal.</p>
                         <a className="text-xl opacity-70 hover:underline">Private <i className="bi bi-lock"></i></a>
                     </div>
                 </div>
             </main>
+        </>
+    )
+}
+
+const Footer = () => {
+    return (
+        <>
+            <footer>
+                <div className="flex flex-row justify-center absolute bottom p-4 w-full space-x-8 text-2xl">
+                    <a href="https://github.com/makuyoshi"><i className="bi bi-github"></i></a>
+                    <a href="https://twitter.com/makuyoshi_dev"><i className="bi bi-twitter-x"></i></a>
+                    <a className="opacity-50"><i className="bi bi-linkedin"></i></a>
+                    <a className="opacity-50"><i className="bi bi-mastodon"></i></a>
+                    <a className="opacity-50"><i className="bi bi-telegram"></i></a>
+                </div>
+            </footer>
         </>
     )
 }
@@ -88,6 +110,7 @@ const ProjectsPage = () => {
             </Head>
             <Header/>
             <Main/>
+            <Footer />
         </>
     )
 }
