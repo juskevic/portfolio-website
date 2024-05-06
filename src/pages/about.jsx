@@ -41,12 +41,10 @@ const Main = () => {
                 <div className=" flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10
                 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-5 xl:w-1/2 xl:mb-32">
                     <h2 className="text-3xl xl:text-4xl">ABOUT ME</h2>
-                    <p className="about-me-font-2 text-xl xl:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum.</p>
+                    <p className="about-me-font-2 text-xl xl:text-2xl">
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
+                        Hi there! 👋 My name is Max. I'm a 19-year-old student from the Czech Republic.<br /> I'm currently trying to master the art of web development. More specifically, I'm learning various JavaScript frameworks like Next.js and React Native.<br /> I spend most of my free time developing various web applications that come to my mind.<br />Apart from that, I like to listen to 70's progressive rock and read fantasy books.
+                    </p>
                     <h2 className="text-3xl xl:text-3xl">TECH STACK</h2>
                     <h3 className="text-2xl xl:text-2xl">Languages:</h3>
                     <p className="about-me-font-2 text-2xl xl:text-2xl">HTML, CSS, JavaScript</p>
