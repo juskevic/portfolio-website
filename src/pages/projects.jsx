@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from "next/link";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Header = () => {
     return (
@@ -38,23 +39,25 @@ const Main = () => {
                         <h2 className="text-3xl xl:text-4xl">Portfolio Website</h2>
                         <h1 className="text-xl space-x-3 italic">
                             <span>Next.js</span>
-                            <span>Tailwind</span>
-                            <span>React</span>
+                            <span>Tailwind CSS</span>
+                            <span>React.js</span>
                         </h1>
                         <p className="about-me-font-2 text-xl xl:text-2xl">...</p>
+                        <a href="https://github.com/makuyoshi/makuyoshi-web" className="text-xl opacity-70 hover:underline">makuyoshi-web <i className="bi bi-github"></i></a>
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">Highstorm Weather</h2>
                         <h1 className="text-xl italic">Bootstrap</h1>
                         <p className="about-me-font-2 text-xl xl:text-2xl">...</p>
+                        <a href="https://github.com/makuyoshi/Highstorm" className="text-xl opacity-70 hover:underline">Highstorm <i className="bi bi-github"></i></a>
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">DC Helper</h2>
                         <h1 className="text-xl space-x-3 italic">
-                            <span>Bootstrap</span>
                             <span>React Native</span>
                         </h1>
                         <p className="about-me-font-2 text-xl xl:text-2xl">...</p>
+                        <a className="text-xl opacity-70 hover:underline">Private <i className="bi bi-lock"></i></a>
                     </div>
                 </div>
             </main>
