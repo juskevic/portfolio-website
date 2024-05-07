@@ -37,10 +37,7 @@ const Main = () => {
                     </p>
                     <h2 className="text-3xl xl:text-3xl">TECH STACK</h2>
                     <h3 className="text-2xl xl:text-2xl">Languages</h3>
-                    <p className="about-me-font-2 text-2xl xl:text-2xl"><a href="https://html.spec.whatwg.org/" className="hover:underline">HTML</a>, <a
-                        href="https://www.w3.org/TR/CSS/#css" className="hover:underline">CSS</a>, <a
-                        href="https://ecma-international.org/publications-and-standards/standards/ecma-262/"
-                        className="hover:underline">JavaScript</a>
+                    <p className="about-me-font-2 text-2xl xl:text-2xl"><a href="https://html.spec.whatwg.org/" className="hover:underline">HTML</a>, <a href="https://www.w3.org/TR/CSS/#css" className="hover:underline">CSS</a>, <a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/" className="hover:underline">JavaScript</a>
                     </p>
                     <h3 className="text-2xl xl:text-2xl">Frontend Development</h3>
                     <p className="about-me-font-2 text-2xl xl:text-2xl">
