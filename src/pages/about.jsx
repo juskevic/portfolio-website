@@ -13,13 +13,10 @@ const Header = () => {
             xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96">
                 <h1 id="header-brand">makuyoshi.dev / about</h1>
                 <nav className="
-            space-x-4
+            space-x-10
             xl:space-x-10">
                     <Link href="/" className="hover:underline">
                         home
-                    </Link>
-                    <Link href="#" className="hover:underline">
-                        contact
                     </Link>
                 </nav>
             </header>
@@ -40,22 +37,32 @@ const Main = () => {
                     </p>
                     <h2 className="text-3xl xl:text-3xl">TECH STACK</h2>
                     <h3 className="text-2xl xl:text-2xl">Languages</h3>
-                    <p className="about-me-font-2 text-2xl xl:text-2xl"><a href="https://html.spec.whatwg.org/" className="hover:underline">HTML</a>, <a href="https://www.w3.org/TR/CSS/#css" className="hover:underline">CSS</a>, <a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/" className="hover:underline">JavaScript</a>
+                    <p className="about-me-font-2 text-2xl xl:text-2xl"><a href="https://html.spec.whatwg.org/" className="hover:underline">HTML</a>, <a
+                        href="https://www.w3.org/TR/CSS/#css" className="hover:underline">CSS</a>, <a
+                        href="https://ecma-international.org/publications-and-standards/standards/ecma-262/"
+                        className="hover:underline">JavaScript</a>
                     </p>
                     <h3 className="text-2xl xl:text-2xl">Frontend Development</h3>
-                    <p className="about-me-font-2 text-2xl xl:text-2xl"><a href="https://getbootstrap.com/" className="hover:underline">Bootstrap</a>, <a href="https://tailwindcss.com/" className="hover:underline">Tailwind</a>, <a href="https://react.dev/" className="hover:underline">React</a>, <a href="https://nextjs.org/" className="hover:underline">Next.js</a>
+                    <p className="about-me-font-2 text-2xl xl:text-2xl">
+                        <a href="https://getbootstrap.com/" className="hover:underline">Bootstrap</a>, <a
+                        href="https://tailwindcss.com/" className="hover:underline">Tailwind</a>, <a
+                        href="https://react.dev/" className="hover:underline">React</a>,
+                        <a href="https://nextjs.org/" className="hover:underline">Next.js</a>
                     </p>
                     <h3 className="text-2xl xl:text-2xl">Backend Development</h3>
-                    <a href="https://nodejs.org/en" className="about-me-font-2 hover:underline text-2xl xl:text-2xl">Node.js
+                    <a href="https://nodejs.org/en" className="about-me-font-2 hover:underline text-2xl xl:text-2xl">
+                        Node.js
                     </a>
                     <h3 className="text-2xl xl:text-2xl">Other</h3>
-                    <p className="about-me-font-2 text-2xl xl:text-2xl"><a href="https://git-scm.com/" className="hover:underline">Git</a>, <a href="https://github.com/torvalds/linux" className="hover:underline">GNU/Linux</a>
+                    <p className="about-me-font-2 text-2xl xl:text-2xl">
+                        <a href="https://git-scm.com/" className="hover:underline">Git</a>, <a
+                        href="https://github.com/torvalds/linux" className="hover:underline">GNU/Linux</a>
                     </p>
                     <h2 className="opacity-50 text-3xl xl:text-3xl">EXPERIENCE</h2>
                     <h2 className="opacity-50 text-3xl xl:text-3xl">EDUCATION</h2>
                 </div>
                 <div className="hidden xl:w-1/2 xl:pl-32 xl:pt-16 xl:block">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <a href="https://github.com/JeffreyCA/lastfm-recently-played-readme"><img
                         src="https://lastfm-recently-played.vercel.app/api?user=makuyoshi&show_user=header&count=7&header_style=compact_stats_only"
                         alt="last.fm scrobbles"
@@ -89,7 +96,7 @@ const AboutMePage = () => {
             </Head>
             <Header/>
             <Main/>
-            <FooterExtended />
+            <FooterExtended/>
         </>
     )
 }
