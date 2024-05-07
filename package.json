@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "makuyoshi-web",
-  "version": "b0.2.2",
+  "version": "b0.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
