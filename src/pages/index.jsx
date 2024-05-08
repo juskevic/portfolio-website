@@ -9,16 +9,19 @@ const Header = () => {
     return (
         <>
             <header className="
-            flex flex-row justify-center space-x-16 p-4 text-xl
+            flex flex-row justify-center space-x-4 p-4 text-xl
             xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96">
                 <h1 id="header-brand">makuyoshi.dev</h1>
                 <nav className="space-x-4 xl:space-x-10">
                     <Link href="/projects" className="hover:underline">
                         projects
                     </Link>
-                    <a className="relative group opacity-50" href="#">
+                    <a className="relative group opacity-50 cursor-not-allowed" href="#">
                         <span>blog</span>
                     </a>
+                    <Link href="#" className="opacity-50 cursor-not-allowed">
+                        contact
+                    </Link>
                 </nav>
             </header>
         </>
