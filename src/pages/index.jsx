@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import Footer from "@/components/Footer.jsx"
 import TypingAnimationComponent from "@/components/TypingAnimation.jsx";
@@ -10,7 +9,7 @@ const Header = () => {
     return (
         <>
             <header className="
-            flex flex-row justify-center space-x-16 p-4 text-1xl
+            flex flex-row justify-center space-x-16 p-4 text-xl
             xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96">
                 <h1 id="header-brand">makuyoshi.dev</h1>
                 <nav className="space-x-4 xl:space-x-10">
@@ -32,7 +31,7 @@ const Main = () => {
             <main className="flex">
                 <div className=" flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10
                 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-5 xl:w-1/2 xl:mb-32">
-                    <div id="main-animation" className="space-y-3 h-64 xl:h-72">
+                    <div id="main-animation" className="space-y-3 h-52 xl:h-72">
                         <h2 className="text-3xl xl:text-4xl">Hewo! 👋</h2>
                         <p className="text-5xl xl:text-6xl">
                             <TypingAnimationComponent />
