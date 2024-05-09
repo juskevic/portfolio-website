@@ -54,10 +54,12 @@ const Main = () => {
                     <h2 className="opacity-50 text-3xl xl:text-3xl">EDUCATION</h2>
                 </div>
                 <div className="hidden xl:w-1/2 xl:pl-32 xl:pt-16 xl:block">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src="" alt="profile picture" className="border-2 border-silver rounded-full mb-80 m-10" width={350} height={350}
                     />
                     <a href="https://github.com/JeffreyCA/lastfm-recently-played-readme">
-                        <img src="https://lastfm-recently-played.vercel.app/api?user=makuyoshi&show_user=header&count=7&header_style=compact_stats_only"alt="last.fm scrobbles" className="border-2 border-border-silver rounded-2xl"
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src="https://lastfm-recently-played.vercel.app/api?user=makuyoshi&show_user=header&count=7&header_style=compact_stats_only" alt="last.fm scrobbles" className="border-2 border-border-silver rounded-2xl"
                         />
                     </a>
                     <a href="https://www.last.fm/user/makuyoshi" className="opacity-40 hover:underline about-me-font ml-4">
