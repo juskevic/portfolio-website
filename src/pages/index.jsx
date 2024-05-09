@@ -36,13 +36,15 @@ const Main = () => {
                             <TypingAnimationComponent />
                         </p>
                     </div>
-                    <h2 className="about-me-font text-3xl xl:text-4xl">ABOUT ME</h2>
+                    <h2 className="about-me-font text-3xl xl:text-4xl">
+                        ABOUT ME
+                    </h2>
                     <p className="about-me-font-2 text-xl xl:text-2xl">
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         Hi there! My name is Max. <br />I'm a 19-year-old student from the Czech Republic. I'm currently trying to master the art of web development. More specifically, I'm learning various JavaScript frameworks like Next.js and React Native.<br/> I spend most of my free time developing various web applications that come to my mind.<br/>Apart from that, I like to listen to 70's progressive rock and read fantasy books.
                     </p>
                     <h2 className="about-me-font text-3xl xl:text-3xl">
-                        TECH STACK <i className="bi bi-pc-display-horizontal"></i>
+                        TECH STACK <i className="bi bi-code-slash"></i>
                     </h2>
                     <h3 className="text-2xl xl:text-2xl">Languages</h3>
                     <p className="about-me-font-2 text-2xl xl:text-2xl"><a href="https://html.spec.whatwg.org/" className="hover:underline">HTML</a>, <a href="https://www.w3.org/TR/CSS/#css" className="hover:underline">CSS</a>, <a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/" className="hover:underline">JavaScript</a></p>
@@ -50,8 +52,12 @@ const Main = () => {
                     <p className="about-me-font-2 text-2xl xl:text-2xl"><a href="https://getbootstrap.com/" className="hover:underline">Bootstrap</a>, <a href="https://tailwindcss.com/" className="hover:underline">Tailwind</a>, <a href="https://react.dev/" className="hover:underline">React</a>, <a href="https://nextjs.org/" className="hover:underline">Next.js</a></p>
                     <h3 className="text-2xl xl:text-2xl">Other</h3>
                     <p className="about-me-font-2 text-2xl xl:text-2xl"><a href="https://git-scm.com/" className="hover:underline">Git</a>, <a href="https://github.com/torvalds/linux" className="hover:underline">GNU/Linux</a></p>
-                    <h2 className="opacity-50 text-3xl xl:text-3xl">EXPERIENCE</h2>
-                    <h2 className="opacity-50 text-3xl xl:text-3xl">EDUCATION</h2>
+                    <h2 className="opacity-50 text-3xl xl:text-3xl">
+                        EXPERIENCE
+                    </h2>
+                    <h2 className="opacity-50 text-3xl xl:text-3xl">
+                        EDUCATION
+                    </h2>
                 </div>
                 <div className="hidden xl:w-1/2 xl:pl-32 xl:pt-16 xl:block">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
