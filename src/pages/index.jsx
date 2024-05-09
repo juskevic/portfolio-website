@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <>
             <header className="
-            flex flex-row justify-center space-x-4 p-4 text-xl
+            flex flex-row justify-center space-x-6 p-4 text-2xl
             xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96">
                 <h1 id="header-brand">makuyoshi.dev</h1>
                 <nav className="space-x-4 xl:space-x-10">
@@ -19,9 +19,6 @@ const Header = () => {
                     <a className="relative group opacity-50 cursor-not-allowed" href="#">
                         <span>blog</span>
                     </a>
-                    <Link href="#" className="opacity-50 cursor-not-allowed">
-                        contact
-                    </Link>
                 </nav>
             </header>
         </>
@@ -34,7 +31,7 @@ const Main = () => {
             <main className="flex">
                 <div className=" flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10
                 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-5 xl:w-1/2 xl:mb-32">
-                    <div id="main-animation" className="space-y-3 h-52 xl:h-72">
+                    <div id="main-animation" className="space-y-3 h-52 mb-80 xl:h-72">
                         <h2 className="text-3xl xl:text-4xl">Hewo! 👋</h2>
                         <p className="text-5xl xl:text-6xl">
                             <TypingAnimationComponent />
@@ -58,12 +55,7 @@ const Main = () => {
                     <h2 className="opacity-50 text-3xl xl:text-3xl">EDUCATION</h2>
                 </div>
                 <div className="hidden xl:w-1/2 xl:pl-32 xl:pt-16 xl:block">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <a href="https://github.com/JeffreyCA/lastfm-recently-played-readme"><img
-                        src="https://lastfm-recently-played.vercel.app/api?user=makuyoshi&show_user=header&count=7&header_style=compact_stats_only"
-                        alt="last.fm scrobbles"
-                        className="border-2 border-border-silver rounded-2xl"/>
-                    </a>
+                    <a href="https://github.com/JeffreyCA/lastfm-recently-played-readme"><img src="https://lastfm-recently-played.vercel.app/api?user=makuyoshi&show_user=header&count=7&header_style=compact_stats_only" alt="last.fm scrobbles" className="border-2 border-border-silver rounded-2xl"/></a>
                 </div>
             </main>
         </>
