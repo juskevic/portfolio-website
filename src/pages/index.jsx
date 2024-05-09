@@ -10,7 +10,7 @@ const Header = () => {
         <>
             <header className="
             flex flex-row justify-center space-x-6 p-4 text-2xl
-            xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96">
+            xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96 xl:mb-8">
                 <h1 id="header-brand">makuyoshi.dev</h1>
                 <nav className="space-x-4 xl:space-x-10">
                     <Link href="/projects" className="hover:underline">
@@ -29,10 +29,9 @@ const Main = () => {
     return (
         <>
             <main className="flex">
-                <div className=" flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10
-                about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-5 xl:w-1/2 xl:mb-32">
+                <div className="flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-5 xl:w-1/2 xl:mb-32">
                     <div id="main-animation" className="space-y-3 h-52 mb-80 xl:h-72">
-                        <h2 className="text-3xl xl:text-4xl">Hewo! 👋</h2>
+                        <h2 className="text-3xl xl:text-4xl">Hello! 👋</h2>
                         <p className="text-5xl xl:text-6xl">
                             <TypingAnimationComponent />
                         </p>
@@ -40,9 +39,11 @@ const Main = () => {
                     <h2 className="about-me-font text-3xl xl:text-4xl">ABOUT ME</h2>
                     <p className="about-me-font-2 text-xl xl:text-2xl">
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
-                        Hi there! My name is Max. I'm a 19-year-old student from the Czech Republic.<br/> I'm currently trying to master the art of web development. More specifically, I'm learning various JavaScript frameworks like Next.js and React Native.<br/> I spend most of my free time developing various web applications that come to my mind.<br/>Apart from that, I like to listen to 70's progressive rock and read fantasy books.
+                        Hi there! My name is Max. <br />I'm a 19-year-old student from the Czech Republic. I'm currently trying to master the art of web development. More specifically, I'm learning various JavaScript frameworks like Next.js and React Native.<br/> I spend most of my free time developing various web applications that come to my mind.<br/>Apart from that, I like to listen to 70's progressive rock and read fantasy books.
                     </p>
-                    <h2 className="about-me-font text-3xl xl:text-3xl">TECH STACK</h2>
+                    <h2 className="about-me-font text-3xl xl:text-3xl">
+                        TECH STACK <i className="bi bi-pc-display-horizontal"></i>
+                    </h2>
                     <h3 className="text-2xl xl:text-2xl">Languages</h3>
                     <p className="about-me-font-2 text-2xl xl:text-2xl"><a href="https://html.spec.whatwg.org/" className="hover:underline">HTML</a>, <a href="https://www.w3.org/TR/CSS/#css" className="hover:underline">CSS</a>, <a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/" className="hover:underline">JavaScript</a></p>
                     <h3 className="text-2xl xl:text-2xl">Frameworks</h3>
@@ -53,7 +54,15 @@ const Main = () => {
                     <h2 className="opacity-50 text-3xl xl:text-3xl">EDUCATION</h2>
                 </div>
                 <div className="hidden xl:w-1/2 xl:pl-32 xl:pt-16 xl:block">
-                    <a href="https://github.com/JeffreyCA/lastfm-recently-played-readme"><img src="https://lastfm-recently-played.vercel.app/api?user=makuyoshi&show_user=header&count=7&header_style=compact_stats_only" alt="last.fm scrobbles" className="border-2 border-border-silver rounded-2xl"/></a>
+                    <img src="" alt="profile picture" className="border-2 border-silver rounded-full mb-80 m-10" width={350} height={350}
+                    />
+                    <a href="https://github.com/JeffreyCA/lastfm-recently-played-readme">
+                        <img src="https://lastfm-recently-played.vercel.app/api?user=makuyoshi&show_user=header&count=7&header_style=compact_stats_only"alt="last.fm scrobbles" className="border-2 border-border-silver rounded-2xl"
+                        />
+                    </a>
+                    <a href="https://www.last.fm/user/makuyoshi" className="opacity-40 hover:underline about-me-font ml-4">
+                        Life is boring without cool music ヾ( ˃ᴗ˂ )◞ • *✰ <i className="bi bi-box-arrow-up-right"></i>
+                    </a>
                 </div>
             </main>
         </>
