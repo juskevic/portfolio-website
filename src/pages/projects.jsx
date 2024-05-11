@@ -49,7 +49,10 @@ const Main = () => {
                     </div>
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">Highstorm Weather</h2>
-                        <h1 className="text-xl italic">Bootstrap</h1>
+                        <h1 className="text-xl italic space-x-3">
+                            <span>React</span>
+                            <span>Bootstrap</span>
+                        </h1>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         <p className="about-me-font-2 text-xl xl:text-2xl">The Highstorm Weather web app provides users
                             with a dynamic interface that displays real-time weather, wind conditions, pressure,
@@ -57,11 +60,11 @@ const Main = () => {
                             to interact with application programming interfaces (APIs), a skill I would not have gained
                             without it. The app is mobile-oriented and was built with the popular Bootstrap
                             framework.<span className="pl-2 text-xl italic opacity-50">6/5/2024</span></p>
-                        <a href="https://github.com/makuyoshi/Highstorm"
+                        <a href="https://github.com/makuyoshi/highstorm"
                            className="text-xl opacity-70 hover:underline">
                             Highstorm <i className="bi bi-github"></i>
                         </a>
-                        <a className="pl-4 text-xl opacity-70 hover:underline">
+                        <a href="#" className="pl-4 text-xl opacity-70 hover:underline">
                             highstorm.makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i>
                         </a>
                     </div>
@@ -69,6 +72,7 @@ const Main = () => {
                         <h2 className="text-3xl xl:text-4xl">DC Helper</h2>
                         <h1 className="text-xl space-x-3 italic">
                             <span>React Native</span>
+                            <span>Bootstrap</span>
                         </h1>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         <p className="about-me-font-2 text-xl xl:text-2xl">This is a closed-source mobile web app that I'm developing as an assistant for my part-time job. It's currently in the early stages of development, but I've already built a beta version using Bootstrap, which is open-source and available to the public.<span className="pl-2 text-xl italic opacity-50">6/5/2024</span></p>
