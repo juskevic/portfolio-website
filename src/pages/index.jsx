@@ -32,7 +32,7 @@ const Main = () => {
                 <div className="flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-5 xl:w-1/2 xl:mb-32">
                     <div id="main-animation" className="space-y-3 h-52 mb-80 xl:h-72">
                         <h2 className="text-3xl xl:text-4xl">Hi there! 👋</h2>
-                        <p className="text-5xl xl:text-6xl">
+                        <p className="text-5xl xl:text-7xl">
                             <TypingAnimationComponent />
                         </p>
                     </div>
@@ -61,7 +61,7 @@ const Main = () => {
                 </div>
                 <div className="hidden xl:w-1/2 xl:pl-32 xl:pt-16 xl:block">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="" alt="profile picture" className="border-2 border-silver rounded-full mb-80 m-10" width={350} height={350}
+                    <img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="profile picture" className="border-2 border-silver rounded-full mb-80 m-10" width={350} height={350}
                     />
                     <a href="https://github.com/JeffreyCA/lastfm-recently-played-readme">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
