@@ -6,19 +6,19 @@ const TypingAnimationComponent = () => {
             <TypeAnimation
                 style={{whiteSpace: 'pre-line'}}
                 sequence={[
-                        `My name is Max,\n and I'm a Web Developer.`,
+                        `My name is Max,\n and I'm a \nWeb Developer.`,
                         8000,
-                        `I'm currently learning \nJavaScript`,
+                        `I'm currently \nlearning JavaScript`,
                         4000,
-                        `I'm currently learning \nReact`,
+                        `I'm currently \nlearning React`,
                         4000,
-                        `I'm currently learning \nBootstrap`,
+                        `I'm currently \nlearning Bootstrap`,
                         4000,
-                        `I'm currently learning \nTailwind`,
+                        `I'm currently \nlearning Tailwind`,
                         4000,
-                        `I'm currently learning \nNext.js`,
+                        `I'm currently \nlearning Next.js`,
                         4000,
-                        `I'm currently learning \nUI/UX`,
+                        `I'm currently \nlearning UI/UX`,
                         4000,
                         `Thanks \nfor visiting <3`,
                         10000
