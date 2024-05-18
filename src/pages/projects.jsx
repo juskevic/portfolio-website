@@ -48,23 +48,17 @@ const Main = () => {
                         </a>
                     </div>
                     <div className="space-y-3">
-                        <h2 className="text-3xl xl:text-4xl">Highstorm Weather</h2>
+                        <h2 className="text-3xl xl:text-4xl">Highstorm</h2>
                         <h1 className="text-xl italic space-x-3">
-                            <span>React</span>
                             <span>Bootstrap</span>
                         </h1>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
-                        <p className="about-me-font-2 text-xl xl:text-2xl">The Highstorm Weather web app provides users
-                            with a dynamic interface that displays real-time weather, wind conditions, pressure,
-                            humidity levels, and more. This innovative project has equipped me with the skills necessary
-                            to interact with application programming interfaces (APIs), a skill I would not have gained
-                            without it. The app is mobile-oriented and was built with the popular Bootstrap
-                            framework.<span className="pl-2 text-xl italic opacity-50">6/5/2024</span></p>
+                        <p className="about-me-font-2 text-xl xl:text-2xl">Highstorm (formerly Highstorm Weather) is a weather web app built using Bootstrap. <br />I have gained valuable experience in using API's during the development process. <br />As of the time of writing, it is still in its early stages of development. <br />However, the backend code is mostly complete. <span className="pl-2 text-xl italic opacity-50">18/5/2024</span></p>
                         <a href="https://github.com/makuyoshi/highstorm"
                            className="text-xl opacity-70 hover:underline">
                             Highstorm <i className="bi bi-github"></i>
                         </a>
-                        <a href="#" className="pl-4 text-xl opacity-70 hover:underline">
+                        <a href="https://highstorm.makuyoshi.dev/" className="pl-4 text-xl opacity-70 hover:underline">
                             highstorm.makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i>
                         </a>
                     </div>
