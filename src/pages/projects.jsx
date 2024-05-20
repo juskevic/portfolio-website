@@ -9,7 +9,7 @@ const Header = () => {
         <>
             <header className="
             flex flex-row justify-center space-x-16 p-4 text-1xl
-            xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96">
+            xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-4xl xl:space-x-96">
                 <h1 id="header-brand">makuyoshi.dev / projects</h1>
                 <nav className="
             space-x-4

@@ -10,7 +10,7 @@ const Header = () => {
         <>
             <header className="
             flex flex-row justify-center space-x-6 p-4 text-2xl
-            xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-3xl xl:space-x-96 xl:mb-8">
+            xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-4xl xl:space-x-96 xl:mb-8">
                 <h1 id="header-brand">makuyoshi.dev</h1>
                 <nav className="space-x-4 xl:space-x-10">
                     <Link href="/projects" className="hover:underline">
