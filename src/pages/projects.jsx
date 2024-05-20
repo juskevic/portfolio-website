@@ -32,6 +32,7 @@ const Main = () => {
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">Portfolio Website</h2>
                         <h1 className="text-xl space-x-3 italic">
+                            <i className="bi bi-code-slash"></i>
                             <span>Next.js</span>
                             <span>React</span>
                             <span>Tailwind</span>
@@ -50,10 +51,11 @@ const Main = () => {
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">Highstorm</h2>
                         <h1 className="text-xl italic space-x-3">
+                            <i className="bi bi-code-slash"></i>
                             <span>Bootstrap</span>
                         </h1>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
-                        <p className="about-me-font-2 text-xl xl:text-2xl">Highstorm (formerly Highstorm Weather) is a weather web app built using Bootstrap. <br />I have gained valuable experience in using API's during the development process. <br />As of the time of writing, it is still in its early stages of development. <br />However, the backend code is mostly complete. <span className="pl-2 text-xl italic opacity-50">18/5/2024</span></p>
+                        <p className="about-me-font-2 text-xl xl:text-2xl">Highstorm (formerly Highstorm Weather) is a weather web app built using Bootstrap I have gained valuable experience in using API's during the development process. As of the time of writing, it is still in its early stages of development. However, the backend code is mostly complete. <span className="pl-2 text-xl italic opacity-50">18/5/2024</span></p>
                         <a href="https://github.com/makuyoshi/highstorm"
                            className="text-xl opacity-70 hover:underline">
                             Highstorm <i className="bi bi-github"></i>
@@ -65,6 +67,7 @@ const Main = () => {
                     <div className="space-y-3">
                         <h2 className="text-3xl xl:text-4xl">DC Helper</h2>
                         <h1 className="text-xl space-x-3 italic">
+                            <i className="bi bi-code-slash"></i>
                             <span>React Native</span>
                             <span>Bootstrap</span>
                         </h1>
