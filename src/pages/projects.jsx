@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <>
             <header className="
-            flex flex-row justify-center space-x-16 p-4 text-1xl
+            flex flex-row justify-center space-x-16 p-4 text-xl
             xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-4xl xl:space-x-96">
                 <h1 id="header-brand">makuyoshi.dev / projects</h1>
                 <nav className="
@@ -41,10 +41,10 @@ const Main = () => {
                         <p className="about-me-font-2 text-xl xl:text-2xl">My first project was my portfolio website. You're looking at it right now! I built it originally using vanilla HTML and CSS. It has a home page, an about page, projects page and a blog page. It is fully responsive and can be viewed on both mobile and large screens. As of writing this, it is built using Next.js with Tailwind.<span className="pl-2 text-xl italic opacity-50">6/5/2024</span>
                         </p>
                         <a href="https://github.com/makuyoshi/makuyoshi-web"
-                           className="text-xl opacity-70 hover:underline">
+                           className="text-lg xl:text-xl opacity-70 hover:underline">
                             makuyoshi-web <i className="bi bi-github"></i>
                         </a>
-                        <a className="pl-4 text-xl opacity-70 hover:underline">
+                        <a href="https://www.makuyoshi.dev/" className="pl-3 xl:pl-4 text-lg xl:text-xl opacity-70 hover:underline">
                             makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i>
                         </a>
                     </div>
@@ -57,10 +57,10 @@ const Main = () => {
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         <p className="about-me-font-2 text-xl xl:text-2xl">Highstorm (formerly Highstorm Weather) is a weather web app built using Bootstrap I have gained valuable experience in using API's during the development process. As of the time of writing, it is still in its early stages of development. However, the backend code is mostly complete. <span className="pl-2 text-xl italic opacity-50">18/5/2024</span></p>
                         <a href="https://github.com/makuyoshi/highstorm"
-                           className="text-xl opacity-70 hover:underline">
+                           className="pl-2 xl:pl-0 text-lg xl:text-xl opacity-70 hover:underline">
                             Highstorm <i className="bi bi-github"></i>
                         </a>
-                        <a href="https://highstorm.makuyoshi.dev/" className="pl-4 text-xl opacity-70 hover:underline">
+                        <a href="https://highstorm.makuyoshi.dev/" className="pl-2 xl:pl-4 text-lg xl:text-xl opacity-70 hover:underline">
                             highstorm.makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i>
                         </a>
                     </div>

@@ -9,6 +9,9 @@ const Footer = () => {
                     <a href="https://github.com/makuyoshi"><i className="bi bi-github"></i></a>
                     <a href="https://twitter.com/makuyoshi_dev"><i className="bi bi-twitter-x"></i></a>
                 </div>
+                <div className="text-center mb-5">
+                    <p>© {new Date().getFullYear()} makuyoshi.dev. All Rights Reserved.</p>
+                </div>
             </footer>
         </>
     )

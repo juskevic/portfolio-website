@@ -20,7 +20,7 @@ const TypingAnimationComponent = () => {
                         4000,
                         `I'm currently \nlearning UI/UX`,
                         4000,
-                        `Thanks \nfor visiting <3`,
+                        `Thanks \nfor visiting 💖`,
                         10000
                 ]}
                 cursor={true}
