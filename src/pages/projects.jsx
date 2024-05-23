@@ -26,7 +26,7 @@ const Header = () => {
 const Main = () => {
     return (
         <>
-            <main className="flex">
+            <main className="flex pl-12">
                 <div className=" flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10
                 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-10 xl:w-1/2 xl:mb-32">
                     <div className="space-y-3">

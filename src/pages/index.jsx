@@ -28,7 +28,7 @@ const Header = () => {
 const Main = () => {
     return (
         <>
-            <main className="flex">
+            <main className="flex pl-12">
                 <div className="flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-5 xl:w-1/2 xl:mb-32">
                     <div id="main-animation" className="space-y-3 h-52 mb-80 xl:h-72">
                         <h2 className="text-3xl xl:text-4xl">Hi there! 👋</h2>
