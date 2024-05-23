@@ -15,7 +15,7 @@ const Header = () => {
             space-x-4
             xl:space-x-10">
                     <Link href="/" className="hover:underline">
-                        home
+                        <i className="bi bi-arrow-left-short"></i> go back
                     </Link>
                 </nav>
             </header>
@@ -102,6 +102,8 @@ const ProjectsPage = () => {
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
                 <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
                       rel="stylesheet"/>
+                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+                <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"/>
             </Head>
             <Header/>
             <Main/>

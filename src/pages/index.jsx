@@ -12,12 +12,12 @@ const Header = () => {
             flex flex-row justify-center space-x-6 p-4 text-2xl
             xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-4xl xl:space-x-96 xl:mb-8">
                 <h1 id="header-brand">makuyoshi.dev</h1>
-                <nav className="space-x-4 xl:space-x-10">
+                <nav className="space-x-4 xl:space-x-20">
                     <Link href="/projects" className="hover:underline">
-                        projects
+                        projects<i className="bi bi-arrow-right-short"></i>
                     </Link>
                     <a className="relative group opacity-50 cursor-not-allowed" href="#">
-                        <span>blog</span>
+                        <span>blog<i className="bi bi-arrow-right-short"></i></span>
                     </a>
                 </nav>
             </header>
@@ -105,7 +105,10 @@ const HomePage = () => {
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
                 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-                <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+                      rel="stylesheet"/>
+                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+                <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"/>
             </Head>
             <Header/>
             <Main/>
