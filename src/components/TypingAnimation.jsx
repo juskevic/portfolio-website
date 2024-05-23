@@ -26,7 +26,7 @@ const TypingAnimationComponent = () => {
                         10000
                 ]}
                 cursor={true}
-                speed={45}
+                speed={35}
                 repeat={Infinity}
             />
         )
