@@ -8,14 +8,14 @@ const Header = () => {
     return (
         <>
             <header className="
-            flex flex-row justify-center space-x-16 p-4 text-xl
+            flex flex-row justify-center space-x-12 p-4 text-2xl
             xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-4xl xl:space-x-96">
                 <h1 id="header-brand">makuyoshi.dev / projects</h1>
                 <nav className="
             space-x-4
             xl:space-x-10">
                     <Link href="/" className="hover:underline">
-                        <i className="bi bi-arrow-left-short"></i> go back
+                        <i className="bi bi-arrow-return-left hover:animate-pulse"></i>
                     </Link>
                 </nav>
             </header>
@@ -26,7 +26,7 @@ const Header = () => {
 const Main = () => {
     return (
         <>
-            <main className="flex pl-12">
+            <main className="flex xl:pl-12">
                 <div className=" flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10
                 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-10 xl:w-1/2 xl:mb-32">
                     <div className="space-y-3">
@@ -57,7 +57,7 @@ const Main = () => {
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         <p className="about-me-font-2 text-xl xl:text-2xl">Highstorm (formerly Highstorm Weather) is a weather web app built using Bootstrap I have gained valuable experience in using API's during the development process. As of the time of writing, it is still in its early stages of development. However, the backend code is mostly complete. <span className="pl-2 text-xl italic opacity-50">18/5/2024</span></p>
                         <a href="https://github.com/makuyoshi/highstorm"
-                           className="pl-2 xl:pl-0 text-lg xl:text-xl opacity-70 hover:underline">
+                           className="pl-0 xl:pl-0 text-lg xl:text-xl opacity-70 hover:underline">
                             Highstorm <i className="bi bi-github"></i>
                         </a>
                         <a href="https://highstorm.makuyoshi.dev/" className="pl-2 xl:pl-4 text-lg xl:text-xl opacity-70 hover:underline">
