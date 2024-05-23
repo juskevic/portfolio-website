@@ -6,7 +6,7 @@ const TypingAnimationComponent = () => {
             <TypeAnimation
                 style={{whiteSpace: 'pre-line'}}
                 sequence={[
-                        `My name is Max,\n and I'm a \nWeb Developer.`,
+                        `My name is Max,\n and I'm a \n Front-end Web Developer.`,
                         8000,
                         `I'm currently \nlearning JavaScript`,
                         4000,
