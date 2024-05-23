@@ -11,7 +11,8 @@ const Header = () => {
             <header className="
             flex flex-row justify-center space-x-6 p-4 text-2xl
             xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-4xl xl:space-x-96 xl:mb-8">
-                <h1 id="header-brand">makuyoshi.dev</h1>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                <h1 id="header-brand" className="">max's portfolio website</h1>
                 <nav className="space-x-4 xl:space-x-20">
                     <Link href="/projects" className="hover:underline">
                         projects<i className="bi bi-arrow-right-short"></i>
@@ -41,7 +42,7 @@ const Main = () => {
                     </h2>
                     <p className="about-me-font-2 text-xl xl:text-2xl">
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
-                        Hi there! My name is Max. <br />I'm a 19-year-old student from the Czech Republic. I'm currently trying to master the art of web development. More specifically, I'm learning various JavaScript frameworks like Next.js and React Native.<br/> I spend most of my free time developing various web applications that come to my mind.<br/>Apart from that, I like to listen to 70's progressive rock and read fantasy books.
+                        Hi there! My name is Max. <br />I'm a 19-year-old student from the Czech Republic. I'm currently trying to master the art of Front-end web development. More specifically, I'm learning various JavaScript frameworks like Next.js and React Native.<br/> I spend most of my free time developing various web applications that come to my mind.<br/>Apart from that, I like to listen to 70's progressive rock and read fantasy books.
                     </p>
                     <h2 className="about-me-font text-3xl xl:text-3xl">
                         TECH STACK <i className="bi bi-code-slash"></i>
