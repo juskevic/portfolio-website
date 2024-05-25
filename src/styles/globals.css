@@ -29,3 +29,7 @@ footer  {
     font-family: "Exo", serif;
     color: #B1A7A6;
 }
+
+.active {
+    color: #D8315B;
+}
