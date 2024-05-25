@@ -7,10 +7,20 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const Main = () => {
     return (
         <>
-            <div id="hello">...</div>
-            <div id="about">...</div>
-            <div id="projects">...</div>
-            <div id="contact">...</div>
+            <main className="p-60 space-y-60">
+                <div id="hello" className="flex flex-row justify-start text-4xl">
+                    <div className="">
+                        <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent">Max Yushkevich</h1>
+                        <h2 className="opacity-50">Front-end web developer</h2>
+                    </div>
+                    <div>
+                        <img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" className="rounded-full h-24 w-24 object-cover" alt="Profile"/>
+                    </div>
+                </div>
+                <div id="about">...</div>
+                <div id="projects">...</div>
+                <div id="contact">...</div>
+            </main>
         </>
     )
 }

@@ -6,7 +6,7 @@ const Header = () => {
         <>
             <header className="">
                 <nav className="flex flex-row justify-center pt-2 p-1 xl:p-4 w-full text-lg xl:text-2xl space-x-3 xl:space-x-32 fixed">
-                    <div className="flex flex-row space-x-2 xl:space-x-10 outline outline-1 rounded-2xl p-2 bg-bg-eerie shadow-2xl">
+                    <div className="flex flex-row space-x-2 xl:space-x-8 outline outline-1 rounded-2xl p-2 bg-bg-eerie shadow-2xl">
                         <Link href="">hello</Link>
                         <Link href="">about</Link>
                         <Link href="">projects</Link>
