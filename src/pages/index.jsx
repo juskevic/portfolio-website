@@ -1,31 +1,55 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Head from 'next/head';
 import Header from "@/components/Header.jsx";
-import Footer from "@/components/Footer.jsx"
+import Socials from "@/components/Socials.jsx"
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Image from "next/image";
+import { Element } from 'react-scroll'
+import { Events } from 'react-scroll';
 
 const Main = () => {
     return (
         <>
             <main className="p-60 space-y-60">
-                <div id="hello" className="flex flex-row justify-start text-4xl">
+                <Element name="hello" className="element flex flex-row justify-start text-4xl">
                     <div className="">
-                        <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent">Max Yushkevich</h1>
-                        <h2 className="opacity-50">Front-end web developer</h2>
+                        <div>
+                            <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent">
+                                Max Yushkevich
+                            </h1>
+                            <h2 className="opacity-50">Front-end web developer</h2>
+                            <Socials/>
+                        </div>
                     </div>
-                    <div>
-                        <img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" className="rounded-full h-24 w-24 object-cover" alt="Profile"/>
+                    <div className="pl-32">
+                        <Image src="/makuyoshiLogo.png" className="rounded-full object-cover" alt="Profile" height="150"
+                               width="150"/>
                     </div>
-                </div>
-                <div id="about">...</div>
-                <div id="projects">...</div>
-                <div id="contact">...</div>
+                </Element>
+                <Element name="about" className="element">...</Element>
+                <Element name="projects" className="element">...</Element>
+                <Element name="contact" className="element">...</Element>
             </main>
         </>
     )
 }
 
 const HomePage = () => {
+    useEffect(() => {
+        Events.scrollEvent.register('begin', function() {
+            console.log("begin", arguments);
+        });
+
+        Events.scrollEvent.register('end', function() {
+            console.log("end", arguments);
+        });
+
+        return () => {
+            Events.scrollEvent.remove('begin');
+            Events.scrollEvent.remove('end');
+        };
+    }, []);
+
     return (
         <>
             <Head>
@@ -60,7 +84,6 @@ const HomePage = () => {
             </Head>
             <Header/>
             <Main/>
-            <Footer/>
         </>
     );
 };

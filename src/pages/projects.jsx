@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-import Footer from "@/components/Footer.jsx"
+import Socials from "@/components/Socials.jsx"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Main = () => {
@@ -87,7 +87,7 @@ const ProjectsPage = () => {
             </Head>
             <Header/>
             <Main/>
-            <Footer/>
+            <Socials/>
         </>
     )
 }
