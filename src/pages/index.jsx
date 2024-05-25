@@ -1,42 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
+import Header from "@/components/Header.jsx";
 import Footer from "@/components/Footer.jsx"
 import TypingAnimationComponent from "@/components/TypingAnimation.jsx";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-const Header = () => {
-    return (
-        <>
-            <header className="
-            flex flex-row justify-center space-x-6 p-4 text-2xl
-            xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-4xl xl:space-x-96 xl:mb-8">
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <h1 id="header-brand" className="">max's portfolio website</h1>
-                <nav className="space-x-4 xl:space-x-20">
-                    <Link href="/projects" className="hover:underline">
-                        projects<i className="bi bi-arrow-right-short"></i>
-                    </Link>
-                    <a className="relative group opacity-50 cursor-not-allowed" href="#">
-                        <span>blog</span>
-                    </a>
-                </nav>
-            </header>
-        </>
-    )
-}
-
 const Main = () => {
     return (
         <>
-            <main className="flex xl:pl-12">
+            <main className="flex xl:pl-12 pt-16">
                 <div className="flex flex-col justify-between space-y-7 pl-6 pt-10 mr-10 mb-10 about-me-font xl:flex xl:flex-col xl:justify-between xl:pl-40 xl:pt-16 xl:space-y-5 xl:w-1/2 xl:mb-32">
-                    <div id="main-animation" className="space-y-3 h-52 mb-80 xl:h-72">
-                        <h2 className="text-3xl xl:text-4xl">Hi there! 👋</h2>
-                        <p className="text-5xl xl:text-7xl">
-                            <TypingAnimationComponent />
-                        </p>
-                    </div>
                     <h2 className="about-me-font text-3xl xl:text-4xl">
                         ABOUT ME
                     </h2>
