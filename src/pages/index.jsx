@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Header from "@/components/Header.jsx";
 import Footer from "@/components/Footer.jsx"
-import TypingAnimationComponent from "@/components/TypingAnimation.jsx";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const Main = () => {
