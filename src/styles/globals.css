@@ -31,5 +31,8 @@ footer  {
 }
 
 .active {
-    color: #D8315B;
+    background-color: var(--header-color);
+    color: black;
+    border-radius: 10px;
+
 }

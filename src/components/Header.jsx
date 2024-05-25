@@ -12,7 +12,7 @@ const Header = () => {
                         <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={500}>projects</Link>
                         <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500}>contact</Link>
                     </div>
-                    <Link href="#" className="outline outline-1 rounded-2xl p-2 bg-bg-eerie shadow-2xl">
+                    <Link href="#" className="outline outline-1 rounded-2xl p-2 bg-bg-eerie shadow-2xl hover:scale-105 hover:cursor-not-allowed">
                         blog<i className="bi bi-arrow-right-short"></i>
                     </Link>
                 </nav>
