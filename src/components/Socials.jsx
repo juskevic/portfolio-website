@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedinIn, faTelegram, faXTwitter} from "@fortawesome/free-brands-svg-icons";
 
-const Footer = () => {
+const Socials = () => {
     return (
         <>
             <footer>
@@ -12,12 +12,9 @@ const Footer = () => {
                     <a href="#" className="hover:scale-110"><FontAwesomeIcon icon={faLinkedinIn} /></a>
                     <a href="#" className="hover:scale-110"><FontAwesomeIcon icon={faTelegram} /></a>
                 </div>
-                <div className="text-center mb-5">
-                    <p>© {new Date().getFullYear()} makuyoshi.dev. All Rights Reserved.</p>
-                </div>
             </footer>
         </>
     )
 }
 
-export default Footer;
+export default Socials;
