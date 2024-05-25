@@ -1,27 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 import Footer from "@/components/Footer.jsx"
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
-const Header = () => {
-    return (
-        <>
-            <header className="
-            flex flex-row justify-center space-x-12 p-4 text-2xl
-            xl:flex xl:flex-row xl:justify-center xl:p-5 xl:text-4xl xl:space-x-96">
-                <h1 id="header-brand">makuyoshi.dev / projects</h1>
-                <nav className="
-            space-x-4
-            xl:space-x-10">
-                    <Link href="/" className="hover:scale-110">
-                        <i className="bi bi-arrow-return-left"></i>
-                    </Link>
-                </nav>
-            </header>
-        </>
-    )
-}
 
 const Main = () => {
     return (
