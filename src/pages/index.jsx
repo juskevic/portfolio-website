@@ -4,8 +4,8 @@ import Header from "@/components/Header.jsx";
 import Socials from "@/components/Socials.jsx"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Image from "next/image";
-import { Element } from 'react-scroll'
-import { Events } from 'react-scroll';
+import {Element} from 'react-scroll'
+import {Events} from 'react-scroll';
 import Footer from "@/components/Footer.jsx";
 
 const Main = () => {
@@ -31,12 +31,32 @@ const Main = () => {
                     <div className="space-y-5">
                         <h1 className="text-4xl opacity-60">hi</h1>
                         <p className="text-2xl break-words w-1/2 outline outline-1 rounded-xl p-5">
-                            My name is Max and I'm a front-end web developer. I specialize in creating beautiful and responsive websites using modern technologies. With a strong passion for design and user experience, I strive to create visually appealing and intuitive interfaces. I have experience working with HTML, CSS, JavaScript, and various front-end frameworks such as React and Next.js. I am constantly learning and improving my skills to stay up-to-date with the latest trends and technologies in the industry. Feel free to explore my portfolio and get in touch with me for any inquiries or collaborations.
+                            My name is Max and I'm a front-end web developer. I specialize in creating beautiful and
+                            responsive websites using modern technologies. With a strong passion for design and user
+                            experience, I strive to create visually appealing and intuitive interfaces. I have
+                            experience working with HTML, CSS, JavaScript, and various front-end frameworks such as
+                            React and Next.js. I am constantly learning and improving my skills to stay up-to-date with
+                            the latest trends and technologies in the industry. Feel free to explore my portfolio and
+                            get in touch with me for any inquiries or collaborations.
                         </p>
                     </div>
                 </Element>
-                <Element name="projects" className="element">...</Element>
-                <Element name="contact" className="element">...</Element>
+                <Element name="projects" className="element">
+                    <div className="space-y-5">
+                        <h1 className="text-4xl opacity-60">Projects</h1>
+                        <p className="text-2xl break-words w-1/2 outline outline-1 rounded-xl p-5 opacity-50">
+                            Under construction ⚒️
+                        </p>
+                    </div>
+                </Element>
+                <Element name="contact" className="element">
+                    <div className="space-y-5">
+                        <h1 className="text-4xl opacity-60">Contact</h1>
+                        <p className="text-2xl break-words w-1/2 outline outline-1 rounded-xl p-5 opacity-50">
+                            Under construction ⚒️
+                        </p>
+                    </div>
+                </Element>
             </main>
         </>
     )
@@ -44,11 +64,11 @@ const Main = () => {
 
 const HomePage = () => {
     useEffect(() => {
-        Events.scrollEvent.register('begin', function() {
+        Events.scrollEvent.register('begin', function () {
             console.log("begin", arguments);
         });
 
-        Events.scrollEvent.register('end', function() {
+        Events.scrollEvent.register('end', function () {
             console.log("end", arguments);
         });
 
@@ -92,7 +112,7 @@ const HomePage = () => {
             </Head>
             <Header/>
             <Main/>
-            <Footer />
+            <Footer/>
         </>
     );
 };
