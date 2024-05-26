@@ -31,8 +31,7 @@ footer  {
 }
 
 .active {
-    background-color: var(--timberwolf);
-    filter: opacity(80%);
+    background-color: var(--silver);
     color: black;
     border-radius: 10px;
 }

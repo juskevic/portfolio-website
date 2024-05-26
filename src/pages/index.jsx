@@ -6,6 +6,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Image from "next/image";
 import { Element } from 'react-scroll'
 import { Events } from 'react-scroll';
+import Footer from "@/components/Footer.jsx";
 
 const Main = () => {
     return (
@@ -91,6 +92,7 @@ const HomePage = () => {
             </Head>
             <Header/>
             <Main/>
+            <Footer />
         </>
     );
 };
