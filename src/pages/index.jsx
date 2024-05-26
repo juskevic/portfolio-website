@@ -26,7 +26,14 @@ const Main = () => {
                                width="150"/>
                     </div>
                 </Element>
-                <Element name="about" className="element">...</Element>
+                <Element name="about" className="element">
+                    <div className="space-y-5">
+                        <h1 className="text-4xl opacity-60">hi</h1>
+                        <p className="text-2xl break-words w-1/2 outline outline-1 rounded-xl p-5">
+                            My name is Max and I'm a front-end web developer. I specialize in creating beautiful and responsive websites using modern technologies. With a strong passion for design and user experience, I strive to create visually appealing and intuitive interfaces. I have experience working with HTML, CSS, JavaScript, and various front-end frameworks such as React and Next.js. I am constantly learning and improving my skills to stay up-to-date with the latest trends and technologies in the industry. Feel free to explore my portfolio and get in touch with me for any inquiries or collaborations.
+                        </p>
+                    </div>
+                </Element>
                 <Element name="projects" className="element">...</Element>
                 <Element name="contact" className="element">...</Element>
             </main>

@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 :root { /* Colors! */
-    --background-color: #161A1D;
-    --header-color: #B1A7A6;
-    --nav-color: #B1A7A6;
-    --text-color: #D3D3D3;
-    --text-highligther: #D8315B;
+    --night: #0b090aff;
+    --eerie-black: #161a1dff;
+    --silver: #b1a7a6ff;
+    --timberwolf: #d3d3d3ff;
+    --white-smoke: #f5f3f4ff;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--night);
     user-select: none;
 }
 
 header {
-    color: var(--header-color);
+    color: var(--silver);
     font-family: "Exo", serif;
 }
 
 main {
-    color: var(--text-color);
+    color: var(--timberwolf);
     font-family: "Exo", sans, serif;
 }
 
@@ -31,8 +31,8 @@ footer  {
 }
 
 .active {
-    background-color: var(--header-color);
+    background-color: var(--silver);
+    filter: opacity(80%);
     color: black;
     border-radius: 10px;
-
 }
