@@ -11,8 +11,8 @@ import Footer from "@/components/Footer.jsx";
 const Main = () => {
     return (
         <>
-            <main className="p-4 pt-32 md:p-40 xl:p-60 space-y-8 md:space-y-60">
-                <Element name="hello" className="element flex flex-col md:flex-row xl:justify-start text-xl xl:text-4xl">
+            <main className="p-60 space-y-60">
+                <Element name="hello" className="element flex flex-row justify-start text-4xl">
                     <div className="">
                         <div>
                             <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent">
@@ -22,30 +22,24 @@ const Main = () => {
                             <Socials/>
                         </div>
                     </div>
-                    <div className="pt-10 md:pt-0 md:pl-32">
+                    <div className="pl-32">
                         <Image src="/makuyoshiLogo.png" className="rounded-full object-cover" alt="Profile" height="150"
                                width="150"/>
                     </div>
                 </Element>
                 <Element name="about" className="element">
                     <div className="space-y-5">
-                        <h1 className="text-4xl opacity-60">hi</h1>
-                        <p className="text-2xl break-words w-full md:w-1/2 outline outline-1 rounded-xl p-5">
+                        <h1 className="text-3xl opacity-60 ">about me</h1>
+                        <p className="text-2xl break-words w-full md:w-1/2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                             {/* eslint-disable-next-line react/no-unescaped-entities */}
-                            My name is Max and I'm a front-end web developer. I specialize in creating beautiful and
-                            responsive websites using modern technologies. With a strong passion for design and user
-                            experience, I strive to create visually appealing and intuitive interfaces. I have
-                            experience working with HTML, CSS, JavaScript, and various front-end frameworks such as
-                            React and Next.js. I am constantly learning and improving my skills to stay up-to-date with
-                            the latest trends and technologies in the industry. Feel free to explore my portfolio and
-                            get in touch with me for any inquiries or collaborations.
+                            Hi, I’m Max. I’m a front-end web developer. I specialise in creating beautiful and responsive websites using modern technologies. I love design and user experience, so I try to create visually appealing and intuitive interfaces. I’ve worked with HTML, CSS, JavaScript, and various front-end frameworks such as React and Next.js. I’m always learning and improving my skills to stay up-to-date with the latest trends and technologies in the industry. Feel free to check out my portfolio and get in touch if you have any questions or want to work together.
                         </p>
                     </div>
                 </Element>
                 <Element name="projects" className="element">
                     <div className="space-y-5">
                         <h1 className="text-4xl opacity-60">Projects</h1>
-                        <p className="text-2xl break-words w-full md:w-1/2 outline outline-1 rounded-xl p-5 opacity-50">
+                        <p className="text-2xl break-words w-full md:w-1/2 outline outline-1 rounded-xl p-5 opacity-50 ">
                             Under construction ⚒️
                         </p>
                     </div>

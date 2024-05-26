@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <>
             <header className="">
-                <nav className="flex flex-row justify-center pt-6 xl:pt-4 xl:p-4 w-full text-sm xl:text-2xl space-x-8 xl:space-x-32 fixed">
-                    <div className="flex flex-row space-x-4 xl:space-x-8 outline outline-1 rounded-2xl p-2 bg-black shadow-white shadow">
+                <nav className="flex flex-row justify-center pt-4 p-4 w-full text-2xl space-x-32 fixed">
+                    <div className="flex flex-row space-x-8 outline outline-1 rounded-2xl p-2 bg-black shadow-white shadow">
                         <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-250} duration={500}>hello</Link>
                         <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>about</Link>
                         <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={500}>projects</Link>
