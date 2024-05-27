@@ -23,13 +23,13 @@ const Main = () => {
                         </div>
                     </div>
                     <div className="pl-32">
-                        <Image src="/makuyoshiLogo.png" className="rounded-full object-cover" alt="Profile" height="150"
+                        <Image src="/makuyoshiLogo.png" className="rounded-full object-cover shadow-2xl shadow-stone-500/20" alt="Profile" height="150"
                                width="150"/>
                     </div>
                 </Element>
                 <Element name="about" className="element">
                     <div className="space-y-5">
-                        <h1 className="text-3xl opacity-60 ">about me</h1>
+                        <h1 className="text-3xl opacity-60 ">Let me tell you a bit about myself</h1>
                         <p className="text-2xl break-words w-full md:w-1/2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                             {/* eslint-disable-next-line react/no-unescaped-entities */}
                             Hi, I’m Max. I’m a front-end web developer. I specialise in creating beautiful and responsive websites using modern technologies. I love design and user experience, so I try to create visually appealing and intuitive interfaces. I’ve worked with HTML, CSS, JavaScript, and various front-end frameworks such as React and Next.js. I’m always learning and improving my skills to stay up-to-date with the latest trends and technologies in the industry. Feel free to check out my portfolio and get in touch if you have any questions or want to work together.
@@ -38,10 +38,44 @@ const Main = () => {
                 </Element>
                 <Element name="projects" className="element">
                     <div className="space-y-5">
-                        <h1 className="text-4xl opacity-60">Projects</h1>
-                        <p className="text-2xl break-words w-full md:w-1/2 outline outline-1 rounded-xl p-5 opacity-50 ">
-                            Under construction ⚒️
-                        </p>
+                        <h1 className="text-4xl opacity-60">Check out my projects</h1>
+                        <div className="flex flex-row space-x-20">
+                            <div
+                                className="flex flex-col justify-start space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                                <h2 className="text-2xl">Portfolio website</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </p>
+                                <a className="opacity-75">makuyoshi-web <i className="bi bi-github"></i></a>
+                                <a className="opacity-75">makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                            <div
+                                className="flex flex-col justify-start space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                                <h2 className="text-2xl">Highstorm</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
+                                </p>
+                                <a className="opacity-75" href="https://github.com/makuyoshi/highstorm">highstorm <i className="bi bi-github"></i></a>
+                                <a className="opacity-75">highstorm.makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                            <div
+                                className="flex flex-col justify-start space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                                <h2 className="text-2xl">DC Helper</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </Element>
                 <Element name="contact" className="element">

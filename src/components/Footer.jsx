@@ -11,7 +11,7 @@ const Footer = () => {
                         className="bi bi-box-arrow-up-right"></i></a>
                     </p>
                     <p className="text-center">
-                        &copy; {new Date().getFullYear()} Max Yushkevich. All Rights Reserved.
+                        &copy; {new Date().getFullYear()} Max Yushkevich. All rights reserved.
                     </p>
                 </div>
             </footer>
