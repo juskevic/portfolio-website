@@ -11,7 +11,7 @@ import Footer from "@/components/Footer.jsx";
 const Main = () => {
     return (
         <>
-            <main className="p-80 space-y-60">
+            <main className="p-80 space-y-80">
                 <Element name="hello" className="element flex flex-row justify-start text-4xl">
                     <div className="">
                         <div>
@@ -30,19 +30,9 @@ const Main = () => {
                 <Element name="about" className="element space-y-5">
                     <h1 className="text-3xl opacity-60 ">Let me tell you a bit about myself</h1>
                     <div className="space-x-8 flex flex-row">
-                        <p className="text-2xl break-words w-1/2 outline outline-1 outline-stone-600 rounded-xl p-7 shadow-2xl shadow-stone-500/20">
+                        <p className="text-2xl break-words h-1/2 w-1/2 outline outline-2 outline-stone-600 rounded-xl p-7 shadow-2xl shadow-stone-500/20">
                             {/* eslint-disable-next-line react/no-unescaped-entities */}
-                            Hi, I’m Max. I’m a front-end web developer. I specialise in creating beautiful and
-                            responsive websites using modern technologies. I love design and user experience, so I
-                            try
-                            to create visually appealing and intuitive interfaces. I’ve worked with HTML, CSS,
-                            JavaScript, and various front-end frameworks such as React and Next.js. I’m always
-                            learning
-                            and improving my skills to stay up-to-date with the latest trends and technologies in
-                            the
-                            industry. Feel free to check out my portfolio and get in touch if you have any questions
-                            or
-                            want to work together.
+                            Hello! I’m Max, a front-end developer passionate about crafting beautiful, responsive websites with the latest tech. I focus on design and user experience, ensuring interfaces are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus frameworks like React and Next.js, I’m committed to continuous learning to keep pace with industry innovations. Take a look at my portfolio, and let’s connect to explore how we can collaborate!
                         </p>
                         <div className="flex flex-col space-y-7">
                             <div
@@ -51,8 +41,8 @@ const Main = () => {
                                 </Image>
                             </div>
                             <div className="flex justify-center">
-                                <p className="text-2xl text-center w-full outline outline-1 outline-stone-600 rounded-xl p-3 shadow-2xl shadow-stone-500/20">
-                                    <i className="bi bi-geo-alt"></i> Czechia
+                                <p className="text-2xl w-full outline outline-1 outline-stone-600 rounded-xl p-3 shadow-2xl shadow-stone-500/20">
+                                    ...
                                 </p>
                             </div>
                         </div>
@@ -61,7 +51,7 @@ const Main = () => {
                 <Element name="projects" className="element">
                     <div className="space-y-5">
                         <h1 className="text-4xl opacity-60">Check out my projects</h1>
-                        <div className="flex flex-row space-x-20">
+                        <div className="flex flex-row space-x-16">
                             <div
                                 className="flex flex-col justify-start space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                                 <h2 className="text-2xl">Portfolio website</h2>
