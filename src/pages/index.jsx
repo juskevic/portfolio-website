@@ -33,17 +33,22 @@ const Main = () => {
                     <div className="space-x-8 flex flex-row">
                         <p className="text-2xl break-words h-1/2 w-1/2 outline outline-2 outline-stone-600 rounded-xl p-7 shadow-2xl shadow-stone-500/20">
                             {/* eslint-disable-next-line react/no-unescaped-entities */}
-                            Hello! I’m Max, a front-end developer passionate about crafting beautiful, responsive websites with the latest tech. I focus on design and user experience, ensuring interfaces are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus frameworks like React and Next.js, I’m committed to continuous learning to keep pace with industry innovations. Take a look at my portfolio, and let’s connect to explore how we can collaborate!
+                            Hello! I’m Max, a front-end developer passionate about crafting beautiful, responsive
+                            websites with the latest tech. I focus on design and user experience, ensuring interfaces
+                            are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus frameworks like
+                            React and Next.js, I’m committed to continuous learning to keep pace with industry
+                            innovations. Take a look at my portfolio, and let’s connect to explore how we can
+                            collaborate!
                         </p>
                         <div className="flex flex-col space-y-7">
                             <div
-                                className="text-2xl h-1/2 outline outline-1 outline-stone-600 rounded-xl p-4 shadow-2xl shadow-stone-500/20">
+                                className="text-2xl h-2/3 outline outline-1 outline-stone-600 rounded-xl p-4 shadow-2xl shadow-stone-500/20">
                                 <Image className="rounded-2xl" src="" alt="Image" width={300} height={300}>
                                 </Image>
                             </div>
-                            <div className="flex justify-center">
+                            <div>
                                 <p className="text-2xl w-full outline outline-1 outline-stone-600 rounded-xl p-3 shadow-2xl shadow-stone-500/20">
-                                    <span className="opacity-50">I’m good at… </span><TypingAnimation />
+                                    <span className="opacity-50">I’m good at… </span><TypingAnimation/>
                                 </p>
                             </div>
                         </div>
