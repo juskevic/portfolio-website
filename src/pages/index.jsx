@@ -53,7 +53,7 @@ const Main = () => {
                         <h1 className="text-4xl opacity-60">Check out my projects</h1>
                         <div className="flex flex-row space-x-8">
                             {/* Project: Portfolio website*/}
-                            <div className="flex flex-col h-1/2 space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                            <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                                 <h2 className="text-2xl">Portfolio website</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -71,7 +71,7 @@ const Main = () => {
                                 </a>
                             </div>
                             {/* Project: Highstorm*/}
-                            <div className="flex flex-col h-1/2 space-y-2 outline outline-2 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                            <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-2 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                                 <h2 id="project-highstorm" className="text-2xl">Highstorm</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -89,7 +89,7 @@ const Main = () => {
                                 </a>
                             </div>
                             {/* Project: DC Helper*/}
-                            <div className="flex flex-col h-1/2 space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                            <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                                 <h2 className="text-2xl">DC Helper</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
