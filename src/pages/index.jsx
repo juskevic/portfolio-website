@@ -7,6 +7,7 @@ import Image from "next/image";
 import {Element} from 'react-scroll'
 import {Events} from 'react-scroll';
 import Footer from "@/components/Footer.jsx";
+import TypingAnimation from "@/components/TypingAnimation.jsx";
 
 const Main = () => {
     return (
@@ -42,7 +43,7 @@ const Main = () => {
                             </div>
                             <div className="flex justify-center">
                                 <p className="text-2xl w-full outline outline-1 outline-stone-600 rounded-xl p-3 shadow-2xl shadow-stone-500/20">
-                                    ...
+                                    <span className="opacity-50">I’m good at… </span><TypingAnimation />
                                 </p>
                             </div>
                         </div>

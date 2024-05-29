@@ -6,11 +6,26 @@ const TypingAnimationComponent = () => {
             <TypeAnimation
                 style={{whiteSpace: 'pre-line'}}
                 sequence={[
-                        `With a strong passion for design and user experience, I strive to create visually appealing and intuitive interfaces. I have experience working with HTML, CSS, JavaScript, and various front-end frameworks such as React and Next.js. I am constantly learning and improving my skills to stay up-to-date with the latest trends and technologies in the industry. Feel free to explore my portfolio and get in touch with me for any inquiries or collaborations.`,
-                        8000,
+                    `HTML`,
+                    3000,
+                    `CSS`,
+                    3000,
+                    `JavaScript`,
+                    3000,
+                    `Bootstrap`,
+                    3000,
+                    `React`,
+                    3000,
+                    `Tailwind`,
+                    3000,
+                    `UI/UX`,
+                    3000,
+                    `Next.js`,
+                    3000
                 ]}
-                cursor={false}
+                cursor={true}
                 speed={50}
+                repeat={Infinity}
             />
         )
 }
