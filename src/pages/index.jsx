@@ -11,7 +11,7 @@ import Footer from "@/components/Footer.jsx";
 const Main = () => {
     return (
         <>
-            <main className="p-80 space-y-80">
+            <main className="p-72 space-y-80">
                 <Element name="hello" className="element flex flex-row justify-start text-4xl">
                     <div className="">
                         <div>
@@ -56,7 +56,7 @@ const Main = () => {
                                 className="flex flex-col justify-start space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                                 <h2 className="text-2xl">Portfolio website</h2>
                                 <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -67,8 +67,8 @@ const Main = () => {
                                 <a className="opacity-75">makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i></a>
                             </div>
                             <div
-                                className="flex flex-col justify-start space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
-                                <h2 className="text-2xl">Highstorm</h2>
+                                className="flex flex-col justify-start space-y-2 outline outline-2 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                                <h2 id="project-highstorm" className="text-2xl">Highstorm</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -77,22 +77,32 @@ const Main = () => {
                                     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                                     deserunt mollit anim id est laborum.
                                 </p>
-                                <a className="opacity-75" href="https://github.com/makuyoshi/highstorm">highstorm <i className="bi bi-github"></i></a>
-                                <a className="opacity-75">highstorm.makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i></a>
+                                <a className="opacity-75" href="https://github.com/makuyoshi/highstorm">highstorm <i
+                                    className="bi bi-github"></i></a>
+                                <a className="opacity-75">highstorm.makuyoshi.dev <i
+                                    className="bi bi-box-arrow-up-right"></i></a>
                             </div>
                             <div
                                 className="flex flex-col justify-start space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                                 <h2 className="text-2xl">DC Helper</h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
                                 </p>
                             </div>
+                        </div>
+                        <div className="flex flex-col text-center w-1/6 outline outline-1 outline-stone-600 rounded-xl p-2 shadow-2xl shadow-stone-500/20 hover:outline-2 hover:outline-stone-400">
+                            <a href="#">View more <i className="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </Element>
                 <Element name="contact" className="element">
                     <div className="space-y-5">
-                        <h1 className="text-4xl opacity-60">Contact</h1>
+                    <h1 className="text-4xl opacity-60">Contact</h1>
                         <p className="text-2xl break-words w-full md:w-1/2 outline outline-1 rounded-xl p-5 opacity-50">
                             Under construction ⚒️
                         </p>
@@ -143,6 +153,8 @@ const HomePage = () => {
                 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet"/>
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
                 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet"/>
+                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+                <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&amp;display=swap" rel="stylesheet"/>
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
                 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
