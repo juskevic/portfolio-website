@@ -51,10 +51,9 @@ const Main = () => {
                 <Element name="projects" className="element">
                     <div className="space-y-5">
                         <h1 className="text-4xl opacity-60">Check out my projects</h1>
-                        <div className="flex flex-row space-x-16">
+                        <div className="flex flex-row space-x-8">
                             {/* Project: Portfolio website*/}
-                            <div
-                                className="flex flex-col justify-start space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                            <div className="flex flex-col h-1/2 space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                                 <h2 className="text-2xl">Portfolio website</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -72,8 +71,7 @@ const Main = () => {
                                 </a>
                             </div>
                             {/* Project: Highstorm*/}
-                            <div
-                                className="flex flex-col justify-start space-y-2 outline outline-2 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                            <div className="flex flex-col h-1/2 space-y-2 outline outline-2 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                                 <h2 id="project-highstorm" className="text-2xl">Highstorm</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -91,11 +89,15 @@ const Main = () => {
                                 </a>
                             </div>
                             {/* Project: DC Helper*/}
-                            <div
-                                className="flex flex-col justify-start space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                            <div className="flex flex-col h-1/2 space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                                 <h2 className="text-2xl">DC Helper</h2>
                                 <p>
-                                    This is an accounting tool that allows you to count the amount of banknotes and coins that are in your cash register. This is an open source beta version. The final project will be for personal use only and will be closed source.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.
                                 </p>
                                 <a className="opacity-75">
                                     Private <i className="bi bi-lock-fill"></i></a>
@@ -104,7 +106,7 @@ const Main = () => {
                             </div>
                         </div>
                         <div
-                            className="flex flex-col text-center w-1/6 outline outline-1 outline-stone-600 rounded-xl p-2 shadow-2xl shadow-stone-500/20 hover:outline-2 hover:outline-stone-400">
+                            className="flex flex-col text-center w-1/6 outline outline-1 outline-stone-600 rounded-xl p-2 shadow-2xl shadow-stone-500/20 hover:outline-1 hover:outline-stone-400">
                             <a href="#">View more <i className="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
