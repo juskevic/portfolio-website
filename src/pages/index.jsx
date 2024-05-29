@@ -8,7 +8,7 @@ import {Element} from 'react-scroll'
 import {Events} from 'react-scroll';
 import Footer from "@/components/Footer.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
-import {faCodepen} from "@fortawesome/free-brands-svg-icons";
+import {faCodepen, faHackerrank} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 /**
@@ -35,7 +35,7 @@ const Main = () => {
                     </div>
                 </Element>
                 <Element name="about" className="element space-y-5">
-                    <h1 className="text-3xl opacity-60 ">Let me tell you a bit about myself</h1>
+                    <h1 className="text-3xl opacity-70 ">Let me tell you a bit about myself</h1>
                     <div className="space-x-8 flex flex-row">
                         <p className="text-2xl break-words h-1/2 w-1/2 outline outline-2 outline-stone-600 rounded-xl p-7 shadow-2xl shadow-stone-500/20">
                             {/* eslint-disable-next-line react/no-unescaped-entities */}
@@ -54,7 +54,7 @@ const Main = () => {
                             </div>
                             <div>
                                 <p className="text-2xl w-full outline outline-1 outline-stone-600 rounded-xl p-3 shadow-2xl shadow-stone-500/20">
-                                    <span className="opacity-50">I’m good at… </span><TypingAnimation/>
+                                    <span className="opacity-50">im good at… </span><TypingAnimation/>
                                 </p>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ const Main = () => {
                 </Element>
                 <Element name="projects" className="element">
                     <div className="space-y-5">
-                        <h1 className="text-4xl opacity-60">Check out my projects</h1>
+                        <h1 className="text-4xl opacity-70">Check out my projects</h1>
                         <div className="flex flex-row space-x-8">
                             {/* Project: Portfolio website*/}
                             <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
@@ -125,8 +125,8 @@ const Main = () => {
                 </Element>
                 <Element name="contact" className="element">
                     <div className="space-y-6">
-                    <h1 className="text-4xl opacity-60">Let’s get in touch</h1>
-                        <div className="text-xl break-words space-y-6 text-center outline outline-1 outline-stone-900 rounded-xl p-5 shadow-xl shadow-stone-500/20">
+                    <h1 className="text-4xl opacity-70">Let’s get in touch</h1>
+                        <div className="flex flex-col w-3/4 text-xl break-words space-y-5 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                             <div>
                                 {/*GitHub*/}
                                 <i className="bi bi-github opacity-60"></i>
@@ -181,6 +181,14 @@ const Main = () => {
                                 <span className="opacity-75"> Solving coding puzzles? Check out my LeetCode profile: </span>
                                 <a className="hover:underline" href="https://leetcode.com/u/makuyoshi/">
                                     makuyoshi
+                                </a>
+                            </div>
+                            <div>
+                                {/*HackerRank*/}
+                                <FontAwesomeIcon icon={faHackerrank} className="opacity-75"/>
+                                <span className="opacity-75"> Explore my HackerRank Profile to discover my coding journey and challenges: </span>
+                                <a className="hover:underline" href="https://www.hackerrank.com/profile/makuyoshi">
+                                    @makuyoshi
                                 </a>
                             </div>
                         </div>
