@@ -8,7 +8,13 @@ import {Element} from 'react-scroll'
 import {Events} from 'react-scroll';
 import Footer from "@/components/Footer.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
+import {faCodepen} from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
+/**
+ * Represents the main component of the application.
+ * @returns {ReactNode} The rendered JSX elements.
+ */
 const Main = () => {
     return (
         <>
@@ -118,11 +124,66 @@ const Main = () => {
                     </div>
                 </Element>
                 <Element name="contact" className="element">
-                    <div className="space-y-5">
-                    <h1 className="text-4xl opacity-60">Contact</h1>
-                        <p className="text-2xl break-words w-full md:w-1/2 outline outline-1 rounded-xl p-5 opacity-50">
-                            Under construction ⚒️
-                        </p>
+                    <div className="space-y-6">
+                    <h1 className="text-4xl opacity-60">Let’s get in touch</h1>
+                        <div className="text-xl break-words space-y-6 text-center outline outline-1 outline-stone-900 rounded-xl p-5 shadow-xl shadow-stone-500/20">
+                            <div>
+                                {/*GitHub*/}
+                                <i className="bi bi-github opacity-60"></i>
+                                <span className="opacity-75"> Explore my code and projects on GitHub: </span>
+                                <a className="hover:underline" href="https://github.com/makuyoshi">
+                                    @makuyoshi
+                                </a>
+                            </div>
+                            <div>
+                                {/*X*/}
+                                <i className="bi bi-twitter-x opacity-75"></i>
+                                <span className="opacity-75"> Follow me on X for bite-sized thoughts and updates: </span>
+                                <a className="hover:underline" href="https://twitter.com/makuyoshi_dev">
+                                    @makuyoshi_dev
+                                </a>
+                            </div>
+                            <div>
+                                {/*LinkedIn*/}
+                                <i className="bi bi-linkedin opacity-75"></i>
+                                <span className="opacity-75"> Let’s connect on LinkedIn and expand our professional networks: </span>
+                                <a className="hover:underline" href="#">
+
+                                </a>
+                            </div>
+                            <div>
+                                {/*Telegram*/}
+                                <i className="bi bi-telegram opacity-75"></i>
+                                <span className="opacity-75"> Reach out to me on Telegram for direct messaging: </span>
+                                <a className="hover:underline" href="#">
+
+                                </a>
+                            </div>
+                            <div>
+                                {/*Mail*/}
+                                <i className="bi bi-envelope-fill opacity-75"></i>
+                                <span className="opacity-75"> Drop me an email for collaboration or just to say hello: </span>
+                                <a className="hover:underline" href="mailto:hello@makuyoshi.dev">
+                                    contact@makuyoshi.dev
+                                </a>
+                            </div>
+                            <div>
+                                {/*CodePen*/}
+                                <FontAwesomeIcon icon={faCodepen} className="opacity-75"/>
+                                <span className="opacity-75"> Explore my creative side on CodePen: </span>
+                                <a className="hover:underline" href="https://codepen.io/makuyoshi">
+                                    @makuyoshi
+                                </a>
+                            </div>
+                            <div>
+                                {/*LeetCode*/}
+                                <i className="bi bi-code-slash opacity-75"></i>
+                                <span className="opacity-75"> Solving coding puzzles? Check out my LeetCode profile: </span>
+                                <a className="hover:underline" href="https://leetcode.com/u/makuyoshi/">
+                                    makuyoshi
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </Element>
             </main>
