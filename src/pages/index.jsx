@@ -54,7 +54,7 @@ const Main = () => {
                             </div>
                             <div>
                                 <p className="text-2xl w-full outline outline-1 outline-stone-600 rounded-xl p-3 shadow-2xl shadow-stone-500/20">
-                                    <span className="opacity-50">im good at… </span><TypingAnimation/>
+                                    <span className="opacity-50">skills include… </span><TypingAnimation/>
                                 </p>
                             </div>
                         </div>
@@ -100,21 +100,19 @@ const Main = () => {
                                     highstorm.makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i>
                                 </a>
                             </div>
-                            {/* Project: DC Helper*/}
+                            {/* Project: Vycetka*/}
                             <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
-                                <h2 className="text-2xl">DC Helper</h2>
+                                <Image src="/header-nav-vycatkaLogo.png" alt="vycetka logo" width={220} height={220}>
+
+                                </Image>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
+                                    This is an accounting tool that allows you to count the amount of banknotes and coins that are in your cash register.
                                 </p>
-                                <a className="opacity-75">
-                                    Private <i className="bi bi-lock-fill"></i></a>
+                                <a className="opacity-75" href="https://github.com/makuyoshi/vycetka">
+                                    vycetka <i className="bi bi-github"></i></a>
                                 <a className="opacity-75 hover:underline" href="https://github.com/makuyoshi/DCHelper-beta">
-                                    DCHelper-beta <i className="bi bi-github"></i></a>
+                                    vycetka.makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i>
+                                </a>
                             </div>
                         </div>
                         <div
@@ -126,67 +124,67 @@ const Main = () => {
                 <Element name="contact" className="element">
                     <div className="space-y-6">
                     <h1 className="text-4xl opacity-70">Let’s get in touch</h1>
-                        <div className="flex flex-col w-3/4 text-xl break-words space-y-5 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                        <div className="flex flex-col w-6/7 text-xl break-words space-y-5 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                             <div>
                                 {/*GitHub*/}
                                 <i className="bi bi-github opacity-60"></i>
-                                <span className="opacity-75"> Explore my code and projects on GitHub: </span>
+                                <span className="opacity-60"> Explore my code and projects on GitHub: </span>
                                 <a className="hover:underline" href="https://github.com/makuyoshi">
                                     @makuyoshi
                                 </a>
                             </div>
                             <div>
                                 {/*X*/}
-                                <i className="bi bi-twitter-x opacity-75"></i>
-                                <span className="opacity-75"> Follow me on X for bite-sized thoughts and updates: </span>
+                                <i className="bi bi-twitter-x opacity-60"></i>
+                                <span className="opacity-60"> Follow me on X for bite-sized thoughts and updates: </span>
                                 <a className="hover:underline" href="https://twitter.com/makuyoshi_dev">
                                     @makuyoshi_dev
                                 </a>
                             </div>
                             <div>
                                 {/*LinkedIn*/}
-                                <i className="bi bi-linkedin opacity-75"></i>
-                                <span className="opacity-75"> Let’s connect on LinkedIn and expand our professional networks: </span>
+                                <i className="bi bi-linkedin opacity-60"></i>
+                                <span className="opacity-60"> Let’s connect on LinkedIn and expand our professional networks: </span>
                                 <a className="hover:underline" href="#">
 
                                 </a>
                             </div>
                             <div>
                                 {/*Telegram*/}
-                                <i className="bi bi-telegram opacity-75"></i>
-                                <span className="opacity-75"> Reach out to me on Telegram for direct messaging: </span>
+                                <i className="bi bi-telegram opacity-60"></i>
+                                <span className="opacity-60"> Reach out to me on Telegram for direct messaging: </span>
                                 <a className="hover:underline" href="#">
 
                                 </a>
                             </div>
                             <div>
                                 {/*Mail*/}
-                                <i className="bi bi-envelope-fill opacity-75"></i>
-                                <span className="opacity-75"> Drop me an email for collaboration or just to say hello: </span>
+                                <i className="bi bi-envelope-fill opacity-60"></i>
+                                <span className="opacity-60"> Drop me an email for collaboration or just to say hello: </span>
                                 <a className="hover:underline" href="mailto:hello@makuyoshi.dev">
                                     contact@makuyoshi.dev
                                 </a>
                             </div>
                             <div>
                                 {/*CodePen*/}
-                                <FontAwesomeIcon icon={faCodepen} className="opacity-75"/>
-                                <span className="opacity-75"> Explore my creative side on CodePen: </span>
+                                <FontAwesomeIcon icon={faCodepen} className="opacity-60"/>
+                                <span className="opacity-60"> Explore my creative side on CodePen: </span>
                                 <a className="hover:underline" href="https://codepen.io/makuyoshi">
                                     @makuyoshi
                                 </a>
                             </div>
                             <div>
                                 {/*LeetCode*/}
-                                <i className="bi bi-code-slash opacity-75"></i>
-                                <span className="opacity-75"> Solving coding puzzles? Check out my LeetCode profile: </span>
+                                <i className="bi bi-code-slash opacity-60"></i>
+                                <span className="opacity-60"> Solving coding puzzles? Check out my LeetCode profile: </span>
                                 <a className="hover:underline" href="https://leetcode.com/u/makuyoshi/">
                                     makuyoshi
                                 </a>
                             </div>
                             <div>
                                 {/*HackerRank*/}
-                                <FontAwesomeIcon icon={faHackerrank} className="opacity-75"/>
-                                <span className="opacity-75"> Explore my HackerRank Profile to discover my coding journey and challenges: </span>
+                                <FontAwesomeIcon icon={faHackerrank} className="opacity-60"/>
+                                <span className="opacity-60"> Explore my HackerRank Profile to discover my coding journey and challenges: </span>
                                 <a className="hover:underline" href="https://www.hackerrank.com/profile/makuyoshi">
                                     @makuyoshi
                                 </a>
