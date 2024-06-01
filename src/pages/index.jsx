@@ -22,7 +22,7 @@ const Main = () => {
                 <Element name="hello" className="element flex flex-row justify-start text-4xl">
                     <div className="">
                         <div>
-                            <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent animate-fade-left animate-once">
+                            <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent animate-fade-left animate-once bold">
                                 Max Yushkevich
                             </h1>
                             <h2 className="text-stone-500 animate-fade-right animate-once">Front-end web developer</h2>
