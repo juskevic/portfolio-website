@@ -31,9 +31,7 @@ footer  {
 }
 
 .active {
-    background-color: var(--silver);
-    color: black;
-    border-radius: 10px;
+    color: var(--timberwolf);
 }
 
 #project-highstorm {
