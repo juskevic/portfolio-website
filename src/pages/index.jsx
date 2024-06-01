@@ -22,20 +22,19 @@ const Main = () => {
                 <Element name="hello" className="element flex flex-row justify-start text-4xl">
                     <div className="">
                         <div>
-                            <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent">
+                            <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent animate-fade-left animate-once">
                                 Max Yushkevich
                             </h1>
-                            <h2 className="opacity-50">Front-end web developer</h2>
+                            <h2 className="text-stone-500 animate-fade-right animate-once">Front-end web developer</h2>
                             <Socials/>
                         </div>
                     </div>
-                    <div className="pl-32">
-                        <Image src="" className="rounded-full object-cover shadow-2xl shadow-stone-500/20" alt="Profile" height="150"
-                               width="150"/>
+                    <div className="pl-32 animate-fade-left animate-once animate-delay-200 animate-ease-out">
+                        <Image src="/Profile_avatar_placeholder_large.png" className="rounded-full object-cover shadow-2xl shadow-stone-500/20 outline outline-3 outline-stone-600" alt="Profile" height="150" width="150"/>
                     </div>
                 </Element>
-                <Element name="about" className="element space-y-5">
-                    <h1 className="text-3xl opacity-70 ">Let me tell you a bit about myself</h1>
+                <Element name="about" className="element space-y-5 animate-fade-right animate-once animate-delay-500 animate-ease-out">
+                    <h1 className="text-3xl opacity-70 ">Let me tell you a bit about myself 👇</h1>
                     <div className="space-x-8 flex flex-row">
                         <p className="text-2xl break-words h-1/2 w-1/2 outline outline-2 outline-stone-600 rounded-xl p-7 shadow-2xl shadow-stone-500/20">
                             {/* eslint-disable-next-line react/no-unescaped-entities */}
@@ -48,7 +47,7 @@ const Main = () => {
                         </p>
                         <div className="flex flex-col space-y-7">
                             <div
-                                className="text-2xl h-2/3 outline outline-1 outline-stone-600 rounded-xl p-4 shadow-2xl shadow-stone-500/20">
+                                className="text-2xl h-2/3 rounded-xl p-4 shadow-2xl shadow-stone-500/20 outline outline-1 outline-stone-600">
                                 <Image className="rounded-2xl" src="" alt="Image" width={300} height={300}>
                                 </Image>
                             </div>
