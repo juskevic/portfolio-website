@@ -30,7 +30,7 @@ const Main = () => {
                         </div>
                     </div>
                     <div className="pl-32">
-                        <Image src="/makuyoshiLogo.png" className="rounded-full object-cover shadow-2xl shadow-stone-500/20" alt="Profile" height="150"
+                        <Image src="" className="rounded-full object-cover shadow-2xl shadow-stone-500/20" alt="Profile" height="150"
                                width="150"/>
                     </div>
                 </Element>
@@ -62,7 +62,7 @@ const Main = () => {
                 </Element>
                 <Element name="projects" className="element">
                     <div className="space-y-5">
-                        <h1 className="text-4xl opacity-70">Check out my projects</h1>
+                        <h1 className="text-4xl opacity-70">Check out my projects ✨</h1>
                         <div className="flex flex-row space-x-8">
                             {/* Project: Portfolio website*/}
                             <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
@@ -106,9 +106,9 @@ const Main = () => {
 
                                 </Image>
                                 <p>
-                                    This is an accounting tool that allows you to count the amount of banknotes and coins that are in your cash register.
+                                    This is an accounting tool build using Bootstrap that allows you to count the amount of banknotes and coins that are in your cash register.
                                 </p>
-                                <a className="opacity-75" href="https://github.com/makuyoshi/vycetka">
+                                <a className="opacity-75 hover:underline" href="https://github.com/makuyoshi/vycetka">
                                     vycetka <i className="bi bi-github"></i></a>
                                 <a className="opacity-75 hover:underline" href="https://github.com/makuyoshi/DCHelper-beta">
                                     vycetka.makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i>
