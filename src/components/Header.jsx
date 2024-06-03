@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <>
             <header className="">
-                <nav className="flex flex-row justify-center pt-4 p-4 w-full text-2xl space-x-32 fixed text-stone-400">
+                <nav className="flex flex-row justify-center pt-4 p-4 w-full text-2xl space-x-32 fixed text-stone-400 z-50">
                     <div className="flex flex-row space-x-8 outline outline-1 rounded-2xl p-2 bg-black shadow-sm shadow-stone-500/20 animate-fade-down animate-once animate-delay-200 animate-ease-out">
                         <Link href="/#hello" activeClass="active" className="text-stone-600" to="hello" spy={true} smooth={true} offset={-200} duration={500}>hello</Link>
                         <Link href="/#about" activeClass="active" className="text-stone-600" to="about" spy={true} smooth={true} offset={-120} duration={500}>about</Link>
