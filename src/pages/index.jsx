@@ -64,26 +64,22 @@ const Main = () => {
                         <div className="flex justify-between items-center p-2 opacity-90">
                             <h3 className="text-lg">31.12.2024</h3>
                             <div className="border w-2/3 border-stone-800 rounded-xl"></div>
-                            <h3 className="text-lg text-right">Coming soon <i
-                                className="bi bi-arrow-up-right opacity-40"></i></h3>
+                            <h3 className="text-lg text-right">Coming soon <i className="bi bi-arrow-up-right opacity-40"></i></h3>
                         </div>
                         <div className="flex justify-between items-center p-2 opacity-70">
                             <h3 className="text-lg">31.12.2024</h3>
                             <div className="border w-2/3 border-stone-800 rounded-xl"></div>
-                            <h3 className="text-lg text-right">Coming soon <i
-                                className="bi bi-arrow-up-right opacity-40"></i></h3>
+                            <h3 className="text-lg text-right">Coming soon <i className="bi bi-arrow-up-right opacity-40"></i></h3>
                         </div>
                         <div className="flex justify-between items-center p-2 opacity-50">
                             <h3 className="text-lg">31.12.2024</h3>
                             <div className="border w-2/3 border-stone-800 rounded-xl"></div>
-                            <h3 className="text-lg text-right">Coming soon <i
-                                className="bi bi-arrow-up-right opacity-40"></i></h3>
+                            <h3 className="text-lg text-right">Coming soon <i className="bi bi-arrow-up-right opacity-40"></i></h3>
                         </div>
                         <div className="flex justify-between items-center p-2 opacity-20">
                             <h3 className="text-lg">31.12.2024</h3>
                             <div className="border w-2/3 border-stone-800 rounded-xl"></div>
-                            <h3 className="text-lg text-right">Coming soon <i
-                                className="bi bi-arrow-up-right opacity-40"></i></h3>
+                            <h3 className="text-lg text-right">Coming soon <i className="bi bi-arrow-up-right opacity-40"></i></h3>
                         </div>
                     </div>
                 </Element>
@@ -151,70 +147,88 @@ const Main = () => {
                 <Element name="contact" className="element">
                     <div className="space-y-6">
                     <h1 className="text-4xl opacity-70">Let’s get in touch</h1>
-                        <div className="flex flex-col w-6/7 text-xl break-words space-y-5 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                        <div
+                            className="flex flex-col w-6/7 text-xl break-words space-y-5 p-5">
                             <div>
                                 {/*GitHub*/}
-                                <i className="bi bi-github opacity-60"></i>
-                                <span className="opacity-60"> Explore my code and projects on GitHub: </span>
-                                <a className="hover:underline" href="https://github.com/makuyoshi">
-                                    @makuyoshi
+                                <i className="bi bi-github"></i>
+                                <span className="opacity-90"> Explore my code and projects on </span>
+                                <a className="hover:underline text-right" href="https://github.com/makuyoshi">
+                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                        GITHUB <i className="bi bi-arrow-up-right"></i>
+                                    </button>
                                 </a>
                             </div>
                             <div>
                                 {/*X*/}
-                                <i className="bi bi-twitter-x opacity-60"></i>
-                                <span className="opacity-60"> Follow me on X for bite-sized thoughts and updates: </span>
+                                <i className="bi bi-twitter-x"></i>
+                                <span className="opacity-90"> Follow me on X for bite-sized thoughts and updates </span>
                                 <a className="hover:underline" href="https://twitter.com/makuyoshi_dev">
-                                    @makuyoshi_dev
+                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                        X <i className="bi bi-arrow-up-right"></i>
+                                    </button>
                                 </a>
                             </div>
                             <div>
                                 {/*LinkedIn*/}
-                                <i className="bi bi-linkedin opacity-60"></i>
-                                <span className="opacity-60"> Let’s connect on LinkedIn and expand our professional networks: </span>
+                                <i className="bi bi-linkedin"></i>
+                                <span className="opacity-90"> Let’s connect on LinkedIn and expand our professional networks </span>
                                 <a className="hover:underline" href="#">
-
+                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                        LINKED IN <i className="bi bi-arrow-up-right"></i>
+                                    </button>
                                 </a>
                             </div>
                             <div>
                                 {/*Telegram*/}
-                                <i className="bi bi-telegram opacity-60"></i>
-                                <span className="opacity-60"> Reach out to me on Telegram for direct messaging: </span>
+                                <i className="bi bi-telegram"></i>
+                                <span className="opacity-90"> Reach out to me on Telegram for direct messaging </span>
                                 <a className="hover:underline" href="#">
-
-                                </a>
-                            </div>
-                            <div>
-                                {/*Mail*/}
-                                <i className="bi bi-envelope-fill opacity-60"></i>
-                                <span className="opacity-60"> Drop me an email for collaboration or just to say hello: </span>
-                                <a className="hover:underline" href="mailto:hello@makuyoshi.dev">
-                                    contact@makuyoshi.dev
+                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                        TELEGRAM <i className="bi bi-arrow-up-right"></i>
+                                    </button>
                                 </a>
                             </div>
                             <div>
                                 {/*CodePen*/}
-                                <FontAwesomeIcon icon={faCodepen} className="opacity-60"/>
-                                <span className="opacity-60"> Explore my creative side on CodePen: </span>
+                                <FontAwesomeIcon icon={faCodepen}/>
+                                <span className="opacity-90"> Explore my creative side on </span>
                                 <a className="hover:underline" href="https://codepen.io/makuyoshi">
-                                    @makuyoshi
+                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                        CODEPEN <i className="bi bi-arrow-up-right"></i>
+                                    </button>
                                 </a>
                             </div>
                             <div>
                                 {/*LeetCode*/}
-                                <i className="bi bi-code-slash opacity-60"></i>
-                                <span className="opacity-60"> Solving coding puzzles? Check out my LeetCode profile: </span>
+                                <i className="bi bi-code-slash"></i>
+                                <span className="opacity-90"> Solving coding puzzles? Check out my </span>
                                 <a className="hover:underline" href="https://leetcode.com/u/makuyoshi/">
-                                    makuyoshi
+                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                        LEETCODE <i className="bi bi-arrow-up-right"></i>
+                                    </button>
                                 </a>
                             </div>
                             <div>
                                 {/*HackerRank*/}
-                                <FontAwesomeIcon icon={faHackerrank} className="opacity-60"/>
-                                <span className="opacity-60"> Explore my HackerRank Profile to discover my coding journey and challenges: </span>
+                                <FontAwesomeIcon icon={faHackerrank}/>
+                                <span className="opacity-90"> Explore my HackerRank Profile to discover my coding journey and challenges </span>
                                 <a className="hover:underline" href="https://www.hackerrank.com/profile/makuyoshi">
-                                    @makuyoshi
+                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                        HACKERRANK <i className="bi bi-arrow-up-right"></i>
+                                    </button>
                                 </a>
+                            </div>
+                            <div>
+                                {/*Mail*/}
+                                <i className="bi bi-envelope-fill"></i>
+                                <span className="opacity-90"> Drop me an email for collaboration or just to say hello </span>
+                                <a className="hover:underline" href="mailto:hello@makuyoshi.dev">
+                                    contact@makuyoshi.dev
+                                </a>
+                            </div>
+                            <div className="text-stone-500 text-center">
+                                Contact section is still under development <i className="bi bi-exclamation-circle align-middle"></i>
                             </div>
                         </div>
                     </div>
