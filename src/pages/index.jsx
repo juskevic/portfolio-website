@@ -262,7 +262,8 @@ const HomePage = () => {
     return (
         <>
             <Head>
-                <title>Index | makuyoshi.dev</title>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                <title>Max's Portfolio</title>
 
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -272,6 +273,7 @@ const HomePage = () => {
                 <meta name="robots" content="index, follow"/>
                 <link rel="canonical" href="https://www.makuyoshi.dev"/>
                 <link rel="alternate" hrefLang="en-us" href="https://wwww.makuyoshi.dev"/>
+                <link rel="icon" href="/coffee-9.gif" />
 
                 <meta property="og:title" content="Makuyoshi.dev"/>
                 <meta property="og:description" content="Makuyoshi's portfolio website build using Next.js"/>
