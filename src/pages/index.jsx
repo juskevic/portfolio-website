@@ -100,7 +100,7 @@ const Main = () => {
                                     makuyoshi-web <i className="bi bi-github"></i>
                                 </a>
                                 <a className="opacity-75 hover:underline" href="https://www.makuyoshi.dev/">
-                                    makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i>
+                                    makuyoshi.dev <i className="bi bi-arrow-up-right"></i>
                                 </a>
                             </div>
                             {/* Project: Highstorm*/}
@@ -118,7 +118,7 @@ const Main = () => {
                                     highstorm <i className="bi bi-github"></i>
                                 </a>
                                 <a className="opacity-75 hover:underline" href="https://highstorm.makuyoshi.dev/">
-                                    highstorm.makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i>
+                                    highstorm.makuyoshi.dev <i className="bi bi-arrow-up-right"></i>
                                 </a>
                             </div>
                             {/* Project: Vycetka*/}
@@ -132,7 +132,7 @@ const Main = () => {
                                 <a className="opacity-75 hover:underline" href="https://github.com/makuyoshi/vycetka">
                                     vycetka <i className="bi bi-github"></i></a>
                                 <a className="opacity-75 hover:underline" href="https://github.com/makuyoshi/DCHelper-beta">
-                                    vycetka.makuyoshi.dev <i className="bi bi-box-arrow-up-right"></i>
+                                    vycetka.makuyoshi.dev <i className="bi bi-arrow-up-right"></i>
                                 </a>
                             </div>
                         </div>
