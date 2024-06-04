@@ -269,14 +269,14 @@ const HomePage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
                 <meta name="description"
-                      content="Makuyoshi's portfolio website build using Next.js ✨"/>
+                      content="Max's amazing portfolio website ✨"/>
                 <meta name="robots" content="index, follow"/>
                 <link rel="canonical" href="https://www.makuyoshi.dev"/>
                 <link rel="alternate" hrefLang="en-us" href="https://wwww.makuyoshi.dev"/>
                 <link rel="icon" href="/coffee-9.gif" />
 
-                <meta property="og:title" content="Makuyoshi.dev"/>
-                <meta property="og:description" content="Makuyoshi's portfolio website build using Next.js"/>
+                <meta property="og:title" content="Max's Portfolio"/>
+                <meta property="og:description" content="Max's amazing portfolio website ✨"/>
                 <meta property="og:url" content="https://makuyoshi.dev"/>
 
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
