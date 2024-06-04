@@ -145,91 +145,89 @@ const Main = () => {
                     </div>
                 </Element>
                 <Element name="contact" className="element">
-                    <div className="space-y-6">
-                    <h1 className="text-4xl opacity-70">Let’s get in touch</h1>
-                        <div
-                            className="flex flex-col w-6/7 text-xl break-words space-y-5 p-5">
-                            <div>
-                                {/*GitHub*/}
-                                <i className="bi bi-github"></i>
-                                <span className="opacity-90"> Explore my code and projects on </span>
-                                <a className="hover:underline text-right" href="https://github.com/makuyoshi">
-                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                        GITHUB <i className="bi bi-arrow-up-right"></i>
-                                    </button>
-                                </a>
+                    <div className="space-y-5">
+                        <h1 className="text-4xl opacity-70">Let’s get in touch</h1>
+                        {/*Main container*/}
+                        <div className="flex flex-row justify-center space-x-8 w-6/7 text-xl break-words p-5">
+                            {/*Right side*/}
+                            <div className="space-y-5">
+                                <div>
+                                    <i className="bi bi-github"></i>
+                                    <span className="opacity-90"> Take a look at my code and projects. </span>
+                                </div>
+                                <div>
+                                    <i className="bi bi-stack-overflow"></i>
+                                    <span className="opacity-90"> Visit my Stack Overflow for my coding contributions and queries. </span>
+                                </div>
+                                <div>
+                                    <i className="bi bi-linkedin"></i>
+                                    <span className="opacity-90"> Let’s connect on LinkedIn and expand our professional networks. </span>
+                                </div>
+                                <div>
+                                    <i className="bi bi-telegram"></i>
+                                    <span className="opacity-90"> Contact me on Telegram for direct messaging. </span>
+                                </div>
                             </div>
-                            <div>
-                                {/*X*/}
-                                <i className="bi bi-twitter-x"></i>
-                                <span className="opacity-90"> Follow me on X for bite-sized thoughts and updates </span>
-                                <a className="hover:underline" href="https://twitter.com/makuyoshi_dev">
-                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                        X <i className="bi bi-arrow-up-right"></i>
-                                    </button>
-                                </a>
+                            {/*Left side*/}
+                            <div className="space-y-5">
+                                <div>
+                                    <a className="hover:underline text-right" href="https://github.com/makuyoshi">
+                                        <button
+                                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                            GITHUB <i className="bi bi-arrow-up-right"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a className="hover:underline"
+                                       href="https://stackoverflow.com/users/21579330/makuyoshi">
+                                        <button
+                                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                            STACK OVERFLOW <i className="bi bi-arrow-up-right"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a className="hover:underline" href="#">
+                                        <button
+                                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                            LINKED IN <i className="bi bi-arrow-up-right"></i>
+                                        </button>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a className="hover:underline" href="#">
+                                        <button
+                                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                            TELEGRAM <i className="bi bi-arrow-up-right"></i>
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
-                            <div>
-                                {/*LinkedIn*/}
-                                <i className="bi bi-linkedin"></i>
-                                <span className="opacity-90"> Let’s connect on LinkedIn and expand our professional networks </span>
-                                <a className="hover:underline" href="#">
-                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                        LINKED IN <i className="bi bi-arrow-up-right"></i>
-                                    </button>
-                                </a>
-                            </div>
-                            <div>
-                                {/*Telegram*/}
-                                <i className="bi bi-telegram"></i>
-                                <span className="opacity-90"> Reach out to me on Telegram for direct messaging </span>
-                                <a className="hover:underline" href="#">
-                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                        TELEGRAM <i className="bi bi-arrow-up-right"></i>
-                                    </button>
-                                </a>
-                            </div>
-                            <div>
-                                {/*CodePen*/}
-                                <FontAwesomeIcon icon={faCodepen}/>
-                                <span className="opacity-90"> Explore my creative side on </span>
-                                <a className="hover:underline" href="https://codepen.io/makuyoshi">
-                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                        CODEPEN <i className="bi bi-arrow-up-right"></i>
-                                    </button>
-                                </a>
-                            </div>
-                            <div>
-                                {/*LeetCode*/}
-                                <i className="bi bi-code-slash"></i>
-                                <span className="opacity-90"> Solving coding puzzles? Check out my </span>
-                                <a className="hover:underline" href="https://leetcode.com/u/makuyoshi/">
-                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                        LEETCODE <i className="bi bi-arrow-up-right"></i>
-                                    </button>
-                                </a>
-                            </div>
-                            <div>
-                                {/*HackerRank*/}
-                                <FontAwesomeIcon icon={faHackerrank}/>
-                                <span className="opacity-90"> Explore my HackerRank Profile to discover my coding journey and challenges </span>
-                                <a className="hover:underline" href="https://www.hackerrank.com/profile/makuyoshi">
-                                    <button className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                        HACKERRANK <i className="bi bi-arrow-up-right"></i>
-                                    </button>
-                                </a>
-                            </div>
-                            <div>
-                                {/*Mail*/}
-                                <i className="bi bi-envelope-fill"></i>
-                                <span className="opacity-90"> Drop me an email for collaboration or just to say hello </span>
-                                <a className="hover:underline" href="mailto:hello@makuyoshi.dev">
-                                    contact@makuyoshi.dev
-                                </a>
-                            </div>
-                            <div className="text-stone-500 text-center">
-                                Contact section is still under development <i className="bi bi-exclamation-circle align-middle"></i>
-                            </div>
+                        </div>
+                        <div className="flex flex-row justify-center space-x-4 text-lg opacity-80">
+                            <a className="hover:underline" href="https://codepen.io/makuyoshi">
+                                <button
+                                    className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                    CODEPEN <i className="bi bi-arrow-up-right"></i>
+                                </button>
+                            </a>
+                            <a className="hover:underline" href="https://leetcode.com/u/makuyoshi/">
+                                <button
+                                    className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                    LEETCODE <i className="bi bi-arrow-up-right"></i>
+                                </button>
+                            </a>
+                            <a className="hover:underline" href="https://www.hackerrank.com/profile/makuyoshi">
+                                <button
+                                    className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
+                                    HACKERRANK <i className="bi bi-arrow-up-right"></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div className="text-stone-500 text-center">
+                            Contact section is still under development <i
+                            className="bi bi-exclamation-circle align-middle"></i>
                         </div>
                     </div>
                 </Element>
