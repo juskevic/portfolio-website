@@ -80,67 +80,67 @@ const Main = () => {
                             <h3 className="text-lg text-right">Coming soon <i className="bi bi-arrow-up-right opacity-40"></i></h3>
                         </div>
                     </div>
+                    <div> {/*remove later*/}
+                        <div
+                            className="flex flex-col text-center">
+                            <div className="text-stone-500 text-center">
+                                About Me section is still under development <i
+                                className="bi bi-exclamation-circle align-middle"></i>
+                            </div>
+                        </div>
+                    </div>
                 </Element>
                 <Element name="projects" className="element">
                     <div className="space-y-5">
                         <h1 className="text-4xl opacity-70">Check out my projects ✨</h1>
                         <div className="flex flex-row space-x-8">
-                            {/* Project: Portfolio website*/}
-                            <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
-                                <h2 className="text-2xl">Portfolio website</h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
-                                </p>
-                                <a className="opacity-75 hover:underline" href="https://github.com/makuyoshi/makuyoshi-web">
-                                    makuyoshi-web <i className="bi bi-github"></i>
-                                </a>
-                                <a className="opacity-75 hover:underline" href="https://www.makuyoshi.dev/">
-                                    makuyoshi.dev <i className="bi bi-arrow-up-right"></i>
-                                </a>
-                            </div>
                             {/* Project: Highstorm*/}
-                            <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-2 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
-                                <h2 id="project-highstorm" className="text-2xl">Highstorm</h2>
+                            <div className="flex flex-col h-1/2 w-full space-y-4 outline outline-1 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
+                                <div className="flex flex-row justify-between">
+                                    <h2 id="project-highstorm" className="text-2xl">Highstorm</h2>
+                                    <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
+                                       href="https://highstorm.makuyoshi.dev/">
+                                        <i className="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.
+                                    Highstorm is a web application that I developed in 2024. It was my first attempt at
+                                    utilising an API, and it was built using Bootstrap. The app shows basic weather info
+                                    for a given location, including temperature, humidity, clouds, sunset, and sunrise.
                                 </p>
-                                <a className="opacity-75 hover:underline" href="https://github.com/makuyoshi/highstorm">
-                                    highstorm <i className="bi bi-github"></i>
-                                </a>
-                                <a className="opacity-75 hover:underline" href="https://highstorm.makuyoshi.dev/">
-                                    highstorm.makuyoshi.dev <i className="bi bi-arrow-up-right"></i>
-                                </a>
+                            </div>
+                            {/*Project: Portfolio Website*/}
+                            <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-2 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
+                                <div className="flex flex-row justify-between">
+                                    <h2 className="text-2xl">Portfolio Website</h2>
+                                    <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
+                                       href="https://www.makuyoshi.dev/">
+                                        <i className="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                                <p>
+                                    My portfolio website is the first front-end project I have undertaken. Initially
+                                    developed using basic HTML and CSS, it has since been enhanced with the use of
+                                    modern frameworks such as Next.js and React. It incorporates multiple JavaScript
+                                    libraries to achieve a contemporary look and feel. I am delighted with the result
+                                    and continue to work on it to this day, despite having made over 500 commits.
+                                </p>
                             </div>
                             {/* Project: Vycetka*/}
-                            <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
-                                <Image src="/header-nav-vycatkaLogo.png" alt="vycetka logo" width={220} height={220}>
-
-                                </Image>
+                            <div
+                                className="flex flex-col h-1/2 w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                                <div className="flex flex-row justify-between">
+                                    <Image src="/header-nav-vycatkaLogo.png" alt="vycetka logo" width={220}
+                                           height={220}></Image>
+                                    <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
+                                       href="https://vycetka.makuyoshi.dev/">
+                                        <i className="bi bi-arrow-up-right"></i>
+                                    </a>
+                                </div>
                                 <p>
-                                    This is an accounting tool build using Bootstrap that allows you to count the amount of banknotes and coins that are in your cash register.
+                                    This is an accounting tool build using Bootstrap that allows you to count the amount
+                                    of banknotes and coins that are in your cash register.
                                 </p>
-                                <a className="opacity-75 hover:underline" href="https://github.com/makuyoshi/vycetka">
-                                    vycetka <i className="bi bi-github"></i></a>
-                                <a className="opacity-75 hover:underline" href="https://github.com/makuyoshi/DCHelper-beta">
-                                    vycetka.makuyoshi.dev <i className="bi bi-arrow-up-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            className="flex flex-col text-center">
-                            <div className="text-stone-500 text-center">
-                                Projects section is still under development <i
-                                className="bi bi-exclamation-circle align-middle"></i>
                             </div>
                         </div>
                     </div>
