@@ -137,8 +137,11 @@ const Main = () => {
                             </div>
                         </div>
                         <div
-                            className="flex flex-col text-center w-1/6 outline outline-1 outline-stone-600 rounded-xl p-2 shadow-2xl shadow-stone-500/20 hover:outline-1 hover:outline-stone-400">
-                            <a href="#">View more <i className="bi bi-arrow-right"></i></a>
+                            className="flex flex-col text-center">
+                            <div className="text-stone-500 text-center">
+                                Projects section is still under development <i
+                                className="bi bi-exclamation-circle align-middle"></i>
+                            </div>
                         </div>
                     </div>
                 </Element>
@@ -234,6 +237,12 @@ const Main = () => {
     )
 }
 
+/**
+ * Represents the home page of the portfolio website.
+ * @function HomePage
+ *
+ * @returns {JSX.Element} The home page component.
+ */
 const HomePage = () => {
     useEffect(() => {
         Events.scrollEvent.register('begin', function () {
