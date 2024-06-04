@@ -8,8 +8,6 @@ import {Element} from 'react-scroll'
 import {Events} from 'react-scroll';
 import Footer from "@/components/Footer.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
-import {faCodepen, faHackerrank} from "@fortawesome/free-brands-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 /**
  * Represents the main component of the application.
@@ -145,8 +143,8 @@ const Main = () => {
                     </div>
                 </Element>
                 <Element name="contact" className="element">
-                    <div className="space-y-5">
-                        <h1 className="text-4xl opacity-70">Let’s get in touch</h1>
+                    <div className="space-y-6">
+                        <h1 className="text-4xl opacity-70 pb-6">Let’s get in touch</h1>
                         {/*Main container*/}
                         <div className="flex flex-row justify-center space-x-8 w-6/7 text-xl break-words p-5">
                             {/*Right side*/}
