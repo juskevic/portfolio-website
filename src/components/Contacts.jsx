@@ -4,8 +4,12 @@ const Contacts = () => {
 
     return (
         <div className="flex flex-row justify-center space-x-14 w-6/7 text-xl break-words p-5">
-            {/*Right side*/}
+            {/*Left side*/}
             <div className="space-y-5 text-left">
+                <div className="pb-1">
+                    <i className="bi bi-envelope"> </i>
+                    <span className="opacity-90"> Drop me an email for collaboration or just to say hello. </span>
+                </div>
                 <div>
                     <i className="bi bi-github"></i>
                     <span className="opacity-90"> Take a look at my code and projects. </span>
@@ -25,8 +29,13 @@ const Contacts = () => {
                     <span className="opacity-90"> Contact me on Telegram for direct messaging. </span>
                 </div>
             </div>
-            {/*Left side*/}
+            {/*Right side*/}
             <div className="space-y-5 text-right">
+                <div className="pb-1">
+                    <a>
+                        contact@makuyoshi.com
+                    </a>
+                </div>
                 <div>
                     <a className="hover:underline text-right" href="https://github.com/makuyoshi">
                         <button
