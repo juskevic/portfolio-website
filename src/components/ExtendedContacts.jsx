@@ -34,7 +34,7 @@ function ExtendedContacts() {
                     {/*Left extended*/}
                     <div className="space-y-5 text-right">
                         <div className="animate-fade-down animate-once animate-delay-100 animate-ease-out">
-                            <a className="hover:underline text-right " href="https://github.com/makuyoshi">
+                            <a className="hover:underline text-right">
                                 <button
                                     className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
                                     CODEPEN <i className="bi bi-arrow-up-right"></i>
@@ -42,8 +42,7 @@ function ExtendedContacts() {
                             </a>
                         </div>
                         <div className="animate-fade-down animate-once animate-delay-200 animate-ease-out">
-                            <a className="hover:underline"
-                               href="https://stackoverflow.com/users/21579330/makuyoshi">
+                            <a className="hover:underline">
                                 <button
                                     className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
                                     LEETCODE <i className="bi bi-arrow-up-right"></i>
