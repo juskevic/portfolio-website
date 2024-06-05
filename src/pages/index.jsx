@@ -1,15 +1,16 @@
 import React, {useEffect} from 'react';
+import {Element, Events} from 'react-scroll';
 import Head from 'next/head';
-import Header from "@/components/Header.jsx";
-import Socials from "@/components/Socials.jsx"
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import Image from "next/image";
-import {Element} from 'react-scroll'
-import {Events} from 'react-scroll';
-import Footer from "@/components/Footer.jsx";
-import TypingAnimation from "@/components/TypingAnimation.jsx";
-import ExtendedContacts from "@/components/ExtendedContacts.jsx";
+
 import Contacts from "@/components/Contacts.jsx";
+import ExtendedContacts from "@/components/ExtendedContacts.jsx";
+import Footer from "@/components/Footer.jsx";
+import Header from "@/components/Header.jsx";
+import Socials from "@/components/Socials.jsx";
+import TypingAnimation from "@/components/TypingAnimation.jsx";
+
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 /**
  * Represents the main component of the application.
