@@ -9,6 +9,7 @@ import {Events} from 'react-scroll';
 import Footer from "@/components/Footer.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
 import ExtendedContacts from "@/components/ExtendedContacts.jsx";
+import Contacts from "@/components/Contacts.jsx";
 
 /**
  * Represents the main component of the application.
@@ -149,64 +150,7 @@ const Main = () => {
                 <Element name="contact" className="element">
                     <div className="space-y-6">
                         <h1 className="text-4xl opacity-70 pb-6">Let’s get in touch</h1>
-                        {/*Main container*/}
-                        <div className="flex flex-row justify-center space-x-14 w-6/7 text-xl break-words p-5">
-                            {/*Right side*/}
-                            <div className="space-y-5 text-left">
-                                <div>
-                                    <i className="bi bi-github"></i>
-                                    <span className="opacity-90"> Take a look at my code and projects. </span>
-                                </div>
-                                <div>
-                                    <i className="bi bi-stack-overflow"></i>
-                                    <span className="opacity-90"> Visit my Stack Overflow for my coding contributions and queries. </span>
-                                </div>
-                                <div>
-                                    <i className="bi bi-linkedin"></i>
-                                    <span className="opacity-90"> Let’s connect on LinkedIn and expand our professional networks. </span>
-                                </div>
-                                <div>
-                                    <i className="bi bi-telegram"></i>
-                                    <span className="opacity-90"> Contact me on Telegram for direct messaging. </span>
-                                </div>
-                            </div>
-                            {/*Left side*/}
-                            <div className="space-y-5 text-right">
-                                <div>
-                                    <a className="hover:underline text-right" href="https://github.com/makuyoshi">
-                                        <button
-                                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                            GITHUB <i className="bi bi-arrow-up-right"></i>
-                                        </button>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a className="hover:underline"
-                                       href="https://stackoverflow.com/users/21579330/makuyoshi">
-                                        <button
-                                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                            STACK OVERFLOW <i className="bi bi-arrow-up-right"></i>
-                                        </button>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a className="hover:underline" href="#">
-                                        <button
-                                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                            LINKED IN <i className="bi bi-arrow-up-right"></i>
-                                        </button>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a className="hover:underline" href="#">
-                                        <button
-                                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                            TELEGRAM <i className="bi bi-arrow-up-right"></i>
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <Contacts />
                         <ExtendedContacts />
                         <div className="text-stone-500 text-center">
                             Contact section is still under development <i
