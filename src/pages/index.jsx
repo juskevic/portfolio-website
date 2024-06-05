@@ -8,6 +8,7 @@ import {Element} from 'react-scroll'
 import {Events} from 'react-scroll';
 import Footer from "@/components/Footer.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
+import ExtendedContacts from "@/components/ExtendedContacts.jsx";
 
 /**
  * Represents the main component of the application.
@@ -149,9 +150,9 @@ const Main = () => {
                     <div className="space-y-6">
                         <h1 className="text-4xl opacity-70 pb-6">Let’s get in touch</h1>
                         {/*Main container*/}
-                        <div className="flex flex-row justify-center space-x-8 w-6/7 text-xl break-words p-5">
+                        <div className="flex flex-row justify-center space-x-14 w-6/7 text-xl break-words p-5">
                             {/*Right side*/}
-                            <div className="space-y-5">
+                            <div className="space-y-5 text-left">
                                 <div>
                                     <i className="bi bi-github"></i>
                                     <span className="opacity-90"> Take a look at my code and projects. </span>
@@ -170,7 +171,7 @@ const Main = () => {
                                 </div>
                             </div>
                             {/*Left side*/}
-                            <div className="space-y-5">
+                            <div className="space-y-5 text-right">
                                 <div>
                                     <a className="hover:underline text-right" href="https://github.com/makuyoshi">
                                         <button
@@ -206,26 +207,7 @@ const Main = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-row justify-center space-x-4 text-lg opacity-80">
-                            <a className="hover:underline" href="https://codepen.io/makuyoshi">
-                                <button
-                                    className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                    CODEPEN <i className="bi bi-arrow-up-right"></i>
-                                </button>
-                            </a>
-                            <a className="hover:underline" href="https://leetcode.com/u/makuyoshi/">
-                                <button
-                                    className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                    LEETCODE <i className="bi bi-arrow-up-right"></i>
-                                </button>
-                            </a>
-                            <a className="hover:underline" href="https://www.hackerrank.com/profile/makuyoshi">
-                                <button
-                                    className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                                    HACKERRANK <i className="bi bi-arrow-up-right"></i>
-                                </button>
-                            </a>
-                        </div>
+                        <ExtendedContacts />
                         <div className="text-stone-500 text-center">
                             Contact section is still under development <i
                             className="bi bi-exclamation-circle align-middle"></i>
@@ -273,7 +255,7 @@ const HomePage = () => {
                 <meta name="robots" content="index, follow"/>
                 <link rel="canonical" href="https://www.makuyoshi.dev"/>
                 <link rel="alternate" hrefLang="en-us" href="https://wwww.makuyoshi.dev"/>
-                <link rel="icon" href="/coffee-9.gif" />
+                <link rel="icon" href="/coffee-9.gif"/>
 
                 <meta property="og:title" content="Max's Portfolio"/>
                 <meta property="og:description" content="Max's amazing portfolio website ✨"/>
@@ -286,7 +268,8 @@ const HomePage = () => {
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
                 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet"/>
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-                <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&amp;display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&amp;display=swap"
+                      rel="stylesheet"/>
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
                 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
