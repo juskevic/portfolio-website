@@ -9,6 +9,7 @@ import Footer from "@/components/Footer.jsx";
 import Header from "@/components/Header.jsx";
 import Socials from "@/components/Socials.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
+import LatestBlogPosts from "@/components/LatestBlogPosts.jsx";
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -37,7 +38,7 @@ const Main = () => {
                 <Element name="about" className="element space-y-5 animate-fade-right animate-once animate-delay-500 animate-ease-out">
                     <h1 className="text-3xl opacity-70">Let me tell you a bit about myself 👇</h1>
                     <div className="space-x-8 flex flex-row">
-                        <p className="text-2xl break-words h-1/2 w-1/2 outline outline-2 outline-stone-600 rounded-xl p-7 shadow-2xl shadow-stone-500/20">
+                        <p className="text-xl break-words h-1/2 w-1/2 outline outline-2 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                             {/* eslint-disable-next-line react/no-unescaped-entities */}
                             Hello! I’m Max, a front-end developer passionate about crafting beautiful, responsive
                             websites with the latest tech. I focus on design and user experience, ensuring interfaces
@@ -54,34 +55,14 @@ const Main = () => {
                             </div>
                             <div>
                                 <p className="text-2xl w-full outline outline-1 outline-stone-600 rounded-xl p-3 shadow-2xl shadow-stone-500/20">
-                                    <span className="opacity-50">skills include… </span><TypingAnimation/>
+                                    <span className="opacity-50">I work with… </span><TypingAnimation/>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div
-                        className="flex flex-col space-y-1 w-2/3 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
-                        <h2 className="text-2xl opacity-70">Latest blog posts </h2>
-                        <div className="flex justify-between items-center p-2 opacity-90">
-                            <h3 className="text-lg">31.12.2024</h3>
-                            <div className="border w-2/3 border-stone-800 rounded-xl"></div>
-                            <h3 className="text-lg text-right">Coming soon <i className="bi bi-arrow-up-right opacity-40"></i></h3>
-                        </div>
-                        <div className="flex justify-between items-center p-2 opacity-70">
-                            <h3 className="text-lg">31.12.2024</h3>
-                            <div className="border w-2/3 border-stone-800 rounded-xl"></div>
-                            <h3 className="text-lg text-right">Coming soon <i className="bi bi-arrow-up-right opacity-40"></i></h3>
-                        </div>
-                        <div className="flex justify-between items-center p-2 opacity-50">
-                            <h3 className="text-lg">31.12.2024</h3>
-                            <div className="border w-2/3 border-stone-800 rounded-xl"></div>
-                            <h3 className="text-lg text-right">Coming soon <i className="bi bi-arrow-up-right opacity-40"></i></h3>
-                        </div>
-                        <div className="flex justify-between items-center p-2 opacity-20">
-                            <h3 className="text-lg">31.12.2024</h3>
-                            <div className="border w-2/3 border-stone-800 rounded-xl"></div>
-                            <h3 className="text-lg text-right">Coming soon <i className="bi bi-arrow-up-right opacity-40"></i></h3>
-                        </div>
+                        className="flex flex-col space-y-1 w-5/6 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                        <LatestBlogPosts />
                     </div>
                     <div> {/*remove later*/}
                         <div
