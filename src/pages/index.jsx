@@ -153,10 +153,6 @@ const Main = () => {
                         <h1 className="text-4xl opacity-70 pb-6">Let’s get in touch</h1>
                         <Contacts />
                         <ExtendedContacts />
-                        <div className="text-stone-500 text-center">
-                            Contact section is still under development <i
-                            className="bi bi-exclamation-circle align-middle"></i>
-                        </div>
                     </div>
                 </Element>
             </main>
