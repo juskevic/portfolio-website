@@ -33,7 +33,7 @@ const Contacts = () => {
             <div className="space-y-5 text-right">
                 <div className="pb-1">
                     <a>
-                        contact@makuyoshi.com
+                        contact@makuyoshi.dev
                     </a>
                 </div>
                 <div>
