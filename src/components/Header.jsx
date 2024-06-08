@@ -1,16 +1,23 @@
 import React from "react";
 import {Link} from 'react-scroll'
 
+/**
+ * Represents the Header component.
+ *
+ * @returns {React.Component} The rendered component.
+ */
 const Header = () => {
     return (
         <>
             <header className="">
                 <nav className="flex flex-row justify-center
-                pt-6 p-4 w-full text-xl space-x-32
+                pt-5 p-5 text-lg space-x-4
+                xl:pt-6 xl:p-4 xl:w-full xl:text-xl xl:space-x-32
                 fixed text-stone-400 z-50">
                     <div className="flex flex-row
-                    p-2
-                    space-x-8 outline outline-1 rounded-2xl
+                    space-x-5 p-2
+                    xl:p-2 xl:space-x-8
+                    outline outline-1 rounded-2xl
                     bg-black shadow-sm shadow-stone-500/20
                     animate-fade-down animate-once animate-delay-200 animate-ease-out">
                         <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500}>hello</Link>
