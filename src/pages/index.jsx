@@ -33,7 +33,7 @@ const Main = () => {
                             animate-fade-left animate-once bold">
                                 Max Yushkevich
                             </h1>
-                            <h2 className="text-stone-500 animate-fade-right animate-once text-2xl xl:text-inherit">Front-end web developer</h2>
+                            <h2 className="text-stone-500 animate-fade-right animate-once text-2xl xl:text-3xl">Front-end web developer</h2>
                             <Socials/>
                         </div>
                     </div>
@@ -166,11 +166,14 @@ const Main = () => {
                         </div>
                     </div>
                 </Element>
+                {/*CONTACT SECTION*/}
                 <Element name="contact" className="element">
                     <div className="space-y-6">
-                        <h1 className="text-4xl opacity-70 pb-6">Let’s get in touch 👋</h1>
+                        <h1 className="text-2xl xl:text-4xl opacity-70 pb-6">Let’s get in touch 👋</h1>
                         <Contacts />
-                        <ExtendedContacts />
+                        <div className="hidden xl:block">
+                            <ExtendedContacts />
+                        </div>
                     </div>
                 </Element>
             </main>
