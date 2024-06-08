@@ -20,7 +20,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const Main = () => {
     return (
         <>
-            <main className="p-72 space-y-80">
+            <main className="2xl:p-72 xl:p-64 space-y-80">
                 <Element name="hello" className="element flex flex-row justify-start text-4xl">
                     <div className="">
                         <div>
@@ -37,19 +37,31 @@ const Main = () => {
                 </Element>
                 <Element name="about" className="element space-y-5 animate-fade-right animate-once animate-delay-500 animate-ease-out">
                     <h1 className="text-3xl opacity-70">Let me tell you a bit about myself 👇</h1>
-                    <div className="space-x-8 flex flex-row">
-                        <p className="text-xl break-words h-1/2 w-1/2 outline outline-2 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
-                            {/* eslint-disable-next-line react/no-unescaped-entities */}
-                            Hello! I’m Max, a front-end developer passionate about crafting beautiful, responsive
-                            websites with the latest tech. I focus on design and user experience, ensuring interfaces
-                            are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus frameworks like
-                            React and Next.js, I’m committed to continuous learning to keep pace with industry
-                            innovations. Take a look at my portfolio, and let’s connect to explore how we can
-                            collaborate!
-                        </p>
+                    <div className="flex flex-row space-x-8">
+                        <div className="flex flex-col w-1/2 space-y-8">
+                            <div>
+                                <p className="text-xl p-5
+                                outline outline-2 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
+                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+                                    Hello! I’m Max, a front-end developer passionate about crafting beautiful,
+                                    responsive
+                                    websites with the latest tech. I focus on design and user experience, ensuring
+                                    interfaces
+                                    are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus frameworks
+                                    like
+                                    React and Next.js, I’m committed to continuous learning to keep pace with industry
+                                    innovations. Take a look at my portfolio, and let’s connect to explore how we can
+                                    collaborate!
+                                </p>
+                            </div>
+                            <div className="flex flex-col p-5
+                                outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
+                                <LatestBlogPosts/>
+                            </div>
+                        </div>
                         <div className="flex flex-col space-y-7">
                             <div
-                                className="text-2xl h-2/3 rounded-xl p-4 shadow-2xl shadow-stone-500/20 outline outline-1 outline-stone-600">
+                                className="text-2xl h-1/2 rounded-xl p-4 shadow-2xl shadow-stone-500/20 outline outline-1 outline-stone-600">
                                 <Image className="rounded-2xl" src="" alt="Image" width={300} height={300}>
                                 </Image>
                             </div>
@@ -59,10 +71,6 @@ const Main = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div
-                        className="flex flex-col space-y-1 w-5/6 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
-                        <LatestBlogPosts />
                     </div>
                     <div> {/*remove later*/}
                         <div
