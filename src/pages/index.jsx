@@ -20,7 +20,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const Main = () => {
     return (
         <>
-            <main className="2xl:p-72 xl:p-64 space-y-80">
+            <main className="xl:p-64 space-y-80">
                 <Element name="hello" className="element flex flex-row justify-start text-4xl">
                     <div className="">
                         <div>
