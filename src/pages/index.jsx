@@ -20,27 +20,42 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const Main = () => {
     return (
         <>
-            <main className="xl:p-64 space-y-80">
-                <Element name="hello" className="element flex flex-row justify-start text-4xl">
-                    <div className="">
+            <main className="
+            p-6 pt-60 space-y-40
+            xl:p-64 xl:space-y-80">
+                {/*HELLO SECTION*/}
+                <Element name="hello" className="element flex flex-row justify-start
+                text-3xl
+                xl:text-4xl">
+                    <div>
                         <div>
-                            <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent animate-fade-left animate-once bold">
+                            <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent
+                            animate-fade-left animate-once bold">
                                 Max Yushkevich
                             </h1>
                             <h2 className="text-stone-500 animate-fade-right animate-once">Front-end web developer</h2>
                             <Socials/>
                         </div>
                     </div>
-                    <div className="pl-32 animate-fade-left animate-once animate-delay-200 animate-ease-out">
+                    <div className="
+                    hidden
+                    xl:pl-32 xl:block
+                    animate-fade-left animate-once animate-delay-200 animate-ease-out">
                         <Image src="/Profile_avatar_placeholder_large.png" className="rounded-full object-cover shadow-2xl shadow-stone-500/20 outline outline-3 outline-stone-600" alt="Profile" height="150" width="150"/>
                     </div>
                 </Element>
+                {/*ABOUT SECTION*/}
                 <Element name="about" className="element space-y-5 animate-fade-right animate-once animate-delay-500 animate-ease-out">
-                    <h1 className="text-3xl opacity-70">Let me tell you a bit about myself 👇</h1>
-                    <div className="flex flex-row space-x-8">
-                        <div className="flex flex-col w-1/2 space-y-8">
+                    <h1 className="text-xl xl:text-3xl opacity-70">Let me tell you a bit about myself 👇</h1>
+                    <div className="flex flex-col space-x-8
+                    xl:flex-row">
+                        <div className="flex flex-col
+                        w-full space-y-10
+                        xl:w-1/2 xl:space-y-8">
                             <div>
-                                <p className="text-xl p-5
+                                <p className="
+                                text-lg p-5
+                                xl:text-xl xl:p-5
                                 outline outline-2 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
                                     {/* eslint-disable-next-line react/no-unescaped-entities */}
                                     Hello! I’m Max, a front-end developer passionate about crafting beautiful,
@@ -59,7 +74,9 @@ const Main = () => {
                                 <LatestBlogPosts/>
                             </div>
                         </div>
-                        <div className="flex flex-col space-y-8">
+                        {/*For now the section bellow is HIDDEN from mobile users...in the future try to implement it :)*/}
+                        <div className="hidden
+                        xl:flex xl:flex-col xl:space-y-8">
                             <div>
                                 <p className="text-2xl w-full outline outline-1 outline-stone-600 rounded-xl p-3 shadow-2xl shadow-stone-500/20">
                                     <span className="opacity-50">I work with… </span><TypingAnimation/>
@@ -91,10 +108,13 @@ const Main = () => {
                         </div>
                     </div>
                 </Element>
+                {/*PROJECTS SECTION*/}
                 <Element name="projects" className="element">
                     <div className="space-y-5">
-                        <h1 className="text-4xl opacity-70">Check out my projects ✨</h1>
-                        <div className="flex flex-row space-x-8">
+                        <h1 className="text-2xl xl:text-3xl opacity-70">Check out my projects ✨</h1>
+                        <div className="flex
+                        flex-col space-y-7
+                        xl:flex-row xl:space-x-8">
                             {/* Project: Highstorm*/}
                             <div className="flex flex-col h-1/2 w-full space-y-4 outline outline-1 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
                                 <div className="flex flex-row justify-between">
@@ -111,7 +131,7 @@ const Main = () => {
                                 </p>
                             </div>
                             {/*Project: Portfolio Website*/}
-                            <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-2 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
+                            <div className="flex flex-col h-1/2 w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
                                 <div className="flex flex-row justify-between">
                                     <h2 className="text-2xl">Portfolio Website</h2>
                                     <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
@@ -187,7 +207,8 @@ const HomePage = () => {
                 <title>Max's Portfolio</title>
 
                 <meta charSet="utf-8"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
 
                 <meta name="description"
                       content="Max's amazing portfolio website ✨"/>
