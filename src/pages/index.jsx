@@ -59,17 +59,26 @@ const Main = () => {
                                 <LatestBlogPosts/>
                             </div>
                         </div>
-                        <div className="flex flex-col space-y-7">
-                            <div
-                                className="text-2xl h-1/2 rounded-xl p-4 shadow-2xl shadow-stone-500/20 outline outline-1 outline-stone-600">
-                                <Image className="rounded-2xl" src="" alt="Image" width={300} height={300}>
-                                </Image>
-                            </div>
+                        <div className="flex flex-col space-y-8">
                             <div>
                                 <p className="text-2xl w-full outline outline-1 outline-stone-600 rounded-xl p-3 shadow-2xl shadow-stone-500/20">
                                     <span className="opacity-50">I work with… </span><TypingAnimation/>
                                 </p>
                             </div>
+                            <div
+                                className="text-2xl h-1/2 rounded-xl p-4 shadow-2xl shadow-stone-500/20 outline outline-1 outline-stone-600">
+                                <Image className="rounded-2xl" src="" alt="Image" width={300} height={300}>
+                                </Image>
+                            </div>
+                            <a className="flex flex-col p-4 text-center
+                                outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20
+                                hover:outline-stone-400 hover:shadow-stone-300/20"
+                                href="#">
+                                <span className="text-stone-400">Want a cool website like this one?</span>
+                                <span className="text-lg text-stone-300">
+                                    I can make you one.
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div> {/*remove later*/}
@@ -139,7 +148,7 @@ const Main = () => {
                 </Element>
                 <Element name="contact" className="element">
                     <div className="space-y-6">
-                        <h1 className="text-4xl opacity-70 pb-6">Let’s get in touch</h1>
+                        <h1 className="text-4xl opacity-70 pb-6">Let’s get in touch 👋</h1>
                         <Contacts />
                         <ExtendedContacts />
                     </div>

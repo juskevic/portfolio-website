@@ -3,7 +3,7 @@ import React from 'react';
 const LatestBlogPosts = () => {
     return (
         <>
-            <h2 className="text-2xl
+            <h2 className="text-2xl pb-2
             opacity-70">
                 Latest blog posts
             </h2>
