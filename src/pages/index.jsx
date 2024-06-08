@@ -33,7 +33,7 @@ const Main = () => {
                             animate-fade-left animate-once bold">
                                 Max Yushkevich
                             </h1>
-                            <h2 className="text-stone-500 animate-fade-right animate-once">Front-end web developer</h2>
+                            <h2 className="text-stone-500 animate-fade-right animate-once text-2xl xl:text-inherit">Front-end web developer</h2>
                             <Socials/>
                         </div>
                     </div>

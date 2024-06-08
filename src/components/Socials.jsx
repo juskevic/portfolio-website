@@ -6,8 +6,8 @@ const Socials = () => {
     return (
         <>
             <div>
-                <div className="flex flex-row justify-center
-                p-3 w-full space-x-8 text-2xl bottom-0 sticky
+                <div className="flex flex-row justify-start xl:justify-center
+                p-3 w-full space-x-8 text-xl bottom-0 sticky
                 xl:p-4 xl:w-full xl:space-x-8 xl:text-2xl xl:bottom-0 xl:sticky
                 animate-fade-up animate-once animate-delay-200 animate-ease-out">
                     <a href="https://github.com/makuyoshi" className="hover:scale-110"><FontAwesomeIcon icon={faGithub} /></a>
