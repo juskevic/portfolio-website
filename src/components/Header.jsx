@@ -9,7 +9,7 @@ import {Link} from 'react-scroll'
 const Header = () => {
     return (
         <>
-            <header className="">
+            <header>
                 <nav className="flex flex-row justify-center
                 pt-5 w-full text-xl fixed z-50 scroll
                 xl:pt-6 xl:p-4 xl:w-full xl:text-xl xl:space-x-20">

@@ -21,7 +21,7 @@ const Main = () => {
     return (
         <>
             <main className="
-            p-6 pt-60 space-y-40
+            p-6 pt-60 space-y-80
             xl:p-64 xl:space-y-80">
                 {/*HELLO SECTION*/}
                 <Element name="hello" className="element flex flex-row justify-start
@@ -113,8 +113,8 @@ const Main = () => {
                     <div className="space-y-5">
                         <h1 className="text-2xl xl:text-3xl opacity-70">Check out my projects ✨</h1>
                         <div className="flex
-                        flex-col space-y-7
-                        xl:flex-row xl:space-x-8">
+                        flex-col space-y-8
+                        xl:flex-row xl:space-x-8 xl:space-y-0">
                             {/* Project: Highstorm*/}
                             <div className="flex flex-col h-1/2 w-full space-y-4 outline outline-1 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
                                 <div className="flex flex-row justify-between">
