@@ -100,7 +100,7 @@ const Main = () => {
                     <div className="space-y-5">
                         <h1 className="text-2xl xl:text-3xl">Check out my projects ✨</h1>
                         {/*A*/}
-                        <div className="flex flex-col xl:flex-row xl:justify-between space-y-8 xl:space-x-8">
+                        <div className="flex flex-col xl:flex-row xl:justify-between space-y-8 xl:space-y-0 xl:space-x-8">
                             <div className="flex flex-col w-full xl:w-3/4 space-y-8">
                                 {/* Project: Highstorm*/}
                                 <div
