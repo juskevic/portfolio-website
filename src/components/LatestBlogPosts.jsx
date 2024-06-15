@@ -7,7 +7,7 @@ const LatestBlogPosts = () => {
             pb-1 text-xl
             xl:pb-2 xl:text-2xl
             opacity-80">
-                <h2 className="opacity-90">Latest blog posts</h2>
+                <h2 className="opacity-90">Check out my blog</h2>
                 <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
                    href="#">
                     <i className="bi bi-arrow-up-right"></i>

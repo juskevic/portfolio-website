@@ -13,10 +13,6 @@ import LatestBlogPosts from "@/components/LatestBlogPosts.jsx";
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-/**
- * Represents the main component of the application.
- * @returns {ReactNode} The rendered JSX elements.
- */
 const Main = () => {
     return (
         <>
@@ -46,7 +42,7 @@ const Main = () => {
                 </Element>
                 {/*ABOUT SECTION*/}
                 <Element name="about" className="element space-y-5 animate-fade-right animate-once animate-delay-500 animate-ease-out">
-                    <h1 className="text-xl xl:text-3xl opacity-70">Let me tell you a bit about myself 👇</h1>
+                    <h1 className="text-xl xl:text-3xl">Let me tell you a bit about myself 👇</h1>
                     <div className="flex flex-col space-x-8
                     xl:flex-row">
                         <div className="flex flex-col
@@ -56,7 +52,7 @@ const Main = () => {
                                 <p className="
                                 text-lg p-5
                                 xl:text-xl xl:p-5
-                                outline outline-2 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
+                                outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
                                     {/* eslint-disable-next-line react/no-unescaped-entities */}
                                     Hello! I’m Max, a front-end developer passionate about crafting beautiful,
                                     responsive
@@ -111,7 +107,7 @@ const Main = () => {
                 {/*PROJECTS SECTION*/}
                 <Element name="projects" className="element">
                     <div className="space-y-5">
-                        <h1 className="text-2xl xl:text-3xl opacity-70">Check out my projects ✨</h1>
+                        <h1 className="text-2xl xl:text-3xl">Check out my projects ✨</h1>
                         <div className="flex
                         flex-col space-y-8
                         xl:flex-row xl:space-x-8 xl:space-y-0">
@@ -169,7 +165,7 @@ const Main = () => {
                 {/*CONTACT SECTION*/}
                 <Element name="contact" className="element">
                     <div className="space-y-6">
-                        <h1 className="text-2xl xl:text-4xl opacity-70 pb-6">Let’s get in touch 👋</h1>
+                        <h1 className="text-2xl xl:text-4xl pb-6">Let’s get in touch 👋</h1>
                         <Contacts />
                         <div className="hidden xl:block">
                             <ExtendedContacts />
@@ -181,12 +177,6 @@ const Main = () => {
     )
 }
 
-/**
- * Represents the home page of the portfolio website.
- * @function HomePage
- *
- * @returns {JSX.Element} The home page component.
- */
 const HomePage = () => {
     useEffect(() => {
         Events.scrollEvent.register('begin', function () {
