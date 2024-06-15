@@ -100,8 +100,8 @@ const Main = () => {
                     <div className="space-y-5">
                         <h1 className="text-2xl xl:text-3xl">Check out my projects ✨</h1>
                         {/*A*/}
-                        <div className="flex flex-row justify-between space-x-8">
-                            <div className="flex flex-col w-3/4 space-y-8">
+                        <div className="flex flex-col xl:flex-row xl:justify-between space-y-8 xl:space-x-8">
+                            <div className="flex flex-col w-full xl:w-3/4 space-y-8">
                                 {/* Project: Highstorm*/}
                                 <div
                                     className="w-full space-y-4 outline outline-1 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
@@ -121,6 +121,7 @@ const Main = () => {
                                         sunrise.
                                     </p>
                                 </div>
+                                {/*Project: Libro*/}
                                 <div
                                     className="w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
                                     <div className="flex flex-row justify-between">
@@ -138,7 +139,7 @@ const Main = () => {
                                 </div>
                             </div>
                             {/*B*/}
-                            <div className="flex flex-col w-5/6">
+                            <div className="flex flex-col w-full xl:w-5/6">
                                 {/*Project: Portfolio Website*/}
                                 <div
                                     className="space-y-2 outline outline-1 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
@@ -159,7 +160,7 @@ const Main = () => {
                                 </div>
                             </div>
                             {/*C*/}
-                            <div className="flex flex-col w-3/4">
+                            <div className="flex flex-col w-full xl:w-3/4">
                                 {/* Project: Vycetka*/}
                                 <div className="space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
                                     <div className="flex flex-row justify-between">
