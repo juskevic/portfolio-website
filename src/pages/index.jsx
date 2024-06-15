@@ -29,15 +29,15 @@ const Main = () => {
                             animate-fade-left animate-once bold">
                                 Max Yushkevich
                             </h1>
-                            <h2 className="text-stone-500 animate-fade-right animate-once text-2xl xl:text-3xl">Front-end web developer</h2>
+                            <h2 className="text-stone-500 animate-fade-right animate-once text-2xl xl:text-3xl xl:pb-2">Front-end web developer</h2>
                             <Socials/>
                         </div>
                     </div>
                     <div className="
                     hidden
-                    xl:pl-32 xl:block
+                    xl:pl-24 xl:block
                     animate-fade-left animate-once animate-delay-200 animate-ease-out">
-                        <Image src="/Profile_avatar_placeholder_large.png" className="rounded-full object-cover shadow-2xl shadow-stone-500/20 outline outline-3 outline-stone-600" alt="Profile" height="150" width="150"/>
+                        <Image src="/helloAvatar.jpg" className="rounded-full object-cover shadow-2xl shadow-stone-500/20 outline outline-2 outline-stone-300" alt="Profile" height="150" width="150"/>
                     </div>
                 </Element>
                 {/*ABOUT SECTION*/}
