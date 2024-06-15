@@ -83,15 +83,6 @@ const Main = () => {
                                 <Image className="rounded-2xl" src="" alt="Image" width={300} height={300}>
                                 </Image>
                             </div>
-                            <a className="flex flex-col p-4 text-center
-                                outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20
-                                hover:outline-stone-400 hover:shadow-stone-300/20"
-                                href="#">
-                                <span className="text-stone-400">Want a cool website like this one?</span>
-                                <span className="text-lg text-stone-300">
-                                    I can make you one.
-                                </span>
-                            </a>
                         </div>
                     </div>
                     <div> {/*remove later*/}
