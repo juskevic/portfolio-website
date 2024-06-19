@@ -16,7 +16,6 @@ body {
 }
 
 header {
-    color: var(--silver);
     font-family: "Exo", serif;
 }
 
@@ -31,8 +30,7 @@ footer  {
 }
 
 .active {
-    color: floralwhite;
-
+    color: #fafaf9;
 }
 
 #project-highstorm {
