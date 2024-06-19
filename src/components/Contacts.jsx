@@ -26,16 +26,6 @@ const Contacts = () => {
                     </a>
                 </div>
                 <div className="space-y-2">
-                    <i className="bi bi-stack-overflow"></i>
-                    <span
-                        className="opacity-90"> Visit my Stack Overflow for my coding contributions and queries. </span>
-                    <button
-                        className="flex xl:hidden pl-3 pr-3
-                            outline outline-1 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                        STACK OVERFLOW <i className="bi bi-arrow-up-right"></i>
-                    </button>
-                </div>
-                <div className="space-y-2">
                     <i className="bi bi-linkedin"></i>
                     <span
                         className="opacity-90"> Let’s connect on LinkedIn and expand our professional networks. </span>
@@ -70,17 +60,6 @@ const Contacts = () => {
                         <button
                             className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
                             GITHUB <i className="bi bi-arrow-up-right"></i>
-                        </button>
-                    </a>
-                </div>
-                <div>
-                    <a className="hover:underline"
-                       href="https://stackoverflow.com/users/21579330/makuyoshi">
-                        <button
-                            className="pr-1 pl-1
-                            xl:pl-3 xl:pr-3
-                            outline outline-1 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                            STACK OVERFLOW <i className="bi bi-arrow-up-right"></i>
                         </button>
                     </a>
                 </div>

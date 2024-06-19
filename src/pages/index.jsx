@@ -90,14 +90,14 @@ const Main = () => {
                 </Element>
                 {/*PROJECTS SECTION*/}
                 <Element name="projects" className="element">
-                    <div className="space-y-5">
-                        <h1 className="text-2xl xl:text-3xl">Check out my projects ✨</h1>
+                    <div className="space-y-10">
+                        <h1 className="text-center text-2xl xl:text-3xl">Check out my projects ✨</h1>
                         {/*A*/}
                         <div className="flex flex-col xl:flex-row xl:justify-between space-y-8 xl:space-y-0 xl:space-x-8">
                             <div className="flex flex-col w-full xl:w-3/4 space-y-8">
                                 {/* Project: Highstorm*/}
                                 <div
-                                    className="w-full space-y-4 outline outline-1 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
+                                    className="w-full space-y-4 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
                                     <div className="flex flex-row justify-between">
                                         <h2 id="project-highstorm" className="text-2xl">Highstorm</h2>
                                         <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
@@ -116,7 +116,7 @@ const Main = () => {
                                 </div>
                                 {/*Project: Libro*/}
                                 <div
-                                    className="w-full space-y-2 outline outline-1 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
+                                    className="w-full space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
                                     <div className="flex flex-row justify-between">
                                         <h2 className="text-2xl">Libro (Beta)</h2>
                                         <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
@@ -135,7 +135,7 @@ const Main = () => {
                             <div className="flex flex-col w-full xl:w-5/6">
                                 {/*Project: Portfolio Website*/}
                                 <div
-                                    className="space-y-2 outline outline-1 outline-stone-600 rounded-xl p-6 shadow-2xl shadow-stone-500/20">
+                                    className="space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
                                     <div className="flex flex-row justify-between">
                                         <h2 className="text-2xl">Portfolio Website</h2>
                                         <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
@@ -155,7 +155,7 @@ const Main = () => {
                             {/*C*/}
                             <div className="flex flex-col w-full xl:w-3/4">
                                 {/* Project: Vycetka*/}
-                                <div className="space-y-2 outline outline-1 outline-stone-600 rounded-xl p-5 shadow-2xl shadow-stone-500/20">
+                                <div className="space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
                                     <div className="flex flex-row justify-between">
                                         <Image src="/header-nav-vycatkaLogo.png" alt="vycetka logo" width={220} height={220}></Image>
                                         <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
@@ -173,8 +173,8 @@ const Main = () => {
                 </Element>
                 {/*CONTACT SECTION*/}
                 <Element name="contact" className="element">
-                    <div className="space-y-6">
-                        <h1 className="text-2xl xl:text-4xl pb-6">Let’s get in touch 👋</h1>
+                    <div className="space-y-8">
+                        <h1 className="text-center text-2xl xl:text-4xl pb-6">Let’s get in touch 👋</h1>
                         <Contacts />
                         <div className="hidden xl:block">
                             <ExtendedContacts />

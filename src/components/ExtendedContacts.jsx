@@ -11,7 +11,7 @@ function ExtendedContacts() {
                 <div className="text-center">
                     <button
                         onClick={() => setIsExtended(true)}
-                        className="outline outline-1 outline-stone-600 rounded-2xl p-2 shadow-2xl shadow-stone-500/20 hover:outline-stone-300">
+                        className="p-2 bg-stone-950 outline outline-1 outline-stone-600 rounded-2xl shadow-2xl shadow-stone-500/20 hover:outline-stone-300">
                         View more
                     </button>
                 </div>
