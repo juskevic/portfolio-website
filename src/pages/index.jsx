@@ -39,7 +39,7 @@ const Main = () => {
                 {/*ABOUT SECTION*/}
                 <Element name="about" className="element space-y-6 xl:space-y-10 animate-fade-down animate-once animate-delay-500 animate-ease-out">
                     <h1 className="text-center text-xl xl:text-3xl">Let me tell you a bit about myself 👇</h1>
-                    <div className="flex flex-col justify-center space-x-8 xl:flex-row">
+                    <div className="flex flex-col justify-center space-x-0 xl:space-x-8 xl:space-y-0 space-y-8 xl:flex-row">
                         <div className="flex flex-col w-full space-y-10 xl:w-1/2 xl:space-y-8">
                             <div>
                                 <p className="
@@ -64,8 +64,7 @@ const Main = () => {
                             </div>
                         </div>
                         {/*For now the section bellow is HIDDEN from mobile users...in the future try to implement it :)*/}
-                        <div className="hidden
-                        xl:flex xl:flex-col xl:space-y-8">
+                        <div className="flex flex-col space-y-8 xl:flex xl:flex-col xl:space-y-8">
                             <div>
                                 <p className="text-2xl w-full p-3 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
                                     <span className="opacity-65">I work with… </span><TypingAnimation/>
