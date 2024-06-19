@@ -1,9 +1,19 @@
 import Image from "next/image";
-import React from 'react';
+import React, {useState} from 'react';
+import { handleViewport } from 'react-in-viewport';
 
-const Projects = ({className}) => {
+const Projects = (props) => {
+    const { inViewport, forwardedRef } = props;
+    const [bgClass, setBgClass] = useState('invisible');
+    const [hasEnteredView, setHasEnteredView] = useState(false);
+
+    if (inViewport && !hasEnteredView) {
+        setBgClass('visible animate-fade-down animate-once animate-delay-500 animate-ease-out');
+        setHasEnteredView(true);
+    }
+
     return (
-        <div className={className}>
+        <div ref={forwardedRef} className={`space-y-10 ${bgClass}`}>
             <h1 className="text-center text-2xl xl:text-3xl">Check out my projects ✨</h1>
             {/*A*/}
             <div className="flex flex-col xl:flex-row xl:justify-between space-y-8 xl:space-y-0 xl:space-x-8">
@@ -91,4 +101,6 @@ const Projects = ({className}) => {
     );
 };
 
-export default Projects;
+const ViewportProjects = handleViewport(Projects, {rootMargin: '-1.0px'});
+
+export default ViewportProjects;

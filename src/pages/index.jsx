@@ -1,5 +1,7 @@
 import React, {useEffect} from 'react';
+
 import {Element, Events} from 'react-scroll';
+
 import Head from 'next/head';
 import Image from "next/image";
 
