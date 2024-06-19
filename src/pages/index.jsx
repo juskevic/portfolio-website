@@ -11,48 +11,41 @@ import Socials from "@/components/Socials.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
 import LatestBlogPosts from "@/components/LatestBlogPosts.jsx";
 
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap-icons/font/bootstrap-icons.css'; // To be replaced to FontAwesome later.
 
 const Main = () => {
     return (
         <>
             <main className="
-            p-6 pt-60 space-y-80
+            p-6 pt-60 space-y-56
             xl:p-64 xl:space-y-80">
                 {/*HELLO SECTION*/}
-                <Element name="hello" className="element flex flex-row justify-start
-                text-3xl
-                xl:text-4xl">
+                <Element name="hello" className="element flex flex-row justify-center text-3xl xl:text-4xl">
                     <div>
                         <div>
-                            <h1 className="bg-gradient-to-r from-neutral-300 to-stone-400 bg-clip-text text-transparent
-                            animate-fade-left animate-once bold">
+                            <h1 className="text-stone-300 animate-fade-left animate-once bold">
                                 Max Yushkevich
                             </h1>
-                            <h2 className="text-stone-500 animate-fade-right animate-once text-2xl xl:text-3xl xl:pb-2">Frontend web developer</h2>
+                            <h2 className="text-stone-600 animate-fade-right animate-once text-2xl xl:text-3xl xl:pb-2">
+                                Front-end Web Developer
+                            </h2>
                             <Socials/>
                         </div>
                     </div>
-                    <div className="
-                    hidden
-                    xl:pl-24 xl:block
-                    animate-fade-left animate-once animate-delay-200 animate-ease-out">
+                    <div className="hidden xl:pl-24 xl:block animate-fade-left animate-delay-200 animate-ease-out">
                         <Image src="/helloAvatar.jpg" className="rounded-full object-cover shadow-2xl shadow-stone-500/20 outline outline-2 outline-stone-300" alt="Profile" height="150" width="150"/>
                     </div>
                 </Element>
                 {/*ABOUT SECTION*/}
-                <Element name="about" className="element space-y-5 animate-fade-right animate-once animate-delay-500 animate-ease-out">
-                    <h1 className="text-xl xl:text-3xl">Let me tell you a bit about myself 👇</h1>
-                    <div className="flex flex-col space-x-8
-                    xl:flex-row">
-                        <div className="flex flex-col
-                        w-full space-y-10
-                        xl:w-1/2 xl:space-y-8">
+                <Element name="about" className="element space-y-6 xl:space-y-10 animate-fade-down animate-once animate-delay-500 animate-ease-out">
+                    <h1 className="text-center text-xl xl:text-3xl">Let me tell you a bit about myself 👇</h1>
+                    <div className="flex flex-col justify-center space-x-8 xl:flex-row">
+                        <div className="flex flex-col w-full space-y-10 xl:w-1/2 xl:space-y-8">
                             <div>
                                 <p className="
                                 text-lg p-5
                                 xl:text-xl xl:p-5
-                                outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
+                                bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
                                     {/* eslint-disable-next-line react/no-unescaped-entities */}
                                     Hello! I’m Max, a front-end developer passionate about crafting beautiful,
                                     responsive
@@ -66,7 +59,7 @@ const Main = () => {
                                 </p>
                             </div>
                             <div className="flex flex-col p-5
-                                outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
+                                bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
                                 <LatestBlogPosts/>
                             </div>
                         </div>
@@ -74,12 +67,12 @@ const Main = () => {
                         <div className="hidden
                         xl:flex xl:flex-col xl:space-y-8">
                             <div>
-                                <p className="text-2xl w-full outline outline-1 outline-stone-600 rounded-xl p-3 shadow-2xl shadow-stone-500/20">
-                                    <span className="opacity-50">I work with… </span><TypingAnimation/>
+                                <p className="text-2xl w-full p-3 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
+                                    <span className="opacity-65">I work with… </span><TypingAnimation/>
                                 </p>
                             </div>
                             <div
-                                className="text-2xl h-1/2 rounded-xl p-4 shadow-2xl shadow-stone-500/20 outline outline-1 outline-stone-600">
+                                className="text-2xl h-1/2 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
                                 <Image className="rounded-2xl" src="" alt="Image" width={300} height={300}>
                                 </Image>
                             </div>
@@ -171,8 +164,7 @@ const Main = () => {
                                         </a>
                                     </div>
                                     <p>
-                                        This is an accounting tool build using Bootstrap that allows you to count the amount
-                                        of banknotes and coins that are in your cash register.
+                                        This is an accounting tool build using Bootstrap that allows you to count the amount of banknotes and coins that are in your cash register.
                                     </p>
                                 </div>
                             </div>

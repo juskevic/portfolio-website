@@ -10,14 +10,10 @@ const Header = () => {
     return (
         <>
             <header>
-                <nav className="flex flex-row justify-center
-                pt-5 w-full text-xl fixed z-50 scroll
-                xl:pt-6 xl:p-4 xl:w-full xl:text-xl xl:space-x-20">
-                    <div className="flex flex-row
-                    space-x-5 p-2
+                <nav className="flex flex-row justify-center pt-5 w-full text-xl fixed z-50 scroll xl:pt-6 xl:p-4 xl:w-full xl:text-xl xl:space-x-20">
+                    <div className="flex flex-row space-x-5 p-2
                     xl:p-2 xl:space-x-8
-                    outline outline-1 rounded-2xl
-                    bg-black shadow-sm shadow-stone-500/20
+                    outline outline-1 rounded-2xl bg-stone-950 shadow-sm shadow-stone-500/20
                     animate-fade-down animate-once animate-delay-200 animate-ease-out">
                         <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500}>hello</Link>
                         <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-120} duration={500}>about</Link>
@@ -26,9 +22,10 @@ const Header = () => {
                     </div>
                     {/*Blog button is HIDDEN from mobile view!! fix later pls :)*/}
                     <Link href="#" className="hidden xl:p-2 xl:block
-                    outline outline-1 rounded-2xl bg-black shadow-stone-300 shadow
+                    outline outline-1 rounded-2xl bg-stone-950 shadow-stone-300 shadow
                     hover:scale-105 hover:cursor-not-allowed
-                    animate-fade-down animate-once animate-delay-200 animate-ease-out">
+                    animate-fade-down animate-once animate-delay-200 animate-ease-out
+                    brightness-50">
                         blog<i className="bi bi-arrow-right-short"></i>
                     </Link>
                 </nav>
