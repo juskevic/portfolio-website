@@ -2,22 +2,37 @@ import Image from "next/image";
 import React, {useState} from 'react';
 import { handleViewport } from 'react-in-viewport';
 
+/**
+ * Renders a list of projects with animation effects.
+ *
+ * @param {object} props - The props object containing the following properties:
+ *   - inViewport {boolean} - Indicates whether the component is in the viewport.
+ *   - forwardedRef {object} - The reference to the component.
+ *
+ * @returns {JSX.Element} - The rendered projects component.
+ */
 const Projects = (props) => {
     const { inViewport, forwardedRef } = props;
-    const [bgClass, setBgClass] = useState('invisible');
+    const [animationClass, setAnimation] = useState('invisible');
+    const [animationClassRight, setAnimationRight] = useState('invisible');
+    const [animationClassLeft, setAnimationLeft] = useState('invisible');
+    const [animationClassTop, setAnimationTop] = useState('invisible');
     const [hasEnteredView, setHasEnteredView] = useState(false);
 
     if (inViewport && !hasEnteredView) {
-        setBgClass('visible animate-fade-down animate-once animate-delay-500 animate-ease-out');
+        setAnimation('visible animate-fade-up animate-once animate-delay-550 animate-ease-out');
+        setAnimationRight('visible animate-fade-right animate-once animate-delay-530 animate-ease-out');
+        setAnimationLeft('visible animate-fade-left animate-once animate-delay-510 animate-ease-out');
+        setAnimationTop('visible animate-fade-down animate-once animate-delay-500 animate-ease-out');
         setHasEnteredView(true);
     }
 
     return (
-        <div ref={forwardedRef} className={`space-y-10 ${bgClass}`}>
-            <h1 className="text-center text-2xl xl:text-3xl">Check out my projects ✨</h1>
-            {/*A*/}
-            <div className="flex flex-col xl:flex-row xl:justify-between space-y-8 xl:space-y-0 xl:space-x-8">
-                <div className="flex flex-col w-full xl:w-3/4 space-y-8">
+        <div className="space-y-10">
+            <h1 ref={forwardedRef} className={`text-center text-2xl xl:text-3xl ${animationClassTop}`}>Check out my projects ✨</h1>
+            <div className='flex flex-col xl:flex-row xl:justify-between space-y-8 xl:space-y-0 xl:space-x-8 ${animationClass2}'>
+                {/*RIGHT*/}
+                <div ref={forwardedRef} className={`flex flex-col w-full xl:w-3/4 space-y-8 ${animationClassRight}`}>
                     {/* Project: Highstorm*/}
                     <div
                         className="w-full space-y-4 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
@@ -56,8 +71,8 @@ const Projects = (props) => {
                         </p>
                     </div>
                 </div>
-                {/*B*/}
-                <div className="flex flex-col w-full xl:w-5/6">
+                {/*MIDDLE*/}
+                <div ref={forwardedRef} className={`flex flex-col w-full xl:w-5/6 ${animationClass}`}>
                     {/*Project: Portfolio Website*/}
                     <div
                         className="space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
@@ -77,8 +92,8 @@ const Projects = (props) => {
                         </p>
                     </div>
                 </div>
-                {/*C*/}
-                <div className="flex flex-col w-full xl:w-3/4">
+                {/*LEFT*/}
+                <div ref={forwardedRef} className={`flex flex-col w-full xl:w-3/4 ${animationClassLeft}`}>
                     {/* Project: Vycetka*/}
                     <div
                         className="space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
