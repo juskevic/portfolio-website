@@ -1,4 +1,7 @@
 import React from 'react';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {faGithub, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons";
 
 const Contacts = () => {
 
@@ -9,14 +12,14 @@ const Contacts = () => {
             {/*Left side*/}
             <div className="space-y-5 text-left">
                 <div className="pb-2 space-y-2">
-                    <i className="bi bi-envelope"> </i>
+                    <FontAwesomeIcon icon={faEnvelope} />
                     <span className="opacity-90"> Drop me an email for collaboration or just to say hello. </span>
                     <a className="xl:hidden block">
                         contact@makuyoshi.dev
                     </a>
                 </div>
                 <div className="space-y-2">
-                    <i className="bi bi-github"></i>
+                    <FontAwesomeIcon icon={faGithub} />
                     <span className="opacity-90"> Take a look at my code and projects. </span>
                     <a className="xl:hidden flex hover:underline text-right" href="https://github.com/makuyoshi">
                         <button
@@ -26,7 +29,7 @@ const Contacts = () => {
                     </a>
                 </div>
                 <div className="space-y-2">
-                    <i className="bi bi-linkedin"></i>
+                    <FontAwesomeIcon icon={faLinkedin} />
                     <span
                         className="opacity-90"> Let’s connect on LinkedIn and expand our professional networks. </span>
                     <a className="xl:hidden flex hover:underline" href="#">
@@ -37,7 +40,7 @@ const Contacts = () => {
                     </a>
                 </div>
                 <div className="space-y-2">
-                    <i className="bi bi-telegram"></i>
+                    <FontAwesomeIcon icon={faTelegram} />
                     <span className="opacity-90"> Contact me on Telegram for direct messaging. </span>
                     <a className="xl:hidden flex hover:underline" href="#">
                         <button

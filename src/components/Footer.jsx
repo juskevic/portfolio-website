@@ -9,8 +9,7 @@ const Footer = () => {
                     xl:p-4 xl:w-full xl:space-x-8 xl:text-lg xl:space-y-3 xl:pt-40">
                     <p className="text-center">
                         This website has been built using <span className="text-gray-200">Next.js</span>, React & Tailwind CSS. <br />
-                        Check out the <a href="https://github.com/makuyoshi/makuyoshi-web" className="text-gray-200 underline underline-offset-2">source-code on my GitHub page.
-                        <i className="bi bi-box-arrow-up-right"></i></a>
+                        Check out the <a href="https://github.com/makuyoshi/makuyoshi-web" className="text-gray-200 underline underline-offset-2">source-code on my GitHub page.</a>
                     </p>
                     <p className="text-center">
                         &copy; {new Date().getFullYear()} Max Yushkevich. All rights reserved.

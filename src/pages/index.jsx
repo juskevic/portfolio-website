@@ -132,7 +132,7 @@ const HomePage = () => {
         <>
             <Head>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <title>Max's Portfolio</title>
+                <title>Max Yushkevich</title>
 
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>

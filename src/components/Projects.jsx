@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, {useState} from 'react';
 import { handleViewport } from 'react-in-viewport';
-import {faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
+import {faArrowLeftLong, faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 /**
@@ -19,6 +19,7 @@ const Projects = (props) => {
     const [animationClassRight, setAnimationRight] = useState('invisible');
     const [animationClassLeft, setAnimationLeft] = useState('invisible');
     const [animationClassTop, setAnimationTop] = useState('invisible');
+    const [animationOlder, setAnimationOlder] = useState('invisible');
     const [hasEnteredView, setHasEnteredView] = useState(false);
 
     if (inViewport && !hasEnteredView) {
@@ -26,6 +27,7 @@ const Projects = (props) => {
         setAnimationRight('visible animate-fade-right animate-once animate-delay-530 animate-ease-out');
         setAnimationLeft('visible animate-fade-left animate-once animate-delay-510 animate-ease-out');
         setAnimationTop('visible animate-fade-down animate-once animate-delay-500 animate-ease-out');
+        setAnimationOlder('visible animate-fade-right animate-once animate-delay-530 animate-ease-out');
         setHasEnteredView(true);
     }
 
@@ -35,14 +37,33 @@ const Projects = (props) => {
             <div className='flex flex-col xl:flex-row xl:justify-between space-y-8 xl:space-y-0 xl:space-x-8 ${animationClass2}'>
                 {/*RIGHT*/}
                 <div ref={forwardedRef} className={`flex flex-col w-full xl:w-3/4 space-y-8 ${animationClassRight}`}>
-                    {/* Project: Highstorm*/}
+                    {/*LIBRO*/}
+                    <div
+                        className="w-full space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
+                        <div className="flex flex-row justify-between">
+                            <h2 className="text-2xl">Libro (Beta)</h2>
+                            <a className="w-8 text-2xl pl-1 rounded hover:text-gray-900 hover:bg-stone-50"
+                               href="#">
+                                <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
+                            </a>
+                        </div>
+                        <p>
+                            Libro is a <span className="underline underline-offset-2">Discord</span> bot crafted with
+                            Discord.js and Node.js,
+                            designed to enhance your server’s reading experience.
+                            It allows users to search, share, and discuss books seamlessly within your Discord
+                            community.
+                        </p>
+                    </div>
+                    {/*HIGHSTORM*/}
                     <div
                         className="w-full space-y-4 p-6 bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
                         <div className="flex flex-row justify-between">
                             <h2 id="project-highstorm" className="text-2xl">Highstorm</h2>
+                            <p className="p-1 pl-3 pr-3 text-yellow-500 outline outline-1 outline-yellow-500 rounded-2xl">Archived</p>
                             <a className="w-8 text-2xl pl-1 rounded hover:text-gray-900 hover:bg-stone-50"
                                href="https://highstorm.makuyoshi.dev/">
-                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                                <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                             </a>
                         </div>
                         <p>
@@ -52,24 +73,6 @@ const Projects = (props) => {
                             info
                             for a given location, including temperature, humidity, clouds, sunset, and
                             sunrise.
-                        </p>
-                    </div>
-                    {/*Project: Libro*/}
-                    <div
-                        className="w-full space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
-                        <div className="flex flex-row justify-between">
-                            <h2 className="text-2xl">Libro (Beta)</h2>
-                            <a className="w-8 text-2xl pl-1 rounded hover:text-gray-900 hover:bg-stone-50"
-                               href="#">
-                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                            </a>
-                        </div>
-                        <p>
-                            Libro is a <span className="underline underline-offset-2">Discord</span> bot crafted with
-                            Discord.js and Node.js,
-                            designed to enhance your server’s reading experience.
-                            It allows users to search, share, and discuss books seamlessly within your Discord
-                            community.
                         </p>
                     </div>
                 </div>
@@ -82,7 +85,7 @@ const Projects = (props) => {
                             <h2 className="text-2xl">Portfolio Website</h2>
                             <a className="w-8 text-2xl pl-1 rounded hover:text-gray-900 hover:bg-stone-50"
                                href="https://www.makuyoshi.dev/">
-                                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                                <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                             </a>
                         </div>
                         <p>
@@ -113,6 +116,14 @@ const Projects = (props) => {
                         </p>
                     </div>
                 </div>
+            </div>
+            <div ref={forwardedRef} className={animationOlder}>
+                <button className="space-x-2 p-2 bg-stone-950 outline outline-1 outline-stone-500 rounded-3xl shadow-2xl shadow-stone-500/20 hover:text-gray-900 hover:bg-stone-50">
+                    <FontAwesomeIcon icon={faArrowLeftLong} />
+                    <a>
+                        Older projects
+                    </a>
+                </button>
             </div>
         </div>
     );
