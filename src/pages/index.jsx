@@ -19,8 +19,6 @@ import Projects from "@/components/Projects.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
 import Socials from "@/components/Socials.jsx";
 
-import 'bootstrap-icons/font/bootstrap-icons.css'; // TODO: To be replaced by FontAwesome later.
-
 const Main = () => {
     return (
         <>
