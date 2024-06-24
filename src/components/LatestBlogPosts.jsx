@@ -1,13 +1,15 @@
 import React from 'react';
+import {faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const LatestBlogPosts = () => {
     return (
         <>
             <div className="flex flex-row justify-between pb-1 text-xl xl:pb-2 xl:text-2xl">
                 <h2 className="opacity-90">Latest blog posts</h2>
-                <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
+                <a className="w-8 text-2xl pl-1 rounded hover:text-gray-900 hover:bg-stone-50"
                    href="#">
-                    <i className="bi bi-arrow-up-right"></i>
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </a>
             </div>
             <div className="flex justify-between items-center
