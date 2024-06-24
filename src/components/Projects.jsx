@@ -35,7 +35,7 @@ const Projects = (props) => {
                 <div ref={forwardedRef} className={`flex flex-col w-full xl:w-3/4 space-y-8 ${animationClassRight}`}>
                     {/* Project: Highstorm*/}
                     <div
-                        className="w-full space-y-4 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
+                        className="w-full space-y-4 p-6 bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
                         <div className="flex flex-row justify-between">
                             <h2 id="project-highstorm" className="text-2xl">Highstorm</h2>
                             <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
@@ -54,7 +54,7 @@ const Projects = (props) => {
                     </div>
                     {/*Project: Libro*/}
                     <div
-                        className="w-full space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
+                        className="w-full space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
                         <div className="flex flex-row justify-between">
                             <h2 className="text-2xl">Libro (Beta)</h2>
                             <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
@@ -75,7 +75,7 @@ const Projects = (props) => {
                 <div ref={forwardedRef} className={`flex flex-col w-full xl:w-5/6 ${animationClass}`}>
                     {/*Project: Portfolio Website*/}
                     <div
-                        className="space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
+                        className="space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
                         <div className="flex flex-row justify-between">
                             <h2 className="text-2xl">Portfolio Website</h2>
                             <a className="outline outline-1 rounded-2xl w-8 text-2xl pl-1 hover:text-gray-900 hover:bg-stone-50"
@@ -96,7 +96,7 @@ const Projects = (props) => {
                 <div ref={forwardedRef} className={`flex flex-col w-full xl:w-3/4 ${animationClassLeft}`}>
                     {/* Project: Vycetka*/}
                     <div
-                        className="space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-600 rounded-xl shadow-2xl shadow-stone-500/20">
+                        className="space-y-2 p-6 bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
                         <div className="flex flex-row justify-between">
                             <Image src="/header-nav-vycatkaLogo.png" alt="vycetka logo" width={220}
                                    height={220}></Image>
