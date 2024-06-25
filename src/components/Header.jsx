@@ -35,23 +35,23 @@ export default function Header() {
 
             <NavbarContent className="hidden sm:flex gap-4 animate-fade-down animate-once animate-delay-200 animate-ease-out" justify="center">
                 <NavbarItem>
-                    <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500}>hello</Link>
+                    <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500} className="hover:text-stone-700">hello</Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-120} duration={500}>about</Link>
+                    <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-700">about</Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500}>projects</Link>
+                    <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-700">projects</Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-250} duration={500}>contact</Link>
+                    <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-250} duration={500} className="hover:text-stone-700">contact</Link>
                 </NavbarItem>
             </NavbarContent>
 
             <NavbarContent justify="end" className="animate-fade-down animate-once animate-delay-200 animate-ease-out">
                 <NavbarItem>
-                    <Button as={Link} color="default" href="#" variant="flat">
-                        Lets Talk
+                    <Button as={Link} color="default" href="#" variant="ghost">
+                        Let's Talk
                     </Button>
                 </NavbarItem>
             </NavbarContent>

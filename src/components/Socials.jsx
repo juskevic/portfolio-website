@@ -1,7 +1,7 @@
 import React from "react";
 import {Button, ButtonGroup} from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub, faLinkedinIn, faTelegram} from "@fortawesome/free-brands-svg-icons";
+import {faGithub, faLinkedinIn, faSquareUpwork, faTelegram} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 export default function Socials() {
@@ -11,6 +11,7 @@ export default function Socials() {
             <Button isIconOnly><FontAwesomeIcon icon={faGithub} size="xl" className="text-neutral-400"/></Button>
             <Button isIconOnly><FontAwesomeIcon icon={faLinkedinIn} size="xl" className="text-neutral-400"/></Button>
             <Button isIconOnly><FontAwesomeIcon icon={faTelegram} size="xl" className="text-neutral-400"/></Button>
+            <Button isIconOnly><FontAwesomeIcon icon={faSquareUpwork} size="xl" className="text-neutral-400"/></Button>
         </ButtonGroup>
     );
 }
