@@ -9,7 +9,6 @@ import Footer from "@/components/Footer.jsx";
 
 // Contacts components
 import Contacts from "@/components/Contacts.jsx";
-import ExtendedContacts from "@/components/ExtendedContacts.jsx";
 
 // Content Components
 import LatestBlogPosts from "@/components/LatestBlogPosts.jsx";
@@ -97,14 +96,9 @@ const Main = () => {
                     <Projects  />
                 </Element>
 
-                <Element name="contact" className="element">
-                    <div className="space-y-8">
-                        <h1 className="text-center text-2xl xl:text-4xl pb-6">Let’s get in touch 👋</h1>
-                        <Contacts />
-                        <div className="hidden xl:block">
-                            <ExtendedContacts />
-                        </div>
-                    </div>
+                <Element name="contact" className="element space-y-8">
+                    <h1 className="text-left text-2xl xl:text-4xl pb-6">Let’s get in touch 👋</h1>
+                    <Contacts />
                 </Element>
 
             </main>
@@ -166,9 +160,11 @@ const HomePage = () => {
                 {/* eslint-disable-next-line @next/next/no-page-custom-font */}
                 <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"/>
             </Head>
-            <Header/>
-            <Main/>
-            <Footer/>
+            <div className="dark text-foreground bg-background">
+                <Header/>
+                <Main/>
+                <Footer/>
+            </div>
         </>
     );
 };
