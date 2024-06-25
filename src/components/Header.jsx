@@ -1,8 +1,16 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button} from "@nextui-org/react";
 import {Link} from 'react-scroll'
+import { Exo } from "next/font/google";
+
+const exo = Exo({
+    weight: '300',
+    style: 'normal',
+    subsets: ['latin'],
+});
 
 export default function Header() {
+
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const menuItems = [
@@ -14,14 +22,14 @@ export default function Header() {
     ];
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className="animate-fade-down animate-once animate-delay-200 animate-ease-out">
+        <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exo.className} animate-fade-down animate-once animate-delay-200 animate-ease-out`}>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <p className="font-bold text-inherit">MAKU</p>
+                    <p className="font-bold text-inherit">maku</p>
                 </NavbarBrand>
             </NavbarContent>
 

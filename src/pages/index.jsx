@@ -155,7 +155,7 @@ const HomePage = () => {
                 <meta property="og:description" content="Max's amazing portfolio website ✨"/>
                 <meta property="og:url" content="https://makuyoshi.dev"/>
             </Head>
-            <div className="dark text-foreground bg-background">
+            <div className="dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
                 <Header/>
                 <Main/>
                 <Footer/>
