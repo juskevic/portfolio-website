@@ -4,7 +4,7 @@ import {Link} from 'react-scroll'
 /**
  * Represents the Header component.
  *
- * @returns {React.Component} The rendered component.
+ * @returns {JSX.Element} The rendered component.
  */
 const Header = () => {
     return (
@@ -18,7 +18,7 @@ const Header = () => {
                         <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500}>hello</Link>
                         <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-120} duration={500}>about</Link>
                         <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500}>projects</Link>
-                        <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-120} duration={500}>contact</Link>
+                        <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-300} duration={500}>contact</Link>
                     </div>
                     {/*Blog button is HIDDEN from mobile view!! fix later pls :)*/}
                     <Link href="#" className="hidden xl:p-2 xl:block
