@@ -15,24 +15,6 @@ body {
     user-select: none;
 }
 
-header {
-    font-family: "Exo", serif;
-}
-
-main {
-    color: var(--timberwolf);
-    font-family: "Exo", sans, serif;
-}
-
-footer  {
-    font-family: "Exo", serif;
-    color: #B1A7A6;
-}
-
 .active {
     color: #fafaf9;
-}
-
-#project-highstorm {
-    font-family: "Gloria Hallelujah", sans-serif;
 }
