@@ -2,6 +2,7 @@ import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons";
+import {Button} from "@nextui-org/react";
 
 const Contacts = () => {
 
@@ -21,12 +22,6 @@ const Contacts = () => {
                 <div className="space-y-2">
                     <FontAwesomeIcon icon={faGithub} />
                     <span className="opacity-90"> Take a look at my code and projects. </span>
-                    <a className="xl:hidden flex hover:underline text-right" href="https://github.com/makuyoshi">
-                        <button
-                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                            GITHUB <i className="bi bi-arrow-up-right"></i>
-                        </button>
-                    </a>
                 </div>
                 <div className="space-y-2">
                     <FontAwesomeIcon icon={faLinkedin} />
@@ -54,32 +49,29 @@ const Contacts = () => {
             {/*HIDDEN for mobiles!!*/}
             <div className="space-y-5 text-right xl:block hidden">
                 <div className="pb-2">
-                    <a>
-                        contact@makuyoshi.dev
-                    </a>
+                    <Button className="bg-stone-950" variant="light" radius="md">
+                        <FontAwesomeIcon icon={faEnvelope} size="xl"/>
+                    </Button>
                 </div>
                 <div>
                 <a className="hover:underline text-right" href="https://github.com/makuyoshi">
-                        <button
-                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                            GITHUB <i className="bi bi-arrow-up-right"></i>
-                        </button>
+                    <Button className="bg-stone-950" variant="light" radius="md">
+                        <FontAwesomeIcon icon={faGithub} size="xl"/>
+                    </Button>
+                </a>
+                </div>
+                <div>
+                    <a className="hover:underline" href="#">
+                        <Button className="bg-stone-950" variant="light" radius="md">
+                            <FontAwesomeIcon icon={faLinkedin} size="xl"/>
+                        </Button>
                     </a>
                 </div>
                 <div>
                     <a className="hover:underline" href="#">
-                        <button
-                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                            LINKED IN <i className="bi bi-arrow-up-right"></i>
-                        </button>
-                    </a>
-                </div>
-                <div>
-                    <a className="hover:underline" href="#">
-                        <button
-                            className="outline outline-1 pl-3 pr-3 rounded-2xl align-middle hover:text-gray-900 hover:bg-stone-50">
-                            TELEGRAM <i className="bi bi-arrow-up-right"></i>
-                        </button>
+                        <Button className="bg-stone-950" variant="light" radius="md">
+                            <FontAwesomeIcon icon={faTelegram} size="xl"/>
+                        </Button>
                     </a>
                 </div>
             </div>
