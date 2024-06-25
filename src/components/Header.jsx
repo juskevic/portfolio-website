@@ -29,7 +29,7 @@ export default function Header() {
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <p className="font-bold text-inherit">maku</p>
+                    <p className="italic text-inherit text-xl">maku</p>
                 </NavbarBrand>
             </NavbarContent>
 
