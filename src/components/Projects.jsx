@@ -18,7 +18,6 @@ const Projects = (props) => {
     const [animationClass, setAnimation] = useState('invisible');
     const [animationClassRight, setAnimationRight] = useState('invisible');
     const [animationClassLeft, setAnimationLeft] = useState('invisible');
-    const [animationClassTop, setAnimationTop] = useState('invisible');
     const [animationOlder, setAnimationOlder] = useState('invisible');
     const [hasEnteredView, setHasEnteredView] = useState(false);
 
@@ -26,14 +25,12 @@ const Projects = (props) => {
         setAnimation('visible animate-fade-up animate-once animate-delay-550 animate-ease-out');
         setAnimationRight('visible animate-fade-right animate-once animate-delay-530 animate-ease-out');
         setAnimationLeft('visible animate-fade-left animate-once animate-delay-510 animate-ease-out');
-        setAnimationTop('visible animate-fade-down animate-once animate-delay-500 animate-ease-out');
         setAnimationOlder('visible animate-fade-right animate-once animate-delay-530 animate-ease-out');
         setHasEnteredView(true);
     }
 
     return (
         <div className="space-y-10">
-            <h1 ref={forwardedRef} className={`text-center text-2xl xl:text-3xl ${animationClassTop}`}>Check out my projects ✨</h1>
             <div className='flex flex-col xl:flex-row xl:justify-between space-y-8 xl:space-y-0 xl:space-x-8 ${animationClass2}'>
                 {/*RIGHT*/}
                 <div ref={forwardedRef} className={`flex flex-col w-full xl:w-3/4 space-y-8 ${animationClassRight}`}>

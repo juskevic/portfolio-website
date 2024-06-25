@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import Head from 'next/head';;
+import Head from 'next/head';
 import {Element, Events} from 'react-scroll';
 
 // Header/Footer components
@@ -17,7 +17,7 @@ import Projects from "@/components/Projects.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
 import Socials from "@/components/Socials.jsx";
 
-import {Image} from "@nextui-org/react";
+import {Chip, Image} from "@nextui-org/react";
 import { Caveat, Exo } from "next/font/google";
 
 const caveat = Caveat({
@@ -55,7 +55,6 @@ const Main = () => {
                 </Element>
 
                 <Element name="about" className={`${exo.className} element space-y-6 xl:space-y-10 animate-fade-down animate-once animate-delay-500 animate-ease-out`}>
-                    <h1 className="text-center text-xl xl:text-3xl">Let me tell you a bit about myself 👇</h1>
                     <div className="flex flex-col justify-center space-x-0 xl:space-x-8 xl:space-y-0 space-y-8 xl:flex-row">
                         <div className="flex flex-col w-full space-y-10 xl:w-1/2 xl:space-y-8
                         animate-fade-right animate-once animate-delay-500 animate-ease-out">
@@ -95,24 +94,23 @@ const Main = () => {
                             </div>
                         </div>
                     </div>
-                    <div> {/*remove later*/}
-                        <div
-                            className="flex flex-col text-center">
-                            <div className="text-stone-500 text-center">
-                                About Me section is still under development <i
-                                className="bi bi-exclamation-circle align-middle"></i>
-                            </div>
-                        </div>
+                    <div className="text-center"> {/*remove later*/}
+                        <Chip color="warning" variant="dot">This section is under development</Chip>
                     </div>
                 </Element>
 
                 <Element name="projects" className={`${exo.className} element`}>
-                    <Projects  />
+                    <Projects/>
+                    <div className="text-center"> {/*remove later*/}
+                        <Chip color="warning" variant="dot">This section is under development</Chip>
+                    </div>
                 </Element>
 
                 <Element name="contact" className={`${exo.className} element space-y-8`}>
-                    <h1 className="text-left text-2xl xl:text-4xl pb-6">Let’s get in touch 👋</h1>
-                    <Contacts />
+                    <Contacts/>
+                    <div className="text-center"> {/*remove later*/}
+                        <Chip color="warning" variant="dot">This section is under development</Chip>
+                    </div>
                 </Element>
 
             </main>
