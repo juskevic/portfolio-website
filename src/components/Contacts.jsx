@@ -8,28 +8,28 @@ const Contacts = () => {
     return (
         <>
             <div className="flex flex-col text-lg space-y-5">
-                <div className="flex flex-row justify-start space-x-2">
+                <div className="flex flex-col xl:flex-row justify-start space-x-2">
                     <FontAwesomeIcon icon={faEnvelope} size="lg" className="text-stone-400"/>
                     <p className="text-stone-400">Drop me an email for collaborations or just to say hello: </p>
                     <Link href="#" color="foreground" underline="always" size="lg">
                         contact@makuyoshi.dev
                     </Link>
                 </div>
-                <div className="flex flex-row space-x-2">
+                <div className="flex flex-col xl:flex-row space-x-2">
                     <FontAwesomeIcon icon={faGithub} size="lg" className="text-stone-400"/>
                     <p className="text-stone-400">Take a look at my code and projects: </p>
                     <Link href="#" color="foreground" underline="always" size="lg">
                         @makuyoshi
                     </Link>
                 </div>
-                <div className="flex flex-row space-x-2">
+                <div className="flex flex-col xl:flex-row space-x-2">
                     <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-stone-400"/>
                     <p className="text-stone-400">Lets connect on LinkedIn and expand our professional networks: </p>
                     <Link href="#" color="foreground" underline="always" size="lg">
                         in/...
                     </Link>
                 </div>
-                <div className="flex flex-row space-x-2">
+                <div className="flex flex-col xl:flex-row space-x-2">
                     <FontAwesomeIcon icon={faTelegram} size="lg" className="text-stone-400"/>
                     <p className="text-stone-400">Contact me on Telegram for direct messaging: </p>
                     <Link href="#" color="foreground" underline="always" size="lg">

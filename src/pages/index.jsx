@@ -40,10 +40,10 @@ const Main = () => {
                 <Element name="hello" className="element flex flex-row justify-center space-x-20">
                     <div>
                         <div className="space-y-1">
-                            <h1 className={`${caveat.className} text-5xl text-stone-300 animate-fade-left animate-once bold`}>
+                            <h1 className={`${caveat.className} text-4xl xl:text-5xl text-stone-300 animate-fade-left animate-once bold`}>
                                 Max Yushkevich
                             </h1>
-                            <h2 className={`${exo.className} text-3xl text-stone-500 animate-fade-right animate-once`}>
+                            <h2 className={`${exo.className} text-2xl xl:text-3xl text-stone-500 animate-fade-right animate-once`}>
                                 Frontend Web Developer
                             </h2>
                             <Socials/>
@@ -144,15 +144,14 @@ const HomePage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 
-                <meta name="description"
-                      content="Max's amazing portfolio website ✨"/>
+                <meta name="description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
                 <meta name="robots" content="index, follow"/>
                 <link rel="canonical" href="https://www.makuyoshi.dev"/>
                 <link rel="alternate" hrefLang="en-us" href="https://wwww.makuyoshi.dev"/>
                 <link rel="icon" href="/coffee-9.gif"/>
 
-                <meta property="og:title" content="Max's Portfolio"/>
-                <meta property="og:description" content="Max's amazing portfolio website ✨"/>
+                <meta property="og:title" content="Max Yushkevich: Frontend Web Developer"/>
+                <meta property="og:description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
                 <meta property="og:url" content="https://makuyoshi.dev"/>
             </Head>
             <div className="dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
