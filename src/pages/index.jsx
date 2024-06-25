@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
-import Head from 'next/head';
-import Image from "next/image";
+import Head from 'next/head';;
 import {Element, Events} from 'react-scroll';
 
 // Header/Footer components
@@ -18,29 +17,44 @@ import Projects from "@/components/Projects.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
 import Socials from "@/components/Socials.jsx";
 
+import {Image} from "@nextui-org/react";
+import { Caveat, Exo } from "next/font/google";
+
+const caveat = Caveat({
+    weight: '400',
+    style: 'normal',
+    subsets: ['latin'],
+});
+
+const exo = Exo({
+    weight: '300',
+    style: 'normal',
+    subsets: ['latin'],
+});
+
 const Main = () => {
     return (
         <>
             <main className="p-6 pt-60 space-y-56 xl:p-64 xl:space-y-80">
 
-                <Element name="hello" className="element flex flex-row justify-center text-3xl xl:text-4xl">
+                <Element name="hello" className="element flex flex-row justify-center space-x-20">
                     <div>
-                        <div>
-                            <h1 className="text-stone-300 animate-fade-left animate-once bold">
+                        <div className="space-y-1">
+                            <h1 className={`${caveat.className} text-5xl text-stone-300 animate-fade-left animate-once bold`}>
                                 Max Yushkevich
                             </h1>
-                            <h2 className="text-stone-600 animate-fade-right animate-once text-2xl xl:text-3xl xl:pb-2">
-                                Front-end Web Developer
+                            <h2 className={`${exo.className} text-3xl text-stone-500 animate-fade-right animate-once`}>
+                                Frontend Web Developer
                             </h2>
                             <Socials/>
                         </div>
                     </div>
                     <div className="hidden xl:pl-24 xl:block animate-fade-left animate-delay-200 animate-ease-out">
-                        <Image src="/helloAvatar.jpg" className="rounded-full object-cover shadow-2xl shadow-stone-500/20 outline outline-2 outline-stone-300" alt="Profile" height="150" width="150"/>
+                       <Image isZoomed isBlurred width={170} alt="makuyoshi pfp" src="helloAvatar.jpg"></Image>
                     </div>
                 </Element>
 
-                <Element name="about" className="element space-y-6 xl:space-y-10 animate-fade-down animate-once animate-delay-500 animate-ease-out">
+                <Element name="about" className={`${exo.className} element space-y-6 xl:space-y-10 animate-fade-down animate-once animate-delay-500 animate-ease-out`}>
                     <h1 className="text-center text-xl xl:text-3xl">Let me tell you a bit about myself 👇</h1>
                     <div className="flex flex-col justify-center space-x-0 xl:space-x-8 xl:space-y-0 space-y-8 xl:flex-row">
                         <div className="flex flex-col w-full space-y-10 xl:w-1/2 xl:space-y-8
@@ -92,11 +106,11 @@ const Main = () => {
                     </div>
                 </Element>
 
-                <Element name="projects" className="element">
+                <Element name="projects" className={`${exo.className} element`}>
                     <Projects  />
                 </Element>
 
-                <Element name="contact" className="element space-y-8">
+                <Element name="contact" className={`${exo.className} element space-y-8`}>
                     <h1 className="text-left text-2xl xl:text-4xl pb-6">Let’s get in touch 👋</h1>
                     <Contacts />
                 </Element>
@@ -142,23 +156,6 @@ const HomePage = () => {
                 <meta property="og:title" content="Max's Portfolio"/>
                 <meta property="og:description" content="Max's amazing portfolio website ✨"/>
                 <meta property="og:url" content="https://makuyoshi.dev"/>
-
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-                <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet"/>
-                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-                <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap" rel="stylesheet"/>
-                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-                <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&amp;display=swap"
-                      rel="stylesheet"/>
-                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-                <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
-                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-                <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
-                      rel="stylesheet"/>
-                {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-                <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet"/>
             </Head>
             <div className="dark text-foreground bg-background">
                 <Header/>
