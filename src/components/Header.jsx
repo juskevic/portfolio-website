@@ -36,14 +36,14 @@ export default function Header() {
                     <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500}>projects</Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-120} duration={500}>contact</Link>
+                    <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-250} duration={500}>contact</Link>
                 </NavbarItem>
             </NavbarContent>
 
             <NavbarContent justify="end" className="animate-fade-down animate-once animate-delay-200 animate-ease-out">
                 <NavbarItem>
                     <Button as={Link} color="default" href="#" variant="flat">
-                        Let's Talk
+                        Lets Talk
                     </Button>
                 </NavbarItem>
             </NavbarContent>

@@ -16,5 +16,5 @@ body {
 }
 
 .active {
-    color: #fafaf9;
+    text-decoration: underline;
 }
