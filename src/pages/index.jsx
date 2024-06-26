@@ -17,8 +17,9 @@ import Projects from "@/components/Projects.jsx";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
 import Socials from "@/components/Socials.jsx";
 
-import {Chip, Image} from "@nextui-org/react";
+import {Chip, Divider, Image} from "@nextui-org/react";
 import { Caveat, Exo } from "next/font/google";
+import AboutMe from "@/components/AboutMe.jsx";
 
 const caveat = Caveat({
     weight: '400',
@@ -43,7 +44,7 @@ const Main = () => {
                             <h1 className={`${caveat.className} text-4xl xl:text-5xl text-stone-300 animate-fade-left animate-once bold`}>
                                 Max Yushkevich
                             </h1>
-                            <h2 className={`${exo.className} text-2xl xl:text-3xl text-stone-500 animate-fade-right animate-once`}>
+                            <h2 className={`${exo.className} text-2xl xl:text-2xl text-stone-500 animate-fade-right animate-once`}>
                                 Frontend Web Developer
                             </h2>
                             <Socials/>
@@ -54,47 +55,9 @@ const Main = () => {
                     </div>
                 </Element>
 
-                <Element name="about" className={`${exo.className} element space-y-6 xl:space-y-10 animate-fade-down animate-once animate-delay-500 animate-ease-out`}>
-                    <div className="flex flex-col justify-center space-x-0 xl:space-x-8 xl:space-y-0 space-y-8 xl:flex-row">
-                        <div className="flex flex-col w-full space-y-10 xl:w-1/2 xl:space-y-8
-                        animate-fade-right animate-once animate-delay-500 animate-ease-out">
-                            <div>
-                                <p className="
-                                text-lg p-5
-                                xl:text-xl xl:p-5
-                                bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
-                                    {/* eslint-disable-next-line react/no-unescaped-entities */}
-                                    Hello! I’m Max, a front-end developer passionate about crafting beautiful,
-                                    responsive
-                                    websites with the latest tech. I focus on design and user experience, ensuring
-                                    interfaces
-                                    are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus frameworks
-                                    like
-                                    React and Next.js, I’m committed to continuous learning to keep pace with industry
-                                    innovations. Take a look at my portfolio, and let’s connect to explore how we can
-                                    collaborate!
-                                </p>
-                            </div>
-                            <div className="flex flex-col p-5
-                                bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
-                                <LatestBlogPosts/>
-                            </div>
-                        </div>
-                        <div className="flex flex-col space-y-8 xl:flex xl:flex-col xl:space-y-8
-                        animate-fade-left animate-once animate-delay-500 animate-ease-out">
-                            <div>
-                                <p className="text-2xl w-full p-3 bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
-                                    <span className="opacity-65">I work with… </span><TypingAnimation/>
-                                </p>
-                            </div>
-                            <div
-                                className="text-2xl h-1/2 bg-stone-950 outline outline-1 outline-stone-500 rounded-xl shadow-2xl shadow-stone-500/20">
-                                <Image className="rounded-2xl" src="" alt="Image" width={300} height={300}>
-                                </Image>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="text-center"> {/*remove later*/}
+                <Element name="about" className={`${exo.className} animate-fade-down animate-once animate-delay-500 animate-ease-out`}>
+                    <AboutMe />
+                    <div className="text-center pt-10"> {/*remove later*/}
                         <Chip color="warning" variant="dot">This section is under development</Chip>
                     </div>
                 </Element>
