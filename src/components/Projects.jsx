@@ -2,15 +2,6 @@ import React, {useState} from 'react';
 import { handleViewport } from 'react-in-viewport';
 import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Chip} from "@nextui-org/react";
 
-/**
- * Renders a list of projects with animation effects.
- *
- * @param {object} props - The props object containing the following properties:
- *   - inViewport {boolean} - Indicates whether the component is in the viewport.
- *   - forwardedRef {object} - The reference to the component.
- *
- * @returns {JSX.Element} - The rendered projects component.
- */
 const Projects = (props) => {
     const { inViewport, forwardedRef } = props;
     const [animationClass, setAnimation] = useState('invisible');
