@@ -49,9 +49,8 @@ export default function Header() {
 
             <NavbarContent justify="end" className="animate-fade-down animate-once animate-delay-200 animate-ease-out">
                 <NavbarItem>
-                    <Button as={Link} color="default" href="#" variant="ghost">
-                        {/* eslint-disable-next-line react/no-unescaped-entities */}
-                        Let's Talk
+                    <Button as={Link} color="default" href="#" variant="light">
+                        Blog
                     </Button>
                 </NavbarItem>
             </NavbarContent>
