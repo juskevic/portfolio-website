@@ -8,7 +8,7 @@ import {
     Image,
     Button,
     Divider,
-    ScrollShadow, Chip,
+    ScrollShadow, Chip, Accordion, AccordionItem,
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSquareUpwork} from "@fortawesome/free-brands-svg-icons";
@@ -17,7 +17,7 @@ export default function AboutMe() {
     return (
         <>
             <div className="flex items-center justify-center">
-                <div className="flex flex-col w-full xl:w-3/5 space-y-10">
+                <div className="flex flex-col w-full xl:w-4/5 space-y-10">
                     <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
                         <Card className="w-full xl:w-2/3">
                             <CardBody>
@@ -53,19 +53,28 @@ export default function AboutMe() {
                                         Latest post
                                     </h4>
                                 </CardHeader>
-
-                                <CardFooter className="z-10 items-start">
-                                    <Chip color="warning" variant="dot">Available soon</Chip>
-                                </CardFooter>
+                                <Card className="h-full">
+                                    <CardBody>
+                                        <Chip color="warning" variant="dot">Available soon</Chip>
+                                    </CardBody>
+                                </Card>
                             </CardBody>
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card>
+                        <Card className="w-1/3">
                             <CardBody>
                             <CardHeader>
 
                             </CardHeader>
+                                <Accordion isCompact>
+                                    <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
+                                    </AccordionItem>
+                                    <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
+                                    </AccordionItem>
+                                    <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
+                                    </AccordionItem>
+                                </Accordion>
                             </CardBody>
                         </Card>
                         <Card>
@@ -91,9 +100,10 @@ export default function AboutMe() {
                                     <Image
                                         alt="makuyoshi icon"
                                         className="rounded-full w-10 h-11 bg-black"
-                                        src="https://nextui.org/images/breathing-app-icon.jpeg"
+                                        src=""
                                     />
                                 </div>
+                                {/* eslint-disable-next-line react/no-unescaped-entities */}
                                 <Button color="default" variant="bordered" endContent={<FontAwesomeIcon icon={faSquareUpwork} size={"xl"}/>}>Let's Talk</Button>
                             </CardFooter>
                         </Card>
