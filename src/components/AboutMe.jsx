@@ -75,16 +75,13 @@ export default function AboutMe() {
                                     </AccordionItem>
                                     <AccordionItem  key="2" aria-label="Accordion 2" title="How can someone hire you or collaborate on a project?">
                                         <p>
-                                            Please do not hesitate to contact me via my
-                                            <Link isBlock href="#" underline="always" color="foreground">Upwork</Link>
-                                            profile should you require a website.
-                                            You are also welcome to contribute to my open-source projects on
-                                            <Link isBlock href="#" underline="always" color="foreground">GitHub</Link>.
+                                            Please do not hesitate to contact me via my<Link href="#" underline="always" color="foreground"> Upwork</Link> profile should you require a website.
+                                            You are also welcome to contribute to my open-source projects on <Link href="#" underline="always" color="foreground"> GitHub</Link>.
                                         </p>
                                     </AccordionItem>
                                     <AccordionItem key="3" aria-label="Accordion 3" title="How can we get in touch with you?">
                                         <p>
-                                            Should you require direct communication, please contact me on<Link isBlock href="#" underline="always" color="foreground">Telegram</Link>.
+                                            Should you require direct communication, please contact me on <Link href="#" underline="always" color="foreground"> Telegram</Link> or <Link href="#" underline="always" color="foreground"> Email</Link>.
                                         </p>
                                     </AccordionItem>
                                 </Accordion>
