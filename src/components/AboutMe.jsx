@@ -7,7 +7,7 @@ import {
     CardFooter,
     Image,
     Button,
-    ScrollShadow, Chip, Accordion, AccordionItem,
+    ScrollShadow, Chip, Accordion, AccordionItem, Tabs, Tab, Spacer, Tooltip,
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSquareUpwork} from "@fortawesome/free-brands-svg-icons";
@@ -16,7 +16,7 @@ export default function AboutMe() {
     return (
         <>
             <div className="flex items-center justify-center">
-                <div className="flex flex-col w-full xl:w-4/5 space-y-10">
+                <div className="flex flex-col w-full xl:w-full space-y-10">
                     <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
                         <Card className="w-full xl:w-2/3">
                             <CardBody>
@@ -61,7 +61,7 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card className="w-full xl:w-1/3 h-[380px]">
+                        <Card className="w-[400px] h-[400px]">
                             <CardBody>
                                 <CardHeader>
                                     <p className="text-sm text-white/60 uppercase">PRESS TO EXPAND</p>
@@ -86,16 +86,76 @@ export default function AboutMe() {
                                 </Accordion>
                             </CardBody>
                         </Card>
-                        <Card>
+                        <Card className="w-1/3">
                             <CardBody>
-                                <CardHeader>
-
+                                <CardHeader className="flex flex-col z-10 !items-start">
+                                    <p className="text-sm text-white/60 uppercase">EXPLORE MY</p>
+                                    <h4 className="text-xl">
+                                        Tech stack
+                                    </h4>
                                 </CardHeader>
+                                <div>
+                                    <Tabs aria-label="Options" variant="underlined" size="md">
+                                        <Tab key="myStory" title="Frontend">
+                                            <Card>
+                                                <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
+                                                    <Spacer y={2} />
+                                                    <Tooltip showArrow={true} color="foreground" content="Used for structuring content on the web.">
+                                                        <Chip variant="faded" className="border-red-400">HTML</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content="Used for styling and layout of web pages.">
+                                                        <Chip variant="faded" className="border-blue-500">CSS</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content="Used for making web pages interactive.">
+                                                        <Chip variant="faded" className="border-yellow-400">JavaScript</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content="A popular framework for developing responsive and mobile-first websites.">
+                                                        <Chip variant="faded" className="border-purple-500">Bootstrap</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content="A JavaScript library for building user interfaces.">
+                                                        <Chip variant="faded" className="border-cyan-700">React</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content="A React framework for server-rendered React apps.">
+                                                        <Chip variant="faded" className="border-black">Next.js</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content="A utility-first CSS framework for rapidly building custom designs.">
+                                                        <Chip variant="faded" className="border-blue-400">Tailwind</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content="A React-based component library for building user interfaces.">
+                                                        <Chip variant="faded" className="border-black">NextUI</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content="Refers to User Interface design, which involves designing the look and feel of applications.">
+                                                        <Chip variant="faded" className="border-stone-200">UI</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content="Stands for User Experience, focusing on how users interact with the application.">
+                                                        <Chip variant="faded" className="border-stone-200">UX</Chip>
+                                                    </Tooltip>
+                                                </CardBody>
+                                            </Card>
+                                        </Tab>
+                                        <Tab key="other" title="Other">
+                                            <Card>
+                                                <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
+                                                    <Spacer y={2} />
+                                                    <Tooltip showArrow={true} color="foreground" content=" An open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.">
+                                                        <Chip variant="faded" className="border-green-700">Node.js</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content=" A distributed version control system designed to handle everything from small to very large projects with speed and efficiency.">
+                                                        <Chip variant="faded" className="border-orange-700">Git</Chip>
+                                                    </Tooltip>
+                                                    <Tooltip showArrow={true} color="foreground" content="Stands for Node Package Manager, which is the default package manager for the JavaScript runtime environment Node.js.">
+                                                        <Chip variant="faded" className="border-red-700">npm</Chip>
+                                                    </Tooltip>
+                                                </CardBody>
+                                            </Card>
+                                        </Tab>
+                                    </Tabs>
+                                </div>
                             </CardBody>
                         </Card>
                         <Card isFooterBlurred className="h-[300px] max-h-[300px] w-full max-w-[300px]">
                             <CardHeader className="absolute z-10 top-1 flex-col items-start">
-                                <p className="text-tiny text-white/60">WANT A WEBSITE LIKE THIS?</p>
+                                <p className="text-tiny text-white/60">WANT A WEBSITE LIKE THIS ONE?</p>
                                 <h4 className="text-xl">Let me make you one</h4>
                             </CardHeader>
                             <Image
@@ -104,7 +164,8 @@ export default function AboutMe() {
                                 className="z-0 object-cover"
                                 src=""
                             />
-                            <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+                            <CardFooter
+                                className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
                                 <div className="flex flex-grow gap-2 items-center">
                                     <Image
                                         alt="makuyoshi icon"
