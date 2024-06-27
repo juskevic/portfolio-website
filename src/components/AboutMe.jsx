@@ -68,11 +68,13 @@ export default function AboutMe() {
 
                             </CardHeader>
                                 <Accordion isCompact>
-                                    <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
+                                    <AccordionItem key="1" aria-label="Accordion 1" title="What services do you offer?">
                                     </AccordionItem>
-                                    <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
+                                    <AccordionItem key="2" aria-label="Accordion 2" title="Can you tell us about your expertise and experience?">
                                     </AccordionItem>
-                                    <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
+                                    <AccordionItem key="3" aria-label="Accordion 3" title="How can someone hire you or collaborate on a project?">
+                                    </AccordionItem>
+                                    <AccordionItem key="4" aria-label="Accordion 4" title="How can we get in touch with you?">
                                     </AccordionItem>
                                 </Accordion>
                             </CardBody>
