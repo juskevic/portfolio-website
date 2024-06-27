@@ -8,16 +8,17 @@ import {
     Image,
     Button,
     Divider,
-    ScrollShadow,
-    Accordion, AccordionItem
+    ScrollShadow, Chip,
 } from "@nextui-org/react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faSquareUpwork} from "@fortawesome/free-brands-svg-icons";
 
 export default function AboutMe() {
     return (
         <>
             <div className="flex items-center justify-center">
-                <div className="flex flex-col w-full xl:w-3/5 space-y-5">
-                    <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-5 space-y-5 xl:space-y-0">
+                <div className="flex flex-col w-full xl:w-3/5 space-y-10">
+                    <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
                         <Card className="w-full xl:w-2/3">
                             <CardBody>
                                 <CardHeader className="flex flex-col z-10 !items-start">
@@ -27,7 +28,7 @@ export default function AboutMe() {
                                     </h4>
                                 </CardHeader>
                                 <ScrollShadow hideScrollBar>
-                                    <p className="text-lg max-h-40 p-2">
+                                    <p className="text-lg max-h-[200px] p-2">
                                         I’m a front-end developer passionate about crafting beautiful,
                                         responsive
                                         websites with the latest tech. I focus on design and user experience, ensuring
@@ -46,32 +47,25 @@ export default function AboutMe() {
                         </Card>
                         <Card className="w-full xl:w-1/2">
                             <CardBody>
-                                <CardHeader className="flex flex-col z-10 !items-start">
+                                <CardHeader className="flex flex-col max-h-[200px] z-10 !items-start">
                                     <p className="text-sm text-white/60 uppercase">BLOG</p>
                                     <h4 className="text-xl">
-                                        Last post
+                                        Latest post
                                     </h4>
                                 </CardHeader>
 
-                                <CardFooter>
-
+                                <CardFooter className="z-10 items-start">
+                                    <Chip color="warning" variant="dot">Available soon</Chip>
                                 </CardFooter>
                             </CardBody>
                         </Card>
                     </div>
-                    <div
-                        className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-5 space-y-5 xl:space-y-0">
+                    <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
                         <Card>
                             <CardBody>
                             <CardHeader>
 
-                                </CardHeader>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo
-                                    et, interdum suscipit, sollicitudin et, dolor. Duis bibendum, lectus ut viverra
-                                    rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Aliquam id
-                                    dolor.
-                                </p>
+                            </CardHeader>
                             </CardBody>
                         </Card>
                         <Card>
@@ -79,26 +73,29 @@ export default function AboutMe() {
                                 <CardHeader>
 
                                 </CardHeader>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo
-                                    et,
-                                    interdum suscipit, sollicitudin et, dolor. Duis bibendum, lectus ut viverra rhoncus,
-                                    dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Aliquam id dolor.
-                                </p>
                             </CardBody>
                         </Card>
-                        <Card>
-                            <CardBody>
-                                <CardHeader>
-
-                                </CardHeader>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo
-                                    et,
-                                    interdum suscipit, sollicitudin et, dolor. Duis bibendum, lectus ut viverra rhoncus,
-                                    dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Aliquam id dolor.
-                                </p>
-                            </CardBody>
+                        <Card isFooterBlurred className="h-[300px] max-h-[300px] w-full max-w-[300px]">
+                            <CardHeader className="absolute z-10 top-1 flex-col items-start">
+                                <p className="text-tiny text-white/60">WANT A WEBSITE LIKE THIS?</p>
+                                <h4 className="text-xl">Let me make you one</h4>
+                            </CardHeader>
+                            <Image
+                                removeWrapper
+                                alt="Relaxing app background"
+                                className="z-0 object-cover"
+                                src=""
+                            />
+                            <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+                                <div className="flex flex-grow gap-2 items-center">
+                                    <Image
+                                        alt="makuyoshi icon"
+                                        className="rounded-full w-10 h-11 bg-black"
+                                        src="https://nextui.org/images/breathing-app-icon.jpeg"
+                                    />
+                                </div>
+                                <Button color="default" variant="bordered" endContent={<FontAwesomeIcon icon={faSquareUpwork} size={"xl"}/>}>Let's Talk</Button>
+                            </CardFooter>
                         </Card>
                     </div>
                 </div>
