@@ -62,7 +62,7 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card className="w-1/3">
+                        <Card className="w-full xl:w-1/3">
                             <CardBody>
                             <CardHeader>
 
