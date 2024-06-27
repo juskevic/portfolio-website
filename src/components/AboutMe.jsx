@@ -61,7 +61,7 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card className="w-[400px] h-[400px]">
+                        <Card className="w-full xl:w-[400px] h-[400px]">
                             <CardBody>
                                 <CardHeader>
                                     <p className="text-sm text-white/60 uppercase">PRESS TO EXPAND</p>
@@ -86,7 +86,7 @@ export default function AboutMe() {
                                 </Accordion>
                             </CardBody>
                         </Card>
-                        <Card className="w-1/3">
+                        <Card className="w-full xl:w-1/3">
                             <CardBody>
                                 <CardHeader className="flex flex-col z-10 !items-start">
                                     <p className="text-sm text-white/60 uppercase">EXPLORE MY</p>
