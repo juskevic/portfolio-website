@@ -7,7 +7,6 @@ import {
     CardFooter,
     Image,
     Button,
-    Divider,
     ScrollShadow, Chip, Accordion, AccordionItem,
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -75,7 +74,7 @@ export default function AboutMe() {
                                     </AccordionItem>
                                     <AccordionItem  key="2" aria-label="Accordion 2" title="How can someone hire you or collaborate on a project?">
                                         <p>
-                                            Please do not hesitate to contact me via my<Link href="#" underline="always" color="foreground"> Upwork</Link> profile should you require a website.
+                                            Please do not hesitate to contact me via my <Link href="#" underline="always" color="foreground"> Upwork</Link> profile should you require a website.
                                             You are also welcome to contribute to my open-source projects on <Link href="#" underline="always" color="foreground"> GitHub</Link>.
                                         </p>
                                     </AccordionItem>
