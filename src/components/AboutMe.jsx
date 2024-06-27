@@ -62,19 +62,30 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card className="w-full xl:w-1/3">
+                        <Card className="w-full xl:w-1/3 h-[380px]">
                             <CardBody>
-                            <CardHeader>
-
-                            </CardHeader>
-                                <Accordion isCompact>
-                                    <AccordionItem key="1" aria-label="Accordion 1" title="What services do you offer?">
+                                <CardHeader>
+                                    <p className="text-sm text-white/60 uppercase">PRESS TO EXPAND</p>
+                                </CardHeader>
+                                <Accordion isCompact defaultExpandedKeys={["2"]}>
+                                <AccordionItem key="1" aria-label="Accordion 1" title="Can you tell us about your expertise and experience?">
+                                        <p>
+                                            At the moment I am still a student trying to gain experience in web development by freelancing.
+                                        </p>
                                     </AccordionItem>
-                                    <AccordionItem key="2" aria-label="Accordion 2" title="Can you tell us about your expertise and experience?">
+                                    <AccordionItem  key="2" aria-label="Accordion 2" title="How can someone hire you or collaborate on a project?">
+                                        <p>
+                                            Please do not hesitate to contact me via my
+                                            <Link isBlock href="#" underline="always" color="foreground">Upwork</Link>
+                                            profile should you require a website.
+                                            You are also welcome to contribute to my open-source projects on
+                                            <Link isBlock href="#" underline="always" color="foreground">GitHub</Link>.
+                                        </p>
                                     </AccordionItem>
-                                    <AccordionItem key="3" aria-label="Accordion 3" title="How can someone hire you or collaborate on a project?">
-                                    </AccordionItem>
-                                    <AccordionItem key="4" aria-label="Accordion 4" title="How can we get in touch with you?">
+                                    <AccordionItem key="3" aria-label="Accordion 3" title="How can we get in touch with you?">
+                                        <p>
+                                            Should you require direct communication, please contact me on<Link isBlock href="#" underline="always" color="foreground">Telegram</Link>.
+                                        </p>
                                     </AccordionItem>
                                 </Accordion>
                             </CardBody>
