@@ -1,13 +1,22 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button} from "@nextui-org/react";
 import {Link} from 'react-scroll'
-import { Exo } from "next/font/google";
+import { Exo, Sometype_Mono } from "next/font/google";
+import TypingAnimation from "@/components/TypingAnimation.jsx";
 
 const exo = Exo({
     weight: '300',
     style: 'normal',
     subsets: ['latin'],
 });
+
+const sometypeMono = Sometype_Mono({
+    weight: '400',
+    style: 'normal',
+    subsets: ['latin'],
+});
+
+
 
 export default function Header() {
 
@@ -28,7 +37,7 @@ export default function Header() {
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <p className="italic text-inherit text-xl">maku</p>
+                    <p className={`${sometypeMono.className} italic text-inherit text-xl`}><TypingAnimation /></p>
                 </NavbarBrand>
             </NavbarContent>
 

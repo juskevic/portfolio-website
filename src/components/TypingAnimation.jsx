@@ -6,26 +6,10 @@ const TypingAnimationComponent = () => {
             <TypeAnimation
                 style={{whiteSpace: 'pre-line'}}
                 sequence={[
-                    `HTML`,
-                    3000,
-                    `CSS`,
-                    3000,
-                    `JavaScript`,
-                    3000,
-                    `Bootstrap`,
-                    3000,
-                    `React`,
-                    3000,
-                    `Tailwind`,
-                    3000,
-                    `UI/UX`,
-                    3000,
-                    `Next.js`,
-                    3000
+                    `<Maku />`,
                 ]}
-                cursor={true}
-                speed={50}
-                repeat={Infinity}
+                cursor={false}
+                speed={3}
             />
         )
 }
