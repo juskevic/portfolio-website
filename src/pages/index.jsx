@@ -43,8 +43,8 @@ const Main = () => {
                             <h1 className={`${caveat.className} text-4xl xl:text-5xl text-stone-300 animate-fade-left animate-once bold`}>
                                 Max Yushkevich
                             </h1>
-                            <h2 className={`${exo.className} text-2xl xl:text-2xl text-stone-500 animate-fade-right animate-once`}>
-                                Front-end Engineer
+                            <h2 className={`${exo.className} text-xl xl:text-2xl text-stone-500 animate-fade-right animate-once`}>
+                                Frontend Engineer
                             </h2>
                             <Socials/>
                         </div>
