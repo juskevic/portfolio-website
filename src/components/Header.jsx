@@ -37,7 +37,10 @@ export default function Header() {
                     <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500} className="hover:text-stone-700">hello</Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-700">about</Link>
+                    <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-90} duration={500} className="hover:text-stone-700">about</Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Link className="brightness-50 cursor-not-allowed">testimonials</Link>
                 </NavbarItem>
                 <NavbarItem>
                     <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-700">projects</Link>
@@ -49,8 +52,8 @@ export default function Header() {
 
             <NavbarContent justify="end" className="animate-fade-down animate-once animate-delay-200 animate-ease-out">
                 <NavbarItem>
-                    <Button as={Link} color="default" href="#" variant="light">
-                        Blog
+                    <Button as={Link} color="default" href="#" variant="bordered">
+                        blog ✏️
                     </Button>
                 </NavbarItem>
             </NavbarContent>
