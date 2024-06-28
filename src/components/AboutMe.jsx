@@ -86,10 +86,10 @@ export default function AboutMe() {
                                 </Accordion>
                             </CardBody>
                         </Card>
-                        <Card className="w-full xl:w-1/3">
+                        <Card className="w-full xl:w-1/3 h-[330px]">
                             <CardBody>
                                 <CardHeader className="flex flex-col z-10 !items-start">
-                                    <p className="text-sm text-white/60 uppercase">EXPLORE MY</p>
+                                    <p className="text-sm text-white/60 uppercase">The Tools Behind Stunning Interfaces</p>
                                     <h4 className="text-xl">
                                         Tech stack
                                     </h4>

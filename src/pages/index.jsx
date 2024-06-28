@@ -45,7 +45,7 @@ const Main = () => {
                                 Max Yushkevich
                             </h1>
                             <h2 className={`${exo.className} text-2xl xl:text-2xl text-stone-500 animate-fade-right animate-once`}>
-                                Frontend Web Developer
+                                Frontend Engineer
                             </h2>
                             <Socials/>
                         </div>
