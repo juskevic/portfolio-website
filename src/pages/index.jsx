@@ -35,7 +35,7 @@ const exo = Exo({
 const Main = () => {
     return (
         <>
-            <main className="p-6 pt-40 space-y-56 xl:p-56 xl:space-y-80">
+            <main className="p-6 pt-40 space-y-56 xl:p-36 xl:space-y-80">
 
                 <Element name="hello" className="element flex flex-row justify-center space-x-20">
                     <div>
@@ -104,7 +104,8 @@ const HomePage = () => {
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-                <meta name="description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
+                <meta name="description"
+                      content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
                 <meta name="robots" content="index, follow"/>
                 <link rel="canonical" href="https://www.makuyoshi.dev"/>
                 <link rel="alternate" hrefLang="en-us" href="https://wwww.makuyoshi.dev"/>
@@ -112,11 +113,13 @@ const HomePage = () => {
 
                 <meta property="type" content="website"/>
                 <meta property="og:title" content="Max Yushkevich: Frontend Web Developer"/>
-                <meta property="og:description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
+                <meta property="og:description"
+                      content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
                 <meta property="og:url" content="https://makuyoshi.dev"/>
                 <meta property="og:image" content="makuPreview.png"/>
             </Head>
-            <div className="dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+            <div
+                className="dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
                 <Header/>
                 <Main/>
                 <Footer/>
