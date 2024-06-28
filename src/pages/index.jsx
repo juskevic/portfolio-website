@@ -1,24 +1,23 @@
-import React, {useEffect} from 'react';
+// React related imports
+import React, { useEffect } from 'react';
 import Head from 'next/head';
-import {Element, Events} from 'react-scroll';
+import { Element, Events } from 'react-scroll';
 
-// Header/Footer components
+// NextUI components
+import { Chip, Image } from "@nextui-org/react";
+import { Caveat, Exo } from "next/font/google";
+
+// Components imports grouped by their usage
+// Common components
 import Header from "@/components/Header.jsx";
 import Footer from "@/components/Footer.jsx";
-
-// Contacts components
+// Contacts related component
 import Contacts from "@/components/Contacts.jsx";
-
-// Content Components
-import LatestBlogPosts from "@/components/LatestBlogPosts.jsx";
+//  Projects related component
 import Projects from "@/components/Projects.jsx";
-
-// Animation components
-import TypingAnimation from "@/components/TypingAnimation.jsx";
+// Animation related component
 import Socials from "@/components/Socials.jsx";
-
-import {Chip, Divider, Image} from "@nextui-org/react";
-import { Caveat, Exo } from "next/font/google";
+// AboutMe component
 import AboutMe from "@/components/AboutMe.jsx";
 
 const caveat = Caveat({
