@@ -35,7 +35,7 @@ const exo = Exo({
 const Main = () => {
     return (
         <>
-            <main className="p-6 pt-40 space-y-56 xl:p-40 xl:space-y-80">
+            <main className="p-6 pt-40 space-y-56 xl:p-44 xl:space-y-80">
 
                 <Element name="hello" className="element flex flex-row justify-center space-x-20">
                     <div>
