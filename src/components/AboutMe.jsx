@@ -15,9 +15,9 @@ import {faSquareUpwork} from "@fortawesome/free-brands-svg-icons";
 export default function AboutMe() {
     return (
         <>
-            <div className="flex items-center justify-center">
-                <div className="flex flex-col w-full xl:w-full space-y-10">
-                    <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
+            <div className="flex items-center justify-center ">
+                <div className="flex flex-col space-y-10 xl:w-5/6">
+                    <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10">
                         <Card className="w-full xl:w-2/3">
                             <CardBody>
                                 <CardHeader className="flex flex-col z-10 !items-start">
@@ -61,7 +61,7 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card className="w-full xl:w-[400px] h-[400px]">
+                        <Card className="w-full xl:w-2/3 h-[430px]">
                             <CardBody>
                                 <CardHeader>
                                     <p className="text-sm text-white/60 uppercase">PRESS TO EXPAND</p>
@@ -86,7 +86,7 @@ export default function AboutMe() {
                                 </Accordion>
                             </CardBody>
                         </Card>
-                        <Card className="w-full xl:w-1/3 h-[330px]">
+                        <Card className="w-full xl:w-3/4 h-[330px]">
                             <CardBody>
                                 <CardHeader className="flex flex-col z-10 !items-start">
                                     <p className="text-sm text-white/60 uppercase">The Tools Behind Stunning Interfaces</p>
