@@ -56,96 +56,100 @@ export default function AboutMe() {
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
                         <Card className="w-full xl:w-2/3 h-[400px]">
-                            <CardBody>
-                                <CardHeader>
-                                    <p className="text-sm text-white/60 uppercase">PRESS TO EXPAND</p>
-                                </CardHeader>
-                                <Accordion isCompact defaultExpandedKeys={["2"]}>
-                                <AccordionItem key="1" aria-label="Accordion 1" title="Can you tell us about your expertise and experience?">
-                                        <p>
-                                            At the moment I am still a student trying to gain experience in web development by freelancing.
-                                        </p>
-                                    </AccordionItem>
-                                    <AccordionItem  key="2" aria-label="Accordion 2" title="How can someone hire you or collaborate on a project?">
-                                        <p>
-                                            Please do not hesitate to contact me via my <Link href="#" underline="always" color="foreground"> Upwork</Link> profile should you require a website.
-                                            You are also welcome to contribute to my open-source projects on <Link href="#" underline="always" color="foreground"> GitHub</Link>.
-                                        </p>
-                                    </AccordionItem>
-                                    <AccordionItem key="3" aria-label="Accordion 3" title="How can we get in touch with you?">
-                                        <p>
-                                            Should you require direct communication, please contact me on <Link href="#" underline="always" color="foreground"> Telegram</Link> or <Link href="#" underline="always" color="foreground"> Email</Link>.
-                                        </p>
-                                    </AccordionItem>
-                                </Accordion>
-                            </CardBody>
+                           <ScrollShadow hideScrollBar>
+                               <CardBody>
+                                   <CardHeader>
+                                       <p className="text-sm text-white/60 uppercase">PRESS TO EXPAND</p>
+                                   </CardHeader>
+                                   <Accordion isCompact defaultExpandedKeys={["2"]}>
+                                       <AccordionItem key="1" aria-label="Accordion 1" title="Can you tell us about your expertise and experience?">
+                                           <p>
+                                               At the moment I am still a student trying to gain experience in web development by freelancing.
+                                           </p>
+                                       </AccordionItem>
+                                       <AccordionItem  key="2" aria-label="Accordion 2" title="How can someone hire you or collaborate on a project?">
+                                           <p>
+                                               Please do not hesitate to contact me via my <Link href="#" underline="always" color="foreground"> Upwork</Link> profile should you require a website.
+                                               You are also welcome to contribute to my open-source projects on <Link href="#" underline="always" color="foreground"> GitHub</Link>.
+                                           </p>
+                                       </AccordionItem>
+                                       <AccordionItem key="3" aria-label="Accordion 3" title="How can we get in touch with you?">
+                                           <p>
+                                               Should you require direct communication, please contact me on <Link href="#" underline="always" color="foreground"> Telegram</Link> or <Link href="#" underline="always" color="foreground"> Email</Link>.
+                                           </p>
+                                       </AccordionItem>
+                                   </Accordion>
+                               </CardBody>
+                           </ScrollShadow>
                         </Card>
                         <Card className="w-full xl:w-2/3 h-[330px]">
-                            <CardBody>
-                                <CardHeader className="flex flex-col z-10 !items-start">
-                                    <p className="text-sm text-white/60 uppercase">The Tools Behind Stunning Interfaces</p>
-                                    <h4 className="text-xl">
-                                        Tech stack
-                                    </h4>
-                                </CardHeader>
-                                <div>
-                                    <Tabs aria-label="Options" variant="underlined" size="md">
-                                        <Tab key="myStory" title="Frontend">
-                                            <Card>
-                                                <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
-                                                    <Spacer y={2} />
-                                                    <Tooltip showArrow={true} color="foreground" content="Used for structuring content on the web.">
-                                                        <Chip variant="faded" className="border-red-400">HTML</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content="Used for styling and layout of web pages.">
-                                                        <Chip variant="faded" className="border-blue-500">CSS</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content="Used for making web pages interactive.">
-                                                        <Chip variant="faded" className="border-yellow-400">JavaScript</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content="A popular framework for developing responsive and mobile-first websites.">
-                                                        <Chip variant="faded" className="border-purple-500">Bootstrap</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content="A JavaScript library for building user interfaces.">
-                                                        <Chip variant="faded" className="border-cyan-700">React</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content="A React framework for server-rendered React apps.">
-                                                        <Chip variant="faded" className="border-black">Next.js</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content="A utility-first CSS framework for rapidly building custom designs.">
-                                                        <Chip variant="faded" className="border-blue-400">Tailwind</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content="A React-based component library for building user interfaces.">
-                                                        <Chip variant="faded" className="border-black">NextUI</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content="Refers to User Interface design, which involves designing the look and feel of applications.">
-                                                        <Chip variant="faded" className="border-stone-200">UI</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content="Stands for User Experience, focusing on how users interact with the application.">
-                                                        <Chip variant="faded" className="border-stone-200">UX</Chip>
-                                                    </Tooltip>
-                                                </CardBody>
-                                            </Card>
-                                        </Tab>
-                                        <Tab key="other" title="Other">
-                                            <Card>
-                                                <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
-                                                    <Spacer y={2} />
-                                                    <Tooltip showArrow={true} color="foreground" content=" An open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.">
-                                                        <Chip variant="faded" className="border-green-700">Node.js</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content=" A distributed version control system designed to handle everything from small to very large projects with speed and efficiency.">
-                                                        <Chip variant="faded" className="border-orange-700">Git</Chip>
-                                                    </Tooltip>
-                                                    <Tooltip showArrow={true} color="foreground" content="Stands for Node Package Manager, which is the default package manager for the JavaScript runtime environment Node.js.">
-                                                        <Chip variant="faded" className="border-red-700">npm</Chip>
-                                                    </Tooltip>
-                                                </CardBody>
-                                            </Card>
-                                        </Tab>
-                                    </Tabs>
-                                </div>
-                            </CardBody>
+                            <ScrollShadow hideScrollBar>
+                                <CardBody>
+                                    <CardHeader className="flex flex-col z-10 !items-start">
+                                        <p className="text-sm text-white/60 uppercase">The Tools Behind Stunning Interfaces</p>
+                                        <h4 className="text-xl">
+                                            Tech stack
+                                        </h4>
+                                    </CardHeader>
+                                    <div>
+                                        <Tabs aria-label="Options" variant="underlined" size="md">
+                                            <Tab key="myStory" title="Frontend">
+                                                <Card>
+                                                    <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
+                                                        <Spacer y={2} />
+                                                        <Tooltip showArrow={true} color="foreground" content="Used for structuring content on the web.">
+                                                            <Chip variant="faded" className="border-red-400">HTML</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="Used for styling and layout of web pages.">
+                                                            <Chip variant="faded" className="border-blue-500">CSS</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="Used for making web pages interactive.">
+                                                            <Chip variant="faded" className="border-yellow-400">JavaScript</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="A popular framework for developing responsive and mobile-first websites.">
+                                                            <Chip variant="faded" className="border-purple-500">Bootstrap</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="A JavaScript library for building user interfaces.">
+                                                            <Chip variant="faded" className="border-cyan-700">React</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="A React framework for server-rendered React apps.">
+                                                            <Chip variant="faded" className="border-black">Next.js</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="A utility-first CSS framework for rapidly building custom designs.">
+                                                            <Chip variant="faded" className="border-blue-400">Tailwind</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="A React-based component library for building user interfaces.">
+                                                            <Chip variant="faded" className="border-black">NextUI</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="Refers to User Interface design, which involves designing the look and feel of applications.">
+                                                            <Chip variant="faded" className="border-stone-200">UI</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="Stands for User Experience, focusing on how users interact with the application.">
+                                                            <Chip variant="faded" className="border-stone-200">UX</Chip>
+                                                        </Tooltip>
+                                                    </CardBody>
+                                                </Card>
+                                            </Tab>
+                                            <Tab key="other" title="Other">
+                                                <Card>
+                                                    <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
+                                                        <Spacer y={2} />
+                                                        <Tooltip showArrow={true} color="foreground" content=" An open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.">
+                                                            <Chip variant="faded" className="border-green-700">Node.js</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content=" A distributed version control system designed to handle everything from small to very large projects with speed and efficiency.">
+                                                            <Chip variant="faded" className="border-orange-700">Git</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="Stands for Node Package Manager, which is the default package manager for the JavaScript runtime environment Node.js.">
+                                                            <Chip variant="faded" className="border-red-700">npm</Chip>
+                                                        </Tooltip>
+                                                    </CardBody>
+                                                </Card>
+                                            </Tab>
+                                        </Tabs>
+                                    </div>
+                                </CardBody>
+                            </ScrollShadow>
                         </Card>
                         <Card isFooterBlurred className="h-[300px] max-h-[300px] w-full max-w-[300px]">
                             <CardHeader className="absolute z-10 top-1 flex-col items-start">
