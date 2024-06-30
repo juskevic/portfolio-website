@@ -16,7 +16,7 @@ export default function AboutMe() {
     return (
         <>
             <div className="flex items-center justify-center ">
-                <div className="flex flex-col space-y-10 xl:w-5/6">
+                <div className="flex flex-col space-y-10">
                     <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10">
                         <Card className="w-full xl:w-2/3">
                             <CardBody>
@@ -29,17 +29,11 @@ export default function AboutMe() {
                                 <ScrollShadow hideScrollBar>
                                     <p className="text-lg max-h-[200px] p-2">
                                         I’m a front-end developer passionate about crafting beautiful,
-                                        responsive
-                                        websites with the latest tech. I focus on design and user experience, ensuring
-                                        interfaces
-                                        are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus
-                                        frameworks
-                                        like
-                                        React and Next.js, I’m committed to continuous learning to keep pace with
-                                        industry
-                                        innovations. Take a look at my portfolio, and let’s connect to explore how we
-                                        can
-                                        collaborate!
+                                        responsive websites with the latest tech. I focus on design and user experience, ensuring
+                                        interfaces are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus
+                                        frameworks like React and Next.js, I’m committed to continuous learning to keep pace with
+                                        industry innovations. Take a look at my portfolio, and let’s connect to explore how we
+                                        can collaborate!
                                     </p>
                                 </ScrollShadow>
                             </CardBody>
@@ -61,7 +55,7 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card className="w-full xl:w-2/3 h-[430px]">
+                        <Card className="w-full xl:w-2/3 h-[400px]">
                             <CardBody>
                                 <CardHeader>
                                     <p className="text-sm text-white/60 uppercase">PRESS TO EXPAND</p>
@@ -86,7 +80,7 @@ export default function AboutMe() {
                                 </Accordion>
                             </CardBody>
                         </Card>
-                        <Card className="w-full xl:w-3/4 h-[330px]">
+                        <Card className="w-full xl:w-2/3 h-[330px]">
                             <CardBody>
                                 <CardHeader className="flex flex-col z-10 !items-start">
                                     <p className="text-sm text-white/60 uppercase">The Tools Behind Stunning Interfaces</p>
