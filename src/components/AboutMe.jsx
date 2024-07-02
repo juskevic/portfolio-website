@@ -21,7 +21,7 @@ export default function AboutMe() {
                         <Card className="w-full xl:w-2/3">
                             <CardBody>
                                 <CardHeader className="flex flex-col z-10 !items-start">
-                                    <p className="text-sm text-white/60 uppercase">ABOUT ME</p>
+                                    <p className="text-sm text-default-500 uppercase">ABOUT ME</p>
                                     <h4 className="text-xl">
                                         Hello! I’m Max 👋
                                     </h4>
@@ -41,7 +41,7 @@ export default function AboutMe() {
                         <Card className="w-full xl:w-1/2">
                             <CardBody>
                                 <CardHeader className="flex flex-col max-h-[200px] z-10 !items-start">
-                                    <p className="text-sm text-white/60 uppercase">BLOG</p>
+                                    <p className="text-sm text-default-500 uppercase">BLOG</p>
                                     <h4 className="text-xl">
                                         Latest post
                                     </h4>
@@ -59,7 +59,7 @@ export default function AboutMe() {
                            <ScrollShadow hideScrollBar>
                                <CardBody>
                                    <CardHeader>
-                                       <p className="text-sm text-white/60 uppercase">PRESS TO EXPAND</p>
+                                       <p className="text-sm text-default-500 uppercase">PRESS TO EXPAND</p>
                                    </CardHeader>
                                    <Accordion isCompact defaultExpandedKeys={["2"]}>
                                        <AccordionItem key="1" aria-label="Accordion 1" title="Can you tell us about your expertise and experience?">
@@ -86,7 +86,7 @@ export default function AboutMe() {
                             <ScrollShadow hideScrollBar>
                                 <CardBody>
                                     <CardHeader className="flex flex-col z-10 !items-start">
-                                        <p className="text-sm text-white/60 uppercase">The Tools Behind Stunning Interfaces</p>
+                                        <p className="text-sm text-default-500 uppercase">The Tools Behind Stunning Interfaces</p>
                                         <h4 className="text-xl">
                                             Tech stack
                                         </h4>
@@ -153,7 +153,7 @@ export default function AboutMe() {
                         </Card>
                         <Card isFooterBlurred className="h-[300px] max-h-[300px] w-full max-w-[300px]">
                             <CardHeader className="absolute z-10 top-1 flex-col items-start">
-                                <p className="text-tiny text-white/60">WANT A WEBSITE LIKE THIS ONE?</p>
+                                <p className="text-tiny text-default-500">WANT A WEBSITE LIKE THIS ONE?</p>
                                 <h4 className="text-xl">Let me make you one</h4>
                             </CardHeader>
                             <Image
@@ -163,7 +163,7 @@ export default function AboutMe() {
                                 src=""
                             />
                             <CardFooter
-                                className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
+                                className="absolute bg-default/30 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
                                 <div className="flex flex-grow gap-2 items-center">
                                     <Image
                                         alt="makuyoshi icon"

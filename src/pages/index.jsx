@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { Element, Events } from 'react-scroll';
 
 // NextUI components
-import {Chip, Image, Switch} from "@nextui-org/react";
+import {Chip, Image} from "@nextui-org/react";
 import { Caveat, Exo } from "next/font/google";
 
 // Components imports grouped by their usage
@@ -19,8 +19,6 @@ import Projects from "@/components/Projects.jsx";
 import Socials from "@/components/Socials.jsx";
 // AboutMe component
 import AboutMe from "@/components/AboutMe.jsx";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
 
 const caveat = Caveat({
     weight: '400',
@@ -34,7 +32,7 @@ const exo = Exo({
     subsets: ['latin'],
 });
 
-const Main = ({ isSelected, setIsSelected }) => {
+const Main = () => {
     return (
         <>
             <main className="p-6 pt-40 space-y-56 xl:p-40 xl:space-y-80">
