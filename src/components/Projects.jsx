@@ -35,11 +35,11 @@ const Projects = (props) => {
                                     <p className="text-md">Libro</p>
                                     <p className="text-small text-default-500"></p>
                                 </div>
-                                <Chip color="success" variant="flat">Beta</Chip>
+                                <Chip color="warning" variant="flat">Archived</Chip>
                             </CardHeader>
                             <Divider/>
                             <CardBody>
-                                <p>Libro is a Discord bot crafted with Discord.js and Node.js, designed to enhance your server’s reading experience. It allows users to search, share, and discuss books seamlessly within your Discord community.</p>
+                                <p>Libro was a Discord bot crafted with Discord.js and Node.js, designed to enhance your server’s reading experience. It allowed users to search, share, and discuss books seamlessly within your Discord community.</p>
                             </CardBody>
                             <Divider/>
                             <CardFooter>
@@ -58,13 +58,6 @@ const Projects = (props) => {
                     <div className="">
                         <Card className="max-w-[400px]">
                             <CardHeader className="flex gap-3">
-                                <Image
-                                    alt="highstorm logo"
-                                    height={40}
-                                    radius="sm"
-                                    src=""
-                                    width={40}
-                                />
                                 <div className="flex flex-col">
                                     <p className="text-md">Highstorm</p>
                                     <Link href="https://highstorm.makuyoshi.dev/" className="text-small text-default-500" underline="hover">highstorm.makuyoshi.dev</Link>
@@ -73,12 +66,9 @@ const Projects = (props) => {
                             </CardHeader>
                             <Divider/>
                             <CardBody>
-                                <p>Highstorm is a web application that I developed in 2024. It was my first attempt
-                                    at
-                                    utilising an API, and it was built using Bootstrap. The app shows basic weather
-                                    info
-                                    for a given location, including temperature, humidity, clouds, sunset, and
-                                    sunrise.</p>
+                                <p>
+                                    Highstorm was a web application that I developed in 2024. It was my first attempt at utilizing an API, and it was built using Bootstrap. The app showed basic weather information for a given location, including temperature, humidity, clouds, sunset, and sunrise.
+                                </p>
                             </CardBody>
                             <Divider/>
                             <CardFooter>
@@ -103,7 +93,7 @@ const Projects = (props) => {
                                 alt="website logo"
                                 height={40}
                                 radius="sm"
-                                src="" // TODO: add logo
+                                src="favicon.ico"
                                 width={40}
                             />
                             <div className="flex flex-col">

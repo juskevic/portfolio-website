@@ -116,16 +116,10 @@ export default function AboutMe() {
                                                             <Chip variant="faded" className="border-black">Next.js</Chip>
                                                         </Tooltip>
                                                         <Tooltip showArrow={true} color="foreground" content="A utility-first CSS framework for rapidly building custom designs.">
-                                                            <Chip variant="faded" className="border-blue-400">Tailwind</Chip>
+                                                            <Chip variant="faded" className="border-blue-400">Tailwind CSS</Chip>
                                                         </Tooltip>
                                                         <Tooltip showArrow={true} color="foreground" content="A React-based component library for building user interfaces.">
                                                             <Chip variant="faded" className="border-black">NextUI</Chip>
-                                                        </Tooltip>
-                                                        <Tooltip showArrow={true} color="foreground" content="Refers to User Interface design, which involves designing the look and feel of applications.">
-                                                            <Chip variant="faded" className="border-stone-200">UI</Chip>
-                                                        </Tooltip>
-                                                        <Tooltip showArrow={true} color="foreground" content="Stands for User Experience, focusing on how users interact with the application.">
-                                                            <Chip variant="faded" className="border-stone-200">UX</Chip>
                                                         </Tooltip>
                                                     </CardBody>
                                                 </Card>
