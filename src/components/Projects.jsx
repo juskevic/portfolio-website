@@ -17,7 +17,7 @@ const Projects = (props) => {
     }
 
     return (
-        <div className="space-y-10" ref={forwardedRef}>
+        <div ref={forwardedRef}>
             <div className='flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10 ${animationClass2}'>
                 {/*LEFT*/}
                 <div ref={forwardedRef} className={`flex flex-col space-y-10 ${animationClassRight}`}>

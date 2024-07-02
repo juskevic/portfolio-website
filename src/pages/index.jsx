@@ -63,9 +63,6 @@ const Main = () => {
 
                 <Element name="projects" className={`${exo.className} element`}>
                     <Projects/>
-                    <div className="text-center"> {/*remove later*/}
-                        <Chip color="warning" variant="dot">This section is under development</Chip>
-                    </div>
                 </Element>
 
                 <Element name="contact" className={`${exo.className} element space-y-8`}>
