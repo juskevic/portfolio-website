@@ -1,8 +1,20 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button} from "@nextui-org/react";
+import {
+    Navbar,
+    NavbarBrand,
+    NavbarContent,
+    NavbarItem,
+    NavbarMenuToggle,
+    NavbarMenu,
+    NavbarMenuItem,
+    Button,
+    Switch
+} from "@nextui-org/react";
 import {Link} from 'react-scroll'
 import { Exo, Sometype_Mono } from "next/font/google";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
 
 const exo = Exo({
     weight: '300',
@@ -18,7 +30,7 @@ const sometypeMono = Sometype_Mono({
 
 
 
-export default function Header() {
+export default function Header({isSelected, setIsSelected}) {
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -60,6 +72,11 @@ export default function Header() {
             </NavbarContent>
 
             <NavbarContent justify="end" className="animate-fade-down animate-once animate-delay-200 animate-ease-out">
+                <NavbarItem>
+                    <Switch color="secondary" isSelected={isSelected} onValueChange={setIsSelected}
+                            startContent={<FontAwesomeIcon icon={faMoon}/>} endContent={<FontAwesomeIcon icon={faSun}/>}>
+                    </Switch>
+                </NavbarItem>
                 <NavbarItem>
                     <Button as={Link} color="default" href="#" variant="bordered">
                         blog ✏️

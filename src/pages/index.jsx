@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { Element, Events } from 'react-scroll';
 
 // NextUI components
-import { Chip, Image } from "@nextui-org/react";
+import {Chip, Image, Switch} from "@nextui-org/react";
 import { Caveat, Exo } from "next/font/google";
 
 // Components imports grouped by their usage
@@ -19,6 +19,8 @@ import Projects from "@/components/Projects.jsx";
 import Socials from "@/components/Socials.jsx";
 // AboutMe component
 import AboutMe from "@/components/AboutMe.jsx";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
 
 const caveat = Caveat({
     weight: '400',
@@ -32,7 +34,7 @@ const exo = Exo({
     subsets: ['latin'],
 });
 
-const Main = () => {
+const Main = ({ isSelected, setIsSelected }) => {
     return (
         <>
             <main className="p-6 pt-40 space-y-56 xl:p-40 xl:space-y-80">
@@ -81,6 +83,8 @@ const Main = () => {
 }
 
 const HomePage = () => {
+    const [isSelected, setIsSelected] = React.useState(true);
+
     useEffect(() => {
         Events.scrollEvent.register('begin', function () {
             console.log("begin", arguments);
@@ -118,9 +122,9 @@ const HomePage = () => {
                 <meta property="og:url" content="https://makuyoshi.dev"/>
                 <meta property="og:image" content="makuPreview.png"/>
             </Head>
-            <div className="dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
-                <Header/>
-                <Main/>
+            <div className={`${isSelected ? "dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" : "-z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"}`}>
+                <Header isSelected={isSelected} setIsSelected={setIsSelected}/>
+                <Main isSelected={isSelected} setIsSelected={setIsSelected}/>
                 <Footer/>
             </div>
         </>
@@ -129,6 +133,6 @@ const HomePage = () => {
 
 export default HomePage;
 
-// dark: "dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"
+// dark: dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]
 
 // light: -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]
