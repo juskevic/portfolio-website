@@ -40,10 +40,10 @@ const Main = () => {
                 <Element name="hello" className="element flex flex-row justify-center space-x-20">
                     <div>
                         <div className="space-y-1">
-                            <h1 className={`${caveat.className} text-4xl xl:text-5xl text-stone-300 animate-fade-left animate-once bold`}>
+                            <h1 className={`${caveat.className} text-4xl xl:text-5xl animate-fade-left animate-once bold`}>
                                 Max Yushkevich
                             </h1>
-                            <h2 className={`${exo.className} text-xl xl:text-2xl text-stone-500 animate-fade-right animate-once`}>
+                            <h2 className={`${exo.className} text-xl xl:text-2xl animate-fade-right animate-once`}>
                                 Frontend Engineer
                             </h2>
                             <Socials/>
@@ -118,8 +118,7 @@ const HomePage = () => {
                 <meta property="og:url" content="https://makuyoshi.dev"/>
                 <meta property="og:image" content="makuPreview.png"/>
             </Head>
-            <div
-                className="dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+            <div className="dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
                 <Header/>
                 <Main/>
                 <Footer/>
@@ -129,3 +128,7 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+// dark: "dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"
+
+// light: -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]

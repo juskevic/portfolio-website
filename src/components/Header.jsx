@@ -37,7 +37,7 @@ export default function Header() {
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <p className={`${sometypeMono.className} italic text-inherit text-xl`}><TypingAnimation /></p>
+                    <p className={`${sometypeMono.className} italic text-inherit text-md xl:text-xl`}><TypingAnimation /></p>
                 </NavbarBrand>
             </NavbarContent>
 

@@ -6,7 +6,7 @@ const TypingAnimationComponent = () => {
             <TypeAnimation
                 style={{whiteSpace: 'pre-line'}}
                 sequence={[
-                    `<Maku />`,
+                    `<Max Yushkevich />`,
                 ]}
                 cursor={false}
                 speed={3}
