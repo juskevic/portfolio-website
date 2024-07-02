@@ -49,7 +49,7 @@ export default function Header({isSelected, setIsSelected}) {
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <p className={`${sometypeMono.className} italic text-inherit text-md xl:text-xl`}><TypingAnimation /></p>
+                    <p className={`${sometypeMono.className} text-md xl:text-xl`}><TypingAnimation /></p>
                 </NavbarBrand>
             </NavbarContent>
 
@@ -72,7 +72,7 @@ export default function Header({isSelected, setIsSelected}) {
             </NavbarContent>
 
             <NavbarContent justify="end" className="animate-fade-down animate-once animate-delay-200 animate-ease-out">
-                <NavbarItem>
+                <NavbarItem className="hidden sm:flex">
                     <Switch color="secondary" isSelected={isSelected} onValueChange={setIsSelected}
                             startContent={<FontAwesomeIcon icon={faMoon}/>} endContent={<FontAwesomeIcon icon={faSun}/>}>
                     </Switch>
