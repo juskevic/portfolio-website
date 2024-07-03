@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { handleViewport } from 'react-in-viewport';
-import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Chip} from "@nextui-org/react";
+import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Chip, Button} from "@nextui-org/react";
 
 const Projects = (props) => {
     const { inViewport, forwardedRef } = props;
@@ -39,7 +39,9 @@ const Projects = (props) => {
                             </CardHeader>
                             <Divider/>
                             <CardBody>
-                                <p>Libro was a Discord bot crafted with Discord.js and Node.js, designed to enhance your server’s reading experience. It allowed users to search, share, and discuss books seamlessly within your Discord community.</p>
+                                <p>Libro was a Discord bot crafted with Discord.js and Node.js, designed to enhance your
+                                    server’s reading experience. It allowed users to search, share, and discuss books
+                                    seamlessly within your Discord community.</p>
                             </CardBody>
                             <Divider/>
                             <CardFooter>
@@ -60,14 +62,19 @@ const Projects = (props) => {
                             <CardHeader className="flex gap-3">
                                 <div className="flex flex-col">
                                     <p className="text-md">Highstorm</p>
-                                    <Link href="https://highstorm.makuyoshi.dev/" className="text-small text-default-500" underline="hover">highstorm.makuyoshi.dev</Link>
+                                    <Link href="https://highstorm.makuyoshi.dev/"
+                                          className="text-small text-default-500"
+                                          underline="hover">highstorm.makuyoshi.dev</Link>
                                 </div>
                                 <Chip color="warning" variant="flat">Archived</Chip>
                             </CardHeader>
                             <Divider/>
                             <CardBody>
                                 <p>
-                                    Highstorm was a web application that I developed in 2024. It was my first attempt at utilizing an API, and it was built using Bootstrap. The app showed basic weather information for a given location, including temperature, humidity, clouds, sunset, and sunrise.
+                                    Highstorm was a web application that I developed in 2024. It was my first attempt at
+                                    utilizing an API, and it was built using Bootstrap. The app showed basic weather
+                                    information for a given location, including temperature, humidity, clouds, sunset,
+                                    and sunrise.
                                 </p>
                             </CardBody>
                             <Divider/>
@@ -136,7 +143,8 @@ const Projects = (props) => {
                             />
                             <div className="flex flex-col">
                                 <p className="text-md">Výčetka</p>
-                                <Link href="https://vycetka.makuyoshi.dev/" className="text-small text-default-500" underline="hover">vycetka.makuyoshi.dev</Link>
+                                <Link href="https://vycetka.makuyoshi.dev/" className="text-small text-default-500"
+                                      underline="hover">vycetka.makuyoshi.dev</Link>
                             </div>
                         </CardHeader>
                         <Divider/>

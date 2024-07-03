@@ -8,13 +8,10 @@ import {
     NavbarMenu,
     NavbarMenuItem,
     Button,
-    Switch
 } from "@nextui-org/react";
 import {Link} from 'react-scroll'
 import { Exo, Sometype_Mono } from "next/font/google";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMoon, faSun} from "@fortawesome/free-solid-svg-icons";
 
 const exo = Exo({
     weight: '300',
