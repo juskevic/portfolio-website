@@ -34,13 +34,6 @@ export default function Header({isSelected, setIsSelected}) {
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-    const menuItems = [
-        "Hello",
-        "About",
-        "Projects",
-        "Contact",
-    ];
-
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exo.className} animate-fade-down animate-once animate-delay-200 animate-ease-out`}>
             <NavbarContent>
@@ -83,22 +76,22 @@ export default function Header({isSelected, setIsSelected}) {
                     </Button>
                 </NavbarItem>
             </NavbarContent>
-
-            <NavbarMenu>
-                {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
-                        <Link
-                            color={
-                                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-                            }
-                            className="w-full"
-                            href="#"
-                            size="lg"
-                        >
-                            {item}
-                        </Link>
-                    </NavbarMenuItem>
-                ))}
+            <NavbarMenu className="dark text-foreground bg-background">
+                <NavbarMenuItem>
+                    <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500} className="hover:text-stone-700">hello</Link>
+                </NavbarMenuItem>
+                <NavbarMenuItem>
+                    <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-90} duration={500} className="hover:text-stone-700">about</Link>
+                </NavbarMenuItem>
+                <NavbarMenuItem>
+                    <Link className="brightness-50 cursor-not-allowed">testimonials</Link>
+                </NavbarMenuItem>
+                <NavbarMenuItem>
+                    <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-700">projects</Link>
+                </NavbarMenuItem>
+                <NavbarMenuItem>
+                    <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-250} duration={500} className="hover:text-stone-700">contact</Link>
+                </NavbarMenuItem>
             </NavbarMenu>
         </Navbar>
     );
