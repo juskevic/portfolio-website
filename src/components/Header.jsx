@@ -28,9 +28,7 @@ const sometypeMono = Sometype_Mono({
     subsets: ['latin'],
 });
 
-
-
-export default function Header({isSelected, setIsSelected}) {
+export default function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -65,11 +63,6 @@ export default function Header({isSelected, setIsSelected}) {
             </NavbarContent>
 
             <NavbarContent justify="end" className="animate-fade-down animate-once animate-delay-200 animate-ease-out">
-                <NavbarItem className="hidden sm:flex">
-                    <Switch color="secondary" isSelected={isSelected} onValueChange={setIsSelected}
-                            startContent={<FontAwesomeIcon icon={faMoon}/>} endContent={<FontAwesomeIcon icon={faSun}/>}>
-                    </Switch>
-                </NavbarItem>
                 <NavbarItem>
                     <Button as={Link} color="default" href="#" variant="bordered">
                         blog ✏️

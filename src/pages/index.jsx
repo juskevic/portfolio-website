@@ -43,7 +43,7 @@ const Main = () => {
                             <h1 className={`${caveat.className} text-4xl xl:text-5xl animate-fade-left animate-once bold`}>
                                 Max Yushkevich
                             </h1>
-                            <h2 className={`${exo.className} text-xl xl:text-2xl animate-fade-right animate-once`}>
+                            <h2 className={`${exo.className} text-xl xl:text-2xl animate-fade-right animate-once brightness-75`}>
                                 Frontend Engineer
                             </h2>
                             <Socials/>
@@ -78,7 +78,6 @@ const Main = () => {
 }
 
 const HomePage = () => {
-    const [isSelected, setIsSelected] = React.useState(true);
 
     useEffect(() => {
         Events.scrollEvent.register('begin', function () {
@@ -117,10 +116,10 @@ const HomePage = () => {
                 <meta property="og:url" content="https://makuyoshi.dev"/>
                 <meta property="og:image" content="makuPreview.png"/>
             </Head>
-            <div className={`${isSelected ? "dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" : "-z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"}`}>
-                <Header isSelected={isSelected} setIsSelected={setIsSelected}/>
-                <Main isSelected={isSelected} setIsSelected={setIsSelected}/>
-                <Footer/>
+            <div className="dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
+                <Header />
+                <Main />
+                <Footer />
             </div>
         </>
     );
