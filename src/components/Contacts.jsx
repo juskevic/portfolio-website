@@ -26,7 +26,7 @@ const Contacts = () => {
                     <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-stone-400"/>
                     <p className="text-stone-400">Lets connect on LinkedIn and expand our professional networks: </p>
                     <Link href="#" color="foreground" underline="always" size="lg">
-                        in/...
+                        in/maxyushkevich
                     </Link>
                 </div>
                 <div className="flex flex-col xl:flex-row space-x-2">

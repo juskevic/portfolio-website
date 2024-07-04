@@ -49,9 +49,6 @@ export default function Header() {
                     <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-90} duration={500} className="hover:text-stone-700">about</Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link className="brightness-50 cursor-not-allowed">testimonials</Link>
-                </NavbarItem>
-                <NavbarItem>
                     <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-700">projects</Link>
                 </NavbarItem>
                 <NavbarItem>
@@ -72,9 +69,6 @@ export default function Header() {
                 </NavbarMenuItem>
                 <NavbarMenuItem>
                     <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-90} duration={500} className="hover:text-stone-700">about</Link>
-                </NavbarMenuItem>
-                <NavbarMenuItem>
-                    <Link className="brightness-50 cursor-not-allowed">testimonials</Link>
                 </NavbarMenuItem>
                 <NavbarMenuItem>
                     <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-700">projects</Link>

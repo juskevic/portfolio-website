@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { handleViewport } from 'react-in-viewport';
-import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Chip, Button} from "@nextui-org/react";
+import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Chip} from "@nextui-org/react";
 
 const Projects = (props) => {
     const { inViewport, forwardedRef } = props;
