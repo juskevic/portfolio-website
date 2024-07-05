@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { handleViewport } from 'react-in-viewport';
-import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Chip} from "@nextui-org/react";
+import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Chip, Button} from "@nextui-org/react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 
 const Projects = (props) => {
     const { inViewport, forwardedRef } = props;
@@ -23,37 +25,19 @@ const Projects = (props) => {
                 <div ref={forwardedRef} className={`flex flex-col space-y-10 ${animationClassRight}`}>
                     <div className="">
                         <Card className="max-w-[400px]">
-                            <CardHeader className="flex gap-3">
-                                <Image
-                                    alt="libro logo"
-                                    height={40}
-                                    radius="sm"
-                                    src="libroLogo.jpeg"
-                                    width={40}
-                                />
-                                <div className="flex flex-col">
-                                    <p className="text-md">Libro</p>
-                                    <p className="text-small text-default-500"></p>
-                                </div>
+                            <CardHeader className="flex gap-5">
+                                <h2 className="text-xl">makuyoshi/<br />Libro</h2>
                                 <Chip color="warning" variant="flat">Archived</Chip>
                             </CardHeader>
-                            <Divider/>
                             <CardBody>
                                 <p>Libro was a Discord bot crafted with Discord.js and Node.js, designed to enhance your
                                     server’s reading experience. It allowed users to search, share, and discuss books
                                     seamlessly within your Discord community.</p>
                             </CardBody>
-                            <Divider/>
                             <CardFooter>
-                                <Link
-                                    color="foreground"
-                                    className="brightness-75"
-                                    isExternal
-                                    showAnchorIcon
-                                    href="https://github.com/makuyoshi/Libro"
-                                >
-                                    Visit source code on GitHub.
-                                </Link>
+                                <Button isIconOnly>
+                                    <FontAwesomeIcon icon={faGithub} size="lg"/>
+                                </Button>
                             </CardFooter>
                         </Card>
                     </div>

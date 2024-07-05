@@ -16,9 +16,9 @@ import Contacts from "@/components/Contacts.jsx";
 //  Projects related component
 import Projects from "@/components/Projects.jsx";
 // Animation related component
-import Socials from "@/components/Socials.jsx";
 // AboutMe component
 import AboutMe from "@/components/AboutMe.jsx";
+import Hello from "@/components/Hello.jsx";
 
 const caveat = Caveat({
     weight: '400',
@@ -37,21 +37,8 @@ const Main = () => {
         <>
             <main className="p-6 pt-40 space-y-56 xl:p-40 xl:space-y-80">
 
-                <Element name="hello" className="element flex flex-row justify-center space-x-20">
-                    <div>
-                        <div className="space-y-1">
-                            <h1 className={`${caveat.className} text-4xl xl:text-5xl animate-fade-left animate-once bold`}>
-                                Max Yushkevich
-                            </h1>
-                            <h2 className={`${exo.className} text-xl xl:text-2xl animate-fade-right animate-once brightness-75`}>
-                                Frontend Engineer
-                            </h2>
-                            <Socials/>
-                        </div>
-                    </div>
-                    <div className="hidden xl:pl-24 xl:block animate-fade-left animate-delay-200 animate-ease-out">
-                       <Image isZoomed isBlurred width={170} alt="makuyoshi pfp" src="helloAvatar.jpg"></Image>
-                    </div>
+                <Element name="hello" className="element">
+                    <Hello />
                 </Element>
 
                 <Element name="about" className={`${exo.className} animate-fade-down animate-once animate-delay-500 animate-ease-out`}>
