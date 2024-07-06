@@ -33,20 +33,14 @@ const Main = () => {
 
                 <Element name="about" className={`${exo.className} animate-fade-down animate-once animate-delay-500 animate-ease-out`}>
                     <AboutMe />
-                    <div className="text-center pt-10"> {/*remove later*/}
-                        <Chip color="warning" variant="dot">This section is under development</Chip>
-                    </div>
                 </Element>
 
                 <Element name="projects" className={`${exo.className} element`}>
                     <Projects/>
                 </Element>
 
-                <Element name="contact" className={`${exo.className} element space-y-8`}>
+                <Element name="contact" className={`${exo.className} element`}>
                     <Contacts/>
-                    <div className="text-center"> {/*remove later*/}
-                        <Chip color="warning" variant="dot">This section is under development</Chip>
-                    </div>
                 </Element>
 
             </main>

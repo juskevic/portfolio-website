@@ -26,7 +26,7 @@ const Projects = (props) => {
                     <div className="">
                         <Card className="max-w-[400px]">
                             <CardHeader className="flex gap-5">
-                                <h2 className="text-xl">makuyoshi/<br />Libro</h2>
+                                <h2 className="text-xl">maxyushkevich/<br />Libro</h2>
                                 <Chip color="warning" variant="flat">Archived</Chip>
                             </CardHeader>
                             <CardBody>
