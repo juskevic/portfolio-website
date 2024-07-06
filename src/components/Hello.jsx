@@ -21,13 +21,13 @@ export default function Hello() {
             <div className="flex flex-row justify-center sm:space-x-5">
                 <div className="hidden sm:flex sm:w-2/3">
                     <h1 className="font-bold text-6xl text-wrap animate-fade animate-ease-in
-                    bg-gradient-to-r from-slate-200 to-slate-300 bg-clip-text text-transparent">
+                    bg-gradient-to-r from-slate-300 to-slate-500 bg-clip-text text-transparent">
                         {` "I’m passionate about creating responsive and user-friendly websites."`}
                     </h1>
                 </div>
                 <Image isZoomed isBlurred radius={"full"} width={300} alt="makuyoshi pfp" src="DSCF4717.JPG"></Image>
             </div>
-            <div className="flex flex-row justify-start w-full">
+            <div className="flex flex-row justify-start w-full sm:pt-0 pt-16 sm:pl-0 pl-3">
                 <div className="space-y-1">
                     <h1 className={`${caveat.className} text-4xl sm:text-4xl animate-fade-right animate-delay-600 animate-ease-in`}>
                         {`Max Yushkevich`}

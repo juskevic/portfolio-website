@@ -146,27 +146,20 @@ export default function AboutMe() {
                             </ScrollShadow>
                         </Card>
                         <Card isFooterBlurred className="h-[300px] max-h-[300px] w-full max-w-[300px]">
-                            <CardHeader className="absolute z-10 top-1 flex-col items-start">
-                                <p className="text-tiny text-default-500">WANT A WEBSITE LIKE THIS ONE?</p>
-                                <h4 className="text-xl">Let me make you one</h4>
-                            </CardHeader>
                             <Image
                                 removeWrapper
-                                alt="Relaxing app background"
-                                className="z-0 object-cover"
-                                src=""
+                                alt="Card example background"
+                                className="z-0 w-full h-full scale-105 -translate-y-6 object-cover"
+                                src="index.jsx.png"
                             />
-                            <CardFooter
-                                className="absolute bg-default/30 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
-                                <div className="flex flex-grow gap-2 items-center">
-                                    <Image
-                                        alt="makuyoshi icon"
-                                        className="rounded-full w-10 h-11 bg-black"
-                                        src=""
-                                    />
+                            <CardFooter className="absolute bottom-0 z-10 justify-between">
+                                <div>
+                                    <p className="text-xs">Do you want a website like this?</p>
+                                    <p className="text-medium">{`I’ll make you one.`}</p>
                                 </div>
-                                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                                <Button color="default" variant="bordered" endContent={<FontAwesomeIcon icon={faSquareUpwork} size={"xl"}/>}>Let's Talk</Button>
+                                <Button className="text-tiny" variant="bordered" color="foreground" radius="full" size="sm" endContent={<FontAwesomeIcon icon={faSquareUpwork}  size={"lg"}/>}>
+                                    {`Let's Talk`}
+                                </Button>
                             </CardFooter>
                         </Card>
                     </div>
