@@ -3,6 +3,7 @@ import { handleViewport } from 'react-in-viewport';
 import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Chip, Button} from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faAnchor, faEarth, faLink} from "@fortawesome/free-solid-svg-icons";
 
 const Projects = (props) => {
     const { inViewport, forwardedRef } = props;
@@ -26,16 +27,17 @@ const Projects = (props) => {
                     <div className="">
                         <Card className="max-w-[400px]">
                             <CardHeader className="flex gap-5">
-                                <h2 className="text-xl">maxyushkevich/<br />Libro</h2>
+                                <Link className="text-xl" href="#" underline="hover" color="foreground">Libro</Link>
                                 <Chip color="warning" variant="flat">Archived</Chip>
                             </CardHeader>
+                            <Divider />
                             <CardBody>
                                 <p>Libro was a Discord bot crafted with Discord.js and Node.js, designed to enhance your
                                     server’s reading experience. It allowed users to search, share, and discuss books
                                     seamlessly within your Discord community.</p>
                             </CardBody>
                             <CardFooter>
-                                <Button isIconOnly>
+                                <Button isIconOnly variant="ghost">
                                     <FontAwesomeIcon icon={faGithub} size="lg"/>
                                 </Button>
                             </CardFooter>
@@ -43,16 +45,11 @@ const Projects = (props) => {
                     </div>
                     <div className="">
                         <Card className="max-w-[400px]">
-                            <CardHeader className="flex gap-3">
-                                <div className="flex flex-col">
-                                    <p className="text-md">Highstorm</p>
-                                    <Link href="https://highstorm.makuyoshi.dev/"
-                                          className="text-small text-default-500"
-                                          underline="hover">highstorm.makuyoshi.dev</Link>
-                                </div>
+                            <CardHeader className="flex gap-5">
+                                <Link className="text-xl" href="#" underline="hover" color="foreground">Highstorm</Link>
                                 <Chip color="warning" variant="flat">Archived</Chip>
                             </CardHeader>
-                            <Divider/>
+                            <Divider />
                             <CardBody>
                                 <p>
                                     Highstorm was a web application that I developed in 2024. It was my first attempt at
@@ -61,17 +58,13 @@ const Projects = (props) => {
                                     and sunrise.
                                 </p>
                             </CardBody>
-                            <Divider/>
-                            <CardFooter>
-                                <Link
-                                    color="foreground"
-                                    className="brightness-75"
-                                    isExternal
-                                    showAnchorIcon
-                                    href="https://github.com/makuyoshi/highstorm"
-                                >
-                                    Visit source code on GitHub.
-                                </Link>
+                            <CardFooter className="flex flex-row space-x-1">
+                                <Button isIconOnly variant="ghost">
+                                    <FontAwesomeIcon icon={faGithub} size="lg"/>
+                                </Button>
+                                <Button isIconOnly variant="ghost">
+                                    <FontAwesomeIcon icon={faLink} size="lg"/>
+                                </Button>
                             </CardFooter>
                         </Card>
                     </div>
@@ -79,74 +72,49 @@ const Projects = (props) => {
                 {/*MIDDLE*/}
                 <div ref={forwardedRef} className={`flex flex-col ${animationClass}`}>
                     <Card className="max-w-[400px]">
-                        <CardHeader className="flex gap-3">
-                            <Image
-                                alt="website logo"
-                                height={40}
-                                radius="sm"
-                                src="favicon.ico"
-                                width={40}
-                            />
-                            <div className="flex flex-col">
-                                <p className="text-md">Portfolio Website</p>
-                                <p className="text-small text-default-500">makuyoshi.dev</p>
-                            </div>
+                        <CardHeader className="flex gap-5">
+                            <Link className="text-xl" href="#" underline="hover" color="foreground">Portfolio Website</Link>
                         </CardHeader>
-                        <Divider/>
+                        <Divider />
                         <CardBody>
-                            <p> My portfolio website is the first front-end project I have undertaken. Initially
+                            <p>
+                                My portfolio website is the first front-end project I have undertaken. Initially
                                 developed using basic HTML and CSS, it has since been enhanced with the use of
                                 modern frameworks such as Next.js and React. It incorporates multiple JavaScript
                                 libraries to achieve a contemporary look and feel. I am delighted with the result
-                                and continue to work on it to this day, despite having made over 500 commits.</p>
+                                and continue to work on it to this day, despite having made over 500 commits.
+                            </p>
                         </CardBody>
-                        <Divider/>
-                        <CardFooter>
-                            <Link
-                                color="foreground"
-                                className="brightness-75"
-                                isExternal
-                                showAnchorIcon
-                                href="https://github.com/makuyoshi/makuyoshi-web"
-                            >
-                                Visit source code on GitHub.
-                            </Link>
+                        <CardFooter className="space-x-1">
+                            <Button isIconOnly variant="ghost">
+                                <FontAwesomeIcon icon={faGithub} size="lg"/>
+                            </Button>
+                            <Button isIconOnly variant="ghost">
+                                <FontAwesomeIcon icon={faLink} size="lg"/>
+                            </Button>
                         </CardFooter>
                     </Card>
                 </div>
                 {/*RIGHT*/}
                 <div ref={forwardedRef} className={`flex flex-col space-y-10 ${animationClassLeft}`}>
                     <Card className="max-w-[400px]">
-                        <CardHeader className="flex gap-3">
-                            <Image
-                                alt="vycetka logo"
-                                height={40}
-                                radius="sm"
-                                src="vycetkaLogo.png"
-                                width={40}
-                            />
-                            <div className="flex flex-col">
-                                <p className="text-md">Výčetka</p>
-                                <Link href="https://vycetka.makuyoshi.dev/" className="text-small text-default-500"
-                                      underline="hover">vycetka.makuyoshi.dev</Link>
-                            </div>
+                        <CardHeader className="flex gap-5">
+                            <Link className="text-xl" href="#" underline="hover" color="foreground">Výčetka</Link>
                         </CardHeader>
-                        <Divider/>
+                        <Divider />
                         <CardBody>
-                            <p>This is an accounting tool build using Bootstrap that allows you to count the amount of
-                                banknotes and coins that are in your cash register.</p>
+                            <p>
+                                This is an accounting tool build using Bootstrap that allows you to count the amount of
+                                banknotes and coins that are in your cash register.
+                            </p>
                         </CardBody>
-                        <Divider/>
-                        <CardFooter>
-                            <Link
-                                className="brightness-75"
-                                color="foreground"
-                                isExternal
-                                showAnchorIcon
-                                href="https://github.com/makuyoshi/vycetka"
-                            >
-                                Visit source code on GitHub.
-                            </Link>
+                        <CardFooter className="space-x-1">
+                            <Button isIconOnly variant="ghost">
+                                <FontAwesomeIcon icon={faGithub} size="lg"/>
+                            </Button>
+                            <Button isIconOnly variant="ghost">
+                                <FontAwesomeIcon icon={faLink} size="lg"/>
+                            </Button>
                         </CardFooter>
                     </Card>
                 </div>
@@ -158,3 +126,20 @@ const Projects = (props) => {
 const ViewportProjects = handleViewport(Projects, {rootMargin: '-1.0px'});
 
 export default ViewportProjects;
+
+/*
+<Card className="max-w-[400px]">
+    <CardHeader className="flex gap-5">
+        <Link className="text-xl" href="#" underline="hover" color="foreground">maxyushkevich/Libro</Link>
+        <Chip color="warning" variant="flat">Archived</Chip>
+    </CardHeader>
+    <Divider />
+    <CardBody>
+        <p></p>
+    </CardBody>
+    <CardFooter>
+        <Button isIconOnly variant="ghost">
+            <FontAwesomeIcon icon={faGithub} size="lg"/>
+        </Button>
+    </CardFooter>
+</Card>*/

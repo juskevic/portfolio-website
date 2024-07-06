@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import Head from 'next/head';
 import {Exo} from 'next/font/google';
 import { Element, Events } from 'react-scroll';
-import {Chip} from "@nextui-org/react";
 
 // Common components imports
 import Header from "@/components/Header.jsx";
