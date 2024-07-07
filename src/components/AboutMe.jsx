@@ -93,7 +93,7 @@ export default function AboutMe() {
                                     </CardHeader>
                                     <div>
                                         <Tabs aria-label="Options" variant="underlined" size="md">
-                                            <Tab key="myStory" title="Frontend">
+                                            <Tab key="frontend" title="Frontend">
                                                 <Card>
                                                     <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
                                                         <Spacer y={2} />
