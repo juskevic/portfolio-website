@@ -4,15 +4,10 @@ import {
     Card,
     CardHeader,
     CardBody,
-    CardFooter,
     Divider,
     Link,
     Chip,
     Button,
-    Tabs,
-    Tab,
-    ScrollShadow,
-    Image
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
@@ -38,7 +33,7 @@ const Projects = (props) => {
                 className='flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10 ${animationClass2}'>
                 {/*LEFT*/}
                 <div ref={forwardedRef} className={`flex flex-col space-y-10 ${animationClassRight}`}>
-                    <div className="">
+                    <div>
                         <Card className="max-w-[400px]">
                             <CardHeader className="flex justify-between">
                                 <div className="space-x-4">
@@ -68,8 +63,7 @@ const Projects = (props) => {
                         <Card className="max-w-[400px]">
                             <CardHeader className="flex justify-between">
                                 <div className="space-x-4">
-                                    <Link className="text-xl" href="#" underline="under"
-                                          color="foreground">Highstorm</Link>
+                                    <Link className="text-2xl" href="#" underline="under" color="foreground">Highstorm</Link>
                                 </div>
                                 <Chip color="warning" variant="flat">Archive</Chip>
                                 <div className="space-x-1">
@@ -101,7 +95,7 @@ const Projects = (props) => {
                     <Card className="max-w-[400px]">
                         <CardHeader className="flex justify-between">
                             <div className="space-x-4">
-                                <Link className="text-2xl" href="#" underline="under"color="foreground">Portfolio Website</Link>
+                                <Link className="text-2xl" href="#" underline="under" color="foreground">Portfolio Website</Link>
                             </div>
                             <div className="space-x-1">
                                 <Button isIconOnly variant="ghost">
@@ -126,10 +120,10 @@ const Projects = (props) => {
                 </div>
                 {/*RIGHT*/}
                 <div ref={forwardedRef} className={`flex flex-col space-y-10 ${animationClassLeft}`}>
-                    <Card className="max-w-[400px]">
+                    <Card isHoverable className="max-w-[400px]">
                         <CardHeader className="flex justify-between">
                             <div className="space-x-4">
-                                <Link className="text-2xl" href="#" underline="under"color="foreground">Výčetka</Link>
+                                <Link className="text-2xl" href="#" underline="under" color="foreground">Výčetka</Link>
                             </div>
                             <div className="space-x-1">
                                 <Button isIconOnly variant="ghost">
