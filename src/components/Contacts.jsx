@@ -7,7 +7,7 @@ import {Link} from "@nextui-org/react";
 const Contacts = () => {
     return (
         <>
-            <div className="hidden md:flex justify-center">
+            <div className="hidden md:flex justify-center pb-36">
                 <div className="flex flex-col space-y-7 text-xs md:text-lg">
                     <div className="flex flex-row space-x-3">
                         <FontAwesomeIcon icon={faEnvelope} size="xl" className="brightness-75"/>

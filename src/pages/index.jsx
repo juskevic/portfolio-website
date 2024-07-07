@@ -75,16 +75,15 @@ const HomePage = () => {
                 <meta name="description"
                       content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
                 <meta name="robots" content="index, follow"/>
-                <link rel="canonical" href="https://www.makuyoshi.dev"/>
-                <link rel="alternate" hrefLang="en-us" href="https://wwww.makuyoshi.dev"/>
+                <link rel="canonical" href="https://wwww.maxyushkevich.com"/>
+                <link rel="alternate" hrefLang="en-us" href="https://wwww.maxyushkevich.com"/>
                 <link rel="icon" href="/favicon.ico"/>
 
                 <meta property="type" content="website"/>
                 <meta property="og:title" content="Max Yushkevich: Frontend Web Developer"/>
-                <meta property="og:description"
-                      content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
-                <meta property="og:url" content="https://makuyoshi.dev"/>
-                <meta property="og:image" content="makuPreview.png"/>
+                <meta property="og:description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
+                <meta property="og:url" content="https://wwww.maxyushkevich.com"/>
+                <meta property="og:image" content="ogimage.png"/>
             </Head>
             <div className="dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
                 <Header />

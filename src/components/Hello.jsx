@@ -27,12 +27,12 @@ export default function Hello() {
                 </div>
                 <Image isZoomed isBlurred radius={"full"} width={300} alt="makuyoshi pfp" src="DSCF4717.JPG"></Image>
             </div>
-            <div className="flex flex-row justify-start w-full sm:pt-0 pt-16 sm:pl-0 pl-3">
+            <div className="flex flex-row justify-start sm:pt-0 pt-16 sm:pl-10 pl-3">
                 <div className="space-y-1">
-                    <h1 className={`${caveat.className} text-4xl sm:text-4xl animate-fade-right animate-delay-600 animate-ease-in`}>
+                    <h1 className={`${caveat.className} text-4xl sm:text-4xl animate-fade-down animate-once animate-delay-100`}>
                         {`Max Yushkevich`}
                     </h1>
-                    <p className={`${exo.className} text-xl sm:text-xl brightness-50 animate-fade-right animate-delay-400 animate-ease-in`}>
+                    <p className={`${exo.className} text-xl sm:text-xl brightness-50 animate-fade-down animate-once animate-delay-300`}>
                         Frontend Engineer
                     </p>
                     <Socials />
