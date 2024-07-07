@@ -85,7 +85,7 @@ const HomePage = () => {
                 <meta property="og:url" content="https://wwww.maxyushkevich.com"/>
                 <meta property="og:image" content="ogimage.png"/>
             </Head>
-            <div className="dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
+            <div className="dark text-foreground">
                 <Header />
                 <Main />
                 <Footer />

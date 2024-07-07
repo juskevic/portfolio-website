@@ -37,7 +37,7 @@ export default function Header() {
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <p className={`${sometypeMono.className} text-md xl:text-xl`}><TypingAnimation /></p>
+                    <p className={`${sometypeMono.className} text-lg xl:text-xl`}><TypingAnimation /></p>
                 </NavbarBrand>
             </NavbarContent>
 
