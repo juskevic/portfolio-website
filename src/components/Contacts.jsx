@@ -8,7 +8,7 @@ const Contacts = () => {
     return (
         <>
             <div className="hidden md:flex justify-center pb-36">
-                <div className="flex flex-col space-y-7 text-xs md:text-lg">
+                <div className="flex flex-col space-y-7 p-3 text-xs md:text-lg bg-neutral-600 bg-opacity-50 rounded-xl text-black">
                     <div className="flex flex-row space-x-3">
                         <FontAwesomeIcon icon={faEnvelope} size="xl" className="brightness-75"/>
                         <h2 className="brightness-75">{"Please don't hesitate to get in touch. Just send me an email at: "}</h2>
@@ -41,7 +41,7 @@ const Contacts = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col space-y-5 md:hidden lg:hidden xl:hidden 2xl:hidden">
+            <div className="flex flex-col space-y-5 md:hidden lg:hidden xl:hidden 2xl:hidden text-black">
                 <div>
                     <span className="brightness-75">
                         <FontAwesomeIcon icon={faEnvelope}/>
@@ -50,7 +50,7 @@ const Contacts = () => {
                         {" Please don't hesitate to get in touch. Just send me an email at: "}
                     </span>
                     <span>
-                        <Link underline="always" color={"foreground"}>contact@maxyushkevich.com</Link>
+                        <Link underline="always" className="text-black">contact@maxyushkevich.com</Link>
                     </span>
                 </div>
                 <div>
@@ -61,7 +61,7 @@ const Contacts = () => {
                         {" Take a look at my code on GitHub: "}
                     </span>
                     <span>
-                        <Link underline="always" color={"foreground"}>@maxyushkevich</Link>
+                        <Link underline="always" className="text-black">@maxyushkevich</Link>
                     </span>
                 </div>
                 <div>
@@ -72,7 +72,7 @@ const Contacts = () => {
                         {" Feel free to get in touch on Telegram: "}
                     </span>
                     <span>
-                        <Link underline="always" color={"foreground"}>me/maxyushkevich</Link>
+                        <Link underline="always" className="text-black">me/maxyushkevich</Link>
                     </span>
                 </div>
                 <div>
@@ -83,7 +83,7 @@ const Contacts = () => {
                         {" Let's connect on LinkedIn: "}
                     </span>
                     <span>
-                        <Link underline="always" color={"foreground"}>in/maxyushkevich</Link>
+                        <Link underline="always" className="text-black">in/maxyushkevich</Link>
                     </span>
                 </div>
             </div>

@@ -30,7 +30,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exo.className} animate-fade-down animate-once animate-delay-200 animate-ease-out`}>
+        <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exo.className} animate-fade-down`}>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -41,7 +41,7 @@ export default function Header() {
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4 animate-fade-down animate-once animate-delay-200 animate-ease-out" justify="center">
+            <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem>
                     <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500} className="hover:text-stone-700">hello</Link>
                 </NavbarItem>
@@ -56,7 +56,7 @@ export default function Header() {
                 </NavbarItem>
             </NavbarContent>
 
-            <NavbarContent justify="end" className="animate-fade-down animate-once animate-delay-200 animate-ease-out">
+            <NavbarContent justify="end">
                 <NavbarItem>
                     <Button as={Link} color="default" href="#" variant="bordered">
                         blog ✏️

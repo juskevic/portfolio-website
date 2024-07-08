@@ -29,7 +29,7 @@ const Projects = (props) => {
 
     return (
         <div ref={forwardedRef} className="flex justify-center">
-            <Tabs className={`${animationClass} pb-3`} placement={"top"} size={"lg"} radius={"lg"} variant={"underlined"} disabledKeys={["testimonials", "contributions"]}>
+            <Tabs className={`${animationClass} pb-3`} color={"default"} placement={"top"} size={"lg"} radius={"lg"} variant={"light"} disabledKeys={["contributions"]}>
                 <Tab key={"projects"} title="Projects">
                     <div
                         className='flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10 ${animationClass2}'>

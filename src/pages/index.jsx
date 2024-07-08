@@ -30,7 +30,7 @@ const Main = () => {
                     <Hello />
                 </Element>
 
-                <Element name="about" className={`${exo.className} animate-fade-down animate-once animate-delay-500 animate-ease-out`}>
+                <Element name="about" className={`${exo.className} element`}>
                     <AboutMe />
                 </Element>
 
@@ -83,7 +83,7 @@ const HomePage = () => {
                 <meta property="og:title" content="Max Yushkevich: Frontend Web Developer"/>
                 <meta property="og:description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
                 <meta property="og:url" content="https://wwww.maxyushkevich.com"/>
-                <meta property="og:image" content="ogimage.png"/>
+                <meta property="og:image" content="/ogimage.png"/>
             </Head>
             <div className="dark text-foreground">
                 <Header />

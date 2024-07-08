@@ -20,8 +20,7 @@ export default function Hello() {
         <>
             <div className="flex flex-row justify-center sm:space-x-5">
                 <div className="hidden sm:flex sm:w-2/3">
-                    <h1 className="font-bold text-6xl text-wrap animate-fade animate-ease-in
-                    bg-gradient-to-r from-slate-300 to-slate-500 bg-clip-text text-transparent">
+                    <h1 className="font-bold text-6xl text-wrap bg-gradient-to-r from-neutral-900 to-neutral-300 bg-clip-text text-transparent">
                         {` "I’m passionate about creating responsive and user-friendly websites."`}
                     </h1>
                 </div>
@@ -29,10 +28,10 @@ export default function Hello() {
             </div>
             <div className="flex flex-row justify-start sm:pt-0 pt-16 sm:pl-10 pl-3">
                 <div className="space-y-1">
-                    <h1 className={`${caveat.className} text-4xl sm:text-4xl animate-fade-down animate-once animate-delay-100`}>
+                    <h1 className={`${caveat.className} text-4xl sm:text-4xl text-black`}>
                         {`Max Yushkevich`}
                     </h1>
-                    <p className={`${exo.className} text-xl sm:text-xl brightness-50 animate-fade-down animate-once animate-delay-300`}>
+                    <p className={`${exo.className} text-xl sm:text-xl text-black`}>
                         Frontend Engineer
                     </p>
                     <Socials />

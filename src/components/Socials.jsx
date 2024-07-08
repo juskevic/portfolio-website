@@ -6,12 +6,12 @@ import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 export default function Socials() {
     return (
-        <ButtonGroup size="md" variant="light" fullWidth className="brightness-75 animate-fade-down animate-once animate-delay-500">
-            <Button isIconOnly><FontAwesomeIcon icon={faEnvelope} size="xl"/></Button>
-            <Button isIconOnly><FontAwesomeIcon icon={faGithub} size="xl"/></Button>
-            <Button isIconOnly><FontAwesomeIcon icon={faLinkedinIn} size="xl"/></Button>
-            <Button isIconOnly><FontAwesomeIcon icon={faTelegram} size="xl"/></Button>
-            <Button isIconOnly><FontAwesomeIcon icon={faSquareUpwork} size="xl"/></Button>
+        <ButtonGroup size="md" variant="light" fullWidth>
+            <Button isIconOnly><FontAwesomeIcon icon={faEnvelope} size="xl" color={"black"}/></Button>
+            <Button isIconOnly><FontAwesomeIcon icon={faGithub} size="xl" color={"black"}/></Button>
+            <Button isIconOnly><FontAwesomeIcon icon={faLinkedinIn} size="xl" color={"black"}/></Button>
+            <Button isIconOnly><FontAwesomeIcon icon={faTelegram} size="xl" color={"black"}/></Button>
+            <Button isIconOnly><FontAwesomeIcon icon={faSquareUpwork} size="xl" color={"black"}/></Button>
         </ButtonGroup>
     );
 }
