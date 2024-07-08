@@ -150,11 +150,11 @@ export default function AboutMe() {
                                 removeWrapper
                                 alt="Card example background"
                                 className="z-0 w-full h-full scale-105 -translate-y-6 object-cover"
-                                src="index.jsx.png"
+                                src="https://images.pexels.com/photos/20853116/pexels-photo-20853116/free-photo-of-programming-code-on-a-screen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             />
                             <CardFooter className="absolute bottom-0 z-10 justify-between">
                                 <div>
-                                    <p className="text-xs">Do you want a website like this?</p>
+                                    <p className="text-xs">Need a new website?</p>
                                     <p className="text-medium">{`I’ll make you one.`}</p>
                                 </div>
                                 <Button className="text-tiny" variant="bordered" color="foreground" radius="full" size="sm" endContent={<FontAwesomeIcon icon={faSquareUpwork}  size={"lg"}/>}>
