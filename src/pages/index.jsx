@@ -79,11 +79,10 @@ const HomePage = () => {
                 <link rel="alternate" hrefLang="en-us" href="https://wwww.maxyushkevich.com"/>
                 <link rel="icon" href="/favicon.ico"/>
 
-                <meta property="type" content="website"/>
                 <meta property="og:title" content="Max Yushkevich: Frontend Web Developer"/>
-                <meta property="og:description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
-                <meta property="og:url" content="https://wwww.maxyushkevich.com"/>
-                <meta property="og:image" content="/ogimage.png"/>
+                <meta property="og:description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI. ✨"/>
+                <meta property="og:url" content="https://www.maxyushkevich.com"/>
+                <meta property="og:image" content="https://i.imgur.com/narcO5T.jpeg"/>
             </Head>
             <div className="dark text-foreground">
                 <Header />
