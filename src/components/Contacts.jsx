@@ -49,13 +49,13 @@ const Contacts = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col space-y-5 md:hidden lg:hidden xl:hidden 2xl:hidden text-black">
+            <div className="flex flex-col space-y-5 md:hidden lg:hidden xl:hidden 2xl:hidden p-2 text-black bg-neutral-800 bg-opacity-15 backdrop-blur rounded-xl">
                 <div>
                     <span className="brightness-75">
                         <FontAwesomeIcon icon={faEnvelope}/>
                     </span>
                     <span className="brightness-75">
-                        {" Please don't hesitate to get in touch. Just send me an email at: "}
+                        {" Please don't hesitate to get in touch."}
                     </span>
                     <span>
                         <Link underline="always" className="text-black">contact@maxyushkevich.com</Link>
@@ -66,7 +66,7 @@ const Contacts = () => {
                         <FontAwesomeIcon icon={faGithub}/>
                     </span>
                     <span className="brightness-75">
-                        {" Take a look at my code on GitHub: "}
+                        {" Take a look at my code on GitHub."}
                     </span>
                     <span>
                         <Link underline="always" className="text-black">@maxyushkevich</Link>
@@ -77,7 +77,7 @@ const Contacts = () => {
                         <FontAwesomeIcon icon={faTelegram}/>
                     </span>
                     <span className="brightness-75">
-                        {" Feel free to get in touch on Telegram: "}
+                        {" Feel free to get in touch on Telegram."}
                     </span>
                     <span>
                         <Link underline="always" className="text-black">me/maxyushkevich</Link>
@@ -88,7 +88,7 @@ const Contacts = () => {
                         <FontAwesomeIcon icon={faLinkedin}/>
                     </span>
                     <span className="brightness-75">
-                        {" Let's connect on LinkedIn: "}
+                        {" Let's connect on LinkedIn."}
                     </span>
                     <span>
                         <Link underline="always" className="text-black">in/maxyushkevich</Link>
