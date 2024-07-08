@@ -35,7 +35,7 @@ const Projects = (props) => {
                         {/*LEFT*/}
                         <div ref={forwardedRef} className={`flex flex-col space-y-10 ${animationClassRight}`}>
                             <div>
-                                <Card className="max-w-[400px]">
+                                <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                     <CardHeader className="flex justify-between">
                                         <div className="space-x-4">
                                             <Link className="text-2xl" href="#" underline="under"
@@ -61,7 +61,7 @@ const Projects = (props) => {
                                 </Card>
                             </div>
                             <div>
-                                <Card className="max-w-[400px]">
+                                <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                     <CardHeader className="flex justify-between">
                                         <div className="space-x-4">
                                             <Link className="text-2xl" href="#" underline="under"
@@ -94,7 +94,7 @@ const Projects = (props) => {
                         </div>
                         {/*MIDDLE*/}
                         <div ref={forwardedRef} className={`flex flex-col ${animationClass}`}>
-                            <Card className="max-w-[400px]">
+                            <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between">
                                     <div className="space-x-4">
                                         <Link className="text-2xl" href="#" underline="under" color="foreground">Portfolio
@@ -124,7 +124,7 @@ const Projects = (props) => {
                         </div>
                         {/*RIGHT*/}
                         <div ref={forwardedRef} className={`flex flex-col space-y-10 ${animationClassLeft}`}>
-                            <Card isHoverable className="max-w-[400px]">
+                            <Card isHoverable className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between">
                                     <div className="space-x-4">
                                         <Link className="text-2xl" href="#" underline="under"

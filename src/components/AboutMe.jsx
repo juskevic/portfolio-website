@@ -18,27 +18,22 @@ export default function AboutMe() {
             <div className="flex items-center justify-center ">
                 <div className="flex flex-col space-y-10">
                     <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10">
-                        <Card className="w-full xl:w-2/3">
+                        <Card className="w-full xl:w-2/3 bg-neutral-950 opacity-85 backdrop-blur">
                             <CardBody>
                                 <CardHeader className="flex flex-col z-10 !items-start">
                                     <p className="text-sm text-default-500 uppercase">ABOUT ME</p>
                                     <h4 className="text-xl">
-                                        Hello! I’m Max 👋
+                                        {"Hi, I’m Max "}
                                     </h4>
                                 </CardHeader>
                                 <ScrollShadow hideScrollBar>
                                     <p className="text-lg max-h-[200px] p-2">
-                                        I’m a front-end developer passionate about crafting beautiful,
-                                        responsive websites with the latest tech. I focus on design and user experience, ensuring
-                                        interfaces are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus
-                                        frameworks like React and Next.js, I’m committed to continuous learning to keep pace with
-                                        industry innovations. Take a look at my portfolio, and let’s connect to explore how we
-                                        can collaborate!
+                                        {"I’m a front-end developer passionate about crafting beautiful, responsive websites with the latest tech. I focus on design and user experience, ensuring interfaces are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus frameworks like React and Next.js, I’m committed to continuous learning to keep pace with industry innovations. Take a look at my portfolio, and let’s connect to explore how we can collaborate!"}
                                     </p>
                                 </ScrollShadow>
                             </CardBody>
                         </Card>
-                        <Card className="w-full xl:w-1/2">
+                        <Card className="w-full xl:w-1/2 bg-neutral-950 opacity-85 backdrop-blur">
                             <CardBody>
                                 <CardHeader className="flex flex-col max-h-[200px] z-10 !items-start">
                                     <p className="text-sm text-default-500 uppercase">BLOG</p>
@@ -55,7 +50,7 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card className="w-full xl:w-2/3 h-[400px]">
+                        <Card className="w-full xl:w-2/3 h-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                            <ScrollShadow hideScrollBar>
                                <CardBody>
                                    <CardHeader>
@@ -82,7 +77,7 @@ export default function AboutMe() {
                                </CardBody>
                            </ScrollShadow>
                         </Card>
-                        <Card className="w-full xl:w-2/3 h-[330px]">
+                        <Card className="w-full xl:w-2/3 h-[330px] bg-neutral-950 opacity-85 backdrop-blur">
                             <ScrollShadow hideScrollBar>
                                 <CardBody>
                                     <CardHeader className="flex flex-col z-10 !items-start">
@@ -94,7 +89,7 @@ export default function AboutMe() {
                                     <div>
                                         <Tabs aria-label="Options" variant="underlined" size="md">
                                             <Tab key="frontend" title="Frontend">
-                                                <Card>
+                                                <Card className={"bg-neutral-950 opacity-85 backdrop-blur"}>
                                                     <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
                                                         <Spacer y={2} />
                                                         <Tooltip showArrow={true} color="foreground" content="Used for structuring content on the web.">
@@ -125,7 +120,7 @@ export default function AboutMe() {
                                                 </Card>
                                             </Tab>
                                             <Tab key="other" title="Other">
-                                                <Card>
+                                                <Card className="bg-neutral-950 opacity-85 backdrop-blur">
                                                     <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
                                                         <Spacer y={2} />
                                                         <Tooltip showArrow={true} color="foreground" content=" An open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.">
@@ -145,7 +140,7 @@ export default function AboutMe() {
                                 </CardBody>
                             </ScrollShadow>
                         </Card>
-                        <Card isFooterBlurred className="h-[300px] max-h-[300px] w-full max-w-[300px]">
+                        <Card isFooterBlurred className="h-[300px] max-h-[300px] w-full max-w-[300px] opacity-85 backdrop-blur">
                             <Image
                                 removeWrapper
                                 alt="Card example background"
