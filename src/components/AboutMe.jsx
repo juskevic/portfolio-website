@@ -152,7 +152,8 @@ export default function AboutMe() {
                                     <p className="text-xs">Need a new website?</p>
                                     <p className="text-medium">{`I’ll make you one.`}</p>
                                 </div>
-                                <Button className="text-tiny" variant="bordered" color="foreground" radius="full" size="sm" endContent={<FontAwesomeIcon icon={faSquareUpwork}  size={"lg"}/>}>
+                                {/* Remove isDisabled later ;)*/}
+                                <Button isDisabled className="text-tiny" variant="bordered" color="foreground" radius="full" size="sm" endContent={<FontAwesomeIcon icon={faSquareUpwork}  size={"lg"}/>}>
                                     {`Let's Talk`}
                                 </Button>
                             </CardFooter>

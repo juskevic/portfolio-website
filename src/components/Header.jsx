@@ -58,23 +58,24 @@ export default function Header() {
 
             <NavbarContent justify="end">
                 <NavbarItem>
-                    <Button as={Link} color="default" href="#" variant="bordered" radius={"full"}>
+                    {/*Remove isDisabled later ;)*/}
+                    <Button isDisabled as={Link} color="default" href="#" variant="bordered" radius={"full"}>
                         blog ✏️
                     </Button>
                 </NavbarItem>
             </NavbarContent>
-            <NavbarMenu className="dark text-foreground bg-background">
+            <NavbarMenu className="dark text-foreground bg-background opacity-70">
                 <NavbarMenuItem>
-                    <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500} className="hover:text-stone-700">hello</Link>
+                    <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500} className="hover:text-stone-400">hello</Link>
                 </NavbarMenuItem>
                 <NavbarMenuItem>
-                    <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-90} duration={500} className="hover:text-stone-700">about</Link>
+                    <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-90} duration={500} className="hover:text-stone-400">about</Link>
                 </NavbarMenuItem>
                 <NavbarMenuItem>
-                    <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-700">projects</Link>
+                    <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-400">projects</Link>
                 </NavbarMenuItem>
                 <NavbarMenuItem>
-                    <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-250} duration={500} className="hover:text-stone-700">contact</Link>
+                    <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-250} duration={500} className="hover:text-stone-400">contact</Link>
                 </NavbarMenuItem>
             </NavbarMenu>
         </Navbar>
