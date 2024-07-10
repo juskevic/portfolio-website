@@ -32,7 +32,7 @@ const Contacts = () => {
                            <FontAwesomeIcon icon={faTelegram} size="xl"/>
                            <h2>{"Feel free to get in touch on Telegram."}</h2>
                        </div>
-                        <Link isDisabled href="#" className="text-sm md:text-xl" size={"lg"} color="foreground" underline="hover">
+                        <Link href="https://t.me/maxyushkevich" className="text-sm md:text-xl" size={"lg"} color="foreground" underline="hover">
                             me/maxyushkevich
                         </Link>
                     </div>
@@ -78,7 +78,7 @@ const Contacts = () => {
                         {" Feel free to get in touch on Telegram."}
                     </span>
                     <span>
-                        <Link underline="always" className="text-black">me/maxyushkevich</Link>
+                        <Link href={"https://t.me/maxyushkevich"} underline="always" className="text-black">me/maxyushkevich</Link>
                     </span>
                 </div>
                 <div>
