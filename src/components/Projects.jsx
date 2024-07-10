@@ -38,13 +38,13 @@ const Projects = (props) => {
                                 <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                     <CardHeader className="flex justify-between">
                                         <div className="space-x-4">
-                                            <Link className="text-2xl" href="#" underline="under"
+                                            <Link className="text-2xl" underline="under"
                                                   color="foreground">Libro</Link>
                                         </div>
                                         <Chip color="warning" variant="flat">Archive</Chip>
                                         <div className="space-x-1">
                                             <Button isIconOnly variant="ghost">
-                                                <FontAwesomeIcon icon={faGithub} size="lg"/>
+                                                <Link color="foreground" href={"https://github.com/maxyushkevich/Libro"}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
                                             </Button>
                                         </div>
                                     </CardHeader>
@@ -64,16 +64,16 @@ const Projects = (props) => {
                                 <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                     <CardHeader className="flex justify-between">
                                         <div className="space-x-4">
-                                            <Link className="text-2xl" href="#" underline="under"
+                                            <Link className="text-2xl" href="https://highstorm.makuyoshi.dev/" underline="under"
                                                   color="foreground">Highstorm</Link>
                                         </div>
                                         <Chip color="warning" variant="flat">Archive</Chip>
                                         <div className="space-x-1">
                                             <Button isIconOnly variant="ghost">
-                                                <FontAwesomeIcon icon={faGithub} size="lg"/>
+                                                <Link color="foreground" href={"https://github.com/maxyushkevich/highstorm"}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
                                             </Button>
                                             <Button isIconOnly variant="ghost">
-                                                <FontAwesomeIcon icon={faLink} size="lg"/>
+                                                <Link color="foreground" href={"https://highstorm.makuyoshi.dev/"}><FontAwesomeIcon icon={faLink} size="lg"/></Link>
                                             </Button>
                                         </div>
                                     </CardHeader>
@@ -97,15 +97,14 @@ const Projects = (props) => {
                             <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between">
                                     <div className="space-x-4">
-                                        <Link className="text-2xl" href="#" underline="under" color="foreground">Portfolio
-                                            Website</Link>
+                                        <Link className="text-2xl" href="#" underline="under" color="foreground">Portfolio Website</Link>
                                     </div>
                                     <div className="space-x-1">
                                         <Button isIconOnly variant="ghost">
-                                            <FontAwesomeIcon icon={faGithub} size="lg"/>
+                                            <Link color="foreground" href={"https://github.com/maxyushkevich/portfolio-website"}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
                                         </Button>
                                         <Button isIconOnly variant="ghost">
-                                            <FontAwesomeIcon icon={faLink} size="lg"/>
+                                            <Link color="foreground" href={"#"}><FontAwesomeIcon icon={faLink} size="lg"/></Link>
                                         </Button>
                                     </div>
                                 </CardHeader>
@@ -127,15 +126,15 @@ const Projects = (props) => {
                             <Card isHoverable className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between">
                                     <div className="space-x-4">
-                                        <Link className="text-2xl" href="#" underline="under"
+                                        <Link className="text-2xl" href="https://vycetka.makuyoshi.dev/" underline="under"
                                               color="foreground">Výčetka</Link>
                                     </div>
                                     <div className="space-x-1">
                                         <Button isIconOnly variant="ghost">
-                                            <FontAwesomeIcon icon={faGithub} size="lg"/>
+                                            <Link color="foreground" href={"https://github.com/maxyushkevich/vycetka"}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
                                         </Button>
                                         <Button isIconOnly variant="ghost">
-                                            <FontAwesomeIcon icon={faLink} size="lg"/>
+                                            <Link color="foreground" href={"https://vycetka.makuyoshi.dev/"}><FontAwesomeIcon icon={faLink} size="lg"/></Link>
                                         </Button>
                                     </div>
                                 </CardHeader>
