@@ -8,7 +8,7 @@ const TypingAnimationComponent = () => {
                     `<Max Yushkevich />`,
                 ]}
                 cursor={false}
-                speed={3}
+                speed={2}
             />
         )
 }

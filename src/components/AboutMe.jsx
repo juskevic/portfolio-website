@@ -144,6 +144,19 @@ export default function AboutMe() {
                                                     </CardBody>
                                                 </Card>
                                             </Tab>
+                                            <Tab key="learning" title={"Currently learning"}>
+                                                <Card className="bg-neutral-950 opacity-85 backdrop-blur">
+                                                    <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
+                                                        <Spacer y={2} />
+                                                        <Tooltip showArrow={true} color="foreground" content="A production-ready motion library for React, enabling animations and gestures in web and mobile apps.">
+                                                            <Chip variant="faded" className="border-gray-700">Framer Motion</Chip>
+                                                        </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="A framework for building native apps using React and JavaScript.">
+                                                            <Chip variant="faded" className="border-cyan-800">React Native</Chip>
+                                                        </Tooltip>
+                                                    </CardBody>
+                                                </Card>
+                                            </Tab>
                                         </Tabs>
                                     </div>
                                 </CardBody>
