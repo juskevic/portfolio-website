@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import {handleViewport} from 'react-in-viewport';
+import React  from 'react';
 import {
     Card,
     CardHeader,
@@ -13,27 +12,15 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import {faLink} from "@fortawesome/free-solid-svg-icons";
 
-const Projects = (props) => {
-    const {inViewport, forwardedRef} = props;
-    const [animationClass, setAnimation] = useState('invisible');
-    const [animationClassRight, setAnimationRight] = useState('invisible');
-    const [animationClassLeft, setAnimationLeft] = useState('invisible');
-    const [hasEnteredView, setHasEnteredView] = useState(false);
-
-    if (inViewport && !hasEnteredView) {
-        setAnimation('visible animate-fade-up animate-once animate-delay-550 animate-ease-out');
-        setAnimationRight('visible animate-fade-right animate-once animate-delay-530 animate-ease-out');
-        setAnimationLeft('visible animate-fade-left animate-once animate-delay-510 animate-ease-out');
-        setHasEnteredView(true);
-    }
+const Projects = () => {
 
     return (
-        <div ref={forwardedRef} className="flex justify-center">
-            <Tabs className={`${animationClass} pb-3`} color={"default"} placement={"top"} size={"lg"} radius={"lg"} variant={"light"} disabledKeys={["contributions"]}>
+        <div className="flex justify-center">
+            <Tabs className={`pb-3`} color={"default"} placement={"top"} size={"lg"} radius={"lg"} variant={"light"} disabledKeys={["contributions"]}>
                 <Tab key={"projects"} title="Projects">
                     <div className='flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10'>
                         {/*LEFT*/}
-                        <div ref={forwardedRef} className={`flex flex-col space-y-10 ${animationClassRight}`}>
+                        <div className={`flex flex-col space-y-10`}>
                             <div>
                                 <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                     <CardHeader className="flex justify-between">
@@ -93,7 +80,7 @@ const Projects = (props) => {
                             </div>
                         </div>
                         {/*MIDDLE*/}
-                        <div ref={forwardedRef} className={`flex flex-col ${animationClass}`}>
+                        <div className={`flex flex-col`}>
                             <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between">
                                     <div className="space-x-4">
@@ -122,7 +109,7 @@ const Projects = (props) => {
                             </Card>
                         </div>
                         {/*RIGHT*/}
-                        <div ref={forwardedRef} className={`flex flex-col space-y-10 ${animationClassLeft}`}>
+                        <div className={`flex flex-col space-y-10`}>
                             <Card isHoverable className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between">
                                     <div className="space-x-4">
@@ -156,6 +143,6 @@ const Projects = (props) => {
     );
 };
 
-const ViewportProjects = handleViewport(Projects, {rootMargin: '-1.0px'});
 
-export default ViewportProjects;
+
+export default Projects;

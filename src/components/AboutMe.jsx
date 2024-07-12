@@ -7,7 +7,14 @@ import {
     CardFooter,
     Image,
     Button,
-    ScrollShadow, Chip, Accordion, AccordionItem, Tabs, Tab, Spacer, Tooltip,
+    ScrollShadow,
+    Chip,
+    Accordion,
+    AccordionItem,
+    Tabs,
+    Tab,
+    Spacer,
+    Tooltip,
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSquareUpwork} from "@fortawesome/free-brands-svg-icons";
@@ -20,11 +27,13 @@ export default function AboutMe() {
                     <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10">
                         <Card className="w-full xl:w-2/3 bg-neutral-950 opacity-85 backdrop-blur">
                             <CardBody>
-                                <CardHeader className="flex flex-col z-10 !items-start">
-                                    <p className="text-sm text-default-500 uppercase">ABOUT ME</p>
-                                    <h4 className="text-xl">
-                                        {"Hi, I’m Max "}
-                                    </h4>
+                                <CardHeader className="flex justify-between z-10 !items-start">
+                                    <div className="flex flex-col">
+                                        <p className="text-sm text-default-500 uppercase">ABOUT ME</p>
+                                        <h4 className="text-xl">
+                                            {"Hi, I’m Max "}
+                                        </h4>
+                                    </div>
                                 </CardHeader>
                                 <ScrollShadow hideScrollBar>
                                     <p className="text-lg max-h-[200px] p-2">
@@ -164,3 +173,4 @@ export default function AboutMe() {
         </>
     )
 }
+

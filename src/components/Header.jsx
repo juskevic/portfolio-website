@@ -30,7 +30,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exo.className} animate-fade-down`}>
+        <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exo.className}`}>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
