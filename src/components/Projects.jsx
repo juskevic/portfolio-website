@@ -14,6 +14,8 @@ import {faLink} from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
 
+    const githubBaseURL = "https://github.com/maxyushkevich/"
+
     return (
         <div className="flex justify-center">
             <Tabs className={`pb-3`} color={"default"} placement={"top"} size={"lg"} radius={"lg"} variant={"light"} disabledKeys={["contributions"]}>
@@ -31,7 +33,7 @@ const Projects = () => {
                                         <Chip color="warning" variant="flat">Archive</Chip>
                                         <div className="space-x-1">
                                             <Button isIconOnly variant="ghost">
-                                                <Link color="foreground" href={"https://github.com/maxyushkevich/Libro"}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
+                                                <Link color="foreground" href={`${githubBaseURL}Libro`}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
                                             </Button>
                                         </div>
                                     </CardHeader>
@@ -57,7 +59,7 @@ const Projects = () => {
                                         <Chip color="warning" variant="flat">Archive</Chip>
                                         <div className="space-x-1">
                                             <Button isIconOnly variant="ghost">
-                                                <Link color="foreground" href={"https://github.com/maxyushkevich/highstorm"}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
+                                                <Link color="foreground" href={`${githubBaseURL}highstorm`}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
                                             </Button>
                                             <Button isIconOnly variant="ghost">
                                                 <Link color="foreground" href={"https://highstorm.makuyoshi.dev/"}><FontAwesomeIcon icon={faLink} size="lg"/></Link>
@@ -88,7 +90,7 @@ const Projects = () => {
                                     </div>
                                     <div className="space-x-1">
                                         <Button isIconOnly variant="ghost">
-                                            <Link color="foreground" href={"https://github.com/maxyushkevich/portfolio-website"}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
+                                            <Link color="foreground" href={`${githubBaseURL}portfolio-website`}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
                                         </Button>
                                         <Button isIconOnly variant="ghost">
                                             <Link color="foreground" href={"#"}><FontAwesomeIcon icon={faLink} size="lg"/></Link>
@@ -118,7 +120,7 @@ const Projects = () => {
                                     </div>
                                     <div className="space-x-1">
                                         <Button isIconOnly variant="ghost">
-                                            <Link color="foreground" href={"https://github.com/maxyushkevich/vycetka"}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
+                                            <Link color="foreground" href={`${githubBaseURL}vycetka`}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
                                         </Button>
                                         <Button isIconOnly variant="ghost">
                                             <Link color="foreground" href={"https://vycetka.makuyoshi.dev/"}><FontAwesomeIcon icon={faLink} size="lg"/></Link>

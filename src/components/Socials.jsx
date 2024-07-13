@@ -7,21 +7,21 @@ import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 export default function Socials() {
     return (
         <ButtonGroup size="md" variant="light" fullWidth>
-            <Button isIconOnly>
-                <Link href={"mailto:contact@maxyushkevich.com"}><FontAwesomeIcon icon={faEnvelope} size="xl" color={"black"}/></Link>
-            </Button>
-            <Button isIconOnly>
-                <Link href={"https://github.com/maxyushkevich"}><FontAwesomeIcon icon={faGithub} size="xl" color={"black"}/></Link>
-            </Button>
-            <Button isIconOnly>
-                <Link href={"https://www.linkedin.com/in/maxyushkevich/"}><FontAwesomeIcon icon={faLinkedinIn} size="xl" color={"black"}/></Link>
-            </Button>
-            <Button isIconOnly>
-                <Link href={"https://t.me/maxyushkevich"}><FontAwesomeIcon icon={faTelegram} size="xl" color={"black"}/></Link>
-            </Button>
-            <Button isIconOnly>
-                <Link href={"#"}><FontAwesomeIcon icon={faSquareUpwork} size="xl" color={"black"}/></Link>
-            </Button>
+            {createSocialButton("mailto:contact@maxyushkevich.com", faEnvelope)}
+            {createSocialButton("https://github.com/maxyushkevich", faGithub)}
+            {createSocialButton("https://www.linkedin.com/in/maxyushkevich/", faLinkedinIn)}
+            {createSocialButton("https://t.me/maxyushkevich", faTelegram)}
+            {createSocialButton("#", faSquareUpwork)}
         </ButtonGroup>
+    );
+}
+
+function createSocialButton(href, icon) {
+    return (
+        <Button isIconOnly>
+            <Link href={href}>
+                <FontAwesomeIcon icon={icon} size="xl" color={"black"}/>
+            </Link>
+        </Button>
     );
 }
