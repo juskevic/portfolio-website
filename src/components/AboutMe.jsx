@@ -98,7 +98,7 @@ export default function AboutMe() {
                                     <div>
                                         <Tabs aria-label="Options" variant="underlined" size="md">
                                             <Tab key="frontend" title="Frontend">
-                                                <Card className={"bg-neutral-950 opacity-85 backdrop-blur"}>
+                                                <Card className={"bg-neutral-950"}>
                                                     <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
                                                         <Spacer y={2} />
                                                         <Tooltip showArrow={true} color="foreground" content="Used for structuring content on the web.">
@@ -129,7 +129,7 @@ export default function AboutMe() {
                                                 </Card>
                                             </Tab>
                                             <Tab key="other" title="Other">
-                                                <Card className="bg-neutral-950 opacity-85 backdrop-blur">
+                                                <Card className="bg-neutral-950">
                                                     <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
                                                         <Spacer y={2} />
                                                         <Tooltip showArrow={true} color="foreground" content=" An open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.">
@@ -145,7 +145,7 @@ export default function AboutMe() {
                                                 </Card>
                                             </Tab>
                                             <Tab key="learning" title={"Currently learning"}>
-                                                <Card className="bg-neutral-950 opacity-85 backdrop-blur">
+                                                <Card className="bg-neutral-950">
                                                     <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
                                                         <Spacer y={2} />
                                                         <Tooltip showArrow={true} color="foreground" content="A production-ready motion library for React, enabling animations and gestures in web and mobile apps.">
