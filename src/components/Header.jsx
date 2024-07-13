@@ -1,61 +1,61 @@
 import React from "react";
 import {
+    Button,
     Navbar,
     NavbarBrand,
     NavbarContent,
     NavbarItem,
-    NavbarMenuToggle,
     NavbarMenu,
     NavbarMenuItem,
-    Button,
+    NavbarMenuToggle
 } from "@nextui-org/react";
-import {Link} from 'react-scroll'
-import { Exo, Sometype_Mono } from "next/font/google";
 import TypingAnimation from "@/components/TypingAnimation.jsx";
+import {Link} from "react-scroll";
+import {Exo, Sometype_Mono} from "next/font/google";
 
-const exo = Exo({
+
+const exoFont = Exo({
     weight: '300',
     style: 'normal',
     subsets: ['latin'],
 });
 
-const sometypeMono = Sometype_Mono({
+const sometypeMonoFont = Sometype_Mono({
     weight: '400',
     style: 'normal',
     subsets: ['latin'],
 });
 
-export default function Header() {
+// Function to render a navigation link
+const renderNavLink = (to, offset) => (
+    <Link href={`/#${to}`} activeClass="active" to={to} spy={true} smooth={true}
+          offset={offset} duration={500} className="hover:text-stone-400">
+        {to}
+    </Link>
+);
 
+export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exo.className}`}>
+        <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exoFont.className}`}>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                     className="sm:hidden"
                 />
                 <NavbarBrand>
-                    <p className={`${sometypeMono.className} text-lg xl:text-xl`}><TypingAnimation /></p>
+                    <p className={`${sometypeMonoFont.className} text-lg xl:text-xl`}>
+                        <TypingAnimation />
+                    </p>
                 </NavbarBrand>
             </NavbarContent>
-
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                <NavbarItem>
-                    <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500} className="hover:text-stone-400">hello</Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-90} duration={500} className="hover:text-stone-400">about</Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-400">projects</Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-250} duration={500} className="hover:text-stone-400">contact</Link>
-                </NavbarItem>
+                <NavbarItem>{renderNavLink("hello", -200)}</NavbarItem>
+                <NavbarItem>{renderNavLink("about", -90)}</NavbarItem>
+                <NavbarItem>{renderNavLink("projects", -120)}</NavbarItem>
+                <NavbarItem>{renderNavLink("contact", -250)}</NavbarItem>
             </NavbarContent>
-
             <NavbarContent justify="end">
                 <NavbarItem>
                     {/*Remove isDisabled later ;)*/}
