@@ -4,97 +4,71 @@ import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "@nextui-org/react";
 
+const CONTACTS_DETAILS = [
+    {
+        icon: faEnvelope,
+        message: "Please don't hesitate to get in touch.",
+        link: 'mailto:contact@maxyushkevich.com',
+        linkContentMd: "contact@maxyushkevich.com",
+        linkContentSm: "contact@maxyushkevich.com"
+    },
+    {
+        icon: faGithub,
+        message: "Take a look at my code on GitHub.",
+        link: 'https://github.com/maxyushkevich',
+        linkContentMd: "@maxyushkevich",
+        linkContentSm: "@maxyushkevich"
+    },
+    {
+        icon: faTelegram,
+        message: "Feel free to get in touch on Telegram.",
+        link: 'https://t.me/maxyushkevich',
+        linkContentMd: "me/maxyushkevich",
+        linkContentSm: "me/maxyushkevich"
+    },
+    {
+        icon: faLinkedin,
+        message: "Let's connect on LinkedIn.",
+        link: 'https://www.linkedin.com/in/maxyushkevich/',
+        linkContentMd: "in/maxyushkevich",
+        linkContentSm: "in/maxyushkevich"
+    }
+];
+
+const ContactInfo = ({icon, message, link, linkContentMd, linkContentSm, isSmallScreen}) => {
+    const className = isSmallScreen ? "text-black" : "text-sm md:text-xl";
+    const size = isSmallScreen ? "sm" : "lg";
+
+    return (
+        <div className="flex flex-row justify-between">
+            <div className="flex flex-row space-x-2">
+                <FontAwesomeIcon icon={icon} size="xl"/>
+                <h2>{message}</h2>
+            </div>
+            <Link href={link} className={className} size={size} color="foreground" underline="hover">
+                {isSmallScreen ? linkContentSm : linkContentMd}
+            </Link>
+        </div>
+    );
+};
+
 const Contacts = () => {
     return (
         <>
             <div className="hidden md:flex justify-center pb-36">
-                <div className="flex flex-col space-y-7 p-3 text-xs md:text-lg bg-neutral-800 bg-opacity-25 backdrop-blur rounded-xl text-black w-2/3">
-                    <div className="flex flex-row justify-between">
-                        <div className="flex flex-row space-x-2">
-                            <FontAwesomeIcon icon={faEnvelope} size="xl"/>
-                            <h2>{"Please don't hesitate to get in touch."}</h2>
-                        </div>
-                        <Link href="mailto:contact@maxyushkevich.com" className="text-sm md:text-xl" size={"lg"} color="foreground" underline="hover">
-                            contact@maxyushkevich.com
-                        </Link>
-                    </div>
-                    <div className="flex flex-row justify-between">
-                        <div className="flex flex-row space-x-2">
-                            <FontAwesomeIcon icon={faGithub} size="xl"/>
-                            <h2>{"Take a look at my code on GitHub."}</h2>
-                        </div>
-                        <Link href="https://github.com/maxyushkevich" size={"lg"} className="text-sm md:text-xl" color="foreground" underline="hover">
-                            @maxyushkevich
-                        </Link>
-                    </div>
-                    <div className="flex flex-row justify-between">
-                       <div className="flex flex-row space-x-2">
-                           <FontAwesomeIcon icon={faTelegram} size="xl"/>
-                           <h2>{"Feel free to get in touch on Telegram."}</h2>
-                       </div>
-                        <Link href="https://t.me/maxyushkevich" className="text-sm md:text-xl" size={"lg"} color="foreground" underline="hover">
-                            me/maxyushkevich
-                        </Link>
-                    </div>
-                    <div className="flex flex-row justify-between">
-                        <div className="flex flex-row space-x-2">
-                            <FontAwesomeIcon icon={faLinkedin} size="xl"/>
-                            <h2>{"Let's connect on LinkedIn."}</h2>
-                        </div>
-                        <Link href="https://www.linkedin.com/in/maxyushkevich/" className="text-sm md:text-xl" color="foreground" underline="hover">
-                            in/maxyushkevich
-                        </Link>
-                    </div>
+                <div
+                    className="flex flex-col space-y-7 p-3 text-xs md:text-lg bg-neutral-800 bg-opacity-25 backdrop-blur rounded-xl text-black w-2/3">
+                    {CONTACTS_DETAILS.map((contactDetail, index) => (
+                      <ContactInfo key={index} isSmallScreen={false} {...contactDetail} />
+                    ))}
                 </div>
             </div>
             <div className="flex flex-col space-y-5 md:hidden lg:hidden xl:hidden 2xl:hidden p-2 text-black bg-neutral-800 bg-opacity-15 backdrop-blur rounded-xl">
-                <div>
-                    <span>
-                        <FontAwesomeIcon icon={faEnvelope}/>
-                    </span>
-                    <span>
-                        {" Please don't hesitate to get in touch."}
-                    </span>
-                    <span>
-                        <Link href="mailto:contact@maxyushkevich.com" underline="always" className="text-black">contact@maxyushkevich.com</Link>
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <FontAwesomeIcon icon={faGithub}/>
-                    </span>
-                    <span>
-                        {" Take a look at my code on GitHub."}
-                    </span>
-                    <span>
-                        <Link href={"https://github.com/maxyushkevich"} underline="always" className="text-black">@maxyushkevich</Link>
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <FontAwesomeIcon icon={faTelegram}/>
-                    </span>
-                    <span>
-                        {" Feel free to get in touch on Telegram."}
-                    </span>
-                    <span>
-                        <Link href={"https://t.me/maxyushkevich"} underline="always" className="text-black">me/maxyushkevich</Link>
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <FontAwesomeIcon icon={faLinkedin}/>
-                    </span>
-                    <span>
-                        {" Let's connect on LinkedIn."}
-                    </span>
-                    <span>
-                        <Link href={"https://www.linkedin.com/in/maxyushkevich/"} underline="always" className="text-black">in/maxyushkevich</Link>
-                    </span>
-                </div>
+                {CONTACTS_DETAILS.map((contactDetail, index) => (
+                  <ContactInfo key={index} isSmallScreen={true} {...contactDetail} />
+                ))}
             </div>
         </>
     );
 }
-
 export default Contacts;
