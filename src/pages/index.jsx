@@ -82,7 +82,6 @@ const HomePage = () => {
                 <meta property="og:title" content="Max Yushkevich: Frontend Web Developer"/>
                 <meta property="og:description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI. 💫"/>
                 <meta property="og:url" content="https://www.maxyushkevich.com"/>
-                <meta property="og:image" content="https://i.imgur.com/narcO5T.jpeg"/>
             </Head>
             <div className="dark text-foreground">
                 <Header />

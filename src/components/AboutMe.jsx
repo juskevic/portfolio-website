@@ -168,6 +168,8 @@ export default function AboutMe() {
                                 alt="Card example background"
                                 className="z-0 w-full h-full scale-105 -translate-y-6 object-cover"
                                 src="https://images.pexels.com/photos/20853116/pexels-photo-20853116/free-photo-of-programming-code-on-a-screen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                height={300}
+                                width={300}
                             />
                             <CardFooter className="absolute bottom-0 z-10 justify-between">
                                 <div>
@@ -175,7 +177,7 @@ export default function AboutMe() {
                                     <p className="text-medium">{`I’ll make you one.`}</p>
                                 </div>
                                 {/* Remove isDisabled later ;)*/}
-                                <Button isDisabled className="text-tiny" variant="bordered" color="foreground" radius="full" size="sm" endContent={<FontAwesomeIcon icon={faSquareUpwork}  size={"lg"}/>}>
+                                <Button aria-label="let's talk button" isDisabled className="text-tiny" variant="bordered" color="foreground" radius="full" size="sm" endContent={<FontAwesomeIcon icon={faSquareUpwork}  size={"lg"}/>}>
                                     {`Let's Talk`}
                                 </Button>
                             </CardFooter>

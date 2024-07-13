@@ -28,7 +28,7 @@ export default function Hello() {
                         {'"I’m passionate about creating responsive and user-friendly websites."'}
                     </h1>
                 </div>
-                <Image isZoomed isBlurred radius="full" width={300} alt="makuyoshi pfp" src="DSCF4717.JPG" />
+                <Image isZoomed isBlurred radius="full" width={300} height={300} alt="makuyoshi pfp" src="DSCF4717.webp" />
             </div>
             <div className="flex flex-row justify-start sm:pt-0 pt-16 sm:pl-10 pl-3">
                 <div className="space-y-1">
