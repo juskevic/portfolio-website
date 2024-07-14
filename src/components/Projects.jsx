@@ -18,7 +18,7 @@ const Projects = () => {
 
     return (
         <div className="flex justify-center">
-            <Tabs className={`pb-3`} color={"default"} placement={"top"} size={"lg"} radius={"lg"} variant={"light"} disabledKeys={["contributions"]}>
+            <Tabs className={`pb-3`} color={"default"} placement={"top"} size={"lg"} radius={"lg"} variant={"solid"} disabledKeys={["contributions"]}>
                 <Tab key={"projects"} title="Projects">
                     <div className='flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10'>
                         {/*LEFT*/}

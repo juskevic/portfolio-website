@@ -36,7 +36,7 @@ const CONTACTS_DETAILS = [
 ];
 
 const ContactInfo = ({icon, message, link, linkContentMd, linkContentSm, isSmallScreen}) => {
-    const className = isSmallScreen ? "text-black" : "text-sm md:text-xl";
+    const className = isSmallScreen ? "text-white" : "text-sm md:text-xl";
     const size = isSmallScreen ? "sm" : "lg";
 
     return (
@@ -57,13 +57,13 @@ const Contacts = () => {
         <>
             <div className="hidden md:flex justify-center pb-36">
                 <div
-                    className="flex flex-col space-y-7 p-3 text-xs md:text-lg bg-neutral-800 bg-opacity-25 backdrop-blur rounded-xl text-black w-2/3">
+                    className="flex flex-col space-y-7 p-3 text-xs md:text-lg bg-neutral-950 opacity-80 text-neutral-300 backdrop-blur rounded-xl w-2/3">
                     {CONTACTS_DETAILS.map((contactDetail, index) => (
                       <ContactInfo key={index} isSmallScreen={false} {...contactDetail} />
                     ))}
                 </div>
             </div>
-            <div className="flex flex-col space-y-5 md:hidden lg:hidden xl:hidden 2xl:hidden p-2 text-black bg-neutral-800 bg-opacity-15 backdrop-blur rounded-xl">
+            <div className="flex flex-col space-y-5 md:hidden lg:hidden xl:hidden 2xl:hidden p-2 text-neutral-300 bg-neutral-950 opacity-85 backdrop-blur rounded-xl">
                 {CONTACTS_DETAILS.map((contactDetail, index) => (
                   <ContactInfo key={index} isSmallScreen={true} {...contactDetail} />
                 ))}

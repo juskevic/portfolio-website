@@ -14,7 +14,7 @@ import {
     Tabs,
     Tab,
     Spacer,
-    Tooltip,
+    Tooltip, Badge,
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSquareUpwork} from "@fortawesome/free-brands-svg-icons";
@@ -125,6 +125,9 @@ export default function AboutMe() {
                                                         <Tooltip showArrow={true} color="foreground" content="A React-based component library for building user interfaces.">
                                                             <Chip variant="faded" className="border-black">NextUI</Chip>
                                                         </Tooltip>
+                                                        <Tooltip showArrow={true} color="foreground" content="A production-ready motion library for React, enabling animations and gestures in web and mobile apps.">
+                                                            <Chip variant="faded" className="border-gray-700">Framer Motion</Chip>
+                                                        </Tooltip>
                                                     </CardBody>
                                                 </Card>
                                             </Tab>
@@ -140,19 +143,6 @@ export default function AboutMe() {
                                                         </Tooltip>
                                                         <Tooltip showArrow={true} color="foreground" content="Stands for Node Package Manager, which is the default package manager for the JavaScript runtime environment Node.js.">
                                                             <Chip variant="faded" className="border-red-700">npm</Chip>
-                                                        </Tooltip>
-                                                    </CardBody>
-                                                </Card>
-                                            </Tab>
-                                            <Tab key="learning" title={"Currently learning"}>
-                                                <Card className="bg-neutral-950">
-                                                    <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
-                                                        <Spacer y={2} />
-                                                        <Tooltip showArrow={true} color="foreground" content="A production-ready motion library for React, enabling animations and gestures in web and mobile apps.">
-                                                            <Chip variant="faded" className="border-gray-700">Framer Motion</Chip>
-                                                        </Tooltip>
-                                                        <Tooltip showArrow={true} color="foreground" content="A framework for building native apps using React and JavaScript.">
-                                                            <Chip variant="faded" className="border-cyan-800">React Native</Chip>
                                                         </Tooltip>
                                                     </CardBody>
                                                 </Card>

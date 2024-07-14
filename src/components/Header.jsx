@@ -29,7 +29,7 @@ const sometypeMonoFont = Sometype_Mono({
 // Function to render a navigation link
 const renderNavLink = (to, offset) => (
     <Link href={`/#${to}`} activeClass="active" to={to} spy={true} smooth={true}
-          offset={offset} duration={500} className="hover:text-stone-400">
+          offset={offset} duration={500} className="hover:text-stone-400 text-lg">
         {to}
     </Link>
 );
