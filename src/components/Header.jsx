@@ -38,7 +38,7 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exoFont.className}`}>
+        <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exoFont.className} bg-neutral-950 opacity-85 backdrop-blur`}>
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
