@@ -73,7 +73,7 @@ const HomePage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
                 <meta name="description"
-                      content="Max's portfolio website. Build on top of Next.js, using React & NextUI."/>
+                      content="Max's portfolio website. Built on top of Next.js, using React & NextUI."/>
                 <meta name="robots" content="index, follow"/>
                 <link rel="canonical" href="https://wwww.maxyushkevich.com"/>
                 <link rel="alternate" hrefLang="en-us" href="https://wwww.maxyushkevich.com"/>
