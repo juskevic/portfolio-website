@@ -14,7 +14,7 @@ import {
     Tabs,
     Tab,
     Spacer,
-    Tooltip, Badge,
+    Tooltip
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSquareUpwork} from "@fortawesome/free-brands-svg-icons";

@@ -5,12 +5,11 @@ import {
     CardBody,
     Divider,
     Link,
-    Chip,
-    Button, Tabs, Tab,
+    Button, Tabs, Tab, Tooltip
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
-import {faLink} from "@fortawesome/free-solid-svg-icons";
+import {faLink, faScrewdriverWrench} from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
 
@@ -27,55 +26,34 @@ const Projects = () => {
                                 <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                     <CardHeader className="flex justify-between">
                                         <div className="space-x-4">
-                                            <Link className="text-2xl" underline="under"
-                                                  color="foreground">Libro</Link>
+                                            <Tooltip showArrow={true} color="warning" content="Project name might change in the future!">
+                                                <Link className="text-2xl" underline="under" color="foreground">Task Hive</Link>
+                                            </Tooltip>
                                         </div>
-                                        <Chip color="warning" variant="flat">Archive</Chip>
                                         <div className="space-x-1">
-                                            <Button isIconOnly variant="ghost">
-                                                <Link color="foreground" href={`${githubBaseURL}Libro`}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
+                                            <Tooltip closeDelay={3000} defaultOpen={true} isDismissable showArrow={true} color="warning" content="This project is in development! ⚒️">
+                                                <Button radius="full" size="sm" isIconOnly variant="bordered" color="warning">
+                                                    <Link color="warning"><FontAwesomeIcon icon={faScrewdriverWrench} size="md"/></Link>
+                                                </Button>
+                                            </Tooltip>
+                                            <Button isDisabled radius="full" size="sm" isIconOnly variant="ghost">
+                                                <Link color="foreground" href={`${githubBaseURL}vycetka`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
+                                            </Button>
+                                            <Button isDisabled radius="full" size="sm" isIconOnly variant="ghost">
+                                                <Link color="foreground" href={"https://vycetka.makuyoshi.dev/"}><FontAwesomeIcon icon={faLink} size="md"/></Link>
                                             </Button>
                                         </div>
                                     </CardHeader>
                                     <Divider/>
-                                    <CardBody>
-                                        <p>
-                                            Libro was a Discord bot crafted with Discord.js and Node.js, designed to
-                                            enhance your
-                                            server’s reading experience. It allowed users to search, share, and discuss
-                                            books
-                                            seamlessly within your Discord community
-                                        </p>
-                                    </CardBody>
-                                </Card>
-                            </div>
-                            <div>
-                                <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
-                                    <CardHeader className="flex justify-between">
-                                        <div className="space-x-4">
-                                            <Link className="text-2xl" href="https://highstorm.makuyoshi.dev/" underline="under"
-                                                  color="foreground">Highstorm</Link>
-                                        </div>
-                                        <Chip color="warning" variant="flat">Archive</Chip>
-                                        <div className="space-x-1">
-                                            <Button isIconOnly variant="ghost">
-                                                <Link color="foreground" href={`${githubBaseURL}highstorm`}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
-                                            </Button>
-                                            <Button isIconOnly variant="ghost">
-                                                <Link color="foreground" href={"https://highstorm.makuyoshi.dev/"}><FontAwesomeIcon icon={faLink} size="lg"/></Link>
-                                            </Button>
-                                        </div>
-                                    </CardHeader>
-                                    <Divider/>
-                                    <CardBody>
-                                        <p>
-                                            Highstorm was a web application that I developed in 2024. It was my
-                                            first attempt at
-                                            utilizing an API, and it was built using Bootstrap. The app showed basic
-                                            weather
-                                            information for a given location, including temperature, humidity,
-                                            clouds, sunset,
-                                            and sunrise.
+                                    <CardBody className={"space-y-3"}>
+                                        <p className={"p-1"}>
+                                            Task Hive is an innovative task management app currently in <span className={"underline"}>early
+                                            development</span>. Designed to enhance productivity, it offers a range of
+                                            features for efficient task organization. Create, assign, and track
+                                            tasks seamlessly, and stay tuned for upcoming enhancements like
+                                            subtasks, Gantt chart visualization, and project templates. Whether
+                                            you’re an individual or part of a team, Task Hive will revolutionize the
+                                            way you manage tasks! 🚀
                                         </p>
                                     </CardBody>
                                 </Card>
@@ -86,20 +64,21 @@ const Projects = () => {
                             <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between">
                                     <div className="space-x-4">
-                                        <Link className="text-2xl" href="#" underline="under" color="foreground">Portfolio Website</Link>
+                                        <Link className="text-2xl" href="#" underline="under" color="foreground">Portfolio
+                                            Website</Link>
                                     </div>
                                     <div className="space-x-1">
-                                        <Button isIconOnly variant="ghost">
-                                            <Link color="foreground" href={`${githubBaseURL}portfolio-website`}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
+                                        <Button radius="full" size="sm" isIconOnly variant="ghost">
+                                        <Link color="foreground" href={`${githubBaseURL}portfolio-website`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
                                         </Button>
-                                        <Button isIconOnly variant="ghost">
-                                            <Link color="foreground" href={"#"}><FontAwesomeIcon icon={faLink} size="lg"/></Link>
+                                        <Button radius="full" size="sm" isIconOnly variant="ghost">
+                                            <Link color="foreground" href={"#"}><FontAwesomeIcon icon={faLink} size="md"/></Link>
                                         </Button>
                                     </div>
                                 </CardHeader>
                                 <Divider/>
                                 <CardBody>
-                                    <p>
+                                    <p className="p-1">
                                         My portfolio website is the first front-end project I have undertaken. Initially
                                         developed using basic HTML and CSS, it has since been enhanced with the use of
                                         modern frameworks such as Next.js and React. It incorporates multiple JavaScript
@@ -119,17 +98,17 @@ const Projects = () => {
                                               color="foreground">Výčetka</Link>
                                     </div>
                                     <div className="space-x-1">
-                                        <Button isIconOnly variant="ghost">
-                                            <Link color="foreground" href={`${githubBaseURL}vycetka`}><FontAwesomeIcon icon={faGithub} size="lg"/></Link>
+                                        <Button radius="full" size="sm" isIconOnly variant="ghost">
+                                            <Link color="foreground" href={`${githubBaseURL}vycetka`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
                                         </Button>
-                                        <Button isIconOnly variant="ghost">
-                                            <Link color="foreground" href={"https://vycetka.makuyoshi.dev/"}><FontAwesomeIcon icon={faLink} size="lg"/></Link>
+                                        <Button radius="full" size="sm" isIconOnly variant="ghost">
+                                            <Link color="foreground" href={"https://vycetka.makuyoshi.dev/"}><FontAwesomeIcon icon={faLink} size="md"/></Link>
                                         </Button>
                                     </div>
                                 </CardHeader>
                                 <Divider/>
                                 <CardBody>
-                                    <p>
+                                    <p className="p-1">
                                         This is an accounting tool build using Bootstrap that allows you to count the
                                         amount of
                                         banknotes and coins that are in your cash register.
