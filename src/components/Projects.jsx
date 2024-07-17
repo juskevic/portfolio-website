@@ -3,14 +3,18 @@ import {
     Card,
     CardHeader,
     CardBody,
-    Divider,
     Link,
     Button, Tabs, Tab, Tooltip,
-    Image, Chip
+    Image,
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
-import {faFont, faImage, faLink, faPen, faScrewdriverWrench} from "@fortawesome/free-solid-svg-icons";
+import {
+    faArrowUpRightFromSquare,
+    faImage,
+    faPen,
+    faScrewdriverWrench
+} from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
 
@@ -25,11 +29,12 @@ const Projects = () => {
                         <div className={`flex flex-col space-y-10`}>
                             <div>
                                 <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
-                                    <CardHeader className="flex justify-between">
-                                        <div className="space-x-4">
+                                    <CardHeader className="flex justify-between pb-0">
+                                        <div className="flex flex-col">
                                             <Tooltip showArrow={true} color="warning" content="Project name might change in the future!">
-                                                <Link className="text-2xl" underline="under" color="foreground">Task Hive</Link>
+                                                <Link className="text-2xl" underline="under" color="foreground">Task Hive*</Link>
                                             </Tooltip>
+                                            <p className="opacity-70">Mobile App</p>
                                         </div>
                                         <div className="space-x-1">
                                             <Tooltip closeDelay={3000} defaultOpen={true} isDismissable showArrow={true} color="warning" content="This project is in development! ⚒️">
@@ -37,25 +42,40 @@ const Projects = () => {
                                                     <Link color="warning"><FontAwesomeIcon icon={faScrewdriverWrench} size="md"/></Link>
                                                 </Button>
                                             </Tooltip>
-                                            <Button isDisabled radius="full" size="sm" isIconOnly variant="ghost">
+                                            <Button isDisabled={true} radius="full" size="sm" isIconOnly variant="ghost">
                                                 <Link color="foreground" href={`${githubBaseURL}vycetka`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
                                             </Button>
-                                            <Button isDisabled radius="full" size="sm" isIconOnly variant="ghost">
-                                                <Link color="foreground" href={"https://vycetka.makuyoshi.dev/"}><FontAwesomeIcon icon={faLink} size="md"/></Link>
+                                            <Button isDisabled={true} radius="full" size="sm" isIconOnly variant="ghost">
+                                                <Link color="foreground" href={"#"}><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="md"/></Link>
                                             </Button>
                                         </div>
                                     </CardHeader>
-                                    <Divider/>
-                                    <CardBody className={"space-y-3"}>
-                                        <p className={"p-1"}>
-                                            Task Hive is an innovative task management app currently in <span className={"underline"}>early
-                                            development</span>. Designed to enhance productivity, it offers a range of
-                                            features for efficient task organization. Create, assign, and track
-                                            tasks seamlessly, and stay tuned for upcoming enhancements like
-                                            subtasks, Gantt chart visualization, and project templates. Whether
-                                            you’re an individual or part of a team, Task Hive will revolutionize the
-                                            way you manage tasks! 🚀
-                                        </p>
+                                    <CardBody className="pt-1">
+                                        <Tabs size="md" variant="underlined">
+                                            <Tab title={
+                                                <div className="flex items-center space-x-2">
+                                                    <FontAwesomeIcon icon={faPen}/>
+                                                    <span>Description</span>
+                                                </div>
+                                            }>
+                                                <p className={"p-1"}> Task Hive is an innovative task management app
+                                                    currently in <span className={"underline"}>early development</span>.
+                                                    Designed to enhance productivity, it offers a range of features for
+                                                    efficient task organization. Create, assign, and track tasks
+                                                    seamlessly, and stay tuned for upcoming enhancements like subtasks,
+                                                    Gantt chart visualization, and project templates. Whether you’re an
+                                                    individual or part of a team, Task Hive will revolutionize the way
+                                                    you manage tasks! 🚀 </p>
+                                            </Tab>
+                                            <Tab isDisabled={true} title={
+                                                <div className="flex items-center space-x-2">
+                                                    <FontAwesomeIcon icon={faImage}/>
+                                                    <span>Preview</span>
+                                                </div>
+                                            }>
+                                                <Image isZoomed height={300} src="" alt="preview image"></Image>
+                                            </Tab>
+                                        </Tabs>
                                     </CardBody>
                                 </Card>
                             </div>
@@ -63,21 +83,21 @@ const Projects = () => {
                         {/*MIDDLE*/}
                         <div className={`flex flex-col`}>
                             <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
-                                <CardHeader className="flex justify-between">
-                                    <div className="space-x-4">
+                                <CardHeader className="flex justify-between pb-0">
+                                    <div className="flex flex-col">
                                         <Link className="text-2xl" href="#" underline="under" color="foreground">Portfolio Website</Link>
+                                        <p className="opacity-70">Website</p>
                                     </div>
                                     <div className="space-x-1">
                                         <Button radius="full" size="sm" isIconOnly variant="ghost">
                                         <Link color="foreground" href={`${githubBaseURL}portfolio-website`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
                                         </Button>
                                         <Button radius="full" size="sm" isIconOnly variant="ghost">
-                                            <Link color="foreground" href={"#"}><FontAwesomeIcon icon={faLink} size="md"/></Link>
+                                            <Link color="foreground" href={"#"}><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="md"/></Link>
                                         </Button>
                                     </div>
                                 </CardHeader>
-                                <Divider/>
-                                <CardBody>
+                                <CardBody className="pt-1">
                                     <Tabs size="md" variant="underlined">
                                         <Tab title={
                                             <div className="flex items-center space-x-2">
@@ -95,7 +115,7 @@ const Projects = () => {
                                                 <span>Preview</span>
                                             </div>
                                         }>
-                                            <Image isZoomed height={300} src="portfolio_previwed.png" alt="vycetka preview image"></Image>
+                                            <Image isZoomed height={300} src="portfolio_previwed.png" alt="portfolio preview image"></Image>
                                         </Tab>
                                     </Tabs>
                                 </CardBody>
@@ -104,21 +124,21 @@ const Projects = () => {
                         {/*RIGHT*/}
                         <div className={`flex flex-col space-y-10`}>
                             <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
-                                <CardHeader className="flex justify-between">
-                                    <div className="space-x-4">
+                                <CardHeader className="flex justify-between pb-0">
+                                    <div className="flex flex-col">
                                         <Link className="text-2xl" href="https://vycetka.makuyoshi.dev/" underline="under" color="foreground">Výčetka</Link>
+                                        <p className="opacity-70">Web App</p>
                                     </div>
                                     <div className="space-x-1">
                                         <Button radius="full" size="sm" isIconOnly variant="ghost">
                                             <Link color="foreground" href={`${githubBaseURL}vycetka`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
                                         </Button>
                                         <Button radius="full" size="sm" isIconOnly variant="ghost">
-                                            <Link color="foreground" href={"https://vycetka.makuyoshi.dev/"}><FontAwesomeIcon icon={faLink} size="md"/></Link>
+                                            <Link color="foreground" href={"https://vycetka.makuyoshi.dev/"}><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="md"/></Link>
                                         </Button>
                                     </div>
                                 </CardHeader>
-                                <Divider />
-                                <CardBody>
+                                <CardBody className="pt-1">
                                     <Tabs size="md" variant="underlined">
                                         <Tab title={
                                             <div className="flex items-center space-x-2">
@@ -153,5 +173,3 @@ const Projects = () => {
 
 
 export default Projects;
-
-// My portfolio website is the first front-end project I have undertaken. Initially developed using basic HTML and CSS, it has since been enhanced with the use of modern frameworks such as Next.js and React. It incorporates multiple JavaScript libraries to achieve a contemporary look and feel. I am delighted with the result and continue to work on it to this day, despite having made over 500 commits.
