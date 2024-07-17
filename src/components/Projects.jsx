@@ -5,18 +5,19 @@ import {
     CardBody,
     Divider,
     Link,
-    Button, Tabs, Tab, Tooltip
+    Button, Tabs, Tab, Tooltip,
+    Image, Chip
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
-import {faLink, faScrewdriverWrench} from "@fortawesome/free-solid-svg-icons";
+import {faFont, faImage, faLink, faPen, faScrewdriverWrench} from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
 
     const githubBaseURL = "https://github.com/maxyushkevich/"
 
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center md:pb-0 pb-40 md:h-[700px]">
             <Tabs className={`pb-3`} color={"default"} placement={"top"} size={"lg"} radius={"lg"} variant={"solid"} disabledKeys={["contributions"]}>
                 <Tab key={"projects"} title="Projects">
                     <div className='flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10'>
@@ -64,8 +65,7 @@ const Projects = () => {
                             <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between">
                                     <div className="space-x-4">
-                                        <Link className="text-2xl" href="#" underline="under" color="foreground">Portfolio
-                                            Website</Link>
+                                        <Link className="text-2xl" href="#" underline="under" color="foreground">Portfolio Website</Link>
                                     </div>
                                     <div className="space-x-1">
                                         <Button radius="full" size="sm" isIconOnly variant="ghost">
@@ -91,11 +91,10 @@ const Projects = () => {
                         </div>
                         {/*RIGHT*/}
                         <div className={`flex flex-col space-y-10`}>
-                            <Card isHoverable className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
+                            <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between">
                                     <div className="space-x-4">
-                                        <Link className="text-2xl" href="https://vycetka.makuyoshi.dev/" underline="under"
-                                              color="foreground">Výčetka</Link>
+                                        <Link className="text-2xl" href="https://vycetka.makuyoshi.dev/" underline="under" color="foreground">Výčetka</Link>
                                     </div>
                                     <div className="space-x-1">
                                         <Button radius="full" size="sm" isIconOnly variant="ghost">
@@ -106,13 +105,29 @@ const Projects = () => {
                                         </Button>
                                     </div>
                                 </CardHeader>
-                                <Divider/>
+                                <Divider />
                                 <CardBody>
-                                    <p className="p-1">
-                                        This is an accounting tool build using Bootstrap that allows you to count the
-                                        amount of
-                                        banknotes and coins that are in your cash register.
-                                    </p>
+                                    <Tabs size="md" variant="underlined">
+                                        <Tab title={
+                                            <div className="flex items-center space-x-2">
+                                                <FontAwesomeIcon icon={faPen} />
+                                                <span>Description</span>
+                                            </div>
+                                        }>
+                                            <p className="p-1">
+                                                This is an accounting tool build using Bootstrap that allows you to count the amount of
+                                                banknotes and coins that are in your cash register.
+                                            </p>
+                                        </Tab>
+                                        <Tab title={
+                                            <div className="flex items-center space-x-2">
+                                                <FontAwesomeIcon icon={faImage} />
+                                                <span>Preview</span>
+                                            </div>
+                                        }>
+                                            <Image isZoomed height={300} src="vycetka_previewed.png" alt="vycetka preview image"></Image>
+                                        </Tab>
+                                    </Tabs>
                                 </CardBody>
                             </Card>
                         </div>
@@ -125,5 +140,6 @@ const Projects = () => {
 };
 
 
-
 export default Projects;
+
+// My portfolio website is the first front-end project I have undertaken. Initially developed using basic HTML and CSS, it has since been enhanced with the use of modern frameworks such as Next.js and React. It incorporates multiple JavaScript libraries to achieve a contemporary look and feel. I am delighted with the result and continue to work on it to this day, despite having made over 500 commits.
