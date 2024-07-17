@@ -32,7 +32,7 @@ const Projects = () => {
                                     <CardHeader className="flex justify-between pb-0">
                                         <div className="flex flex-col">
                                             <Tooltip showArrow={true} color="warning" content="Project name might change in the future!">
-                                                <Link className="text-2xl" underline="under" color="foreground">Task Hive*</Link>
+                                                <Link className="text-2xl" underline="under" color="foreground">Task Hive</Link>
                                             </Tooltip>
                                             <p className="opacity-70">Mobile App</p>
                                         </div>
@@ -92,7 +92,7 @@ const Projects = () => {
                                         <Button radius="full" size="sm" isIconOnly variant="ghost">
                                         <Link color="foreground" href={`${githubBaseURL}portfolio-website`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
                                         </Button>
-                                        <Button radius="full" size="sm" isIconOnly variant="ghost">
+                                        <Button isDisabled={true} radius="full" size="sm" isIconOnly variant="ghost">
                                             <Link color="foreground" href={"#"}><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="md"/></Link>
                                         </Button>
                                     </div>
@@ -109,13 +109,12 @@ const Projects = () => {
                                                 My portfolio website is the first front-end project I have undertaken. Initially developed using basic HTML and CSS, it has since been enhanced with the use of modern frameworks such as Next.js and React. It incorporates multiple JavaScript libraries to achieve a contemporary look and feel. I am delighted with the result and continue to work on it to this day, despite having made over 500 commits.
                                             </p>
                                         </Tab>
-                                        <Tab title={
+                                        <Tab isDisabled={true} title={
                                             <div className="flex items-center space-x-2">
                                                 <FontAwesomeIcon icon={faImage} />
                                                 <span>Preview</span>
                                             </div>
                                         }>
-                                            <Image isZoomed height={300} src="portfolio_previwed.png" alt="portfolio preview image"></Image>
                                         </Tab>
                                     </Tabs>
                                 </CardBody>
