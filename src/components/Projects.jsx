@@ -78,14 +78,26 @@ const Projects = () => {
                                 </CardHeader>
                                 <Divider/>
                                 <CardBody>
-                                    <p className="p-1">
-                                        My portfolio website is the first front-end project I have undertaken. Initially
-                                        developed using basic HTML and CSS, it has since been enhanced with the use of
-                                        modern frameworks such as Next.js and React. It incorporates multiple JavaScript
-                                        libraries to achieve a contemporary look and feel. I am delighted with the
-                                        result
-                                        and continue to work on it to this day, despite having made over 500 commits.
-                                    </p>
+                                    <Tabs size="md" variant="underlined">
+                                        <Tab title={
+                                            <div className="flex items-center space-x-2">
+                                                <FontAwesomeIcon icon={faPen} />
+                                                <span>Description</span>
+                                            </div>
+                                        }>
+                                            <p className="p-1">
+                                                My portfolio website is the first front-end project I have undertaken. Initially developed using basic HTML and CSS, it has since been enhanced with the use of modern frameworks such as Next.js and React. It incorporates multiple JavaScript libraries to achieve a contemporary look and feel. I am delighted with the result and continue to work on it to this day, despite having made over 500 commits.
+                                            </p>
+                                        </Tab>
+                                        <Tab title={
+                                            <div className="flex items-center space-x-2">
+                                                <FontAwesomeIcon icon={faImage} />
+                                                <span>Preview</span>
+                                            </div>
+                                        }>
+                                            <Image isZoomed height={300} src="portfolio_previwed.png" alt="vycetka preview image"></Image>
+                                        </Tab>
+                                    </Tabs>
                                 </CardBody>
                             </Card>
                         </div>
