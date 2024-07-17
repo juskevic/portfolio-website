@@ -14,7 +14,7 @@ import {
     Tabs,
     Tab,
     Spacer,
-    Tooltip
+    Tooltip, User
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSquareUpwork} from "@fortawesome/free-brands-svg-icons";
@@ -25,14 +25,25 @@ export default function AboutMe() {
             <div className="flex items-center justify-center ">
                 <div className="flex flex-col space-y-10">
                     <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10">
-                        <Card className="w-full xl:w-2/3 bg-neutral-950 opacity-85 backdrop-blur">
+                        <Card className="w-full md:w-2/3 bg-neutral-950 opacity-85 backdrop-blur max-w-[700px]">
                             <CardBody>
                                 <CardHeader className="flex justify-between z-10 !items-start">
                                     <div className="flex flex-col">
                                         <p className="text-sm text-default-500 uppercase">ABOUT ME</p>
                                         <h4 className="text-xl">
-                                            {"Hi, I’m Max "}
+                                            {"Hi, I’m Max 👋"}
                                         </h4>
+                                    </div>
+                                    <div className="hidden md:flex">
+                                        <User name="Max Yushkevich" description={(
+                                            <Link href="https://github.com/maxyushkevich" size="sm" isExternal>
+                                                @maxyushkevich
+                                            </Link>
+                                        )}
+                                              avatarProps={{
+                                                  src: "DSCF4717.webp"
+                                              }}
+                                        />
                                     </div>
                                 </CardHeader>
                                 <ScrollShadow hideScrollBar>
@@ -42,7 +53,7 @@ export default function AboutMe() {
                                 </ScrollShadow>
                             </CardBody>
                         </Card>
-                        <Card className="w-full xl:w-1/2 bg-neutral-950 opacity-85 backdrop-blur">
+                        <Card className="w-full xl:w-1/2 bg-neutral-950 opacity-85 backdrop-blur max-w-[700px]">
                             <CardBody>
                                 <CardHeader className="flex flex-col max-h-[200px] z-10 !items-start">
                                     <p className="text-sm text-default-500 uppercase">BLOG</p>
@@ -59,7 +70,7 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card className="w-full xl:w-2/3 h-[400px] bg-neutral-950 opacity-85 backdrop-blur">
+                        <Card className="w-full xl:w-2/3 h-[400px] bg-neutral-950 opacity-85 backdrop-blur max-w-[700px] max-h-[500px]">
                            <ScrollShadow hideScrollBar>
                                <CardBody>
                                    <CardHeader>
@@ -86,7 +97,7 @@ export default function AboutMe() {
                                </CardBody>
                            </ScrollShadow>
                         </Card>
-                        <Card className="w-full xl:w-2/3 h-[330px] bg-neutral-950 opacity-85 backdrop-blur">
+                        <Card className="w-full xl:w-2/3 h-[330px] bg-neutral-950 opacity-85 backdrop-blur max-w-[700px]">
                             <ScrollShadow hideScrollBar>
                                 <CardBody>
                                     <CardHeader className="flex flex-col z-10 !items-start">
