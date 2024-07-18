@@ -156,7 +156,7 @@ const Projects = () => {
                                                 <span>Preview</span>
                                             </div>
                                         }>
-                                            <Image isZoomed height={300} src="vycetka_previewed.png" alt="vycetka preview image"></Image>
+                                            <Image height={300} src="vycetka_preview.gif" alt="vycetka preview image"></Image>
                                         </Tab>
                                     </Tabs>
                                 </CardBody>
