@@ -129,7 +129,12 @@ const Projects = () => {
                                         <p className="opacity-70">Web App</p>
                                     </div>
                                     <div className="space-x-1">
-                                        <Button radius="full" size="sm" isIconOnly variant="ghost">
+                                        <Button
+                                            radius="full"
+                                            size="sm"
+                                            isIconOnly
+                                            variant="ghost"
+                                        >
                                             <Link color="foreground" href={`${githubBaseURL}vycetka`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
                                         </Button>
                                         <Button radius="full" size="sm" isIconOnly variant="ghost">
