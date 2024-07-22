@@ -1,27 +1,15 @@
 import React from "react";
-import {Button, ButtonGroup, Link} from "@nextui-org/react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub, faLinkedinIn, faSquareUpwork, faTelegram} from "@fortawesome/free-brands-svg-icons";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {Button, ButtonGroup} from "@nextui-org/react";
+import {IconMail, IconBrandGithub, IconBrandLinkedin, IconBrandTelegram, IconBrandUpwork} from '@tabler/icons-react';
 
 export default function Socials() {
     return (
         <ButtonGroup size="md" variant="light" fullWidth>
-            {createSocialButton("mailto:contact@maxyushkevich.com", faEnvelope)}
-            {createSocialButton("https://github.com/maxyushkevich", faGithub)}
-            {createSocialButton("https://www.linkedin.com/in/maxyushkevich/", faLinkedinIn)}
-            {createSocialButton("https://t.me/maxyushkevich", faTelegram)}
-            {createSocialButton("#", faSquareUpwork)}
+            <Button isIconOnly href="mailto:contact@maxyushkevich.com"><IconMail stroke={1.5} /></Button>
+            <Button isIconOnly href="https://github.com/maxyushkevich"><IconBrandGithub stroke={1.5} /></Button>
+            <Button isIconOnly href="https://www.linkedin.com/in/maxyushkevich/"><IconBrandLinkedin stroke={1.5} /></Button>
+            <Button isIconOnly href="https://t.me/maxyushkevic"><IconBrandTelegram stroke={1.5}/></Button>
+            <Button isIconOnly href=""><IconBrandUpwork stroke={1.5} /></Button>
         </ButtonGroup>
-    );
-}
-
-function createSocialButton(href, icon) {
-    return (
-        <Button isIconOnly>
-            <Link href={href}>
-                <FontAwesomeIcon icon={icon} size="xl" color={"black"}/>
-            </Link>
-        </Button>
     );
 }

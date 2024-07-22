@@ -16,8 +16,7 @@ import {
     Spacer,
     Tooltip
 } from "@nextui-org/react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faSquareUpwork} from "@fortawesome/free-brands-svg-icons";
+import { IconArrowUpRight, IconBrandUpwork } from '@tabler/icons-react';
 
 export default function AboutMe() {
     return (
@@ -40,6 +39,7 @@ export default function AboutMe() {
                                             radius="full"
                                             size="md"
                                             className="text-medium"
+                                            endContent={<IconArrowUpRight stroke={1.5} />}
                                         >
                                             Read my story
                                         </Button>
@@ -177,7 +177,14 @@ export default function AboutMe() {
                                     <p className="text-medium">{`I’ll make you one.`}</p>
                                 </div>
                                 {/* Remove isDisabled later ;)*/}
-                                <Button aria-label="let's talk button" isDisabled className="text-tiny" variant="bordered" color="foreground" radius="full" size="sm" endContent={<FontAwesomeIcon icon={faSquareUpwork}  size={"lg"}/>}>
+                                <Button
+                                    aria-label="let's talk button"
+                                    isDisabled className="text-tiny"
+                                    variant="bordered"
+                                    color="foreground"
+                                    radius="full"
+                                    size="sm"
+                                    endContent={<IconBrandUpwork stroke={1.5} />}>
                                     {`Let's Talk`}
                                 </Button>
                             </CardFooter>

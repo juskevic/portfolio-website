@@ -1,74 +1,40 @@
 import React from 'react';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import {faGithub, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons";
-import {Link} from "@nextui-org/react";
+import {Button, ButtonGroup, Link} from "@nextui-org/react";
+import {IconBrandGithub, IconBrandTelegram, IconBrandLinkedin, IconMail, IconBrandUpwork } from "@tabler/icons-react";
 
-const CONTACTS_DETAILS = [
-    {
-        icon: faEnvelope,
-        message: "Please don't hesitate to get in touch.",
-        link: 'mailto:contact@maxyushkevich.com',
-        linkContentMd: "contact@maxyushkevich.com",
-        linkContentSm: "contact@maxyushkevich.com"
-    },
-    {
-        icon: faGithub,
-        message: "Take a look at my code on GitHub.",
-        link: 'https://github.com/maxyushkevich',
-        linkContentMd: "@maxyushkevich",
-        linkContentSm: "@maxyushkevich"
-    },
-    {
-        icon: faTelegram,
-        message: "Feel free to get in touch on Telegram.",
-        link: 'https://t.me/maxyushkevich',
-        linkContentMd: "me/maxyushkevich",
-        linkContentSm: "me/maxyushkevich"
-    },
-    {
-        icon: faLinkedin,
-        message: "Let's connect on LinkedIn.",
-        link: 'https://www.linkedin.com/in/maxyushkevich/',
-        linkContentMd: "in/maxyushkevich",
-        linkContentSm: "in/maxyushkevich"
-    }
-];
-
-const ContactInfo = ({icon, message, link, linkContentMd, linkContentSm, isSmallScreen}) => {
-    const className = isSmallScreen ? "text-white" : "text-sm md:text-xl";
-    const size = isSmallScreen ? "sm" : "lg";
-
+export default function Socials() {
+    const strokeWidth = 1.5
     return (
-        <div className="flex flex-row justify-between">
-            <div className="flex flex-row space-x-2">
-                <FontAwesomeIcon icon={icon} size="xl"/>
-                <h2>{message}</h2>
-            </div>
-            <Link href={link} className={className} size={size} color="foreground" underline="hover">
-                {isSmallScreen ? linkContentSm : linkContentMd}
-            </Link>
-        </div>
-    );
-};
-
-const Contacts = () => {
-    return (
-        <>
-            <div className="hidden md:flex justify-center pb-36">
-                <div
-                    className="flex flex-col space-y-7 p-3 text-xs md:text-lg bg-neutral-950 opacity-80 text-neutral-300 backdrop-blur rounded-xl w-2/3">
-                    {CONTACTS_DETAILS.map((contactDetail, index) => (
-                      <ContactInfo key={index} isSmallScreen={false} {...contactDetail} />
-                    ))}
-                </div>
-            </div>
-            <div className="flex flex-col space-y-5 md:hidden lg:hidden xl:hidden 2xl:hidden p-2 text-neutral-300 bg-neutral-950 opacity-85 backdrop-blur rounded-xl">
-                {CONTACTS_DETAILS.map((contactDetail, index) => (
-                  <ContactInfo key={index} isSmallScreen={true} {...contactDetail} />
-                ))}
-            </div>
-        </>
+        <ButtonGroup
+            size="md"
+            variant="light"
+            fullWidth
+        >
+            <Button isIconOnly>
+                <Link href={"mailto:contact@maxyushkevich.com"}>
+                    <IconMail stroke={strokeWidth}/>
+                </Link>
+            </Button>
+            <Button isIconOnly>
+                <Link href={"https://github.com/maxyushkevich"}>
+                    <IconBrandGithub stroke={strokeWidth}/>
+                </Link>
+            </Button>
+            <Button isIconOnly>
+                <Link href={"https://www.linkedin.com/in/maxyushkevich/"}>
+                    <IconBrandLinkedin stroke={1.5}/>
+                </Link>
+            </Button>
+            <Button isIconOnly>
+                <Link href={"https://t.me/maxyushkevich"}>
+                    <IconBrandTelegram stroke={strokeWidth}/>
+                </Link>
+            </Button>
+            <Button isIconOnly>
+                <Link href={"#"}>
+                    <IconBrandUpwork stroke={1.5} />
+                </Link>
+            </Button>
+        </ButtonGroup>
     );
 }
-export default Contacts;

@@ -1,29 +1,36 @@
 import React  from 'react';
 import {
-    Card,
-    CardHeader,
-    CardBody,
+    Card, CardHeader, CardBody,
     Link,
-    Button, Tabs, Tab, Tooltip,
+    Button,
+    Tabs, Tab,
+    Tooltip,
     Image,
 } from "@nextui-org/react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub} from "@fortawesome/free-brands-svg-icons";
-import {
-    faArrowUpRightFromSquare,
-    faImage,
-    faPen,
-    faScrewdriverWrench
-} from "@fortawesome/free-solid-svg-icons";
+import {IconBrandGithub, IconArrowUpRight, IconCode, IconPhoto, IconPencil} from "@tabler/icons-react";
 
 const Projects = () => {
 
     const githubBaseURL = "https://github.com/maxyushkevich/"
+    const strokeWidth = 1.5
 
     return (
         <div className="flex justify-center md:pb-0 pb-40 md:h-[700px]">
-            <Tabs className={`pb-3`} color={"default"} placement={"top"} size={"lg"} radius={"lg"} variant={"solid"} disabledKeys={["contributions"]}>
-                <Tab key={"projects"} title="Projects">
+            <Tabs
+                className={`pb-3`}
+                color={"default"}
+                placement={"top"}
+                size={"lg"}
+                radius={"lg"}
+                variant={"solid"}
+                disabledKeys={[
+                    "contributions"
+                ]}
+            >
+                <Tab
+                    key={"projects"}
+                    title="Projects"
+                >
                     <div className='flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10'>
                         {/*LEFT*/}
                         <div className={`flex flex-col space-y-10`}>
@@ -31,30 +38,79 @@ const Projects = () => {
                                 <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                     <CardHeader className="flex justify-between pb-0">
                                         <div className="flex flex-col">
-                                            <Tooltip showArrow={true} color="warning" content="Project name might change in the future!">
-                                                <Link className="text-2xl" underline="under" color="foreground">Task Hive</Link>
+                                            <Tooltip
+                                                showArrow={true}
+                                                color="warning"
+                                                content="Project name might change in the future!"
+                                            >
+                                                <Link
+                                                    className="text-2xl"
+                                                    underline="under"
+                                                    color="foreground"
+                                                >
+                                                    Task Hive
+                                                </Link>
                                             </Tooltip>
                                             <p className="opacity-70">Mobile App</p>
                                         </div>
                                         <div className="space-x-1">
-                                            <Tooltip closeDelay={3000} defaultOpen={true} isDismissable showArrow={true} color="warning" content="This project is in development! ⚒️">
-                                                <Button radius="full" size="sm" isIconOnly variant="bordered" color="warning">
-                                                    <Link color="warning"><FontAwesomeIcon icon={faScrewdriverWrench} size="md"/></Link>
+                                            <Tooltip
+                                                closeDelay={3000}
+                                                defaultOpen={true}
+                                                isDismissable
+                                                showArrow={true}
+                                                color="warning"
+                                                content="This project is in development! ⚒️"
+                                            >
+                                                <Button
+                                                    radius="full"
+                                                    size="sm"
+                                                    isIconOnly
+                                                    variant="bordered"
+                                                    color="warning"
+                                                >
+                                                    <Link color="warning"><IconCode stroke={strokeWidth}/></Link>
                                                 </Button>
                                             </Tooltip>
-                                            <Button isDisabled={true} radius="full" size="sm" isIconOnly variant="ghost">
-                                                <Link color="foreground" href={`${githubBaseURL}vycetka`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
+                                            <Button
+                                                isDisabled={true}
+                                                radius="full"
+                                                size="sm"
+                                                isIconOnly
+                                                variant="ghost"
+                                            >
+                                                <Link
+                                                    color="foreground"
+                                                    href={`${githubBaseURL}vycetka`}
+                                                >
+                                                    <IconBrandGithub stroke={strokeWidth}/>
+                                                </Link>
                                             </Button>
-                                            <Button isDisabled={true} radius="full" size="sm" isIconOnly variant="ghost">
-                                                <Link color="foreground" href={"#"}><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="md"/></Link>
+                                            <Button
+                                                isDisabled={true}
+                                                radius="full"
+                                                size="sm"
+                                                isIconOnly
+                                                variant="ghost"
+                                            >
+                                                <Link
+                                                    color="foreground"
+                                                    href={"#"}
+                                                >
+                                                    <IconArrowUpRight stroke={strokeWidth}/>
+                                                </Link>
                                             </Button>
                                         </div>
                                     </CardHeader>
                                     <CardBody className="pt-1">
-                                        <Tabs size="md" variant="underlined">
-                                            <Tab title={
+                                        <Tabs
+                                            size="md"
+                                            variant="underlined"
+                                        >
+                                            <Tab
+                                                title={
                                                 <div className="flex items-center space-x-2">
-                                                    <FontAwesomeIcon icon={faPen}/>
+                                                    <IconPencil stroke={strokeWidth}/>
                                                     <span>Description</span>
                                                 </div>
                                             }>
@@ -67,13 +123,20 @@ const Projects = () => {
                                                     individual or part of a team, Task Hive will revolutionize the way
                                                     you manage tasks! 🚀 </p>
                                             </Tab>
-                                            <Tab isDisabled={true} title={
+                                            <Tab
+                                                isDisabled={true}
+                                                title={
                                                 <div className="flex items-center space-x-2">
-                                                    <FontAwesomeIcon icon={faImage}/>
+                                                    <IconPhoto stroke={strokeWidth}/>
                                                     <span>Preview</span>
                                                 </div>
                                             }>
-                                                <Image isZoomed height={300} src="" alt="preview image"></Image>
+                                                <Image
+                                                    isZoomed
+                                                    height={300}
+                                                    src=""
+                                                    alt="preview image">
+                                                </Image>
                                             </Tab>
                                         </Tabs>
                                     </CardBody>
@@ -85,23 +148,55 @@ const Projects = () => {
                             <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between pb-0">
                                     <div className="flex flex-col">
-                                        <Link className="text-2xl" href="#" underline="under" color="foreground">Portfolio Website</Link>
+                                        <Link
+                                            className="text-2xl"
+                                            href="#"
+                                            underline="under"
+                                            color="foreground"
+                                        >
+                                            Portfolio Website
+                                        </Link>
                                         <p className="opacity-70">Website</p>
                                     </div>
                                     <div className="space-x-1">
-                                        <Button radius="full" size="sm" isIconOnly variant="ghost">
-                                        <Link color="foreground" href={`${githubBaseURL}portfolio-website`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
+                                        <Button
+                                            radius="full"
+                                            size="sm"
+                                            isIconOnly
+                                            variant="ghost"
+                                        >
+                                        <Link
+                                            color="foreground"
+                                            href={`${githubBaseURL}portfolio-website`}
+                                        >
+                                            <IconBrandGithub stroke={strokeWidth}/>
+                                        </Link>
                                         </Button>
-                                        <Button isDisabled={true} radius="full" size="sm" isIconOnly variant="ghost">
-                                            <Link color="foreground" href={"#"}><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="md"/></Link>
+                                        <Button
+                                            isDisabled={true}
+                                            radius="full"
+                                            size="sm"
+                                            isIconOnly
+                                            variant="ghost"
+                                        >
+                                            <Link
+                                                color="foreground"
+                                                href={"#"}
+                                            >
+                                                <IconArrowUpRight stroke={strokeWidth}/>
+                                            </Link>
                                         </Button>
                                     </div>
                                 </CardHeader>
                                 <CardBody className="pt-1">
-                                    <Tabs size="md" variant="underlined">
-                                        <Tab title={
+                                    <Tabs
+                                        size="md"
+                                        variant="underlined"
+                                    >
+                                        <Tab
+                                            title={
                                             <div className="flex items-center space-x-2">
-                                                <FontAwesomeIcon icon={faPen} />
+                                                <IconPencil stroke={strokeWidth}/>
                                                 <span>Description</span>
                                             </div>
                                         }>
@@ -109,9 +204,11 @@ const Projects = () => {
                                                 My portfolio website is the first front-end project I have undertaken. Initially developed using basic HTML and CSS, it has since been enhanced with the use of modern frameworks such as Next.js and React. It incorporates multiple JavaScript libraries to achieve a contemporary look and feel. I am delighted with the result and continue to work on it to this day, despite having made over 500 commits.
                                             </p>
                                         </Tab>
-                                        <Tab isDisabled={true} title={
+                                        <Tab
+                                            isDisabled={true}
+                                            title={
                                             <div className="flex items-center space-x-2">
-                                                <FontAwesomeIcon icon={faImage} />
+                                                <IconPhoto stroke={strokeWidth}/>
                                                 <span>Preview</span>
                                             </div>
                                         }>
@@ -125,7 +222,14 @@ const Projects = () => {
                             <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
                                 <CardHeader className="flex justify-between pb-0">
                                     <div className="flex flex-col">
-                                        <Link className="text-2xl" href="https://vycetka.makuyoshi.dev/" underline="under" color="foreground">Výčetka</Link>
+                                        <Link
+                                            className="text-2xl"
+                                            href="https://vycetka.makuyoshi.dev/"
+                                            underline="under"
+                                            color="foreground"
+                                        >
+                                            Výčetka
+                                        </Link>
                                         <p className="opacity-70">Web App</p>
                                     </div>
                                     <div className="space-x-1">
@@ -135,18 +239,37 @@ const Projects = () => {
                                             isIconOnly
                                             variant="ghost"
                                         >
-                                            <Link color="foreground" href={`${githubBaseURL}vycetka`}><FontAwesomeIcon icon={faGithub} size="md"/></Link>
+                                            <Link
+                                                color="foreground"
+                                                href={`${githubBaseURL}vycetka`}
+                                            >
+                                                <IconBrandGithub stroke={strokeWidth}/>
+                                            </Link>
                                         </Button>
-                                        <Button radius="full" size="sm" isIconOnly variant="ghost">
-                                            <Link color="foreground" href={"https://vycetka.makuyoshi.dev/"}><FontAwesomeIcon icon={faArrowUpRightFromSquare} size="md"/></Link>
+                                        <Button
+                                            radius="full"
+                                            size="sm"
+                                            isIconOnly
+                                            variant="ghost"
+                                        >
+                                            <Link
+                                                color="foreground"
+                                                href={"https://vycetka.makuyoshi.dev/"}
+                                            >
+                                                <IconArrowUpRight stroke={strokeWidth}/>
+                                            </Link>
                                         </Button>
                                     </div>
                                 </CardHeader>
                                 <CardBody className="pt-1">
-                                    <Tabs size="md" variant="underlined">
-                                        <Tab title={
+                                    <Tabs
+                                        size="md"
+                                        variant="underlined"
+                                    >
+                                        <Tab
+                                            title={
                                             <div className="flex items-center space-x-2">
-                                                <FontAwesomeIcon icon={faPen} />
+                                                <IconPencil stroke={strokeWidth}/>
                                                 <span>Description</span>
                                             </div>
                                         }>
@@ -155,13 +278,20 @@ const Projects = () => {
                                                 banknotes and coins that are in your cash register.
                                             </p>
                                         </Tab>
-                                        <Tab title={
+                                        <Tab
+                                            title={
                                             <div className="flex items-center space-x-2">
-                                                <FontAwesomeIcon icon={faImage} />
+                                                <IconPhoto stroke={strokeWidth}/>
                                                 <span>Preview</span>
                                             </div>
                                         }>
-                                            <Image isZoomed height={300} src="vycetka_preview.gif" alt="vycetka preview image"></Image>
+                                            <Image
+                                                isZoomed
+                                                height={300}
+                                                src="vycetka_preview.gif"
+                                                alt="vycetka preview image"
+                                            >
+                                            </Image>
                                         </Tab>
                                     </Tabs>
                                 </CardBody>
@@ -169,7 +299,12 @@ const Projects = () => {
                         </div>
                     </div>
                 </Tab>
-                <Tab key={"contributions"} title={"Contributions"}></Tab>
+                <Tab
+                    key={"contributions"}
+                    title={"Contributions"}
+                >
+
+                </Tab>
             </Tabs>
         </div>
     );
