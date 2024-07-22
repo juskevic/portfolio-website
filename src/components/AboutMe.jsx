@@ -14,7 +14,7 @@ import {
     Tabs,
     Tab,
     Spacer,
-    Tooltip, User
+    Tooltip
 } from "@nextui-org/react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSquareUpwork} from "@fortawesome/free-brands-svg-icons";
@@ -35,15 +35,14 @@ export default function AboutMe() {
                                         </h4>
                                     </div>
                                     <div className="hidden md:flex">
-                                        <User name="Max Yushkevich" description={(
-                                            <Link href="https://github.com/maxyushkevich" size="sm" isExternal>
-                                                @maxyushkevich
-                                            </Link>
-                                        )}
-                                              avatarProps={{
-                                                  src: "DSCF4717.webp"
-                                              }}
-                                        />
+                                        <Button
+                                            variant="ghost"
+                                            radius="full"
+                                            size="md"
+                                            className="text-medium"
+                                        >
+                                            Read my story
+                                        </Button>
                                     </div>
                                 </CardHeader>
                                 <ScrollShadow hideScrollBar>
