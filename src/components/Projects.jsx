@@ -51,7 +51,7 @@ const Projects = () => {
                                                     Task Hive
                                                 </Link>
                                             </Tooltip>
-                                            <p className="opacity-70">Mobile App</p>
+                                            <p className="opacity-70">Android, iOS</p>
                                         </div>
                                         <div className="space-x-1">
                                             <Tooltip
@@ -66,7 +66,7 @@ const Projects = () => {
                                                     radius="full"
                                                     size="sm"
                                                     isIconOnly
-                                                    variant="bordered"
+                                                    variant="light"
                                                     color="warning"
                                                 >
                                                     <Link color="warning"><IconCode stroke={strokeWidth}/></Link>
@@ -77,11 +77,11 @@ const Projects = () => {
                                                 radius="full"
                                                 size="sm"
                                                 isIconOnly
-                                                variant="ghost"
+                                                variant="light"
                                             >
                                                 <Link
                                                     color="foreground"
-                                                    href={`${githubBaseURL}vycetka`}
+                                                    href={`${githubBaseURL}`}
                                                 >
                                                     <IconBrandGithub stroke={strokeWidth}/>
                                                 </Link>
@@ -91,7 +91,7 @@ const Projects = () => {
                                                 radius="full"
                                                 size="sm"
                                                 isIconOnly
-                                                variant="ghost"
+                                                variant="light"
                                             >
                                                 <Link
                                                     color="foreground"
@@ -109,7 +109,7 @@ const Projects = () => {
                                         >
                                             <Tab
                                                 title={
-                                                <div className="flex items-center space-x-2">
+                                                <div className="flex items-center space-x-1">
                                                     <IconPencil stroke={strokeWidth}/>
                                                     <span>Description</span>
                                                 </div>
@@ -126,7 +126,7 @@ const Projects = () => {
                                             <Tab
                                                 isDisabled={true}
                                                 title={
-                                                <div className="flex items-center space-x-2">
+                                                <div className="flex items-center space-x-1">
                                                     <IconPhoto stroke={strokeWidth}/>
                                                     <span>Preview</span>
                                                 </div>
@@ -163,7 +163,7 @@ const Projects = () => {
                                             radius="full"
                                             size="sm"
                                             isIconOnly
-                                            variant="ghost"
+                                            variant="light"
                                         >
                                         <Link
                                             color="foreground"
@@ -177,7 +177,7 @@ const Projects = () => {
                                             radius="full"
                                             size="sm"
                                             isIconOnly
-                                            variant="ghost"
+                                            variant="light"
                                         >
                                             <Link
                                                 color="foreground"
@@ -195,7 +195,7 @@ const Projects = () => {
                                     >
                                         <Tab
                                             title={
-                                            <div className="flex items-center space-x-2">
+                                            <div className="flex items-center space-x-1">
                                                 <IconPencil stroke={strokeWidth}/>
                                                 <span>Description</span>
                                             </div>
@@ -207,7 +207,7 @@ const Projects = () => {
                                         <Tab
                                             isDisabled={true}
                                             title={
-                                            <div className="flex items-center space-x-2">
+                                            <div className="flex items-center space-x-1">
                                                 <IconPhoto stroke={strokeWidth}/>
                                                 <span>Preview</span>
                                             </div>
@@ -230,14 +230,14 @@ const Projects = () => {
                                         >
                                             Výčetka
                                         </Link>
-                                        <p className="opacity-70">Web App</p>
+                                        <p className="opacity-70">Website</p>
                                     </div>
                                     <div className="space-x-1">
                                         <Button
                                             radius="full"
                                             size="sm"
                                             isIconOnly
-                                            variant="ghost"
+                                            variant="light"
                                         >
                                             <Link
                                                 color="foreground"
@@ -250,7 +250,7 @@ const Projects = () => {
                                             radius="full"
                                             size="sm"
                                             isIconOnly
-                                            variant="ghost"
+                                            variant="light"
                                         >
                                             <Link
                                                 color="foreground"
@@ -268,7 +268,7 @@ const Projects = () => {
                                     >
                                         <Tab
                                             title={
-                                            <div className="flex items-center space-x-2">
+                                            <div className="flex items-center space-x-1">
                                                 <IconPencil stroke={strokeWidth}/>
                                                 <span>Description</span>
                                             </div>
@@ -280,7 +280,7 @@ const Projects = () => {
                                         </Tab>
                                         <Tab
                                             title={
-                                            <div className="flex items-center space-x-2">
+                                            <div className="flex items-center space-x-1">
                                                 <IconPhoto stroke={strokeWidth}/>
                                                 <span>Preview</span>
                                             </div>
