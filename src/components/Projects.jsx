@@ -35,7 +35,10 @@ const Projects = () => {
                         {/*LEFT*/}
                         <div className={`flex flex-col space-y-10`}>
                             <div>
-                                <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
+                                <Card
+                                    className="max-w-[400px] bg-neutral-350 backdrop-blur border-1 border-gray-300 shadow"
+                                    radius="lg"
+                                >
                                     <CardHeader className="flex justify-between pb-0">
                                         <div className="flex flex-col">
                                             <Tooltip
@@ -48,7 +51,7 @@ const Projects = () => {
                                                     underline="under"
                                                     color="foreground"
                                                 >
-                                                    Task Hive
+                                                    Tasken
                                                 </Link>
                                             </Tooltip>
                                             <p className="opacity-70">Android, iOS</p>
@@ -114,13 +117,13 @@ const Projects = () => {
                                                     <span>Description</span>
                                                 </div>
                                             }>
-                                                <p className={"p-1"}> Task Hive is an innovative task management app
+                                                <p className={"p-1"}> Tasken is an innovative task management app
                                                     currently in <span className={"underline"}>early development</span>.
                                                     Designed to enhance productivity, it offers a range of features for
                                                     efficient task organization. Create, assign, and track tasks
                                                     seamlessly, and stay tuned for upcoming enhancements like subtasks,
                                                     Gantt chart visualization, and project templates. Whether you’re an
-                                                    individual or part of a team, Task Hive will revolutionize the way
+                                                    individual or part of a team, Tasken will revolutionize the way
                                                     you manage tasks! 🚀 </p>
                                             </Tab>
                                             <Tab
@@ -145,7 +148,7 @@ const Projects = () => {
                         </div>
                         {/*MIDDLE*/}
                         <div className={`flex flex-col`}>
-                            <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
+                            <Card className="max-w-[400px] bg-neutral-350 backdrop-blur border-1 border-gray-300 shadow">
                                 <CardHeader className="flex justify-between pb-0">
                                     <div className="flex flex-col">
                                         <Link
@@ -219,7 +222,7 @@ const Projects = () => {
                         </div>
                         {/*RIGHT*/}
                         <div className={`flex flex-col space-y-10`}>
-                            <Card className="max-w-[400px] bg-neutral-950 opacity-85 backdrop-blur">
+                            <Card className="max-w-[400px] bg-neutral-350 backdrop-blur border-1 border-gray-300 shadow">
                                 <CardHeader className="flex justify-between pb-0">
                                     <div className="flex flex-col">
                                         <Link

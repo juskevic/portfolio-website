@@ -30,7 +30,7 @@ export default function Header() {
         <Navbar
             isBlurred={false}
             onMenuOpenChange={setIsMenuOpen}
-            className={`${exoFont.className} bg-transparent`}
+            className={`${exoFont.className} bg-transparent `}
         >
             <NavbarContent>
                 <NavbarMenuToggle
@@ -45,6 +45,7 @@ export default function Header() {
                 <ButtonGroup
                     variant="flat"
                     size="md"
+                    className="backdrop-blur border-1 border-gray-300 shadow rounded-full"
                 >
                     <Button
                         as={Link}
@@ -96,7 +97,7 @@ export default function Header() {
                     smooth={true}
                     offset={-100}
                     duration={500}
-                    className="text-lg"
+                    className="text-lg backdrop-blur border-1 border-gray-300 shadow rouned-full"
                     radius="full"
                 >
                     blog ✏️
