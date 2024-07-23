@@ -24,7 +24,8 @@ export default function AboutMe() {
             <div className="flex items-center justify-center ">
                 <div className="flex flex-col space-y-10">
                     <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10">
-                        <Card className="w-full md:w-2/3 bg-neutral-350 backdrop-blur max-w-[700px]">
+                        {/*ABOUT*/}
+                        <Card className="w-full md:w-2/3 max-w-[700px] backdrop-blur border-1 border-gray-300 shadow">
                             <CardBody>
                                 <CardHeader className="flex justify-between z-10 !items-start">
                                     <div className="flex flex-col">
@@ -52,7 +53,8 @@ export default function AboutMe() {
                                 </ScrollShadow>
                             </CardBody>
                         </Card>
-                        <Card className="w-full xl:w-1/2 bg-neutral-350 backdrop-blur max-w-[700px]">
+                        {/*BLOG*/}
+                        <Card className="w-full md:w-1/2 max-w-[700px] backdrop-blur border-1 border-gray-200 shadow">
                             <CardBody>
                                 <CardHeader className="flex flex-col max-h-[200px] z-10 !items-start">
                                     <p className="text-sm text-default-500 uppercase">BLOG</p>
@@ -60,7 +62,7 @@ export default function AboutMe() {
                                         Latest post
                                     </h4>
                                 </CardHeader>
-                                <Card className="h-full">
+                                <Card className="h-full backdrop-blur border-1 border-gray-100 shadow-none">
                                     <CardBody>
                                         <Chip color="warning" variant="dot">Available soon</Chip>
                                     </CardBody>
@@ -69,8 +71,12 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card className="w-full xl:w-2/3 h-[400px] bg-neutral-350
-                         backdrop-blur max-w-[700px] max-h-[500px]">
+                        {/*ACCORDION*/}
+                        <Card
+                            className="
+                            w-full xl:w-2/3 h-[400px] max-w-[700px] max-h-[500px]
+                            bg-neutral-350 backdrop-blur border-1 border-gray-300 shadow"
+                        >
                            <ScrollShadow hideScrollBar>
                                <CardBody>
                                    <CardHeader>
@@ -101,7 +107,11 @@ export default function AboutMe() {
                                </CardBody>
                            </ScrollShadow>
                         </Card>
-                        <Card className="w-full xl:w-2/3 h-[330px] bg-neutral-350 backdrop-blur max-w-[700px]">
+                        {/*TECH STACK*/}
+                        <Card className="
+                        w-full xl:w-2/3 h-[330px] max-w-[700px]
+                        bg-neutral-350 backdrop-blur border-1 border-gray-300 shadow"
+                        >
                             <ScrollShadow hideScrollBar>
                                 <CardBody>
                                     <CardHeader className="flex flex-col z-10 !items-start">
@@ -113,7 +123,7 @@ export default function AboutMe() {
                                     <div>
                                         <Tabs aria-label="Options" variant="underlined" size="md">
                                             <Tab key="frontend" title="Frontend">
-                                                <Card className={"bg-neutral-350"}>
+                                                <Card className="backdrop-blur border-1 border-gray-200 shadow-none">
                                                     <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
                                                         <Spacer y={2} />
                                                         <Tooltip showArrow={true} color="foreground" content="Used for structuring content on the web.">
@@ -147,7 +157,7 @@ export default function AboutMe() {
                                                 </Card>
                                             </Tab>
                                             <Tab key="other" title="Other">
-                                                <Card className="bg-neutral-350">
+                                                <Card className="backdrop-blur border-1 border-gray-200 shadow-none">
                                                     <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
                                                         <Spacer y={2} />
                                                         <Tooltip showArrow={true} color="foreground" content=" An open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.">
@@ -167,9 +177,12 @@ export default function AboutMe() {
                                 </CardBody>
                             </ScrollShadow>
                         </Card>
+                        {/*AD*/}
                         <Card
                             isFooterBlurred
-                            className="h-[300px] max-h-[300px] w-full max-w-[400px] md:max-w-[300px] text-white"
+                            className="
+                            h-[300px] max-h-[300px] w-full max-w-[400px] md:max-w-[300px] text-white
+                            backdrop-blur border-1 border-gray-300 shadow"
                         >
                             <Image
                                 removeWrapper
