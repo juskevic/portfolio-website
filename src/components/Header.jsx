@@ -2,14 +2,11 @@ import React from "react";
 import {
     Button, ButtonGroup,
     Navbar,
-    NavbarBrand,
     NavbarContent,
-    NavbarItem,
     NavbarMenu,
     NavbarMenuItem,
     NavbarMenuToggle
 } from "@nextui-org/react";
-import TypingAnimation from "@/components/TypingAnimation.jsx";
 import {Link} from "react-scroll";
 import {Exo, Sometype_Mono} from "next/font/google";
 
@@ -26,22 +23,6 @@ const sometypeMonoFont = Sometype_Mono({
     subsets: ['latin'],
 });
 
-// Function to render a navigation link
-const renderNavLink = (to, offset) => (
-    <Link
-        href={`/#${to}`}
-        activeClass="active"
-        to={to}
-        spy={true}
-        smooth={true}
-        offset={offset}
-        duration={500}
-        className="hover:text-stone-400 text-lg"
-    >
-        {to}
-    </Link>
-);
-
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -57,10 +38,14 @@ export default function Header() {
                     className="md:hidden"
                 />
             </NavbarContent>
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            <NavbarContent
+                className="hidden sm:flex gap-4"
+                justify="center"
+            >
                 <ButtonGroup
                     variant="flat"
                     size="md"
+                    className="border border-black rounded-full"
                 >
                     <Button
                         as={Link}
@@ -112,7 +97,7 @@ export default function Header() {
                     smooth={true}
                     offset={-100}
                     duration={500}
-                    className="text-lg"
+                    className="border border-black rounded-full text-lg"
                     radius="full"
                 >
                     blog ✏️
