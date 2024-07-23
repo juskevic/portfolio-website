@@ -84,6 +84,7 @@ export default function Header() {
             </NavbarContent>
             <NavbarContent justify="end">
                 <Button
+                    isDisabled
                     variant="flat"
                     as={Link}
                     activeClass="opacity-50"
