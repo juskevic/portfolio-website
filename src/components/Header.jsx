@@ -45,7 +45,6 @@ export default function Header() {
                 <ButtonGroup
                     variant="flat"
                     size="md"
-                    className="border border-black rounded-full"
                 >
                     <Button
                         as={Link}
@@ -53,7 +52,7 @@ export default function Header() {
                         to="about"
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={-110}
                         duration={500}
                         className="text-lg"
                         radius="full"
@@ -66,7 +65,7 @@ export default function Header() {
                         to="projects"
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={-110}
                         duration={500}
                         className="text-lg"
                     >
@@ -78,7 +77,7 @@ export default function Header() {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={-100}
+                        offset={-110}
                         duration={500}
                         className="text-lg"
                         radius="full"
@@ -97,7 +96,7 @@ export default function Header() {
                     smooth={true}
                     offset={-100}
                     duration={500}
-                    className="border border-black rounded-full text-lg"
+                    className="text-lg"
                     radius="full"
                 >
                     blog ✏️

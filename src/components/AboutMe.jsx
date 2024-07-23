@@ -24,11 +24,11 @@ export default function AboutMe() {
             <div className="flex items-center justify-center ">
                 <div className="flex flex-col space-y-10">
                     <div className="flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10">
-                        <Card className="w-full md:w-2/3 bg-neutral-950 opacity-85 backdrop-blur max-w-[700px]">
+                        <Card className="w-full md:w-2/3 bg-neutral-350 backdrop-blur max-w-[700px]">
                             <CardBody>
                                 <CardHeader className="flex justify-between z-10 !items-start">
                                     <div className="flex flex-col">
-                                        <p className="text-sm text-default-500 uppercase">ABOUT ME</p>
+                                        <p className="text-sm text-default-500 uppercase">WHO ARE YOU?</p>
                                         <h4 className="text-xl">
                                             {"Hi, I’m Max 👋"}
                                         </h4>
@@ -52,7 +52,7 @@ export default function AboutMe() {
                                 </ScrollShadow>
                             </CardBody>
                         </Card>
-                        <Card className="w-full xl:w-1/2 bg-neutral-950 opacity-85 backdrop-blur max-w-[700px]">
+                        <Card className="w-full xl:w-1/2 bg-neutral-350 backdrop-blur max-w-[700px]">
                             <CardBody>
                                 <CardHeader className="flex flex-col max-h-[200px] z-10 !items-start">
                                     <p className="text-sm text-default-500 uppercase">BLOG</p>
@@ -69,14 +69,19 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col xl:flex-row justify-between space-x-0 xl:space-x-10 space-y-10 xl:space-y-0">
-                        <Card className="w-full xl:w-2/3 h-[400px] bg-neutral-950 opacity-85 backdrop-blur max-w-[700px] max-h-[500px]">
+                        <Card className="w-full xl:w-2/3 h-[400px] bg-neutral-350
+                         backdrop-blur max-w-[700px] max-h-[500px]">
                            <ScrollShadow hideScrollBar>
                                <CardBody>
                                    <CardHeader>
                                        <p className="text-sm text-default-500 uppercase">PRESS TO EXPAND</p>
                                    </CardHeader>
                                    <Accordion isCompact defaultExpandedKeys={["2"]}>
-                                       <AccordionItem key="1" aria-label="Accordion 1" title="Can you tell us about your expertise and experience?">
+                                       <AccordionItem
+                                           key="1"
+                                           aria-label="Accordion 1"
+                                           title="Can you tell us about your expertise and experience?"
+                                       >
                                            <p>
                                                At the moment I am still a student trying to gain experience in web development by freelancing.
                                            </p>
@@ -96,7 +101,7 @@ export default function AboutMe() {
                                </CardBody>
                            </ScrollShadow>
                         </Card>
-                        <Card className="w-full xl:w-2/3 h-[330px] bg-neutral-950 opacity-85 backdrop-blur max-w-[700px]">
+                        <Card className="w-full xl:w-2/3 h-[330px] bg-neutral-350 backdrop-blur max-w-[700px]">
                             <ScrollShadow hideScrollBar>
                                 <CardBody>
                                     <CardHeader className="flex flex-col z-10 !items-start">
@@ -108,7 +113,7 @@ export default function AboutMe() {
                                     <div>
                                         <Tabs aria-label="Options" variant="underlined" size="md">
                                             <Tab key="frontend" title="Frontend">
-                                                <Card className={"bg-neutral-950"}>
+                                                <Card className={"bg-neutral-350"}>
                                                     <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
                                                         <Spacer y={2} />
                                                         <Tooltip showArrow={true} color="foreground" content="Used for structuring content on the web.">
@@ -142,7 +147,7 @@ export default function AboutMe() {
                                                 </Card>
                                             </Tab>
                                             <Tab key="other" title="Other">
-                                                <Card className="bg-neutral-950">
+                                                <Card className="bg-neutral-350">
                                                     <CardBody className="flex flex-row flex-wrap space-x-2 space-y-2">
                                                         <Spacer y={2} />
                                                         <Tooltip showArrow={true} color="foreground" content=" An open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.">
@@ -162,12 +167,15 @@ export default function AboutMe() {
                                 </CardBody>
                             </ScrollShadow>
                         </Card>
-                        <Card isFooterBlurred className="h-[300px] max-h-[300px] w-full max-w-[300px] opacity-85 backdrop-blur">
+                        <Card
+                            isFooterBlurred
+                            className="h-[300px] max-h-[300px] w-full max-w-[400px] md:max-w-[300px] text-white"
+                        >
                             <Image
                                 removeWrapper
                                 alt="Card example background"
                                 className="z-0 w-full h-full scale-105 -translate-y-6 object-cover"
-                                src="https://images.pexels.com/photos/20853116/pexels-photo-20853116/free-photo-of-programming-code-on-a-screen.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                src="https://images.pexels.com/photos/325111/pexels-photo-325111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                 height={300}
                                 width={300}
                             />
@@ -176,12 +184,11 @@ export default function AboutMe() {
                                     <p className="text-xs">Need a new website?</p>
                                     <p className="text-medium">{`I’ll make you one.`}</p>
                                 </div>
-                                {/* Remove isDisabled later ;)*/}
                                 <Button
                                     aria-label="let's talk button"
-                                    isDisabled className="text-tiny"
+                                    isDisabled
+                                    className="text-tiny text-white"
                                     variant="bordered"
-                                    color="foreground"
                                     radius="full"
                                     size="sm"
                                     endContent={<IconBrandUpwork stroke={1.5} />}>
