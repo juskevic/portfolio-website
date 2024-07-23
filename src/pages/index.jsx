@@ -83,7 +83,7 @@ const HomePage = () => {
                 <meta property="og:description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI. 💫"/>
                 <meta property="og:url" content="https://www.maxyushkevich.com"/>
             </Head>
-            <div className="dark text-foreground">
+            <div className="light text-foreground inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
                 <Header />
                 <Main />
                 <Footer />
@@ -94,6 +94,4 @@ const HomePage = () => {
 
 export default HomePage;
 
-// dark: dark text-foreground bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]
-
-// light: -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]
+// light: inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]

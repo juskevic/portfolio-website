@@ -47,7 +47,7 @@ export default function AboutMe() {
                                 </CardHeader>
                                 <ScrollShadow hideScrollBar>
                                     <p className="text-lg max-h-[200px] p-2">
-                                        {"I’m a front-end developer passionate about crafting beautiful, responsive websites with the latest tech. I focus on design and user experience, ensuring interfaces are both attractive and intuitive. Skilled in HTML, CSS, JavaScript, plus frameworks like React and Next.js, I’m committed to continuous learning to keep pace with industry innovations. Take a look at my portfolio, and let’s connect to explore how we can collaborate!"}
+                                        {"I’m a front-end developer passionate about creating beautiful and responsive websites with the latest tech. I focus on design and user experience. I’m skilled in HTML, CSS, JavaScript, and frameworks like React and Next.js. I’m committed to learning to keep pace with industry innovations. Take a look at my portfolio, and let’s connect!"}
                                     </p>
                                 </ScrollShadow>
                             </CardBody>

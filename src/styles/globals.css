@@ -11,10 +11,5 @@
 }
 
 body {
-    background-color: var(--night);
-    background-image: url("../../public/bg_md.webp");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     user-select: none;
 }

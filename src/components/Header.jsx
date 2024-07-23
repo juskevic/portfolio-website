@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    Button,
+    Button, ButtonGroup,
     Navbar,
     NavbarBrand,
     NavbarContent,
@@ -28,8 +28,16 @@ const sometypeMonoFont = Sometype_Mono({
 
 // Function to render a navigation link
 const renderNavLink = (to, offset) => (
-    <Link href={`/#${to}`} activeClass="active" to={to} spy={true} smooth={true}
-          offset={offset} duration={500} className="hover:text-stone-400 text-lg">
+    <Link
+        href={`/#${to}`}
+        activeClass="active"
+        to={to}
+        spy={true}
+        smooth={true}
+        offset={offset}
+        duration={500}
+        className="hover:text-stone-400 text-lg"
+    >
         {to}
     </Link>
 );
@@ -38,45 +46,134 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className={`${exoFont.className} bg-neutral-950 opacity-85 backdrop-blur`}>
+        <Navbar
+            isBlurred={false}
+            onMenuOpenChange={setIsMenuOpen}
+            className={`${exoFont.className} bg-transparent`}
+        >
             <NavbarContent>
                 <NavbarMenuToggle
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-                    className="sm:hidden"
+                    className="md:hidden"
                 />
-                <NavbarBrand>
-                    <p className={`${sometypeMonoFont.className} text-lg xl:text-xl`}>
-                        <TypingAnimation />
-                    </p>
-                </NavbarBrand>
             </NavbarContent>
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                <NavbarItem>{renderNavLink("hello", -200)}</NavbarItem>
-                <NavbarItem>{renderNavLink("about", -90)}</NavbarItem>
-                <NavbarItem>{renderNavLink("projects", -120)}</NavbarItem>
-                <NavbarItem>{renderNavLink("contact", -250)}</NavbarItem>
+                <ButtonGroup
+                    variant="flat"
+                    size="md"
+                >
+                    <Button
+                        as={Link}
+                        activeClass="opacity-50"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        className="text-lg"
+                        radius="full"
+                    >
+                        about
+                    </Button>
+                    <Button
+                        as={Link}
+                        activeClass="opacity-50"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        className="text-lg"
+                    >
+                        projects
+                    </Button>
+                    <Button
+                        as={Link}
+                        activeClass="opacity-50"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        className="text-lg"
+                        radius="full"
+                    >
+                        contact
+                    </Button>
+                </ButtonGroup>
             </NavbarContent>
             <NavbarContent justify="end">
-                <NavbarItem>
-                    {/*Remove isDisabled later ;)*/}
-                    <Button isDisabled as={Link} color="default" href="#" variant="bordered" radius={"full"}>
-                        blog ✏️
-                    </Button>
-                </NavbarItem>
+                <Button
+                    variant="flat"
+                    as={Link}
+                    activeClass="opacity-50"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                    className="text-lg"
+                    radius="full"
+                >
+                    blog ✏️
+                </Button>
             </NavbarContent>
+
             <NavbarMenu className="dark text-foreground bg-background opacity-70">
+
                 <NavbarMenuItem>
-                    <Link href="/#hello" activeClass="active" to="hello" spy={true} smooth={true} offset={-200} duration={500} className="hover:text-stone-400">hello</Link>
+                    <Link
+                        href="/#hello"
+                        activeClass="active"
+                        to="hello"
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                    >
+                        hello
+                    </Link>
                 </NavbarMenuItem>
                 <NavbarMenuItem>
-                    <Link href="/#about" activeClass="active" to="about" spy={true} smooth={true} offset={-90} duration={500} className="hover:text-stone-400">about</Link>
+                    <Link
+                        href="/#about"
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                    >
+                        about
+                    </Link>
                 </NavbarMenuItem>
                 <NavbarMenuItem>
-                    <Link href="/#projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-120} duration={500} className="hover:text-stone-400">projects</Link>
+                    <Link
+                        href="/#projects"
+                        activeClass="projects"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                    >
+                        projects
+                    </Link>
                 </NavbarMenuItem>
                 <NavbarMenuItem>
-                    <Link href="/#contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-250} duration={500} className="hover:text-stone-400">contact</Link>
+                    <Link
+                        href="/#contact"
+                        activeClass="contact"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-200}
+                        duration={500}
+                    >
+                        contact
+                    </Link>
                 </NavbarMenuItem>
+
             </NavbarMenu>
         </Navbar>
     );
