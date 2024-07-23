@@ -30,12 +30,14 @@ export default function Hello() {
                     className="hidden sm:flex sm:w-2/3"
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
-                    transition={{
+                    transition={
+                    {
                         duration: 1,
-                        ease: "easeIn"}}
+                        ease: "easeIn"
+                    }
+                }
                 >
-                    <h1 className="font-bold text-5xl text-wrap w-3/4
-                    bg-gradient-to-br from-neutral-800 via-neutral-500 to-neutral-100 bg-clip-text text-transparent">
+                    <h1 className="font-bold text-5xl text-wrap w-3/4 bg-gradient-to-br from-neutral-800 via-neutral-500 to-neutral-100 bg-clip-text text-transparent">
                         {'Crafting web magic: responsive, user-friendly, and lightning-fast.'}
                     </h1>
                 </motion.div>

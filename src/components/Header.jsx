@@ -8,17 +8,11 @@ import {
     NavbarMenuToggle
 } from "@nextui-org/react";
 import {Link} from "react-scroll";
-import {Exo, Sometype_Mono} from "next/font/google";
+import {Exo} from "next/font/google";
 
 
 const exoFont = Exo({
     weight: '300',
-    style: 'normal',
-    subsets: ['latin'],
-});
-
-const sometypeMonoFont = Sometype_Mono({
-    weight: '400',
     style: 'normal',
     subsets: ['latin'],
 });
@@ -47,12 +41,13 @@ export default function Header() {
                     className="border-1 border-gray-300 shadow rounded-full bg-white"
                 >
                     <Button
+                        isDisabled
                         as={Link}
                         activeClass="opacity-50"
                         to="about"
                         spy={true}
                         smooth={true}
-                        offset={-110}
+                        offset={-90}
                         duration={500}
                         className="text-lg"
                         radius="full"
@@ -65,19 +60,20 @@ export default function Header() {
                         to="projects"
                         spy={true}
                         smooth={true}
-                        offset={-110}
+                        offset={-90}
                         duration={500}
                         className="text-lg"
                     >
                         projects
                     </Button>
                     <Button
+                        isDisabled
                         as={Link}
                         activeClass="opacity-50"
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={-110}
+                        offset={-90}
                         duration={500}
                         className="text-lg"
                         radius="full"
