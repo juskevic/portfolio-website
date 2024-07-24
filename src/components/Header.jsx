@@ -8,14 +8,7 @@ import {
     NavbarMenuToggle
 } from "@nextui-org/react";
 import {Link} from "react-scroll";
-import {Exo, Work_Sans} from "next/font/google";
-
-
-const exoFont = Exo({
-    weight: '300',
-    style: 'normal',
-    subsets: ['latin'],
-});
+import {Work_Sans} from "next/font/google";
 
 const workSansFont = Work_Sans({
     weight: '300',
