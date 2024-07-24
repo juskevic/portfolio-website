@@ -4,7 +4,7 @@ import {IconMail, IconBrandGithub, IconBrandLinkedin, IconBrandTelegram, IconBra
 
 export default function Socials() {
     return (
-        <ButtonGroup size="md" variant="light" fullWidth>
+        <ButtonGroup size="md" variant="light">
 
             <Button isIconOnly href="mailto:contact@maxyushkevich.com">
                 <IconMail stroke={1.5} color="black"/>

@@ -8,10 +8,16 @@ import {
     NavbarMenuToggle
 } from "@nextui-org/react";
 import {Link} from "react-scroll";
-import {Exo} from "next/font/google";
+import {Exo, Work_Sans} from "next/font/google";
 
 
 const exoFont = Exo({
+    weight: '300',
+    style: 'normal',
+    subsets: ['latin'],
+});
+
+const workSansFont = Work_Sans({
     weight: '300',
     style: 'normal',
     subsets: ['latin'],
@@ -23,7 +29,7 @@ export default function Header() {
     return (
         <Navbar
             onMenuOpenChange={setIsMenuOpen}
-            className={`${exoFont.className} md:bg-transparent md:blur-0 md:backdrop-blur-0`}
+            className={`${workSansFont.className} md:bg-transparent md:blur-0 md:backdrop-blur-0`}
         >
             <NavbarContent>
                 <NavbarMenuToggle
@@ -38,7 +44,7 @@ export default function Header() {
                 <ButtonGroup
                     variant="flat"
                     size="md"
-                    className="border-1 border-gray-300 shadow rounded-full bg-white"
+                    className="border-1 border-gray-400 shadow rounded-full bg-white"
                 >
                     <Button
                         isDisabled
@@ -93,7 +99,7 @@ export default function Header() {
                     smooth={true}
                     offset={-100}
                     duration={500}
-                    className="text-lg backdrop-blur border-1 border-gray-300 shadow rouned-full"
+                    className="text-lg backdrop-blur border-1 border-gray-400 shadow rouned-full"
                     radius="full"
                 >
                     blog ✏️
