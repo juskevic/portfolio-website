@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {Caveat, Poppins, Work_Sans} from "next/font/google";
-import {Button, Image} from "@nextui-org/react";
+import {Button, Image, Tooltip} from "@nextui-org/react";
 import Socials from "@/components/Socials.jsx";
 import { IconVolume } from '@tabler/icons-react';
 
@@ -42,8 +42,11 @@ export default function Hello() {
             <div className="flex flex-row justify-between max-w-screen-xl mx-auto">
                 <div className="flex flex-col">
                     <div className="max-w-[700px]">
-                        <h1 className={`${poppinsFont.className} font-bold text-2xl md:text-5xl`}>
-                            {'Crafting web magic: responsive, user-friendly, and lightning-fast.'}
+                        <h1 className={`${poppinsFont.className} font-bold text-2xl md:text-5xl space-y-0.5`}>
+                            {/*{'Crafting web magic: responsive, user-friendly, and lightning-fast.'}*/}
+                            <div>{"Crafting web magic: "}</div>
+                            <div className="opacity-90">{"responsive, user-friendly, "}</div>
+                            <div className="opacity-90">{"and lightning-fast."}</div>
                         </h1>
                     </div>
                     <div className="flex flex-col pt-10 md:pt-20 justify-start">
@@ -58,16 +61,19 @@ export default function Hello() {
                                     preload="auto"
                                 >
                                 </audio>
-                                <Button
-                                    isIconOnly
-                                    onClick={playAudio}
-                                    variant="light"
-                                    size="sm"
-                                    as="button"
-                                    className="text-gray-400 pt-1"
-                                >
-                                    <IconVolume stroke={1.5} />
-                                </Button>
+                                <Tooltip content="Listen to the pronaucination" showArrow={true}>
+                                    <Button
+                                        radius="full"
+                                        isIconOnly
+                                        onClick={playAudio}
+                                        variant="light"
+                                        size="sm"
+                                        as="button"
+                                        className="text-gray-400 mt-1"
+                                    >
+                                        <IconVolume stroke={1.5} />
+                                    </Button>
+                                </Tooltip>
                             </div>
                             <p className={`${workSansFont.className} text-lg sm:text-xl ${COMMON_TEXT_COLOR}`}>
                                 {"Frontend Engineer"}
