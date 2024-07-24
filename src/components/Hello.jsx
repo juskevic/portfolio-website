@@ -1,8 +1,8 @@
 import React, {useEffect, useRef} from 'react';
 import {Caveat, Poppins, Work_Sans} from "next/font/google";
-import {Image} from "@nextui-org/react";
+import {Button, Image} from "@nextui-org/react";
 import Socials from "@/components/Socials.jsx";
-import { motion } from 'framer-motion';
+import { IconVolume } from '@tabler/icons-react';
 
 const COMMON_TEXT_COLOR = 'text-black';
 
@@ -48,17 +48,32 @@ export default function Hello() {
                     </div>
                     <div className="flex flex-col pt-10 md:pt-20 justify-start">
                         <div>
-                            <div className="flex flex-row justify-between">
+                            <div className="flex flex-row space-x-1">
                                 <h1 className={`${caveat.className} text-3xl sm:text-4xl ${COMMON_TEXT_COLOR}`}>
                                     {"Max Yushkevich"}
                                 </h1>
-
+                                <audio
+                                    ref={audioRef}
+                                    src="/MaxYushkevich.mp3"
+                                    preload="auto"
+                                >
+                                </audio>
+                                <Button
+                                    isIconOnly
+                                    onClick={playAudio}
+                                    variant="light"
+                                    size="sm"
+                                    as="button"
+                                    className="text-gray-400 pt-1"
+                                >
+                                    <IconVolume stroke={1.5} />
+                                </Button>
                             </div>
                             <p className={`${workSansFont.className} text-lg sm:text-xl ${COMMON_TEXT_COLOR}`}>
                                 {"Frontend Engineer"}
                             </p>
                         </div>
-                        <div className="pt-2">
+                        <div className="pt-1">
                             <Socials/>
                         </div>
                     </div>
