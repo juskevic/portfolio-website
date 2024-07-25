@@ -4,7 +4,7 @@ import {Inter} from "next/font/google";
 import {
     IconArrowUpRight,
     IconBrandHtml5, IconBrandReact, IconBrandJavascript, IconBrandCss3, IconBrandBootstrap, IconBrandNextjs,
-    IconBrandTailwind, IconBrandFramerMotion
+    IconBrandTailwind, IconBrandFramerMotion, IconBrandNodejs, IconBrandGit, IconBrandNpm
 } from "@tabler/icons-react"
 
 const InterFont300 = Inter({
@@ -56,11 +56,13 @@ export default function AboutMe() {
                             <Card className={`${borderClassName}`}>
                                 <CardHeader className="pb-0">
                                     <div className="flex flex-col">
-                                        <p className={`${InterFont300.className} text-medium text-gray-400`}>THE TOOLS BEHIND STUNNING INTERFACES</p>
+                                        <p className={`${InterFont300.className} text-medium text-gray-400`}>
+                                            The tools behind stunning interfaces ✨
+                                        </p>
                                         <h2 className="text-2xl">Tech Stack</h2>
                                     </div>
                                 </CardHeader>
-                                <CardBody>
+                                <CardBody className="max-h-[250px] h-[250px] pt-0">
                                     <Tabs
                                         size="md"
                                         variant="underlined"
@@ -150,9 +152,35 @@ export default function AboutMe() {
                                             </Card>
                                         </Tab>
                                         <Tab title="Other">
-                                            <Card>
-                                                <CardBody>
-
+                                            <Card className="shadow-none bg-white">
+                                                <CardBody className="flex flex-row flex-wrap w-auto gap-2">
+                                                    <Chip
+                                                        className="border-2 border-green-700"
+                                                        variant="light"
+                                                        endContent={
+                                                            <IconBrandNodejs stroke={1} />
+                                                        }
+                                                    >
+                                                        Node.js
+                                                    </Chip>
+                                                    <Chip
+                                                        className="border-2 border-orange-700"
+                                                        variant="light"
+                                                        endContent={
+                                                            <IconBrandGit stroke={1} />
+                                                        }
+                                                    >
+                                                        Git
+                                                    </Chip>
+                                                    <Chip
+                                                        className="border-2 border-red-500"
+                                                        variant="light"
+                                                        endContent={
+                                                            <IconBrandNpm stroke={1} />
+                                                        }
+                                                    >
+                                                        npm
+                                                    </Chip>
                                                 </CardBody>
                                             </Card>
                                         </Tab>
