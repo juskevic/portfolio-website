@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Card, CardBody, CardHeader, Chip, Tab, Tabs} from "@nextui-org/react";
+import {Accordion, AccordionItem, Button, Card, CardBody, CardHeader, Chip, Tab, Tabs} from "@nextui-org/react";
 import {Inter} from "next/font/google";
 import {
     IconArrowUpRight,
@@ -13,12 +13,6 @@ const InterFont300 = Inter({
     subsets: ['latin'],
 });
 
-const InterFont400 = Inter({
-    weight: '400',
-    style: 'normal',
-    subsets: ['latin'],
-});
-
 export default function AboutMe() {
 
     const borderClassName = "border-1 border-gray-400 shadow bg-white"
@@ -27,7 +21,7 @@ export default function AboutMe() {
 
     return (
         <>
-            <div className="flex flex-col md:justify-start">
+            <div className="flex flex-col md:flex-row md:justify-between">
                 <div className="flex flex-col md:flex-row">
                     <div className="flex flex-col space-y-5">
                         <div className={`${InterFont300.className} w-full md:w-[400px] md:max-w-[400px]`}>
@@ -74,7 +68,7 @@ export default function AboutMe() {
                                                         className="border-2 border-orange-600"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandHtml5 stroke={1} />
+                                                            <IconBrandHtml5 stroke={1}/>
                                                         }
                                                     >
                                                         HTML
@@ -83,7 +77,7 @@ export default function AboutMe() {
                                                         className="border-2 border-blue-500"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandCss3 stroke={1} />
+                                                            <IconBrandCss3 stroke={1}/>
                                                         }
                                                     >
                                                         CSS
@@ -92,7 +86,7 @@ export default function AboutMe() {
                                                         className="border-2 border-yellow-400"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandJavascript stroke={1} />
+                                                            <IconBrandJavascript stroke={1}/>
                                                         }
                                                     >
                                                         JavaScript
@@ -101,7 +95,7 @@ export default function AboutMe() {
                                                         className="border-2 border-purple-500"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandBootstrap stroke={1} />
+                                                            <IconBrandBootstrap stroke={1}/>
                                                         }
                                                     >
                                                         Bootstrap
@@ -110,7 +104,7 @@ export default function AboutMe() {
                                                         className="border-2 border-cyan-700"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandReact stroke={1} />
+                                                            <IconBrandReact stroke={1}/>
                                                         }
                                                     >
                                                         React
@@ -119,7 +113,7 @@ export default function AboutMe() {
                                                         className="border-2 border-black"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandNextjs stroke={1} />
+                                                            <IconBrandNextjs stroke={1}/>
                                                         }
                                                     >
                                                         Next.js
@@ -128,7 +122,7 @@ export default function AboutMe() {
                                                         className="border-2 border-blue-400"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandTailwind stroke={1} />
+                                                            <IconBrandTailwind stroke={1}/>
                                                         }
                                                     >
                                                         Tailwind CSS
@@ -143,7 +137,7 @@ export default function AboutMe() {
                                                         className="border-2 border-stone-600"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandFramerMotion stroke={1} />
+                                                            <IconBrandFramerMotion stroke={1}/>
                                                         }
                                                     >
                                                         Framer Motion
@@ -158,7 +152,7 @@ export default function AboutMe() {
                                                         className="border-2 border-green-700"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandNodejs stroke={1} />
+                                                            <IconBrandNodejs stroke={1}/>
                                                         }
                                                     >
                                                         Node.js
@@ -167,7 +161,7 @@ export default function AboutMe() {
                                                         className="border-2 border-orange-700"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandGit stroke={1} />
+                                                            <IconBrandGit stroke={1}/>
                                                         }
                                                     >
                                                         Git
@@ -176,7 +170,7 @@ export default function AboutMe() {
                                                         className="border-2 border-red-500"
                                                         variant="light"
                                                         endContent={
-                                                            <IconBrandNpm stroke={1} />
+                                                            <IconBrandNpm stroke={1}/>
                                                         }
                                                     >
                                                         npm
@@ -188,6 +182,47 @@ export default function AboutMe() {
                                 </CardBody>
                             </Card>
                         </div>
+                    </div>
+                </div>
+                <div className="flex flex-col">
+                    <div className="flex flex-row">
+                        <Card className={`${borderClassName} ${InterFont300.className} w-full md:w-[400px] md:max-w-[400px]`}>
+                            <CardHeader className="pb-0">
+                                <div className="flex flex-col">
+                                    <p className="text-medium text-gray-400">
+                                        Press to expand
+                                    </p>
+                                    <h2 className="text-2xl">Learn more about me</h2>
+                                </div>
+                            </CardHeader>
+                            <CardBody>
+                                <Accordion isCompact>
+                                    <AccordionItem
+                                        key="1"
+                                        aria-label="Accordion 1"
+                                        title="What Inspires You?"
+                                    >
+                                        {"I find inspiration in solving problems, creating interfaces, and learning new things. Reading and music also influence my creativity. People like Steve Jobs and books such as \"Don’t Make Me Think\" have shaped my perspective. So has the open-source community. 🌟"}
+                                    </AccordionItem>
+                                    <AccordionItem
+                                        key="2"
+                                        aria-label="Accordion 2"
+                                        title="How Do You Spend Your Free Time?"
+                                    >
+                                        {"Outside of my digital life, I enjoy cycling, reading, and listening to music. These activities help me relax and reflect. They’re my escape from screens and algorithms. 🌿🎶♟️"}
+                                    </AccordionItem>
+                                    <AccordionItem key="3" aria-label="Accordion 3" title="What Are You Currently Learning?">
+                                        {"I'm currently learning the ins and outs of mobile app development using tools like React Native, Expo, and Firebase."}
+                                    </AccordionItem>
+                                </Accordion>
+                            </CardBody>
+                        </Card>
+                        <Card>
+                            <CardHeader></CardHeader>
+                        </Card>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
             </div>
