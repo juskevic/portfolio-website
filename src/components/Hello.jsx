@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import {Caveat, Poppins, Work_Sans} from "next/font/google";
 import {Button, Image, Tooltip} from "@nextui-org/react";
 import Socials from "@/components/Socials.jsx";
-import { IconVolume } from '@tabler/icons-react';
+import { IconVolume, IconArrowDown } from '@tabler/icons-react';
 
 const COMMON_TEXT_COLOR = 'text-black';
 
@@ -94,6 +94,9 @@ export default function Hello() {
                         alt="portrait photo"
                     />
                 </div>
+            </div>
+            <div className="flex justify-center align-middle pt-32 md:pt-20 animate-bounce animate-infinite animate-duration-[1700ms] animate-ease-in">
+                <IconArrowDown stroke={1.5} size={60}/>
             </div>
         </>
     );
