@@ -49,8 +49,13 @@ export default function Hello() {
                             <div className="opacity-90 animate-fade-down animate-delay-[800ms]">{"and lightning-fast."}</div>
                         </h1>
                     </div>
-                    <div className="flex flex-col pt-10 md:pt-20 justify-start">
+                    <div className="flex flex-col pt-10 md:pt-14 justify-start">
                         <div>
+                            <div className="w-[350px] md:w-[420px] pb-8">
+                                <p className="text-gray-400">
+                                    {"I am passionate about frontend development and creating amazing user experiences through UI and UX design."}
+                                </p>
+                            </div>
                             <div className="flex flex-row space-x-1">
                                 <h1 className={`${caveat.className} text-3xl sm:text-4xl ${COMMON_TEXT_COLOR}`}>
                                     {"Max Yushkevich"}
@@ -86,7 +91,7 @@ export default function Hello() {
                 </div>
                 <div className="hidden md:flex">
                     <Image
-                        isBlurred
+                        className="border-1 border-gray-400 shadow-2xl"
                         radius="lg"
                         width={350}
                         isZoomed
