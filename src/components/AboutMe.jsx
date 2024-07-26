@@ -21,13 +21,13 @@ export default function AboutMe() {
 
     return (
         <>
-            <div className="flex flex-col md:flex-row md:justify-between">
+            <div className={`${InterFont300.className} flex flex-col md:flex-row md:justify-between gap-5`}>
                 <div className="flex flex-col md:flex-row">
                     <div className="flex flex-col space-y-5">
-                        <div className={`${InterFont300.className} w-full md:w-[400px] md:max-w-[400px]`}>
+                        <div className={`w-full md:w-[400px] md:max-w-[400px]`}>
                             <Card className={`${borderClassName}`}>
                                 <CardHeader className="flex-row justify-between pb-0">
-                                    <div className={`my-auto text-xl md:text-2xl`}>{"Hi, I'm Max 👋"}</div>
+                                    <div className={`my-auto text-xl md:text-2xl`}>{"Hello there! 👋"}</div>
                                     <div>
                                         <Button
                                             radius="full"
@@ -46,8 +46,45 @@ export default function AboutMe() {
                                 </CardBody>
                             </Card>
                         </div>
-                        <div className={`${InterFont300.className} w-full md:w-[400px] md:max-w-[400px]`}>
+                        <div className={`w-full md:w-[400px] md:max-w-[400px] max-h-40`}>
                             <Card className={`${borderClassName}`}>
+                                <CardHeader className="pb-0">
+                                    <div className="flex flex-col">
+                                        <p className="text-medium text-gray-400">
+                                            Press to expand
+                                        </p>
+                                        <h2 className="text-2xl">Learn more about me</h2>
+                                    </div>
+                                </CardHeader>
+                                <CardBody>
+                                    <Accordion isCompact>
+                                        <AccordionItem
+                                            key="1"
+                                            aria-label="Accordion 1"
+                                            title="What Inspires You?"
+                                        >
+                                            {"I find inspiration in solving problems, creating interfaces, and learning new things. Reading and music also influence my creativity. People like Steve Jobs and books such as \"Don’t Make Me Think\" have shaped my perspective. So has the open-source community. 🌟"}
+                                        </AccordionItem>
+                                        <AccordionItem
+                                            key="2"
+                                            aria-label="Accordion 2"
+                                            title="How Do You Spend Your Free Time?"
+                                        >
+                                            {"Outside of my digital life, I enjoy cycling, reading, and listening to music. These activities help me relax and reflect. They’re my escape from screens and algorithms. 🌿🎶♟️"}
+                                        </AccordionItem>
+                                        <AccordionItem key="3" aria-label="Accordion 3" title="What Are You Currently Learning?">
+                                            {"I'm currently learning the ins and outs of mobile app development using tools like React Native, Expo, and Firebase."}
+                                        </AccordionItem>
+                                    </Accordion>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-col">
+                    <div className="flex flex-col md:flex-row gap-5">
+                        <div>
+                            <Card className={`${borderClassName} w-full md:w-[400px] md:max-w-[400px]`}>
                                 <CardHeader className="pb-0">
                                     <div className="flex flex-col">
                                         <p className={`${InterFont300.className} text-medium text-gray-400`}>
@@ -56,7 +93,7 @@ export default function AboutMe() {
                                         <h2 className="text-2xl">Tech Stack</h2>
                                     </div>
                                 </CardHeader>
-                                <CardBody className="max-h-[250px] h-[250px] pt-0">
+                                <CardBody className="max-h-[240] h-[240px] pt-0">
                                     <Tabs
                                         size="md"
                                         variant="underlined"
@@ -182,44 +219,27 @@ export default function AboutMe() {
                                 </CardBody>
                             </Card>
                         </div>
-                    </div>
-                </div>
-                <div className="flex flex-col">
-                    <div className="flex flex-row">
-                        <Card className={`${borderClassName} ${InterFont300.className} w-full md:w-[400px] md:max-w-[400px]`}>
-                            <CardHeader className="pb-0">
-                                <div className="flex flex-col">
-                                    <p className="text-medium text-gray-400">
-                                        Press to expand
-                                    </p>
-                                    <h2 className="text-2xl">Learn more about me</h2>
-                                </div>
-                            </CardHeader>
-                            <CardBody>
-                                <Accordion isCompact>
-                                    <AccordionItem
-                                        key="1"
-                                        aria-label="Accordion 1"
-                                        title="What Inspires You?"
-                                    >
-                                        {"I find inspiration in solving problems, creating interfaces, and learning new things. Reading and music also influence my creativity. People like Steve Jobs and books such as \"Don’t Make Me Think\" have shaped my perspective. So has the open-source community. 🌟"}
-                                    </AccordionItem>
-                                    <AccordionItem
-                                        key="2"
-                                        aria-label="Accordion 2"
-                                        title="How Do You Spend Your Free Time?"
-                                    >
-                                        {"Outside of my digital life, I enjoy cycling, reading, and listening to music. These activities help me relax and reflect. They’re my escape from screens and algorithms. 🌿🎶♟️"}
-                                    </AccordionItem>
-                                    <AccordionItem key="3" aria-label="Accordion 3" title="What Are You Currently Learning?">
-                                        {"I'm currently learning the ins and outs of mobile app development using tools like React Native, Expo, and Firebase."}
-                                    </AccordionItem>
-                                </Accordion>
-                            </CardBody>
-                        </Card>
-                        <Card>
-                            <CardHeader></CardHeader>
-                        </Card>
+                        <div className={`${InterFont300.className}`}>
+                            <Card className={`${borderClassName} w-full md:w-[400px] md:max-w-[400px]`}>
+                                <CardHeader className="pb-0">
+                                    <div className="flex flex-col">
+                                        <p className="text-medium text-gray-400">
+                                            Blog
+                                        </p>
+                                        <h2 className="text-2xl">Latest post</h2>
+                                    </div>
+                                </CardHeader>
+                                <CardBody>
+                                    <Card className="shadow-none">
+                                        <CardBody>
+                                            <Chip variant="dot" color="warning">
+                                                Available soon
+                                            </Chip>
+                                        </CardBody>
+                                    </Card>
+                                </CardBody>
+                            </Card>
+                        </div>
                     </div>
                     <div>
 

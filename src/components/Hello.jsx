@@ -39,14 +39,14 @@ export default function Hello() {
 
     return (
         <>
-            <div className="flex flex-row justify-between max-w-screen-xl mx-auto">
+            <div className="flex flex-row justify-between max-w-screen-xl mx-auto md:pt-0 pt-32">
                 <div className="flex flex-col">
                     <div className="max-w-[700px]">
                         <h1 className={`${poppinsFont.className} font-bold text-2xl md:text-5xl space-y-0.5`}>
                             {/*{'Crafting web magic: responsive, user-friendly, and lightning-fast.'}*/}
                             <div>{"Crafting web magic: "}</div>
-                            <div className="opacity-90">{"responsive, user-friendly, "}</div>
-                            <div className="opacity-90">{"and lightning-fast."}</div>
+                            <div className="opacity-90 animate-fade-down animate-delay-[400ms]">{"responsive, user-friendly, "}</div>
+                            <div className="opacity-90 animate-fade-down animate-delay-[800ms]">{"and lightning-fast."}</div>
                         </h1>
                     </div>
                     <div className="flex flex-col pt-10 md:pt-20 justify-start">
@@ -75,11 +75,11 @@ export default function Hello() {
                                     </Button>
                                 </Tooltip>
                             </div>
-                            <p className={`${workSansFont.className} text-lg sm:text-xl ${COMMON_TEXT_COLOR}`}>
+                            <p className={`${workSansFont.className} text-lg sm:text-xl ${COMMON_TEXT_COLOR} animate-fade-down animate-delay-[1200ms]`}>
                                 {"Frontend Engineer"}
                             </p>
                         </div>
-                        <div className="pt-1">
+                        <div className="pt-1 animate-fade-down animate-delay-[1600ms]">
                             <Socials/>
                         </div>
                     </div>
@@ -95,8 +95,8 @@ export default function Hello() {
                     />
                 </div>
             </div>
-            <div className="flex justify-center align-middle pt-32 md:pt-20 animate-bounce animate-infinite animate-duration-[1700ms] animate-ease-in">
-                <IconArrowDown stroke={1.5} size={60}/>
+            <div className="flex justify-center align-middle pt-32 md:pt-20 animate-fade-down animate-delay-[2000ms]">
+                <IconArrowDown stroke={1.5} size={60} className="animate-bounce animate-infinite animate-duration-[1700ms] animate-ease-in"/>
             </div>
         </>
     );

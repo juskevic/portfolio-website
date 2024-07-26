@@ -40,7 +40,6 @@ export default function Header() {
                     className="border-1 border-gray-400 shadow rounded-full bg-white"
                 >
                     <Button
-                        isDisabled
                         as={Link}
                         activeClass="opacity-50"
                         to="about"
