@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import {Caveat, Poppins, Work_Sans} from "next/font/google";
+import {Caveat, Poppins, Work_Sans, Inter} from "next/font/google";
 import {Button, Image, Tooltip} from "@nextui-org/react";
 import Socials from "@/components/Socials.jsx";
 import { IconVolume, IconArrowDown } from '@tabler/icons-react';
@@ -24,6 +24,12 @@ const poppinsFont = Poppins({
     subsets: ['latin'],
 });
 
+const InterFont300 = Inter({
+    weight: '300',
+    style: 'normal',
+    subsets: ['latin'],
+});
+
 
 export default function Hello() {
 
@@ -39,8 +45,8 @@ export default function Hello() {
 
     return (
         <>
-            <div className="flex flex-row justify-between max-w-screen-xl mx-auto md:pt-0 pt-32">
-                <div className="flex flex-col">
+            <div className="flex flex-row justify-between max-w-screen-xl mx-auto md:pt-0 pt-20">
+                <div className="flex flex-col md:space-y-0 space-y-10">
                     <div className="max-w-[700px]">
                         <h1 className={`${poppinsFont.className} font-bold text-2xl md:text-5xl space-y-0.5`}>
                             {/*{'Crafting web magic: responsive, user-friendly, and lightning-fast.'}*/}
@@ -51,9 +57,9 @@ export default function Hello() {
                     </div>
                     <div className="flex flex-col pt-10 md:pt-14 justify-start">
                         <div>
-                            <div className="w-[350px] md:w-[420px] pb-8">
-                                <p className="text-gray-400">
-                                    {"I am passionate about frontend development and creating amazing user experiences through UI and UX design."}
+                            <div className="w-[350px] md:w-[380px] pb-8">
+                                <p className={`${InterFont300.className} text-lg text-gray-400`}>
+                                    {"I love creating great user experiences through UI and UX design."}
                                 </p>
                             </div>
                             <div className="flex flex-row space-x-1">

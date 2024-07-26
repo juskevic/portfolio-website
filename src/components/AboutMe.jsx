@@ -4,7 +4,7 @@ import {Inter} from "next/font/google";
 import {
     IconArrowUpRight,
     IconBrandHtml5, IconBrandReact, IconBrandJavascript, IconBrandCss3, IconBrandBootstrap, IconBrandNextjs,
-    IconBrandTailwind, IconBrandFramerMotion, IconBrandNodejs, IconBrandGit, IconBrandNpm
+    IconBrandTailwind, IconBrandFramerMotion, IconBrandNodejs, IconBrandGit, IconBrandNpm, IconSparkles, IconClock, IconNotes
 } from "@tabler/icons-react"
 
 const InterFont300 = Inter({
@@ -21,7 +21,7 @@ export default function AboutMe() {
 
     return (
         <>
-            <div className={`${InterFont300.className} flex flex-col md:flex-row md:justify-between gap-5`}>
+            <div className={`${InterFont300.className} flex flex-col md:flex-row md:justify-between gap-5 max-w-[1000px]`}>
                 <div className="flex flex-col md:flex-row">
                     <div className="flex flex-col space-y-5">
                         <div className={`w-full md:w-[400px] md:max-w-[400px]`}>
@@ -46,7 +46,7 @@ export default function AboutMe() {
                                 </CardBody>
                             </Card>
                         </div>
-                        <div className={`w-full md:w-[400px] md:max-w-[400px] max-h-40`}>
+                        <div className={`w-full md:max-w-[400px] md:max-h-40`}>
                             <Card className={`${borderClassName}`}>
                                 <CardHeader className="pb-0">
                                     <div className="flex flex-col">
@@ -59,20 +59,24 @@ export default function AboutMe() {
                                 <CardBody>
                                     <Accordion isCompact>
                                         <AccordionItem
-                                            key="1"
                                             aria-label="Accordion 1"
-                                            title="What Inspires You?"
+                                            title={<span className="md:text-lg">{"What inspires you?"}</span>}
+                                            indicator={<IconSparkles stroke={1}/>}
                                         >
                                             {"I find inspiration in solving problems, creating interfaces, and learning new things. Reading and music also influence my creativity. People like Steve Jobs and books such as \"Don’t Make Me Think\" have shaped my perspective. So has the open-source community. 🌟"}
                                         </AccordionItem>
                                         <AccordionItem
-                                            key="2"
                                             aria-label="Accordion 2"
-                                            title="How Do You Spend Your Free Time?"
+                                            title={<span className="md:text-lg">{"How do you spend your free time?"}</span>}
+                                            indicator={<IconClock stroke={1}/>}
                                         >
                                             {"Outside of my digital life, I enjoy cycling, reading, and listening to music. These activities help me relax and reflect. They’re my escape from screens and algorithms. 🌿🎶♟️"}
                                         </AccordionItem>
-                                        <AccordionItem key="3" aria-label="Accordion 3" title="What Are You Currently Learning?">
+                                        <AccordionItem
+                                            aria-label="Accordion 3"
+                                            title={<span className="md:text-lg">{"What are you currently learning?"}</span>}
+                                            indicator={<IconNotes stroke={1}/>}
+                                        >
                                             {"I'm currently learning the ins and outs of mobile app development using tools like React Native, Expo, and Firebase."}
                                         </AccordionItem>
                                     </Accordion>
