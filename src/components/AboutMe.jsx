@@ -6,7 +6,7 @@ import {
     Card,
     CardBody,
     CardHeader,
-    Chip,
+    Chip, Divider,
     ScrollShadow,
     Tab,
     Tabs
@@ -100,7 +100,7 @@ export default function AboutMe() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-5">
                     <div className="flex flex-col md:flex-row gap-5">
                         <div>
                             <Card className={`${borderClassName} w-full md:w-[400px] md:max-w-[400px]`}>
@@ -264,11 +264,7 @@ export default function AboutMe() {
                         </div>
                     </div>
                     <div>
-                        <Card>
-                            <CardBody>
-                                a
-                            </CardBody>
-                        </Card>
+                        {/*Add something here later*/}
                     </div>
                 </div>
             </div>

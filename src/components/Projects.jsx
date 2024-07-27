@@ -222,7 +222,7 @@ const Projects = () => {
                         </div>
                         {/*RIGHT*/}
                         <div className={`flex flex-col space-y-10`}>
-                            <Card className="max-w-[400px] backdrop-blur border-1 border-gray-400 shadow">
+                            <Card className="max-w-[400px] border-1 border-gray-400 shadow">
                                 <CardHeader className="flex justify-between pb-0">
                                     <div className="flex flex-col">
                                         <Link
