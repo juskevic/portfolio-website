@@ -1,10 +1,23 @@
 import React from 'react';
-import {Accordion, AccordionItem, Button, Card, CardBody, CardHeader, Chip, Tab, Tabs} from "@nextui-org/react";
+import {
+    Accordion,
+    AccordionItem,
+    Button,
+    Card,
+    CardBody,
+    CardHeader,
+    Chip,
+    ScrollShadow,
+    Tab,
+    Tabs
+} from "@nextui-org/react";
 import {Inter} from "next/font/google";
 import {
     IconArrowUpRight,
-    IconBrandHtml5, IconBrandReact, IconBrandJavascript, IconBrandCss3, IconBrandBootstrap, IconBrandNextjs,
-    IconBrandTailwind, IconBrandFramerMotion, IconBrandNodejs, IconBrandGit, IconBrandNpm, IconSparkles, IconClock, IconNotes
+    IconBrandHtml5, IconBrandReact, IconBrandJavascript, IconBrandCss3,
+    IconBrandBootstrap, IconBrandNextjs,
+    IconBrandTailwind, IconBrandFramerMotion, IconBrandNodejs,
+    IconBrandGit, IconBrandNpm, IconSparkles, IconClock, IconNotes
 } from "@tabler/icons-react"
 
 const InterFont300 = Inter({
@@ -21,7 +34,8 @@ export default function AboutMe() {
 
     return (
         <>
-            <div className={`${InterFont300.className} flex flex-col md:flex-row md:justify-between gap-5 max-w-[1000px]`}>
+            <div
+                className={`${InterFont300.className} flex flex-col md:flex-row md:justify-between gap-5 max-w-[1000px]`}>
                 <div className="flex flex-col md:flex-row">
                     <div className="flex flex-col space-y-5">
                         <div className={`w-full md:w-[400px] md:max-w-[400px]`}>
@@ -67,14 +81,16 @@ export default function AboutMe() {
                                         </AccordionItem>
                                         <AccordionItem
                                             aria-label="Accordion 2"
-                                            title={<span className="md:text-lg">{"How do you spend your free time?"}</span>}
+                                            title={<span
+                                                className="md:text-lg">{"How do you spend your free time?"}</span>}
                                             indicator={<IconClock stroke={1}/>}
                                         >
                                             {"Outside of my digital life, I enjoy cycling, reading, and listening to music. These activities help me relax and reflect. They’re my escape from screens and algorithms. 🌿🎶♟️"}
                                         </AccordionItem>
                                         <AccordionItem
                                             aria-label="Accordion 3"
-                                            title={<span className="md:text-lg">{"What are you currently learning?"}</span>}
+                                            title={<span
+                                                className="md:text-lg">{"What are you currently learning?"}</span>}
                                             indicator={<IconNotes stroke={1}/>}
                                         >
                                             {"I'm currently learning the ins and outs of mobile app development using tools like React Native, Expo, and Firebase."}
@@ -97,94 +113,97 @@ export default function AboutMe() {
                                         <h2 className="text-2xl">Tech Stack</h2>
                                     </div>
                                 </CardHeader>
-                                <CardBody className="max-h-[240] h-[240px] pt-0">
+                                <CardBody className="h-[240px] pt-0">
                                     <Tabs
                                         size="md"
                                         variant="underlined"
                                     >
                                         <Tab title="Frontend">
-                                            <Card className="shadow-none bg-white">
-                                                <CardBody className="flex flex-row flex-wrap w-auto gap-2">
-                                                    <Chip
-                                                        className="border-2 border-orange-600"
-                                                        variant="light"
-                                                        endContent={
-                                                            <IconBrandHtml5 stroke={1}/>
-                                                        }
-                                                    >
-                                                        HTML
-                                                    </Chip>
-                                                    <Chip
-                                                        className="border-2 border-blue-500"
-                                                        variant="light"
-                                                        endContent={
-                                                            <IconBrandCss3 stroke={1}/>
-                                                        }
-                                                    >
-                                                        CSS
-                                                    </Chip>
-                                                    <Chip
-                                                        className="border-2 border-yellow-400"
-                                                        variant="light"
-                                                        endContent={
-                                                            <IconBrandJavascript stroke={1}/>
-                                                        }
-                                                    >
-                                                        JavaScript
-                                                    </Chip>
-                                                    <Chip
-                                                        className="border-2 border-purple-500"
-                                                        variant="light"
-                                                        endContent={
-                                                            <IconBrandBootstrap stroke={1}/>
-                                                        }
-                                                    >
-                                                        Bootstrap
-                                                    </Chip>
-                                                    <Chip
-                                                        className="border-2 border-cyan-700"
-                                                        variant="light"
-                                                        endContent={
-                                                            <IconBrandReact stroke={1}/>
-                                                        }
-                                                    >
-                                                        React
-                                                    </Chip>
-                                                    <Chip
-                                                        className="border-2 border-black"
-                                                        variant="light"
-                                                        endContent={
-                                                            <IconBrandNextjs stroke={1}/>
-                                                        }
-                                                    >
-                                                        Next.js
-                                                    </Chip>
-                                                    <Chip
-                                                        className="border-2 border-blue-400"
-                                                        variant="light"
-                                                        endContent={
-                                                            <IconBrandTailwind stroke={1}/>
-                                                        }
-                                                    >
-                                                        Tailwind CSS
-                                                    </Chip>
-                                                    <Chip
-                                                        className="border-2 border-gray-700"
-                                                        variant="light"
-                                                    >
-                                                        NextUI
-                                                    </Chip>
-                                                    <Chip
-                                                        className="border-2 border-stone-600"
-                                                        variant="light"
-                                                        endContent={
-                                                            <IconBrandFramerMotion stroke={1}/>
-                                                        }
-                                                    >
-                                                        Framer Motion
-                                                    </Chip>
-                                                </CardBody>
-                                            </Card>
+                                            <ScrollShadow className="max-h-[180px]" hideScrollBar={true}>
+                                                <Card className="shadow-none bg-white">
+                                                    <CardBody className="flex flex-row flex-wrap w-auto gap-2">
+                                                        <Chip
+                                                            className="border-2 border-orange-600"
+                                                            variant="light"
+                                                            endContent={
+                                                                <IconBrandHtml5 stroke={1}/>
+                                                            }
+                                                        >
+                                                            HTML
+                                                        </Chip>
+                                                        <Chip
+                                                            className="border-2 border-blue-500"
+                                                            variant="light"
+                                                            endContent={
+                                                                <IconBrandCss3 stroke={1}/>
+                                                            }
+                                                        >
+                                                            CSS
+                                                        </Chip>
+                                                        <Chip
+                                                            className="border-2 border-yellow-400"
+                                                            variant="light"
+                                                            endContent={
+                                                                <IconBrandJavascript stroke={1}/>
+                                                            }
+                                                        >
+                                                            JavaScript
+                                                        </Chip>
+                                                        <Chip
+                                                            className="border-2 border-purple-500"
+                                                            variant="light"
+                                                            endContent={
+                                                                <IconBrandBootstrap stroke={1}/>
+                                                            }
+                                                        >
+                                                            Bootstrap
+                                                        </Chip>
+                                                        <Chip
+                                                            className="border-2 border-cyan-700"
+                                                            variant="light"
+                                                            endContent={
+                                                                <IconBrandReact stroke={1}/>
+                                                            }
+                                                        >
+                                                            React
+                                                        </Chip>
+                                                        <Chip
+                                                            className="border-2 border-black"
+                                                            variant="light"
+                                                            endContent={
+                                                                <IconBrandNextjs stroke={1}/>
+                                                            }
+                                                        >
+                                                            Next.js
+                                                        </Chip>
+                                                        <Chip
+                                                            className="border-2 border-blue-400"
+                                                            variant="light"
+                                                            endContent={
+                                                                <IconBrandTailwind stroke={1}/>
+                                                            }
+                                                        >
+                                                            Tailwind CSS
+                                                        </Chip>
+                                                        <Chip
+                                                            className="border-2 border-gray-700"
+                                                            variant="light"
+                                                        >
+                                                            NextUI
+                                                        </Chip>
+                                                        <Chip
+                                                            className="border-2 border-stone-600"
+                                                            variant="light"
+                                                            endContent={
+                                                                <IconBrandFramerMotion stroke={1}/>
+                                                            }
+                                                        >
+                                                            Framer Motion
+                                                        </Chip>
+
+                                                    </CardBody>
+                                                </Card>
+                                            </ScrollShadow>
                                         </Tab>
                                         <Tab title="Other">
                                             <Card className="shadow-none bg-white">
