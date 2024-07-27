@@ -65,7 +65,6 @@ export default function Header() {
                         projects
                     </Button>
                     <Button
-                        isDisabled
                         as={Link}
                         activeClass="opacity-50"
                         to="contact"

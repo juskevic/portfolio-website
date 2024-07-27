@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, ButtonGroup, Card, CardBody, CardHeader, Chip, Link} from "@nextui-org/react";
+import {Card, CardBody, Link} from "@nextui-org/react";
 import {IconBrandGithub, IconBrandTelegram, IconBrandLinkedin, IconMail, IconBrandUpwork } from "@tabler/icons-react";
 import {Inter} from "next/font/google";
 
@@ -25,8 +25,8 @@ export default function Socials() {
                                 <p>Mail</p>
                             </div>
                             <div className="flex flex-row">
-                                <Link href="https://github.com/maxyushkevich" underline="always" color="foreground" isDisabled={true}
-                                      className="md:text-xl">
+                                <Link href="mailto:contact@maxyushkevich.com" underline="always" color="foreground" isDisabled={true}
+                                      className="md:text-xl" target="_blank">
                                     contact@maxyushkevich.com
                                 </Link>
                             </div>
@@ -38,7 +38,7 @@ export default function Socials() {
                             </div>
                             <div className="flex flex-row">
                                 <Link href="https://github.com/maxyushkevich" underline="always" color="foreground"
-                                      className="md:text-xl">
+                                      className="md:text-xl" target="_blank">
                                     @maxyushkevich
                                 </Link>
                             </div>
@@ -49,8 +49,8 @@ export default function Socials() {
                                 <p>Telegram</p>
                             </div>
                             <div className="flex flex-row">
-                                <Link href="https://github.com/maxyushkevich" underline="always" color="foreground"
-                                      className="md:text-xl">
+                                <Link href="https://t.me/maxyushkevich" underline="always" color="foreground"
+                                      className="md:text-xl" target="_blank">
                                     me/maxyushkevich
                                 </Link>
                             </div>
@@ -61,8 +61,8 @@ export default function Socials() {
                                 <p>LinkedIn</p>
                             </div>
                             <div className="flex flex-row">
-                                <Link href="https://github.com/maxyushkevich" underline="always" color="foreground"
-                                      className="md:text-xl">
+                                <Link href="https://www.linkedin.com/in/maxyushkevich/" underline="always" color="foreground"
+                                      className="md:text-xl" target="_blank">
                                     in/maxyushkevich
                                 </Link>
                             </div>
@@ -74,7 +74,7 @@ export default function Socials() {
                             </div>
                             <div className="flex flex-row">
                                 <Link href="https://github.com/maxyushkevich" underline="always" color="foreground"
-                                      className="md:text-xl" isDisabled={true}>
+                                      className="md:text-xl" isDisabled={true} target="_blank">
                                     maxyushkevich
                                 </Link>
                             </div>
