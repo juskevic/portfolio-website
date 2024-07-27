@@ -34,8 +34,7 @@ export default function AboutMe() {
 
     return (
         <>
-            <div
-                className={`${InterFont300.className} flex flex-col md:flex-row md:justify-between gap-5 max-w-[1000px]`}>
+            <div className={`${InterFont300.className} flex flex-col md:flex-row md:justify-between gap-5 max-w-[1000px]`}>
                 <div className="flex flex-col md:flex-row">
                     <div className="flex flex-col space-y-5">
                         <div className={`w-full md:w-[400px] md:max-w-[400px]`}>
@@ -265,7 +264,11 @@ export default function AboutMe() {
                         </div>
                     </div>
                     <div>
-
+                        <Card>
+                            <CardBody>
+                                a
+                            </CardBody>
+                        </Card>
                     </div>
                 </div>
             </div>

@@ -58,7 +58,7 @@ export default function Hello() {
                     <div className="flex flex-col pt-10 md:pt-14 justify-start">
                         <div>
                             <div className="w-[350px] md:w-[380px] pb-8">
-                                <p className={`${InterFont300.className} text-lg text-gray-400`}>
+                                <p className={`${InterFont300.className} text-lg text-gray-400 animate-fade animate-delay-[2000ms]`}>
                                     {"I love creating great user experiences through UI and UX design."}
                                 </p>
                             </div>
@@ -95,7 +95,7 @@ export default function Hello() {
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:flex">
+                <div className="hidden md:flex animate-fade animate-duration-[2500ms] animate-ease-in">
                     <Image
                         className="border-1 border-gray-400 shadow-2xl"
                         radius="lg"
@@ -106,7 +106,7 @@ export default function Hello() {
                     />
                 </div>
             </div>
-            <div className="flex justify-center align-middle pt-32 md:pt-20 animate-fade-down animate-delay-[2000ms]">
+            <div className="flex justify-center align-middle pt-32 md:pt-16 animate-fade-down animate-delay-[2500ms]">
                 <IconArrowDown stroke={1.5} size={60} className="animate-bounce animate-infinite animate-duration-[1700ms] animate-ease-in"/>
             </div>
         </>
