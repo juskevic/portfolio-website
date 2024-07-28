@@ -95,16 +95,6 @@ export default function Hello() {
                         </div>
                     </div>
                 </div>
-                <div className="hidden md:flex animate-fade animate-duration-[2500ms] animate-ease-in">
-                    <Image
-                        className="border-1 border-gray-400 shadow-2xl"
-                        radius="lg"
-                        width={350}
-                        isZoomed
-                        src="DSCF4717.webp"
-                        alt="portrait photo"
-                    />
-                </div>
             </div>
             <div className="flex justify-center align-middle pt-32 md:pt-16 animate-fade-down animate-delay-[2500ms]">
                 <IconArrowDown stroke={1.5} size={60} className="animate-bounce animate-infinite animate-duration-[1700ms] animate-ease-in"/>
