@@ -3,9 +3,6 @@ import {
     Button, ButtonGroup,
     Navbar,
     NavbarContent,
-    NavbarMenu,
-    NavbarMenuItem,
-    NavbarMenuToggle
 } from "@nextui-org/react";
 import {Link} from "react-scroll";
 import {Inter} from "next/font/google";

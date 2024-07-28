@@ -64,7 +64,7 @@ export default function Hello() {
                             </div>
                             <div className="flex flex-row space-x-1">
                                 <h1 className={`${caveat.className} text-3xl sm:text-4xl ${COMMON_TEXT_COLOR}`}>
-                                    {"Max Yushkevich"}
+                                    {"Max Juškevič"}
                                 </h1>
                                 <audio
                                     ref={audioRef}
