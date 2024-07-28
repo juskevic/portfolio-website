@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from 'react';
 import {Caveat, Poppins, Work_Sans, Inter} from "next/font/google";
-import {Button, Image, Tooltip} from "@nextui-org/react";
+import {Button, Tooltip} from "@nextui-org/react";
 import Socials from "@/components/Socials.jsx";
 import { IconVolume, IconArrowDown } from '@tabler/icons-react';
 
@@ -73,15 +73,7 @@ export default function Hello() {
                                 >
                                 </audio>
                                 <Tooltip content="Listen to the pronaucination" showArrow={true}>
-                                    <Button
-                                        radius="full"
-                                        isIconOnly
-                                        onClick={playAudio}
-                                        variant="light"
-                                        size="sm"
-                                        as="button"
-                                        className="text-gray-400 mt-1"
-                                    >
+                                    <Button radius="full" isIconOnly onClick={playAudio} variant="light" size="sm" as="button" className="text-gray-400 mt-1">
                                         <IconVolume stroke={1.5} />
                                     </Button>
                                 </Tooltip>

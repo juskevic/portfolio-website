@@ -35,29 +35,21 @@ export default function AboutMe() {
     return (
         <>
             <div className="flex justify-center">
-                <div
-                    className={`${InterFont300.className} flex flex-col md:flex-row md:justify-center gap-5 max-w-[1000px]`}>
+                <div className={`${InterFont300.className} flex flex-col md:flex-row md:justify-center gap-5 max-w-[1000px]`}>
                     <div className="flex flex-col md:flex-row">
                         <div className="flex flex-col space-y-5">
                             <div className={`w-full md:w-[400px] md:max-w-[400px]`}>
                                 <Card className={`${borderClassName}`}>
                                     <CardHeader className="flex-row justify-between pb-0">
-                                        <div className={`my-auto text-xl md:text-2xl`}>{"Hello there! 👋"}</div>
+                                        <div className={`my-auto text-xl md:text-2xl`}>{"Hi there! 👋"}</div>
                                         <div>
-                                            <Button
-                                                radius="full"
-                                                variant="light"
-                                                className={`border-1 border-gray-300 shadow-none bg-white`}
-                                                endContent={
-                                                    <IconArrowUpRight stroke={strokeWidth}/>
-                                                }
-                                            >
+                                            <Button radius="full" variant="light" className={`border-1 border-gray-300 shadow-none bg-white`} endContent={<IconArrowUpRight stroke={strokeWidth}/>}>
                                                 Read my story
                                             </Button>
                                         </div>
                                     </CardHeader>
                                     <CardBody className="text-lg md:text-xl">
-                                        {" I’m a front-end developer passionate about crafting beautiful, responsive websites with the latest tech."}
+                                        {"I'm a self-taught front-end developer with a passion for creating user experiences. I specialize in UI design and love crafting intuitive interfaces."}
                                     </CardBody>
                                 </Card>
                             </div>
@@ -73,27 +65,13 @@ export default function AboutMe() {
                                     </CardHeader>
                                     <CardBody>
                                         <Accordion isCompact>
-                                            <AccordionItem
-                                                aria-label="Accordion 1"
-                                                title={<span className="md:text-lg">{"What inspires you?"}</span>}
-                                                indicator={<IconSparkles stroke={1}/>}
-                                            >
+                                            <AccordionItem aria-label="Accordion 1" title={<span className="md:text-lg">{"What inspires you?"}</span>} indicator={<IconSparkles stroke={1}/>}>
                                                 {"I find inspiration in solving problems, creating interfaces, and learning new things. Reading and music also influence my creativity. People like Steve Jobs and books such as \"Don’t Make Me Think\" have shaped my perspective. So has the open-source community. 🌟"}
                                             </AccordionItem>
-                                            <AccordionItem
-                                                aria-label="Accordion 2"
-                                                title={<span
-                                                    className="md:text-lg">{"How do you spend your free time?"}</span>}
-                                                indicator={<IconClock stroke={1}/>}
-                                            >
+                                            <AccordionItem aria-label="Accordion 2" title={<span className="md:text-lg">{"How do you spend your free time?"}</span>} indicator={<IconClock stroke={1}/>}>
                                                 {"Outside of my digital life, I enjoy cycling, reading, and listening to music. These activities help me relax and reflect. They’re my escape from screens and algorithms. 🌿🎶♟️"}
                                             </AccordionItem>
-                                            <AccordionItem
-                                                aria-label="Accordion 3"
-                                                title={<span
-                                                    className="md:text-lg">{"What are you currently learning?"}</span>}
-                                                indicator={<IconNotes stroke={1}/>}
-                                            >
+                                            <AccordionItem aria-label="Accordion 3" title={<span className="md:text-lg">{"What are you currently learning?"}</span>} indicator={<IconNotes stroke={1}/>}>
                                                 {"I'm currently learning the ins and outs of mobile app development using tools like React Native, Expo, and Firebase."}
                                             </AccordionItem>
                                         </Accordion>

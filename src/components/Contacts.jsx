@@ -25,8 +25,7 @@ export default function Socials() {
                                 <p>Mail</p>
                             </div>
                             <div className="flex flex-row">
-                                <Link href="mailto:contact@maxyushkevich.com" underline="always" color="foreground" isDisabled={true}
-                                      className="md:text-xl" target="_blank">
+                                <Link href="mailto:contact@maxyushkevich.com" underline="always" color="foreground" isDisabled={true} className="md:text-xl" target="_blank">
                                     contact@maxyushkevich.com
                                 </Link>
                             </div>
@@ -37,9 +36,8 @@ export default function Socials() {
                                 <p>GitHub</p>
                             </div>
                             <div className="flex flex-row">
-                                <Link href="https://github.com/maxyushkevich" underline="always" color="foreground"
-                                      className="md:text-xl" target="_blank">
-                                    @maxyushkevich
+                                <Link href="https://github.com/juskevic" underline="always" color="foreground" className="md:text-xl" target="_blank">
+                                    @juskevic
                                 </Link>
                             </div>
                         </div>
@@ -49,9 +47,8 @@ export default function Socials() {
                                 <p>Telegram</p>
                             </div>
                             <div className="flex flex-row">
-                                <Link href="https://t.me/maxyushkevich" underline="always" color="foreground"
-                                      className="md:text-xl" target="_blank">
-                                    me/maxyushkevich
+                                <Link href="https://t.me/juskevic" underline="always" color="foreground" className="md:text-xl" target="_blank">
+                                    me/juskevic
                                 </Link>
                             </div>
                         </div>
@@ -61,9 +58,8 @@ export default function Socials() {
                                 <p>LinkedIn</p>
                             </div>
                             <div className="flex flex-row">
-                                <Link href="https://www.linkedin.com/in/maxyushkevich/" underline="always" color="foreground"
-                                      className="md:text-xl" target="_blank">
-                                    in/maxyushkevich
+                                <Link href="https://www.linkedin.com/in/maxjuskevic/" underline="always" color="foreground" className="md:text-xl" target="_blank">
+                                    in/maxjuskevic
                                 </Link>
                             </div>
                         </div>
@@ -75,7 +71,7 @@ export default function Socials() {
                             <div className="flex flex-row">
                                 <Link href="https://www.upwork.com/freelancers/~01f6c71aea76152016" underline="always" color="foreground"
                                       className="md:text-xl" target="_blank">
-                                    maxyushkevich
+                                    maxjuskevic
                                 </Link>
                             </div>
                         </div>
