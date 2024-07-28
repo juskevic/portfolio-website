@@ -8,9 +8,9 @@ import {
     NavbarMenuToggle
 } from "@nextui-org/react";
 import {Link} from "react-scroll";
-import {Work_Sans} from "next/font/google";
+import {Inter} from "next/font/google";
 
-const workSansFont = Work_Sans({
+const InterFont300 = Inter({
     weight: '300',
     style: 'normal',
     subsets: ['latin'],
@@ -19,8 +19,8 @@ const workSansFont = Work_Sans({
 export default function Header() {
 
     return (
-        <Navbar className={`${workSansFont.className} bg-transparent blur-0 backdrop-blur-0`}>
-            <NavbarContent className="md:flex hidden"></NavbarContent>
+        <Navbar className={`${InterFont300.className} bg-transparent blur-none backdrop-blur-none`}>
+            <NavbarContent></NavbarContent>
             <NavbarContent justify="center">
                 <ButtonGroup
                     variant="light"
@@ -65,16 +65,9 @@ export default function Header() {
                     >
                         contact
                     </Button>
-                    <Button
-                        as={Link}
-                        className="text-lg"
-                        radius="full"
-                    >
-                        blog ✏️
-                    </Button>
                 </ButtonGroup>
             </NavbarContent>
-            <NavbarContent className="md:flex hidden"></NavbarContent>
+            <NavbarContent></NavbarContent>
         </Navbar>
     );
 }

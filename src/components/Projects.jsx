@@ -8,6 +8,13 @@ import {
     Image,
 } from "@nextui-org/react";
 import {IconBrandGithub, IconArrowUpRight, IconCode, IconPhoto, IconPencil} from "@tabler/icons-react";
+import {Inter} from "next/font/google";
+
+const InterFont300 = Inter({
+    weight: '300',
+    style: 'normal',
+    subsets: ['latin'],
+});
 
 const Projects = () => {
 
@@ -15,7 +22,7 @@ const Projects = () => {
     const strokeWidth = 1.5
 
     return (
-        <div className="flex justify-center md:pb-0 pb-40 md:h-[700px]">
+        <div className={`${InterFont300.className} flex justify-center md:pb-0 pb-40 md:h-[700px]`}>
             <Tabs
                 className={`pb-3`}
                 color={"default"}
