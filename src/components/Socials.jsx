@@ -22,7 +22,7 @@ export default function Socials() {
                 <IconBrandTelegram stroke={1.5} color="black"/>
             </Button>
 
-            <Button as="a" target="_blank" isIconOnly href="" isDisabled={true}>
+            <Button as="a" target="_blank" isIconOnly href="https://www.upwork.com/freelancers/~01f6c71aea76152016">
                 <IconBrandUpwork stroke={1.5} color="black"/>
             </Button>
 

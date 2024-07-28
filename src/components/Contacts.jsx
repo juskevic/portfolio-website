@@ -73,8 +73,8 @@ export default function Socials() {
                                 <p>Upwork</p>
                             </div>
                             <div className="flex flex-row">
-                                <Link href="https://github.com/maxyushkevich" underline="always" color="foreground"
-                                      className="md:text-xl" isDisabled={true} target="_blank">
+                                <Link href="https://www.upwork.com/freelancers/~01f6c71aea76152016" underline="always" color="foreground"
+                                      className="md:text-xl" target="_blank">
                                     maxyushkevich
                                 </Link>
                             </div>
