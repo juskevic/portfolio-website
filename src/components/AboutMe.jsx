@@ -6,7 +6,7 @@ import {
     Card,
     CardBody,
     CardHeader,
-    Chip, Divider,
+    Chip,
     ScrollShadow,
     Tab,
     Tabs
