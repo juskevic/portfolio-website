@@ -6,19 +6,19 @@ export default function Socials() {
     return (
         <ButtonGroup size="md" variant="light">
 
-            <Button as="a" target="_blank" isIconOnly href="mailto:contact@maxyushkevich.com">
+            <Button as="a" target="_blank" isIconOnly href="mailto:contact@maxyushkevich.com" isDisabled={true}>
                 <IconMail stroke={1.5} color="black"/>
             </Button>
 
-            <Button as="a" target="_blank" isIconOnly href="https://github.com/maxyushkevich">
+            <Button as="a" target="_blank" isIconOnly href="https://github.com/juskevic">
                 <IconBrandGithub stroke={1.5} color="black"/>
             </Button>
 
-            <Button as="a" target="_blank" isIconOnly href="https://www.linkedin.com/in/maxyushkevich/">
+            <Button as="a" target="_blank" isIconOnly href="https://www.linkedin.com/in/maxjuskevic/">
                 <IconBrandLinkedin stroke={1.5} color="black"/>
             </Button>
 
-            <Button as="a" target="_blank" isIconOnly href="https://t.me/maxyushkevic">
+            <Button as="a" target="_blank" isIconOnly href="https://t.me/juskevic">
                 <IconBrandTelegram stroke={1.5} color="black"/>
             </Button>
 

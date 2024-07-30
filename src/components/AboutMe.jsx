@@ -43,7 +43,7 @@ export default function AboutMe() {
                                     <CardHeader className="flex-row justify-between pb-0">
                                         <div className={`my-auto text-xl md:text-2xl`}>{"Hi there! 👋"}</div>
                                         <div>
-                                            <Button radius="full" variant="light" className={`border-1 border-gray-300 shadow-none bg-white`} endContent={<IconArrowUpRight stroke={strokeWidth}/>}>
+                                            <Button radius="full" variant="light" className={`border-1 border-gray-400 shadow-none bg-white text-medium`} endContent={<IconArrowUpRight stroke={strokeWidth}/>}>
                                                 Read my story
                                             </Button>
                                         </div>

@@ -240,9 +240,18 @@ const Projects = () => {
                                         >
                                             Výčetka
                                         </Link>
-                                        <p className="opacity-70">Website</p>
+                                        <p className="opacity-70">Android, iOS, Web</p>
                                     </div>
                                     <div className="space-x-1">
+                                        <Button
+                                            radius="full"
+                                            size="sm"
+                                            isIconOnly
+                                            variant="light"
+                                            color="warning"
+                                        >
+                                            <Link color="warning"><IconCode stroke={strokeWidth}/></Link>
+                                        </Button>
                                         <Button
                                             radius="full"
                                             size="sm"
@@ -284,8 +293,7 @@ const Projects = () => {
                                             </div>
                                         }>
                                             <p className="p-1">
-                                                This is an accounting tool build using Bootstrap that allows you to count the amount of
-                                                banknotes and coins that are in your cash register.
+                                                Vyčetka is a mobile app built with Expo, React Native, and React Native Paper UI. It quickly and accurately counts banknotes and coins, originally starting as a web app with Bootstrap. Now, it's a handy way to manage currency denominations on the go. 💰📱
                                             </p>
                                         </Tab>
                                         <Tab
