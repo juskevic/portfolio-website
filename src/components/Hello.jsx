@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import {Caveat, Poppins, Work_Sans, Inter} from "next/font/google";
+import {Caveat, Poppins, Inter} from "next/font/google";
 import {Button, Tooltip} from "@nextui-org/react";
 import Socials from "@/components/Socials.jsx";
 import { IconVolume, IconArrowDown } from '@tabler/icons-react';
