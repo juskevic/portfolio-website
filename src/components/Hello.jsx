@@ -47,8 +47,8 @@ export default function Hello() {
         <>
             <div className="flex flex-row justify-between max-w-screen-xl mx-auto md:pt-0 pt-20">
                 <div className="flex flex-col md:space-y-0 space-y-10">
-                    <div className="max-w-[700px]">
-                        <h1 className={`${poppinsFont.className} font-bold text-2xl md:text-5xl space-y-0.5`}>
+                    <div className="max-w-screen-xl">
+                        <h1 className={`${poppinsFont.className} font-bold text-2xl md:text-4xl xl:text-6xl space-y-0.5`}>
                             {/*{'Crafting web magic: responsive, user-friendly, and lightning-fast.'}*/}
                             <div>{"Crafting web magic: "}</div>
                             <div className="opacity-90 animate-fade-down animate-delay-[400ms]">{"responsive, user-friendly, "}</div>

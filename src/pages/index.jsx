@@ -24,7 +24,7 @@ const exo = Exo({
 const Main = () => {
     return (
         <>
-            <main className="p-6 pt-16 space-y-64 md:p-40 md:space-y-[300px]">
+            <main className="pt-16 p-6 md:p-20 xl:p-36 space-y-64 md:space-y-[300px]">
 
                 <Element name="hello" className="element">
                     <Hello />
