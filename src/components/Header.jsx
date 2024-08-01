@@ -19,47 +19,14 @@ export default function Header() {
         <Navbar className={`${InterFont300.className} bg-transparent blur-none backdrop-blur-none`}>
             <NavbarContent></NavbarContent>
             <NavbarContent justify="center">
-                <ButtonGroup
-                    variant="light"
-                    size="md"
-                    className="border-1 border-gray-400 shadow rounded-full bg-white"
-                >
-                    <Button
-                        as={Link}
-                        activeClass="opacity-50"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={-90}
-                        duration={500}
-                        className="text-lg"
-                        radius="full"
-                    >
+                <ButtonGroup variant="light" size="md" className="border-1 border-gray-400 shadow bg-white rounded-full bg-opacity-80 backdrop-blur-3xl">
+                    <Button as={Link} activeClass="opacity-30" to="about" spy={true} smooth={true} offset={-90} duration={500} className="text-lg" radius="full">
                         about
                     </Button>
-                    <Button
-                        as={Link}
-                        activeClass="opacity-50"
-                        to="projects"
-                        spy={true}
-                        smooth={true}
-                        offset={-90}
-                        duration={500}
-                        className="text-lg"
-                    >
+                    <Button as={Link} activeClass="opacity-30" to="projects" spy={true} smooth={true} offset={-90} duration={500} className="text-lg" radius="full">
                         projects
                     </Button>
-                    <Button
-                        as={Link}
-                        activeClass="opacity-50"
-                        to="contact"
-                        spy={true}
-                        smooth={true}
-                        offset={-90}
-                        duration={500}
-                        className="text-lg"
-                        radius="full"
-                    >
+                    <Button as={Link} activeClass="opacity-30" to="contact" spy={true} smooth={true} offset={-90} duration={500} className="text-lg" radius="full">
                         contact
                     </Button>
                 </ButtonGroup>

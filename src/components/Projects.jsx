@@ -23,107 +23,50 @@ const Projects = () => {
 
     return (
         <div className={`${InterFont300.className} flex justify-center md:pb-0 pb-40 md:h-[700px]`}>
-            <Tabs
-                className={`pb-3`}
-                color={"default"}
-                placement={"top"}
-                size={"lg"}
-                radius={"lg"}
-                variant={"solid"}
-                disabledKeys={[
-                    "contributions"
-                ]}
-            >
-                <Tab
-                    key={"projects"}
-                    title="Projects"
-                >
+            <Tabs className={`pb-3`} color={"default"} placement={"top"} size={"lg"} radius={"lg"} variant={"solid"} disabledKeys={["contributions"]}>
+                <Tab key={"projects"} title="Projects">
                     <div className='flex flex-col xl:flex-row justify-center space-x-0 xl:space-x-10 xl:space-y-0 space-y-10'>
                         {/*LEFT*/}
                         <div className={`flex flex-col space-y-10`}>
                             <div>
-                                <Card
-                                    className="max-w-[400px] backdrop-blur border-1 border-gray-400 shadow"
-                                    radius="lg"
-                                >
+                                <Card className="max-w-[400px] backdrop-blur border-1 border-gray-400 shadow" radius="lg">
                                     <CardHeader className="flex justify-between pb-0">
                                         <div className="flex flex-col">
-                                            <Tooltip
-                                                showArrow={true}
-                                                color="warning"
-                                                content="Project name might change in the future!"
-                                            >
-                                                <Link
-                                                    className="text-2xl"
-                                                    underline="under"
-                                                    color="foreground"
-                                                >
+                                            <Tooltip showArrow={true} color="warning" content="Project name might change in the future!">
+                                                <Link className="text-2xl" underline="under" color="foreground">
                                                     Tasken
                                                 </Link>
                                             </Tooltip>
                                             <p className="opacity-70">Android, iOS</p>
                                         </div>
                                         <div className="space-x-1">
-                                            <Tooltip
-                                                closeDelay={3000}
-                                                defaultOpen={true}
-                                                isDismissable
-                                                showArrow={true}
-                                                color="warning"
-                                                content="This project is in development! ⚒️"
-                                            >
-                                                <Button
-                                                    radius="full"
-                                                    size="sm"
-                                                    isIconOnly
-                                                    variant="light"
-                                                    color="warning"
-                                                >
+                                            <Tooltip closeDelay={3000} defaultOpen={true} isDismissable showArrow={true} color="warning" content="This project is in development! ⚒️">
+                                                <Button radius="full" size="sm" isIconOnly variant="light" color="warning">
                                                     <Link color="warning"><IconCode stroke={strokeWidth}/></Link>
                                                 </Button>
                                             </Tooltip>
-                                            <Button
-                                                isDisabled={true}
-                                                radius="full"
-                                                size="sm"
-                                                isIconOnly
-                                                variant="light"
-                                            >
-                                                <Link
-                                                    color="foreground"
-                                                    href={`${githubBaseURL}`}
-                                                >
+                                            <Button isDisabled={true} radius="full" size="sm" isIconOnly variant="light">
+                                                <Link color="foreground" href={`${githubBaseURL}`}>
                                                     <IconBrandGithub stroke={strokeWidth}/>
                                                 </Link>
                                             </Button>
-                                            <Button
-                                                isDisabled={true}
-                                                radius="full"
-                                                size="sm"
-                                                isIconOnly
-                                                variant="light"
-                                            >
-                                                <Link
-                                                    color="foreground"
-                                                    href={"#"}
-                                                >
+                                            <Button isDisabled={true} radius="full" size="sm" isIconOnly variant="light">
+                                                <Link color="foreground" href={"#"}>
                                                     <IconArrowUpRight stroke={strokeWidth}/>
                                                 </Link>
                                             </Button>
                                         </div>
                                     </CardHeader>
                                     <CardBody className="pt-1">
-                                        <Tabs
-                                            size="md"
-                                            variant="underlined"
-                                        >
+                                        <Tabs size="md" variant="underlined">
                                             <Tab
                                                 title={
                                                 <div className="flex items-center space-x-1">
                                                     <IconPencil stroke={strokeWidth}/>
                                                     <span>Description</span>
                                                 </div>
-                                            }>
+                                            }
+                                            >
                                                 <p className={"p-1"}> Tasken is an innovative task management app
                                                     currently in <span className={"underline"}>early development</span>.
                                                     Designed to enhance productivity, it offers a range of features for
@@ -133,20 +76,14 @@ const Projects = () => {
                                                     individual or part of a team, Tasken will revolutionize the way
                                                     you manage tasks! 🚀 </p>
                                             </Tab>
-                                            <Tab
-                                                isDisabled={true}
+                                            <Tab isDisabled={true}
                                                 title={
                                                 <div className="flex items-center space-x-1">
                                                     <IconPhoto stroke={strokeWidth}/>
                                                     <span>Preview</span>
                                                 </div>
                                             }>
-                                                <Image
-                                                    isZoomed
-                                                    height={300}
-                                                    src=""
-                                                    alt="preview image">
-                                                </Image>
+                                                <Image isZoomed height={300} src="" alt="preview image"></Image>
                                             </Tab>
                                         </Tabs>
                                     </CardBody>
@@ -158,51 +95,26 @@ const Projects = () => {
                             <Card className="max-w-[400px] backdrop-blur border-1 border-gray-400 shadow">
                                 <CardHeader className="flex justify-between pb-0">
                                     <div className="flex flex-col">
-                                        <Link
-                                            className="text-2xl"
-                                            href="#"
-                                            underline="under"
-                                            color="foreground"
-                                        >
+                                        <Link className="text-2xl" href="#" underline="under" color="foreground">
                                             Portfolio Website
                                         </Link>
                                         <p className="opacity-70">Website</p>
                                     </div>
                                     <div className="space-x-1">
-                                        <Button
-                                            radius="full"
-                                            size="sm"
-                                            isIconOnly
-                                            variant="light"
-                                        >
-                                        <Link
-                                            color="foreground"
-                                            href={`${githubBaseURL}portfolio-website`}
-                                        >
+                                        <Button radius="full" size="sm" isIconOnly variant="light">
+                                        <Link color="foreground" href={`${githubBaseURL}portfolio-website`}>
                                             <IconBrandGithub stroke={strokeWidth}/>
                                         </Link>
                                         </Button>
-                                        <Button
-                                            isDisabled={true}
-                                            radius="full"
-                                            size="sm"
-                                            isIconOnly
-                                            variant="light"
-                                        >
-                                            <Link
-                                                color="foreground"
-                                                href={"#"}
-                                            >
+                                        <Button isDisabled={true} radius="full" size="sm" isIconOnly variant="light">
+                                            <Link color="foreground" href={"#"}>
                                                 <IconArrowUpRight stroke={strokeWidth}/>
                                             </Link>
                                         </Button>
                                     </div>
                                 </CardHeader>
                                 <CardBody className="pt-1">
-                                    <Tabs
-                                        size="md"
-                                        variant="underlined"
-                                    >
+                                    <Tabs size="md" variant="underlined">
                                         <Tab
                                             title={
                                             <div className="flex items-center space-x-1">
@@ -214,8 +126,7 @@ const Projects = () => {
                                                 My portfolio website is the first front-end project I have undertaken. Initially developed using basic HTML and CSS, it has since been enhanced with the use of modern frameworks such as Next.js and React. It incorporates multiple JavaScript libraries to achieve a contemporary look and feel. I am delighted with the result and continue to work on it to this day, despite having made over 500 commits.
                                             </p>
                                         </Tab>
-                                        <Tab
-                                            isDisabled={true}
+                                        <Tab isDisabled={true}
                                             title={
                                             <div className="flex items-center space-x-1">
                                                 <IconPhoto stroke={strokeWidth}/>
@@ -232,59 +143,29 @@ const Projects = () => {
                             <Card className="max-w-[400px] border-1 border-gray-400 shadow">
                                 <CardHeader className="flex justify-between pb-0">
                                     <div className="flex flex-col">
-                                        <Link
-                                            className="text-2xl"
-                                            href="https://vycetka.makuyoshi.dev/"
-                                            underline="under"
-                                            color="foreground"
-                                        >
+                                        <Link className="text-2xl" href="https://vycetka.makuyoshi.dev/" underline="under" color="foreground">
                                             Výčetka
                                         </Link>
                                         <p className="opacity-70">Android, iOS, Web</p>
                                     </div>
                                     <div className="space-x-1">
-                                        <Button
-                                            radius="full"
-                                            size="sm"
-                                            isIconOnly
-                                            variant="light"
-                                            color="warning"
-                                        >
+                                        <Button radius="full" size="sm" isIconOnly variant="light" color="warning">
                                             <Link color="warning"><IconCode stroke={strokeWidth}/></Link>
                                         </Button>
-                                        <Button
-                                            radius="full"
-                                            size="sm"
-                                            isIconOnly
-                                            variant="light"
-                                        >
-                                            <Link
-                                                color="foreground"
-                                                href={`${githubBaseURL}vycetka`}
-                                            >
+                                        <Button radius="full" size="sm" isIconOnly variant="light">
+                                            <Link color="foreground" href={`${githubBaseURL}vycetka`}>
                                                 <IconBrandGithub stroke={strokeWidth}/>
                                             </Link>
                                         </Button>
-                                        <Button
-                                            radius="full"
-                                            size="sm"
-                                            isIconOnly
-                                            variant="light"
-                                        >
-                                            <Link
-                                                color="foreground"
-                                                href={"https://vycetka.makuyoshi.dev/"}
-                                            >
+                                        <Button radius="full" size="sm" isIconOnly variant="light">
+                                            <Link color="foreground" href={"https://vycetka.makuyoshi.dev/"}>
                                                 <IconArrowUpRight stroke={strokeWidth}/>
                                             </Link>
                                         </Button>
                                     </div>
                                 </CardHeader>
                                 <CardBody className="pt-1">
-                                    <Tabs
-                                        size="md"
-                                        variant="underlined"
-                                    >
+                                    <Tabs size="md" variant="underlined">
                                         <Tab
                                             title={
                                             <div className="flex items-center space-x-1">
@@ -293,7 +174,7 @@ const Projects = () => {
                                             </div>
                                         }>
                                             <p className="p-1">
-                                                Vyčetka is a mobile app built with Expo, React Native, and React Native Paper UI. It quickly and accurately counts banknotes and coins, originally starting as a web app with Bootstrap. Now, it's a handy way to manage currency denominations on the go. 💰📱
+                                                {"Vyčetka is a mobile app built with Expo, React Native, and React Native Paper UI. It quickly and accurately counts banknotes and coins, originally starting as a web app with Bootstrap. Now, it's a handy way to manage currency denominations on the go. 💰📱"}
                                             </p>
                                         </Tab>
                                         <Tab
@@ -303,13 +184,7 @@ const Projects = () => {
                                                 <span>Preview</span>
                                             </div>
                                         }>
-                                            <Image
-                                                isZoomed
-                                                height={300}
-                                                src="vycetka_preview.gif"
-                                                alt="vycetka preview image"
-                                            >
-                                            </Image>
+                                            <Image sZoomed height={300} src="vycetka_preview.gif" alt="vycetka preview image"></Image>
                                         </Tab>
                                     </Tabs>
                                 </CardBody>
@@ -317,10 +192,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </Tab>
-                <Tab
-                    key={"contributions"}
-                    title={"Contributions"}
-                >
+                <Tab key={"contributions"} title={"Contributions"}>
 
                 </Tab>
             </Tabs>
