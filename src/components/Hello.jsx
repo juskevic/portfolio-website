@@ -58,7 +58,7 @@ export default function Hello() {
                     <div className="flex flex-col pt-10 md:pt-14 justify-start">
                         <div>
                             <div className="w-[350px] md:w-[380px] pb-8">
-                                <p className={`${InterFont300.className} text-lg text-gray-400 animate-fade animate-delay-[2000ms]`}>
+                                <p className={`${InterFont300.className} text-lg text-gray-600 animate-fade animate-delay-[2000ms]`}>
                                     {"I love creating great user experiences through UI and UX design."}
                                 </p>
                             </div>
@@ -78,7 +78,7 @@ export default function Hello() {
                                     </Button>
                                 </Tooltip>
                             </div>
-                            <p className={`${workSansFont.className} text-lg sm:text-xl ${COMMON_TEXT_COLOR} animate-fade-down animate-delay-[1200ms]`}>
+                            <p className={`${InterFont300.className} text-gray-600 text-lg sm:text-xl ${COMMON_TEXT_COLOR} animate-fade-down animate-delay-[1200ms]`}>
                                 {"Frontend Engineer"}
                             </p>
                         </div>

@@ -1,9 +1,5 @@
 import React from "react";
-import {
-    Button, ButtonGroup,
-    Navbar,
-    NavbarContent,
-} from "@nextui-org/react";
+import {Button, ButtonGroup, Navbar, NavbarContent,} from "@nextui-org/react";
 import {Link} from "react-scroll";
 import {Inter} from "next/font/google";
 
@@ -19,7 +15,7 @@ export default function Header() {
         <Navbar className={`${InterFont300.className} bg-transparent blur-none backdrop-blur-none`}>
             <NavbarContent></NavbarContent>
             <NavbarContent justify="center">
-                <ButtonGroup variant="light" size="md" className="border-1 border-gray-400 shadow bg-white rounded-full bg-opacity-80 backdrop-blur-3xl">
+                <ButtonGroup variant="light" size="md" className="border-1 border-gray-800 shadow rounded-full bg-white bg-opacity-80 backdrop-blur-3xl">
                     <Button as={Link} activeClass="opacity-30" to="about" spy={true} smooth={true} offset={-90} duration={500} className="text-lg" radius="full">
                         about
                     </Button>

@@ -1,7 +1,6 @@
 // React and Next related imports
 import React, { useEffect } from 'react';
 import Head from 'next/head';
-import {Exo} from 'next/font/google';
 import { Element, Events } from 'react-scroll';
 
 // Common components imports
@@ -15,33 +14,23 @@ import Hello from "@/components/Hello.jsx";
 import AboutMe from "@/components/AboutMe.jsx";
 import Projects from "@/components/Projects.jsx";
 import Contacts from "@/components/Contacts.jsx";
-const exo = Exo({
-    weight: '300',
-    style: 'normal',
-    subsets: ['latin'],
-});
 
 const Main = () => {
     return (
         <>
             <main className="pt-16 p-6 md:p-20 xl:p-36 space-y-64 md:space-y-[300px]">
-
                 <Element name="hello" className="element">
                     <Hello />
                 </Element>
-
-                <Element name="about" className={`${exo.className} element`}>
+                <Element name="about" className={`element`}>
                     <AboutMe />
                 </Element>
-
-                <Element name="projects" className={`${exo.className} element`}>
+                <Element name="projects" className={`element`}>
                     <Projects/>
                 </Element>
-
-                <Element name="contact" className={`${exo.className} element`}>
+                <Element name="contact" className={`element`}>
                     <Contacts/>
                 </Element>
-
             </main>
         </>
     )

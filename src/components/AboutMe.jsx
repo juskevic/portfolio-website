@@ -1,24 +1,7 @@
 import React from 'react';
-import {
-    Accordion,
-    AccordionItem,
-    Button,
-    Card,
-    CardBody,
-    CardHeader,
-    Chip,
-    ScrollShadow,
-    Tab,
-    Tabs
-} from "@nextui-org/react";
+import {Accordion, AccordionItem, Button, Card, CardBody, CardHeader, Chip, ScrollShadow, Tab, Tabs} from "@nextui-org/react";
 import {Inter} from "next/font/google";
-import {
-    IconArrowUpRight,
-    IconBrandHtml5, IconBrandReact, IconBrandJavascript, IconBrandCss3,
-    IconBrandBootstrap, IconBrandNextjs,
-    IconBrandTailwind, IconBrandFramerMotion, IconBrandNodejs,
-    IconBrandGit, IconBrandNpm, IconSparkles, IconClock, IconNotes
-} from "@tabler/icons-react"
+import {IconArrowUpRight, IconBrandHtml5, IconBrandReact, IconBrandJavascript, IconBrandCss3, IconBrandBootstrap, IconBrandNextjs, IconBrandTailwind, IconBrandFramerMotion, IconBrandNodejs, IconBrandGit, IconBrandNpm, IconSparkles, IconClock, IconNotes} from "@tabler/icons-react"
 
 const InterFont300 = Inter({
     weight: '300',
