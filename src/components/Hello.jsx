@@ -12,12 +12,6 @@ const caveat = Caveat({
     subsets: ['latin'],
 });
 
-const workSansFont = Work_Sans({
-    weight: '300',
-    style: 'normal',
-    subsets: ['latin'],
-});
-
 const poppinsFont = Poppins({
     weight: '500',
     style: 'normal',
