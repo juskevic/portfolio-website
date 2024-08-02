@@ -3,9 +3,6 @@ import {Card, CardBody, CardHeader, Link} from "@nextui-org/react";
 import {IconBrandGithub, IconBrandTelegram, IconBrandLinkedin, IconMail, IconBrandUpwork, IconBrandMedium } from "@tabler/icons-react";
 
 export default function Socials() {
-
-    const commonStroke = 1.5
-
     return (
         <>
             <div className="flex justify-center max-w-screen-2xl">
