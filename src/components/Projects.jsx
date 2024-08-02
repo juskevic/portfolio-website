@@ -1,11 +1,9 @@
 import React  from 'react';
-import {Card, CardHeader, CardBody, Link, Button, Tabs, Tab, Image, CardFooter, Chip} from "@nextui-org/react";
+import {Card, CardHeader, CardBody, Button, Tabs, Tab, Image, Chip} from "@nextui-org/react";
 import {IconBrandGithub, IconArrowUpRight, IconBrandGooglePlay, IconBrandAppstore, IconAlertCircle} from "@tabler/icons-react";
 
 const Projects = () => {
 
-    const githubBaseURL = "https://github.com/maxyushkevich/"
-    const strokeWidth = 1.5
     const cardClassName = "shadow-none bg-opacity-25 xl:w-1/3"
 
     return (
