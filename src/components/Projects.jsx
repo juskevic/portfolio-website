@@ -1,6 +1,6 @@
 import React  from 'react';
-import {Card, CardHeader, CardBody, Link, Button, Tabs, Tab, Image} from "@nextui-org/react";
-import {IconBrandGithub, IconArrowUpRight, IconCode, IconPhoto, IconPencil} from "@tabler/icons-react";
+import {Card, CardHeader, CardBody, Link, Button, Tabs, Tab, Image, CardFooter, Chip} from "@nextui-org/react";
+import {IconBrandGithub, IconArrowUpRight, IconBrandGooglePlay, IconBrandAppstore, IconAlertCircle} from "@tabler/icons-react";
 
 const Projects = () => {
 
@@ -40,6 +40,23 @@ const Projects = () => {
                                     <Tab title={<span className="text-medium md:text-lg">Preview</span>}>
                                         <Image isZoomed height={300} src="" alt="preview image"></Image>
                                     </Tab>
+                                    <Tab title={<span className="text-medium md:text-lg">Links</span>}>
+                                        <div className="space-x-3 space-y-3 md:flex-row xl:flex-col flex-col pb-5">
+                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandGithub stroke={1.5}/>}>
+                                                source-code
+                                            </Button>
+                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconArrowUpRight stroke={1.5}/>}>
+                                                website
+                                            </Button>
+                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandAppstore stroke={1.5}/>}>
+                                                app store
+                                            </Button>
+                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandGooglePlay stroke={1.5}/>}>
+                                                google play
+                                            </Button>
+                                        </div>
+                                        <Chip className="!text-center" startContent={<IconAlertCircle stroke={1.5}/>} color="warning" variant="flat">This project is currently under development.</Chip>
+                                    </Tab>
                                 </Tabs>
                             </CardBody>
                         </Card>
@@ -64,8 +81,15 @@ const Projects = () => {
                                             commits.
                                         </p>
                                     </Tab>
-                                    <Tab isDisabled={true} title={<span className="text-medium md:text-lg">Preview</span>}>
+                                    <Tab title={<span className="text-medium md:text-lg">Preview</span>}>
                                         <Image isZoomed height={300} src="" alt="preview image"></Image>
+                                    </Tab>
+                                    <Tab title={<span className="text-medium md:text-lg">Links</span>}>
+                                        <div className="space-x-3 space-y-3 md:flex-row xl:flex-col flex-col">
+                                            <Button as="a" href="https://github.com/juskevic/portfolio-website" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandGithub stroke={1.5}/>}>
+                                                source-code
+                                            </Button>
+                                        </div>
                                     </Tab>
                                 </Tabs>
                             </CardBody>
@@ -85,8 +109,25 @@ const Projects = () => {
                                             {"Vyčetka is a mobile app built with Expo, React Native, and React Native Paper UI. It quickly and accurately counts banknotes and coins, originally starting as a web app with Bootstrap. Now, it's a handy way to manage currency denominations on the go. 💰📱"}
                                         </p>
                                     </Tab>
-                                    <Tab isDisabled={true} title={<span className="text-medium md:text-lg">Preview</span>}>
+                                    <Tab title={<span className="text-medium md:text-lg">Preview</span>}>
                                         <Image isZoomed height={300} src="" alt="preview image"></Image>
+                                    </Tab>
+                                    <Tab title={<span className="text-medium md:text-lg">Links</span>}>
+                                        <div className="space-x-3 space-y-3 md:flex-row xl:flex-col flex-col pb-5">
+                                            <Button as="a" href="https://github.com/juskevic/vycetka-app" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandGithub stroke={1.5}/>}>
+                                                source-code
+                                            </Button>
+                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconArrowUpRight stroke={1.5}/>}>
+                                                website
+                                            </Button>
+                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandAppstore stroke={1.5}/>}>
+                                                app store
+                                            </Button>
+                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandGooglePlay stroke={1.5}/>}>
+                                                google play
+                                            </Button>
+                                        </div>
+                                        <Chip className="!text-center" startContent={<IconAlertCircle stroke={1.5}/>} color="warning" variant="flat">This project is currently under development.</Chip>
                                     </Tab>
                                 </Tabs>
                             </CardBody>
