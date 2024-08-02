@@ -1,14 +1,6 @@
 import React from 'react';
-import {Card, CardBody, Link} from "@nextui-org/react";
-import {IconBrandGithub, IconBrandTelegram, IconBrandLinkedin, IconMail, IconBrandUpwork } from "@tabler/icons-react";
-import {Inter} from "next/font/google";
-
-const InterFont300 = Inter({
-    weight: '300',
-    style: 'normal',
-    subsets: ['latin'],
-});
-
+import {Card, CardBody, CardHeader, Link} from "@nextui-org/react";
+import {IconBrandGithub, IconBrandTelegram, IconBrandLinkedin, IconMail, IconBrandUpwork, IconBrandMedium } from "@tabler/icons-react";
 
 export default function Socials() {
 
@@ -16,63 +8,64 @@ export default function Socials() {
 
     return (
         <>
-            <div className={`${InterFont300.className} flex justify-center`}>
-                <Card className="border-1 border-gray-400 shadow">
-                    <CardBody className="flex flex-col gap-3">
-                        <div className="flex flex-row justify-between gap-15 md:gap-20 md:text-xl">
-                            <div className="flex flex-row">
-                                <IconMail stroke={commonStroke}></IconMail>
-                                <p>Mail</p>
+            <div className="flex justify-center max-w-screen-2xl">
+                <Card className="shadow-none bg-opacity-25 md:w-[600px]">
+                    <CardHeader>
+                        <h2 className="font-medium text-2xl md:text-3xl xl:text-4xl !text-left">{"Let's get in touch"}</h2>
+                    </CardHeader>
+                    <CardBody className="flex flex-col gap-5">
+                        <div className="flex flex-row flew-wrap justify-between">
+                            <div className="flex flex-row md:gap-1">
+                                <IconMail stroke={1.5} size="30"/>
+                                <p className="text-xl">{"Email me. "}</p>
                             </div>
-                            <div className="flex flex-row">
-                                <Link href="mailto:contact@maxyushkevich.com" underline="always" color="foreground" isDisabled={true} className="md:text-xl" target="_blank">
-                                    contact@maxyushkevich.com
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="flex flex-row justify-between gap-20 md:text-xl">
-                            <div className="flex flex-row">
-                                <IconBrandGithub stroke={commonStroke}></IconBrandGithub>
-                                <p>GitHub</p>
-                            </div>
-                            <div className="flex flex-row">
-                                <Link href="https://github.com/juskevic" underline="always" color="foreground" className="md:text-xl" target="_blank">
-                                    @juskevic
-                                </Link>
+                            <div>
+                                <Link color="foreground" className="text-xl" underline="always" href="#">hello@juskevic.com</Link>
                             </div>
                         </div>
-                        <div className="flex flex-row justify-between gap-20 md:text-xl">
-                            <div className="flex flex-row">
-                                <IconBrandTelegram stroke={commonStroke}></IconBrandTelegram>
-                                <p>Telegram</p>
+                        <div className="flex flex-row flew-wrap justify-between">
+                            <div className="flex flex-row md:gap-1">
+                                <IconBrandGithub stroke={1.5} size="30"/>
+                                <p className="text-xl">{"See my work. "}</p>
                             </div>
-                            <div className="flex flex-row">
-                                <Link href="https://t.me/juskevic" underline="always" color="foreground" className="md:text-xl" target="_blank">
-                                    me/juskevic
-                                </Link>
+                            <div>
+                                <Link color="foreground" className="text-xl" underline="always" href="#">@juskevic</Link>
                             </div>
                         </div>
-                        <div className="flex flex-row justify-between gap-20 md:text-xl">
-                            <div className="flex flex-row">
-                                <IconBrandLinkedin stroke={commonStroke}></IconBrandLinkedin>
-                                <p>LinkedIn</p>
+                        <div className="flex flex-row flew-wrap justify-between">
+                            <div className="flex flex-row md:gap-1">
+                                <IconBrandLinkedin stroke={1.5} size="30"/>
+                                <p className="text-xl">{"Connect with my network. "}</p>
                             </div>
-                            <div className="flex flex-row">
-                                <Link href="https://www.linkedin.com/in/maxjuskevic/" underline="always" color="foreground" className="md:text-xl" target="_blank">
-                                    in/maxjuskevic
-                                </Link>
+                            <div>
+                                <Link color="foreground" className="text-xl" underline="always" href="#">in/maxjuskevic</Link>
                             </div>
                         </div>
-                        <div className="flex flex-row justify-between gap-20 md:text-xl">
-                            <div className="flex flex-row">
-                                <IconBrandUpwork stroke={commonStroke}></IconBrandUpwork>
-                                <p>Upwork</p>
+                        <div className="flex flex-row flew-wrap justify-between">
+                            <div className="flex flex-row md:gap-1">
+                                <IconBrandTelegram stroke={1.5} size="30"/>
+                                <p className="text-xl">{"Message me. "}</p>
                             </div>
-                            <div className="flex flex-row">
-                                <Link href="https://www.upwork.com/freelancers/~01f6c71aea76152016" underline="always" color="foreground"
-                                      className="md:text-xl" target="_blank">
-                                    maxjuskevic
-                                </Link>
+                            <div>
+                                <Link color="foreground" className="text-xl" underline="always" href="#">me/juskevic</Link>
+                            </div>
+                        </div>
+                        <div className="flex flex-row flew-wrap justify-between">
+                            <div className="flex flex-row md:gap-1">
+                                <IconBrandUpwork stroke={1.5} size="30"/>
+                                <p className="text-xl">{"Do you need a website? "}</p>
+                            </div>
+                            <div>
+                                <Link color="foreground" className="text-xl" underline="always" href="#">maxjuskevic</Link>
+                            </div>
+                        </div>
+                        <div className="flex flex-row flew-wrap justify-between">
+                            <div className="flex flex-row md:gap-1">
+                                <IconBrandMedium stroke={1.5} size="30"/>
+                                <p className="text-xl">{"Read my blog."}</p>
+                            </div>
+                            <div>
+                                <Link color="foreground" className="text-xl" underline="always" href="#">@juskevic</Link>
                             </div>
                         </div>
                     </CardBody>
