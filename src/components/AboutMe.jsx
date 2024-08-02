@@ -15,8 +15,8 @@ export default function AboutMe() {
                     <div className="flex flex-col xl:flex-row md:justify-between gap-12">
                         <Card className={`${borderClassName} xl:w-1/2`}>
                             <CardHeader className="z-10 flex-row justify-between">
-                                <div className={headerStyling}>
-                                    {"Hi there! 👋"}
+                                <div className={`${headerStyling} underline`}>
+                                    {"Hi there!"}
                                 </div>
                                 <div>
                                     <Button  radius="full" variant="light" className={`border-1 border-gray-800 shadow-none bg-white text-medium md:text-lg`}>
