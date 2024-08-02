@@ -16,7 +16,7 @@ export default function AboutMe() {
                         <Card className={`${borderClassName} xl:w-1/2`}>
                             <CardHeader className="z-10 flex-row justify-between">
                                 <div className={`${headerStyling} underline`}>
-                                    {"Hi there!"}
+                                    {"Hello."}
                                 </div>
                                 <div>
                                     <Button  radius="full" variant="light" className={`border-1 border-gray-800 shadow-none bg-white text-medium md:text-lg`}>
@@ -25,7 +25,7 @@ export default function AboutMe() {
                                 </div>
                             </CardHeader>
                             <CardBody className="text-xl md:text-2xl">
-                                {"I'm a self-taught front-end developer with a passion for creating user experiences. I specialize in UI design and love crafting intuitive interfaces."}
+                                {"I’m Max, a self-taught Frontend Engineer with a passion for UI and UX design. My expertise lies in creating seamless web experiences using technologies like HTML, CSS, and JavaScript. From optimizing performance to crafting elegant interfaces, I’m dedicated to enhancing user interactions. "}
                             </CardBody>
                         </Card>
                         <Card className={`${borderClassName} xl:w-1/2`}>
@@ -41,7 +41,7 @@ export default function AboutMe() {
                             </CardHeader>
                             <CardBody className="pt-0 h-[250px] xl:h-[180px]">
                                 <Tabs size="lg" variant="underlined">
-                                    <Tab title="Frontend">
+                                    <Tab title={<span className="text-medium md:text-lg">Frontend</span>}>
                                         <ScrollShadow hideScrollBar={true}>
                                             <Card className="shadow-none bg-white">
                                                 <CardBody className="flex flex-row flex-wrap w-auto gap-2">
@@ -73,7 +73,7 @@ export default function AboutMe() {
                                             </Card>
                                         </ScrollShadow>
                                     </Tab>
-                                    <Tab title="Other">
+                                    <Tab title={<span className="text-medium md:text-lg">Other</span>}>
                                         <Card className="shadow-none bg-white">
                                             <CardBody className="flex flex-row flex-wrap w-auto gap-2">
                                                 <Chip className="border-2 border-green-700" variant="light" endContent={<IconBrandNodejs stroke={1}/>}>
