@@ -17,7 +17,7 @@ export default function Socials() {
                                 <p className="text-xl">{"Email me. "}</p>
                             </div>
                             <div>
-                                <Link color="foreground" className="text-xl" underline="always" href="#">hello@juskevic.com</Link>
+                                <Link isDisabled={true} color="foreground" className="text-xl" underline="always" href="mailto:hello@juskevic.com">hello@juskevic.com</Link>
                             </div>
                         </div>
                         <div className="flex flex-row flew-wrap justify-between">
@@ -26,7 +26,7 @@ export default function Socials() {
                                 <p className="text-xl">{"See my work. "}</p>
                             </div>
                             <div>
-                                <Link color="foreground" className="text-xl" underline="always" href="#">@juskevic</Link>
+                                <Link color="foreground" className="text-xl" underline="always" href="https://github.com/juskevic">@juskevic</Link>
                             </div>
                         </div>
                         <div className="flex flex-row flew-wrap justify-between">
@@ -35,7 +35,7 @@ export default function Socials() {
                                 <p className="text-xl">{"Connect with my network. "}</p>
                             </div>
                             <div>
-                                <Link color="foreground" className="text-xl" underline="always" href="#">in/maxjuskevic</Link>
+                                <Link color="foreground" className="text-xl" underline="always" href="https://www.linkedin.com/in/maxjuskevic/">in/maxjuskevic</Link>
                             </div>
                         </div>
                         <div className="flex flex-row flew-wrap justify-between">
@@ -44,7 +44,7 @@ export default function Socials() {
                                 <p className="text-xl">{"Message me. "}</p>
                             </div>
                             <div>
-                                <Link color="foreground" className="text-xl" underline="always" href="#">me/juskevic</Link>
+                                <Link color="foreground" className="text-xl" underline="always" href="https://t.me/juskevic">me/juskevic</Link>
                             </div>
                         </div>
                         <div className="flex flex-row flew-wrap justify-between">
@@ -53,7 +53,7 @@ export default function Socials() {
                                 <p className="text-xl">{"Do you need a website? "}</p>
                             </div>
                             <div>
-                                <Link color="foreground" className="text-xl" underline="always" href="#">maxjuskevic</Link>
+                                <Link color="foreground" className="text-xl" underline="always" href="https://www.upwork.com/freelancers/~01f6c71aea76152016">maxjuskevic</Link>
                             </div>
                         </div>
                         <div className="flex flex-row flew-wrap justify-between">
@@ -62,7 +62,7 @@ export default function Socials() {
                                 <p className="text-xl">{"Read my blog."}</p>
                             </div>
                             <div>
-                                <Link color="foreground" className="text-xl" underline="always" href="#">@juskevic</Link>
+                                <Link color="foreground" className="text-xl" underline="always" href="https://medium.com/@juskevic">@juskevic</Link>
                             </div>
                         </div>
                     </CardBody>
