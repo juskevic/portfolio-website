@@ -108,7 +108,7 @@ const Projects = () => {
                                         </p>
                                     </Tab>
                                     <Tab title={<span className="text-medium md:text-lg">Preview</span>}>
-                                        <Image isZoomed height={300} src="" alt="preview image"></Image>
+                                        <Image isZoomed height={300} src="/vycetka_preview_1.png" alt="preview image"></Image>
                                     </Tab>
                                     <Tab title={<span className="text-medium md:text-lg">Links</span>}>
                                         <div className="space-x-3 space-y-3 md:flex-row xl:flex-col flex-col pb-5">
