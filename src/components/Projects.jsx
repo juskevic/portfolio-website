@@ -112,10 +112,7 @@ const Projects = () => {
                                     </Tab>
                                     <Tab title={<span className="text-medium md:text-lg">Links</span>}>
                                         <div className="space-x-3 space-y-3 md:flex-row xl:flex-col flex-col pb-5">
-                                            <Button as="a" href="https://github.com/juskevic/vycetka-app" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandGithub stroke={1.5}/>}>
-                                                source-code
-                                            </Button>
-                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconArrowUpRight stroke={1.5}/>}>
+                                            <Button as="a" href="https://vycetka.juskevic.com/" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconArrowUpRight stroke={1.5}/>}>
                                                 website
                                             </Button>
                                             <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandAppstore stroke={1.5}/>}>

@@ -1,6 +1,23 @@
 import React from 'react';
 import {Accordion, AccordionItem, Button, Card, CardBody, CardHeader, Chip, ScrollShadow, Tab, Tabs} from "@nextui-org/react";
-import {IconBrandHtml5, IconBrandReact, IconBrandJavascript, IconBrandCss3, IconBrandBootstrap, IconBrandNextjs, IconBrandTailwind, IconBrandFramerMotion, IconBrandNodejs, IconBrandGit, IconBrandNpm, IconSparkles, IconClock, IconNotes} from "@tabler/icons-react"
+import {
+    IconBrandHtml5,
+    IconBrandReact,
+    IconBrandJavascript,
+    IconBrandCss3,
+    IconBrandBootstrap,
+    IconBrandNextjs,
+    IconBrandTailwind,
+    IconBrandFramerMotion,
+    IconBrandNodejs,
+    IconBrandGit,
+    IconBrandNpm,
+    IconSparkles,
+    IconClock,
+    IconNotes,
+    IconCode,
+    IconBrandTypescript
+} from "@tabler/icons-react"
 
 export default function AboutMe() {
 
@@ -54,6 +71,9 @@ export default function AboutMe() {
                                                     <Chip className="border-2 border-yellow-400" variant="light" endContent={<IconBrandJavascript stroke={1}/>}>
                                                         JavaScript
                                                     </Chip>
+                                                    <Chip className="border-2 border-blue-600" variant="light" endContent={<IconBrandTypescript stroke={1}/>}>
+                                                        TypeScript
+                                                    </Chip>
                                                     <Chip className="border-2 border-purple-500" variant="light" endContent={<IconBrandBootstrap stroke={1}/>}>
                                                         Bootstrap
                                                     </Chip>
@@ -68,6 +88,12 @@ export default function AboutMe() {
                                                     </Chip>
                                                     <Chip className="border-2 border-stone-600" variant="light" endContent={<IconBrandFramerMotion stroke={1}/>}>
                                                         Framer Motion
+                                                    </Chip>
+                                                    <Chip className="border-2 border-cyan-600" variant="light" endContent={<IconBrandReact stroke={1}/>}>
+                                                        React Native
+                                                    </Chip>
+                                                    <Chip className="border-2 border-gray-950" variant="light" endContent={<IconCode stroke={1}/>}>
+                                                        Expo
                                                     </Chip>
                                                 </CardBody>
                                             </Card>
