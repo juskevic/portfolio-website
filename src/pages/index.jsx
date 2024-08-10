@@ -64,13 +64,13 @@ const HomePage = () => {
                 <meta name="description"
                       content="Max's portfolio website. Built on top of Next.js, using React & NextUI."/>
                 <meta name="robots" content="index, follow"/>
-                <link rel="canonical" href="https://wwww.maxyushkevich.com"/>
-                <link rel="alternate" hrefLang="en-us" href="https://wwww.maxyushkevich.com"/>
+                <link rel="canonical" href="https://wwww.juskevic.com"/>
+                <link rel="alternate" hrefLang="en-us" href="https://wwww.juskevic.com"/>
                 <link rel="icon" href="/favicon.ico"/>
 
                 <meta property="og:title" content="Max Juškevič: Frontend Engineer"/>
                 <meta property="og:description" content="Max's portfolio website. Build on top of Next.js, using React & NextUI. 💫"/>
-                <meta property="og:url" content="https://www.maxyushkevich.com"/>
+                <meta property="og:url" content="https://www.juskevic.com"/>
             </Head>
             <div className="light text-foreground inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
                 <Header />

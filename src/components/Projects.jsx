@@ -8,12 +8,11 @@ const Projects = () => {
 
     return (
         <>
-            <div className="flex flex-center max-w-screen-2xl">
+            <div className="flex justify-center">
                 <div className="flex flex-col">
                     <div className="flex flex-col xl:flex-row justify-evenly">
                         <Card className={cardClassName}>
                             <CardHeader className="flex gap-3 pb-1">
-                                <Image alt="tasken logo" height={50} radius="md" src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4" width={50}/>
                                 <div className="flex flex-col">
                                     <p className="text-2xl">Tasken</p>
                                     <p className="text-lg text-gray-600">Android, iOS</p>
@@ -60,7 +59,6 @@ const Projects = () => {
                         </Card>
                         <Card className={cardClassName}>
                             <CardHeader className="flex gap-3 pb-1">
-                                <Image alt="tasken logo" height={50} radius="md" src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4" width={50}/>
                                 <div className="flex flex-col">
                                     <p className="text-2xl">Portfolio Website</p>
                                     <p className="text-lg text-gray-600">Website</p>

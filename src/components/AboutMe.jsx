@@ -38,7 +38,7 @@ export default function AboutMe() {
 
     return (
         <>
-            <div className="flex justify-center xl:h-[500px]">
+            <div className="flex justify-center">
                 <div className="flex flex-col">
                     <div className="flex flex-col xl:flex-row md:justify-between gap-12">
                         <Card className={`${borderClassName} xl:w-1/2`}>
