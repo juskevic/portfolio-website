@@ -53,7 +53,8 @@ export default function Hello() {
                         <div>
                             <div className="w-[350px] md:w-[380px] pb-8">
                                 <p className={`${InterFont300.className} text-lg text-gray-600 animate-fade animate-delay-[2000ms]`}>
-                                    {"I love creating great user experiences through UI and UX design."}
+                                    <span>{"I love creating great user experiences through "}</span>
+                                    <span className="bg-green-400 bg-opacity-20 rounded">{"UI and UX design."}</span>
                                 </p>
                             </div>
                             <div className="flex flex-row space-x-1">

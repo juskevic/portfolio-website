@@ -41,8 +41,17 @@ export default function AboutMe() {
                                     </Button>
                                 </div>
                             </CardHeader>
-                            <CardBody className="text-xl md:text-2xl">
-                                {"I’m Max, a self-taught Frontend Engineer with a passion for UI and UX design. My expertise lies in creating seamless web experiences using technologies like HTML, CSS, and JavaScript. From optimizing performance to crafting elegant interfaces, I’m dedicated to enhancing user interactions. "}
+                            <CardBody className="text-xl md:text-2xl inline">
+                                <span>{"I’m Max, a "}</span>
+                                <span className="bg-green-400 bg-opacity-20 rounded">{"self-taught"}</span>
+                                <span>{" Frontend Engineer with a passion for UI and UX design. My expertise lies in creating seamless web experiences using technologies like "}</span>
+                                <span className="bg-cyan-700 bg-opacity-20 rounded">{"React"}</span>
+                                <span>{", "}</span>
+                                <span className="bg-blue-600 bg-opacity-20 rounded">{" TypeScript"}</span>
+                                <span>{" and "}</span>
+                                <span className="bg-gray-800 bg-opacity-20 rounded">{"NEXT"}</span>
+                                <span>{"."}</span>
+                                <span>{" From optimizing performance to crafting elegant interfaces, I’m dedicated to enhancing user interactions."}</span>
                             </CardBody>
                         </Card>
                         <Card className={`${borderClassName} xl:w-1/2`}>

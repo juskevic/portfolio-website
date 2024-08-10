@@ -6,7 +6,7 @@ export default function Socials() {
     return (
         <ButtonGroup size="md" variant="light">
 
-            <Button as="a" target="_blank" isIconOnly href="mailto:contact@maxyushkevich.com" isDisabled={true}>
+            <Button as="a" target="_blank" isIconOnly href="mailto:hello@juskevic.com">
                 <IconMail stroke={1.5} color="black"/>
             </Button>
 
