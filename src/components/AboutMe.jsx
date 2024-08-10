@@ -32,8 +32,9 @@ export default function AboutMe() {
                     <div className="flex flex-col xl:flex-row md:justify-between gap-12">
                         <Card className={`${borderClassName} xl:w-1/2`}>
                             <CardHeader className="z-10 flex-row justify-between">
-                                <div className={`${headerStyling} underline`}>
-                                    {"Hello."}
+                                <div className={`${headerStyling} inline`}>
+                                    <span className="underline">{"Hello."}</span>
+                                    <span>{"👋"}</span>
                                 </div>
                                 <div>
                                     <Button  radius="full" variant="light" className={`border-1 border-gray-800 shadow-none bg-white text-medium md:text-lg`}>
@@ -68,7 +69,7 @@ export default function AboutMe() {
                             <CardBody className="pt-0 h-[250px] xl:h-[180px]">
                                 <Tabs size="lg" variant="underlined">
                                     <Tab title={<span className="text-medium md:text-lg">Frontend</span>}>
-                                        <ScrollShadow hideScrollBar={true}>
+                                        <ScrollShadow hideScrollBar={true} className="max-h-36">
                                             <Card className="shadow-none bg-white">
                                                 <CardBody className="flex flex-row flex-wrap w-auto gap-2">
                                                     <Chip className="border-2 border-orange-600" variant="light" endContent={<IconBrandHtml5 stroke={1}/>}>
