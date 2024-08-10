@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, CardBody, CardHeader, Link} from "@nextui-org/react";
+import {Card, CardBody, CardHeader, Divider, Link} from "@nextui-org/react";
 import {IconBrandGithub, IconBrandTelegram, IconBrandLinkedin, IconMail, IconBrandUpwork, IconBrandMedium } from "@tabler/icons-react";
 
 export default function Socials() {
@@ -8,8 +8,9 @@ export default function Socials() {
             <div className="flex justify-center max-w-screen-2xl">
                 <Card className="shadow-none bg-opacity-25 md:w-[600px]">
                     <CardHeader>
-                        <h2 className="font-medium text-2xl md:text-3xl xl:text-4xl !text-left">{"Let's get in touch"}</h2>
+                        <h2 className="font-medium text-3xl md:text-4xl !text-left">{"Let's get in touch"}</h2>
                     </CardHeader>
+                    <Divider />
                     <CardBody className="flex flex-col gap-5">
                         <div className="flex flex-row flew-wrap justify-between">
                             <div className="flex flex-row md:gap-1">
@@ -17,7 +18,7 @@ export default function Socials() {
                                 <p className="text-xl">{"Email me. "}</p>
                             </div>
                             <div>
-                                <Link isDisabled={true} color="foreground" className="text-xl" underline="always" href="mailto:hello@juskevic.com">hello@juskevic.com</Link>
+                                <Link color="foreground" className="text-xl" underline="always" href="mailto:hello@juskevic.com">hello@juskevic.com</Link>
                             </div>
                         </div>
                         <div className="flex flex-row flew-wrap justify-between">

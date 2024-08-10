@@ -1,5 +1,16 @@
 import React from 'react';
-import {Accordion, AccordionItem, Button, Card, CardBody, CardHeader, Chip, ScrollShadow, Tab, Tabs} from "@nextui-org/react";
+import {
+    Accordion,
+    AccordionItem,
+    Button,
+    Card,
+    CardBody,
+    CardHeader,
+    Chip,
+    ScrollShadow,
+    Tab,
+    Tabs
+} from "@nextui-org/react";
 import {
     IconBrandHtml5,
     IconBrandReact,
