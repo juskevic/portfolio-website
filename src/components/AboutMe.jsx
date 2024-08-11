@@ -4,8 +4,7 @@ import {
     Card, CardBody, CardHeader,
     Chip,
     ScrollShadow,
-    Tab, Tabs,
-    useDisclosure
+    Tab, Tabs
 } from "@nextui-org/react";
 import {
     IconBrandHtml5,
