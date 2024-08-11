@@ -1,8 +1,29 @@
-import React  from 'react';
+import React, {useEffect, useRef} from 'react';
 import {Card, CardHeader, CardBody, Button, Tabs, Tab, Image, Chip} from "@nextui-org/react";
 import {IconBrandGithub, IconArrowUpRight, IconBrandGooglePlay, IconBrandAppstore, IconAlertCircle} from "@tabler/icons-react";
 
 const Projects = () => {
+
+    const AnimateDivProjects1 = useRef(null);
+    const AnimateDivProjects2 = useRef(null);
+
+    useEffect(() => {
+        let observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-down', 'animate-once');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        if (AnimateDivProjects1.current) observer.observe(AnimateDivProjects1.current);
+        if (AnimateDivProjects2.current) observer.observe(AnimateDivProjects2.current);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
 
     const cardClassName = "shadow-none bg-opacity-25 xl:w-1/2"
 
@@ -11,8 +32,9 @@ const Projects = () => {
             <div className="flex justify-center">
                 <div className="flex flex-col">
                     <div className="flex flex-col xl:flex-row justify-evenly xl:h-[500px]">
-                        <Card className={cardClassName}>
+                        <Card ref={AnimateDivProjects1} className={cardClassName}>
                             <CardHeader className="flex gap-3 pb-1">
+                                <Image className="outline-2 outline outline-neutral-600" alt="portfolio website logo" height={50} radius="md" src="/favicon.ico" width={50}/>
                                 <div className="flex flex-col">
                                     <p className="text-2xl">Portfolio Website</p>
                                     <p className="text-lg text-gray-600">Website</p>
@@ -44,7 +66,7 @@ const Projects = () => {
                                 </Tabs>
                             </CardBody>
                         </Card>
-                        <Card className={cardClassName}>
+                        <Card ref={AnimateDivProjects2} className={cardClassName}>
                             <CardHeader className="flex gap-3 pb-1">
                                 <Image alt="vycetka logo" height={50} radius="md" src="vycetkaLogo.png" width={50}/>
                                 <div className="flex flex-col">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import {
     Accordion, AccordionItem,
     Card, CardBody, CardHeader,
@@ -29,6 +29,29 @@ import ReadMyStoryModal from "@/components/ReadMyStoryModal.jsx";
 
 export default function AboutMe() {
 
+    const AnimateDivAbout1 = useRef(null);
+    const AnimateDivAbout2 = useRef(null);
+    const AnimateDivAbout3 = useRef(null);
+
+    useEffect(() => {
+        let observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-down', 'animate-once');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        if (AnimateDivAbout1.current) observer.observe(AnimateDivAbout1.current);
+        if (AnimateDivAbout2.current) observer.observe(AnimateDivAbout2.current);
+        if (AnimateDivAbout3.current) observer.observe(AnimateDivAbout3.current);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
+
     const borderClassName = "shadow-none bg-opacity-25"
     const headerStyling = "font-medium text-2xl md:text-3xl xl:text-4xl"
     const textStyling = "text-xl"
@@ -38,7 +61,7 @@ export default function AboutMe() {
             <div className="flex justify-center">
                 <div className="flex flex-col">
                     <div className="flex flex-col xl:flex-row md:justify-between gap-12">
-                        <Card className={`${borderClassName} xl:w-1/2`}>
+                        <Card ref={AnimateDivAbout1} className={`${borderClassName} xl:w-1/2`}>
                             <CardHeader className="z-10 flex-row justify-between">
                                 <div className={`${headerStyling} inline`}>
                                     <span className="underline">{"Hello."}</span>
@@ -61,7 +84,7 @@ export default function AboutMe() {
                                 <span>{" From optimizing performance to crafting elegant interfaces, I’m dedicated to enhancing user interactions."}</span>
                             </CardBody>
                         </Card>
-                        <Card className={`${borderClassName} xl:w-1/2`}>
+                        <Card ref={AnimateDivAbout2} className={`${borderClassName} xl:w-1/2`}>
                             <CardHeader className="z-10 flex-col !items-start">
                                 <div className="flex flex-col">
                                     <p className={`text-lg text-gray-600`}>
@@ -135,7 +158,7 @@ export default function AboutMe() {
                         </Card>
                     </div>
                     <div className="flex flex-col md:flex-row">
-                        <Card className={`${borderClassName} xl:w-1/2 md:max-h-[500px]`}>
+                        <Card ref={AnimateDivAbout3} className={`${borderClassName} xl:w-1/2 md:max-h-[500px]`}>
                             <CardHeader className="z-10 flex-col !items-start">
                                 <div className="text-lg text-gray-600">
                                     Press to expand
