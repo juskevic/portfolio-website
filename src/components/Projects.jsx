@@ -4,59 +4,13 @@ import {IconBrandGithub, IconArrowUpRight, IconBrandGooglePlay, IconBrandAppstor
 
 const Projects = () => {
 
-    const cardClassName = "shadow-none bg-opacity-25 xl:w-1/3"
+    const cardClassName = "shadow-none bg-opacity-25 xl:w-1/2"
 
     return (
         <>
             <div className="flex justify-center">
                 <div className="flex flex-col">
-                    <div className="flex flex-col xl:flex-row justify-evenly">
-                        <Card className={cardClassName}>
-                            <CardHeader className="flex gap-3 pb-1">
-                                <div className="flex flex-col">
-                                    <p className="text-2xl">Tasken</p>
-                                    <p className="text-lg text-gray-600">Android, iOS</p>
-                                </div>
-                            </CardHeader>
-                            <CardBody className="pt-0">
-                                <Tabs size="md" variant="underlined">
-                                    <Tab title={<span className="text-medium md:text-lg">Description</span>}>
-                                        <p className="text-medium md:text-lg"> Tasken is an innovative task management app
-                                            currently in <span
-                                                className={"underline"}>early development</span>.
-                                            Designed to enhance productivity, it offers a range of features
-                                            for
-                                            efficient task organization. Create, assign, and track tasks
-                                            seamlessly, and stay tuned for upcoming enhancements like
-                                            subtasks,
-                                            Gantt chart visualization, and project templates. Whether you’re
-                                            an
-                                            individual or part of a team, Tasken will revolutionize the way
-                                            you manage tasks! 🚀 </p>
-                                    </Tab>
-                                    <Tab title={<span className="text-medium md:text-lg">Preview</span>}>
-                                        <Image isZoomed height={300} src="" alt="preview image"></Image>
-                                    </Tab>
-                                    <Tab title={<span className="text-medium md:text-lg">Links</span>}>
-                                        <div className="space-x-3 space-y-3 md:flex-row xl:flex-col flex-col pb-5">
-                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandGithub stroke={1.5}/>}>
-                                                source-code
-                                            </Button>
-                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconArrowUpRight stroke={1.5}/>}>
-                                                website
-                                            </Button>
-                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandAppstore stroke={1.5}/>}>
-                                                app store
-                                            </Button>
-                                            <Button isDisabled={true} as="a" href="" className="border-1 border-gray-800 shadow-none bg-white text-medium" radius="md" variant="ghost" size="sm" endContent={<IconBrandGooglePlay stroke={1.5}/>}>
-                                                google play
-                                            </Button>
-                                        </div>
-                                        <Chip className="!text-center" startContent={<IconAlertCircle stroke={1.5}/>} color="warning" variant="flat">This project is currently under development.</Chip>
-                                    </Tab>
-                                </Tabs>
-                            </CardBody>
-                        </Card>
+                    <div className="flex flex-col xl:flex-row justify-evenly xl:h-[500px]">
                         <Card className={cardClassName}>
                             <CardHeader className="flex gap-3 pb-1">
                                 <div className="flex flex-col">
@@ -106,7 +60,7 @@ const Projects = () => {
                                         </p>
                                     </Tab>
                                     <Tab title={<span className="text-medium md:text-lg">Preview</span>}>
-                                        <Image isZoomed height={300} src="/vycetka_preview_1.png" alt="preview image"></Image>
+                                        <Image width={400} height={400} src="/vycetka_preview_1.png" alt="preview image"></Image>
                                     </Tab>
                                     <Tab title={<span className="text-medium md:text-lg">Links</span>}>
                                         <div className="space-x-3 space-y-3 md:flex-row xl:flex-col flex-col pb-5">
