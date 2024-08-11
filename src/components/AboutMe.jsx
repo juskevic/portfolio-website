@@ -1,15 +1,11 @@
 import React from 'react';
 import {
-    Accordion,
-    AccordionItem,
-    Button,
-    Card,
-    CardBody,
-    CardHeader,
+    Accordion, AccordionItem,
+    Card, CardBody, CardHeader,
     Chip,
     ScrollShadow,
-    Tab,
-    Tabs
+    Tab, Tabs,
+    useDisclosure
 } from "@nextui-org/react";
 import {
     IconBrandHtml5,
@@ -30,6 +26,8 @@ import {
     IconBrandTypescript
 } from "@tabler/icons-react"
 
+import ReadMyStoryModal from "@/components/ReadMyStoryModal.jsx";
+
 export default function AboutMe() {
 
     const borderClassName = "shadow-none bg-opacity-25"
@@ -48,9 +46,7 @@ export default function AboutMe() {
                                     <span>{"👋"}</span>
                                 </div>
                                 <div>
-                                    <Button  radius="full" variant="light" className={`border-1 border-gray-800 shadow-none bg-white text-medium md:text-lg`}>
-                                        Read my story
-                                    </Button>
+                                    <ReadMyStoryModal />
                                 </div>
                             </CardHeader>
                             <CardBody className="text-xl md:text-2xl inline">

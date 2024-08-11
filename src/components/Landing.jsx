@@ -25,7 +25,7 @@ const InterFont300 = Inter({
 });
 
 
-export default function Hello() {
+export default function Landing() {
 
     useEffect(() => {}, []);
 

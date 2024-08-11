@@ -7,20 +7,18 @@ import { Element, Events } from 'react-scroll';
 import Header from "@/components/Header.jsx";
 import Footer from "@/components/Footer.jsx";
 
-// Animation related components imports
-import Hello from "@/components/Hello.jsx";
-
 // Page specific components imports
 import AboutMe from "@/components/AboutMe.jsx";
 import Projects from "@/components/Projects.jsx";
 import Contacts from "@/components/Contacts.jsx";
+import Landing from "@/components/Landing.jsx";
 
 const Main = () => {
     return (
         <>
             <main className="pt-16 p-6 md:p-20 xl:p-36 space-y-64 md:space-y-[300px]">
                 <Element name="hello" className="element">
-                    <Hello />
+                    <Landing />
                 </Element>
                 <Element name="about" className={`element`}>
                     <AboutMe />
