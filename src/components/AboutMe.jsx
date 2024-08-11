@@ -98,7 +98,7 @@ export default function AboutMe() {
                             <CardBody className="pt-0 h-[250px] xl:h-[180px]">
                                 <Tabs size="lg" variant="underlined">
                                     <Tab title={<span className="text-medium md:text-lg">Frontend</span>}>
-                                        <ScrollShadow hideScrollBar={true} className="max-h-36">
+                                        <ScrollShadow hideScrollBar className="max-h-40 md:max-h-72">
                                             <Card className="shadow-none bg-white">
                                                 <CardBody className="flex flex-row flex-wrap w-auto gap-2">
                                                     <Chip className="border-2 border-orange-600" variant="light" endContent={<IconBrandHtml5 stroke={1}/>}>
