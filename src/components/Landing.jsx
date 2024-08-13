@@ -44,12 +44,12 @@ export default function Landing() {
                     <div className="max-w-screen-xl">
                         <h1 className={`${poppinsFont.className} font-bold text-2xl md:text-4xl xl:text-6xl space-y-0.5`}>
                             {/*{'Crafting web magic: responsive, user-friendly, and lightning-fast.'}*/}
-                            <div>{"Crafting web magic: "}</div>
+                            <div className="animate-fade-down animate-delay-[200ms]">{"Crafting web magic: "}</div>
                             <div className="opacity-90 animate-fade-down animate-delay-[400ms]">{"responsive, user-friendly, "}</div>
                             <div className="opacity-90 animate-fade-down animate-delay-[800ms]">{"and lightning-fast."}</div>
                         </h1>
                     </div>
-                    <div className="flex flex-col pt-10 md:pt-14 justify-start">
+                    <div className="flex flex-col pt-10 md:pt-14 justify-start animate-fade-down animate-delay-[1000ms]">
                         <div>
                             <div className="w-[350px] md:w-[380px] pb-8">
                                 <p className={`${InterFont300.className} text-lg text-gray-600 animate-fade animate-delay-[2000ms]`}>
